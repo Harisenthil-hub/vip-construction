@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+
+
+@theme{
+    --color-primary: #1A1F2E;  /* NAVY BLUE */
+    --color-secondary: #F5A623; /* GOLDEN */
+    --color-surface: #F8F8F8; /* BACKGROUND SLATE */
+
+
+    --color-text-primary: #1A1F2E; /* NAVY BLUE */
+    --color-text-secondary: #F5A623; /* GOLDEN */
+    --color-text-muted: #666666; /* GREY */
+
+
+    --color-gold-hover: #E09200; /* GOLDEN HOVER */
+
+    --color-bg-black: #111111; /* BG BLACK SHADE */
+
+}
