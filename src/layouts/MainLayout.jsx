@@ -8,7 +8,7 @@ export function MainLayout() {
       {/* TOP HEADER */}
       <TopBar />
 
-      <nav>
+      <nav className="relative z-50 bg-white">
         <NavBar />
       </nav>
       <main>
