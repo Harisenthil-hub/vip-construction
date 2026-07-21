@@ -2,19 +2,65 @@
 
 
 
-@theme{
-    --color-primary: #1A1F2E;  /* NAVY BLUE */
-    --color-secondary: #F5A623; /* GOLDEN */
-    --color-surface: #F8F8F8; /* BACKGROUND SLATE */
+@theme {
+    --color-primary: #1A1F2E;
+    /* NAVY BLUE */
+    --color-secondary: #F5A623;
+    /* GOLDEN */
+    --color-surface: #F8F8F8;
+    /* BACKGROUND SLATE */
 
 
-    --color-text-primary: #1A1F2E; /* NAVY BLUE */
-    --color-text-secondary: #F5A623; /* GOLDEN */
-    --color-text-muted: #666666; /* GREY */
+    --color-text-primary: #1A1F2E;
+    /* NAVY BLUE */
+    --color-text-secondary: #F5A623;
+    /* GOLDEN */
+    --color-text-muted: #aaa;
+    /* GREY */
 
 
-    --color-gold-hover: #E09200; /* GOLDEN HOVER */
+    --color-gold-hover: #E09200;
+    /* GOLDEN HOVER */
 
-    --color-bg-black: #111111; /* BG BLACK SHADE */
+    --color-bg-black: #111111;
+    /* BG BLACK SHADE */
 
+
+    /* BORDER MOBILE NAV */
+    --color-mobile-nav: #2a2a2a;
+
+
+
+
+    /* CHANGING DEFAULT FONT */
+    --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+}
+
+
+
+/* MOBILE TOPBAR ANIMATION */
+@keyframes topbar-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.topbar-marquee {
+    animation: topbar-scroll 20s linear infinite;
+}
+
+
+
+@utility nav-link-underline {
+    @apply relative font-medium cursor-pointer text-slate-700 hover:text-gold-hover transition-colors duration-300 px-1 py-1;
+    @apply after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-center after:scale-x-0 after:bg-gold-hover after:transition-transform after:duration-300 hover:after:scale-x-100;
+
+    &.active {
+        @apply text-gold-hover after:scale-x-100;
+    }
 }
