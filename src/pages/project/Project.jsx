@@ -1,7 +1,11 @@
-export function Project() {
+import ProjectHero from "./component/ProjectHero";
+
+const Project = () => {
   return (
-    <div className="font-bold text-red-900 text-[20px] bg-primary text-secondary">
-      Project
-    </div>
+    <>
+      <ProjectHero />
+    </>
   );
-}
+};
+
+export default Project;
