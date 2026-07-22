@@ -5,7 +5,7 @@ export function ServiceSection() {
     <section className="py-15 lg:py-20 lg:max-w-[1200px] m-auto">
       <div>
         {/* SERVICE HEADER */}
-        <div className="text-center mb-14 mx-3 lg:mx-2">
+        <div className="text-center mb-12 lg:mb-14 mx-3 lg:mx-2">
           <span className="inline-block uppercase text-secondary font-bold tracking-widest text-lg lg:text-xl mb-2">
             Our Services
           </span>
