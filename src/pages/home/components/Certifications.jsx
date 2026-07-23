@@ -5,7 +5,7 @@ export function Certifications() {
     <section className="py-12 lg:py-20 lg:max-w-[1200px] m-auto">
       <div>
         {/* CERTIFICATIONS HEADER */}
-        <div className="home-container-header mb-10">
+        <div className="home-container-header">
           <span className="span-heading text-xs">
             Certifications & Partners
           </span>
