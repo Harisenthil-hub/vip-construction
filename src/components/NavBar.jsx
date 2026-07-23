@@ -2,7 +2,8 @@ import { NavLink, Link } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
 import { MdCallMade } from "react-icons/md";
 import { useState } from "react";
-import logo from "../assets/PDFGallery_20260717_153225_pages-to-jpg-0001.jpg";
+import SymbolLogo from "../assets/logo/SymbolLogo.webp";
+import NameLogo from "../assets/logo/NameLogo.webp";
 import { MobileNavDropDown } from "./MobileNavDropDown";
 
 export function NavBar() {
@@ -15,12 +16,20 @@ export function NavBar() {
     <>
       <div className="mx-auto lg:max-w-[1300px] py-2 bg-white flex justify-between lg:px-1 items-center px-3 pr-5">
         {/* LOGO */}
-        <Link>
-          <div className="h-15 w-40">
+        <Link className="flex" to='/'>
+          <div className="h-15 w-20 lg:w-25">
             <img
-              className="w-full h-full object-cover"
-              src="https://media.istockphoto.com/id/1980276924/vector/no-photo-thumbnail-graphic-element-no-found-or-available-image-in-the-gallery-or-album-flat.jpg?s=612x612&w=0&k=20&c=ZBE3NqfzIeHGDPkyvulUw14SaWfDj2rZtyiKv3toItk="
-              alt=""
+              className="w-full h-full object-contain"
+              src={SymbolLogo}
+              alt="VIP CONSTRUCTION UDUMALPET"
+            />
+          </div>
+
+          <div className="h-15 w-45 lg:w-60">
+            <img
+              className="w-full h-full object-contain"
+              src={NameLogo}
+              alt="VIP CONSTRUCTION UDUMALPET"
             />
           </div>
         </Link>
@@ -49,7 +58,10 @@ export function NavBar() {
               </NavLink>
             </li>
             <li className="">
-              <NavLink to="/contact" className="px-2 py-2 font-medium bg-secondary hover:bg-gold-hover text-white rounded-sm flex items-center transition-transform duration-300 hover:-translate-y-0.5">
+              <NavLink
+                to="/contact"
+                className="px-2 py-2 font-medium bg-secondary hover:bg-gold-hover text-white rounded-sm flex items-center transition-transform duration-300 hover:-translate-y-0.5"
+              >
                 Contact Us <MdCallMade size={20} />
               </NavLink>
             </li>
@@ -60,7 +72,10 @@ export function NavBar() {
         <button
           type="button"
           onClick={() => setIsMenuOpen((prev) => !prev)}
-          className=" lg:hidden flex items-center justify-center text-slate-700 hover:text-gold-hover transition-colors duration-300 cursor-pointer" aria-label="Toggle navigation menu" aria-expanded={isMenuOpen} >
+          className=" lg:hidden flex items-center justify-center text-slate-700 hover:text-gold-hover transition-colors duration-300 cursor-pointer"
+          aria-label="Toggle navigation menu"
+          aria-expanded={isMenuOpen}
+        >
           {isMenuOpen ? <HiX size={30} /> : <HiMenu size={30} />}
         </button>
       </div>
