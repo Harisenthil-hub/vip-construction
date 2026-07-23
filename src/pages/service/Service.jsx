@@ -9,7 +9,7 @@ import Projects from "./components/Projects";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import CTA from "./components/CTA";
-import Footer from "./components/Footer";
+
 
 export function Service() {
   const location = useLocation();
@@ -51,7 +51,6 @@ export function Service() {
       <Testimonials />
       <FAQ />
       <CTA />
-      <Footer />
     </>
   );
 }

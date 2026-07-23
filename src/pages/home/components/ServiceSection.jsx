@@ -5,14 +5,14 @@ export function ServiceSection() {
     <section className="py-15 lg:py-20 lg:max-w-[1200px] m-auto">
       <div>
         {/* SERVICE HEADER */}
-        <div className="text-center mb-14 mx-3 lg:mx-2">
-          <span className="inline-block uppercase text-secondary font-bold tracking-widest text-lg lg:text-xl mb-2">
+        <div className="home-container-header">
+          <span className="span-heading">
             Our Services
           </span>
-          <h2 className="text-2xl md:lg-text-3xl lg:text-4xl font-extrabold text-primary mb-4 ">
+          <h2 className="h2-heading">
             Comprehensive Construction Solutions
           </h2>
-          <div className="w-[150px] lg:w-3xs bg-secondary h-1 m-auto rounded" />
+          <div className="divider" />
         </div>
 
         {/* 1'ST GRID CONTAINER */}
