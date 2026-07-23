@@ -18,6 +18,8 @@
     --color-text-muted: #aaa;
     /* GREY */
 
+    --color-text-dark-muted: #666;
+
 
     --color-gold-hover: #E09200;
     /* GOLDEN HOVER */
@@ -63,4 +65,23 @@
     &.active {
         @apply text-gold-hover after:scale-x-100;
     }
+}
+
+@utility home-container-header{
+    @apply text-center mb-10 lg:mb-12 lg:mb-14 mx-3 lg:mx-2;
+}
+
+
+@utility span-heading{
+    @apply inline-block uppercase text-secondary font-bold tracking-widest text-sm lg:text-lg mb-2;
+}
+
+
+@utility h2-heading{
+    @apply text-2xl md:text-3xl lg:text-4xl font-extrabold text-primary mb-4;
+}
+
+
+@utility divider{
+    @apply w-[150px] lg:w-3xs bg-secondary h-1 m-auto rounded;
 }
