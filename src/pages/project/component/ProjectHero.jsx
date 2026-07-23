@@ -1,4 +1,4 @@
-import banner from "../../../assets/Project_Banner.png";
+import banner from "../../../assets/project/hero_section/Project_Banner.png";
 import ProjectStats from "./ProjectStats";
 import ProjectButtons from "./ProjectButtons";
 import ProjectWave from "./ProjectWave";
