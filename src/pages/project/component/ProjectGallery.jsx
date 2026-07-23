@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ProjectFilter from "./ProjectFilter";
 import ProjectCard from "./ProjectCard";
-import { projects } from "../utils/projectData";
+import { projects } from "../utils/ProjectData";
 
 const ProjectGallery = () => {
   const [activeFilter, setActiveFilter] = useState("All Projects");
