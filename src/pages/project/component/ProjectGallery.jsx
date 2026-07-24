@@ -1,10 +1,12 @@
 import { useState } from "react";
 import ProjectFilter from "./ProjectFilter";
 import ProjectCard from "./ProjectCard";
+import ProjectModal from "./ProjectModal";
 import { projects } from "../utils/ProjectData";
 
 const ProjectGallery = () => {
   const [activeFilter, setActiveFilter] = useState("All Projects");
+  const [selectedProject, setSelectedProject] = useState(null);
 
   const filteredProjects = projects.filter((project) => {
     if (activeFilter === "All Projects") return true;
@@ -21,7 +23,6 @@ const ProjectGallery = () => {
 
   return (
     <section className="py-20 bg-gray-50">
-
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
@@ -49,9 +50,18 @@ const ProjectGallery = () => {
             <ProjectCard
               key={project.id}
               project={project}
+              onView={() => setSelectedProject(project)}
             />
           ))}
         </div>
+
+        {/* Project Modal */}
+        {selectedProject && (
+          <ProjectModal
+            project={selectedProject}
+            onClose={() => setSelectedProject(null)}
+          />
+        )}
 
       </div>
     </section>

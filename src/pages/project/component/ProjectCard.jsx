@@ -1,9 +1,11 @@
 import { MapPin, ArrowRight } from "lucide-react";
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, onView }) => {
   return (
-    <div className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
-
+    <div
+      onClick={onView}
+      className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer"
+    >
       {/* Image */}
       <img
         src={project.cover}
@@ -16,8 +18,7 @@ const ProjectCard = ({ project }) => {
 
       {/* Status */}
       <div
-        className={`absolute top-4 left-4 px-3 py-1 rounded-md text-xs font-bold uppercase text-white
-        ${
+        className={`absolute top-4 left-4 px-3 py-1 rounded-md text-xs font-bold uppercase text-white ${
           project.status === "Completed"
             ? "bg-orange-500"
             : "bg-green-500"
@@ -28,7 +29,6 @@ const ProjectCard = ({ project }) => {
 
       {/* Content */}
       <div className="absolute bottom-0 left-0 w-full p-6">
-
         <h2 className="text-3xl font-bold text-white">
           {project.title}
         </h2>
@@ -40,6 +40,10 @@ const ProjectCard = ({ project }) => {
 
         {/* Hover Button */}
         <button
+          onClick={(e) => {
+            e.stopPropagation();
+            onView();
+          }}
           className="
             mt-5
             flex
@@ -57,7 +61,6 @@ const ProjectCard = ({ project }) => {
           View Gallery
           <ArrowRight size={18} />
         </button>
-
       </div>
     </div>
   );
