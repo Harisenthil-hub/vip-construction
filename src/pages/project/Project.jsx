@@ -5,6 +5,7 @@ import MaterialGallery from "./component/MaterialGallery";
 const Project = () => {
   return (
     <>
+      <title>Projects | Construction</title>
       <ProjectHero />
       <ProjectGallery />
       <MaterialGallery />

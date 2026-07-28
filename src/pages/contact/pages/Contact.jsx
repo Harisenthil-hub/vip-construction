@@ -7,6 +7,7 @@ import CTA from "../components/CTA";
 export default function Contact() {
   return (
     <div>
+      <title>Contact Us | VIP Construction</title>
       <ContactHero />
 
       <ContactInfo />
