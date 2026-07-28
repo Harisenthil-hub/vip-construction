@@ -1,6 +1,5 @@
 import { TiHome } from "react-icons/ti";
-import { BsBuildingsFill } from "react-icons/bs";
-import { FaIndustry } from "react-icons/fa6";
+import { BsBuildingsFill, BsBank } from "react-icons/bs";
 import { FaTools, FaDraftingCompass } from "react-icons/fa";
 import { GiSofa } from "react-icons/gi";
 import { SiMoleculer } from "react-icons/si";
@@ -24,9 +23,10 @@ export const data_container_1 = [
     },
     {
         id: 3, 
-        icon: FaIndustry,
-        heading: 'Industrial Construction',
-        description: 'Strong and sustainable industrial structures for various industries.'
+        icon: GiSofa,
+        heading: "Interior Design",
+        description: "Creative interior solutions combining aesthetics and functionality."
+        
     },
     {
         id: 4,
@@ -40,23 +40,24 @@ export const data_container_1 = [
 export const data_container_2 = [
     {
         id: 5, 
-        icon: GiSofa,
-        heading: "Interior Design",
-        description: "Creative interior solutions combining aesthetics and functionality."
+        icon: FaDraftingCompass,
+        heading: "Architectural Planning",
+        description: "Custom homes and luxury residences built with precision and care."
+        
 
     },
     {
         id: 6, 
-        icon: FaDraftingCompass,
-        heading: "Architectural Planning",
-        description: "Custom homes and luxury residences built with precision and care."
+        icon: SiMoleculer,
+        heading: "Structural Engineering",
+        description: "Safe, durable, and sustainable structural engineering solutions."
 
     },
     {
         id: 7, 
-        icon: SiMoleculer,
-        heading: "Structural Engineering",
-        description: "Safe, durable, and sustainable structural engineering solutions."
+        icon: BsBank,
+        heading: 'Bank Loan Assistance',
+        description: 'We help clients obtain home loans from reputed banks to make their construction journey simple and stress-free.'
 
     },
 ]
