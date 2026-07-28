@@ -12,12 +12,9 @@ export function AppRoutes() {
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<Aboutus />} />
-        <Route path="/aboutus" element={<Aboutus />} />
-        <Route path="/about us" element={<Aboutus />} />
         <Route path="/service" element={<Service />} />
         <Route path="/project" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Home />} />
       </Route>
     </Routes>
   );

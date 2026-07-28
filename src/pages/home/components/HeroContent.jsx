@@ -8,8 +8,8 @@ export function HeroContent() {
       <div className="max-w-[750px]">
         {/* MAIN SEO HEADING */}
         <h1 className=" font-bold text-white text-4xl leading-[1.1] sm:text-5xl lg:text-6xl xl:text-7xl lg:leading-[1.05] " >
-          Building Beyond
-          <span className=" block text-secondary mt-1 ">Blueprints</span>
+          Building Better
+          <span className=" block text-secondary mt-1 ">Every Day</span>
         </h1>
 
         {/* DESCRIPTION */}
@@ -32,7 +32,7 @@ export function HeroContent() {
 
           {/* CONTACT */}
           <a
-            href="tel:+911234567890"
+            href="tel:+919080273030"
             className="inline-flex items-center justify-center gap-2 border border-white/50 bg-black/10 hover:bg-white/10 text-white font-semibold px-6 py-3.5 rounded-md backdrop-blur-sm transition-colors duration-300 "
           >
             <FaPhoneAlt size={15} />
@@ -45,7 +45,7 @@ export function HeroContent() {
           {/* EXPERIENCE */}
           <div className="pr-3 sm:pr-7">
             <p className=" text-secondary font-bold text-2xl sm:text-3xl lg:text-4xl ">
-              15+
+              7+
             </p>
 
             <p className=" mt-1 text-slate-400 text-xs sm:text-sm ">
@@ -56,7 +56,7 @@ export function HeroContent() {
           {/* PROJECTS */}
           <div className=" px-3 sm:px-7 border-l border-white/20 ">
             <p className=" text-secondary font-bold text-2xl sm:text-3xl lg:text-4xl ">
-              250+
+              100+
             </p>
 
             <p className=" mt-1 text-slate-400 text-xs sm:text-sm ">
@@ -67,11 +67,11 @@ export function HeroContent() {
           {/* CLIENTS */}
           <div className=" pl-3 sm:pl-7 border-l border-white/20 ">
             <p className=" text-secondary font-bold text-2xl sm:text-3xl lg:text-4xl ">
-              500+
+              100%
             </p>
 
             <p className=" mt-1 text-slate-400 text-xs sm:text-sm ">
-              Happy Clients
+              Client Satisfaction
             </p>
           </div>
         </div>

@@ -16,16 +16,16 @@ export const whyChoose = [
   {
     id: 2,
     icon: FaShieldAlt,
-    title: "Trusted & Safe",
+    title: "Trusted & Reliable",
     description:
-      "Safety, transparency, and customer satisfaction are our highest priorities.",
+      "Built on trust, transparency, and a commitment to customer satisfaction.",
   },
   {
     id: 3,
     icon: FaUsers,
     title: "Expert Team",
     description:
-      "Our architects, engineers, and skilled professionals deliver outstanding results.",
+      "Our architects, engineers, and skilled labourers bring over 15 years of experience to deliver exceptional results.",
   },
   {
     id: 4,

@@ -4,24 +4,19 @@ import ContactForm from "../components/ContactForm";
 import FAQ from "../components/FAQ";
 import CTA from "../components/CTA";
 
-export default function Contact(){
+export default function Contact() {
+  return (
+    <div>
+      <title>Contact Us | VIP Construction</title>
+      <ContactHero />
 
-return(
+      <ContactInfo />
 
-<div>
+      <ContactForm />
 
-<ContactHero/>
+      <FAQ />
 
-<ContactInfo/>
-
-<ContactForm/>
-
-<FAQ/>
-
-<CTA/>
-
-</div>
-
-)
-
+      <CTA />
+    </div>
+  );
 }

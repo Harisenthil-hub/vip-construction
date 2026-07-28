@@ -1,4 +1,12 @@
-import { FaComments, FaDraftingCompass, FaFileInvoiceDollar, FaHardHat, FaClipboardCheck, FaKey } from "react-icons/fa";
+import {
+  FaComments,
+  FaDraftingCompass,
+  FaFileInvoiceDollar,
+  FaClipboardCheck,
+  FaKey,
+} from "react-icons/fa";
+import { MdEngineering } from "react-icons/md";
+
 
 const steps = [
   {
@@ -13,18 +21,18 @@ const steps = [
     icon: <FaDraftingCompass />,
     title: "02. Planning",
     description:
-      "Thorough site inspection, architectural drawings and structural planning.",
+      "Complete site planning with architectural, structural, and 2D & 3D elevation designs.",
   },
   {
     id: "03",
     icon: <FaFileInvoiceDollar />,
     title: "03. Quotation",
     description:
-      "Detailed, transparent cost estimates covering all materials and labour.",
+      "Customized quotations for every budget without compromising on quality or design.",
   },
   {
     id: "04",
-    icon: <FaHardHat />,
+    icon: <MdEngineering size={30} />,
     title: "04. Construction",
     description:
       "Execution with precision, premium materials and strict safety protocols.",
@@ -47,11 +55,14 @@ const steps = [
 
 export default function Process() {
   return (
-    <section id="process" className="bg-slate-50 py-10 sm:py-14 lg:py-16 border-t border-slate-200/50">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Left-Aligned Heading */}
-        <div className="text-left mb-10 max-w-xl">
-          <span className="text-[#F5A623] font-extrabold text-xs uppercase tracking-widest block mb-1">
+    <section
+      id="process"
+      className="bg-slate-50 py-16 sm:py-24 border-t border-slate-200/50"
+    >
+      <div className="max-w-5xl mx-auto px-6">
+        {/* Left-Aligned Heading (Dribbble Style) */}
+        <div className="text-left mb-16 max-w-xl">
+          <span className="text-amber-500 font-bold text-xs uppercase tracking-widest">
             STEP BY STEP PROCESS
           </span>
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 leading-tight">
@@ -81,17 +92,16 @@ export default function Process() {
           {/* Row 1 (Steps 1, 2, 3) - Text is BELOW the circle cards */}
           <div className="grid grid-cols-3 gap-8 relative z-10">
             {steps.slice(0, 3).map((step) => (
-              <div key={step.id} className="group flex flex-col items-center text-center px-4 h-[170px]">
+              <div
+                key={step.id}
+                className="group flex flex-col items-center text-center px-4 h-[170px]"
+              >
                 {/* Circle Card */}
-                <div
-                  className="w-20 h-20 rounded-full bg-white border-2 border-slate-200 shadow-sm text-slate-400 group-hover:border-amber-500 group-hover:shadow-md group-hover:scale-105 group-hover:text-amber-500 transition duration-300 flex items-center justify-center text-2xl cursor-pointer relative z-10"
-                >
+                <div className="w-20 h-20 rounded-full bg-white border-2 border-slate-200 shadow-sm text-slate-400 group-hover:border-amber-500 group-hover:shadow-md group-hover:scale-105 group-hover:text-amber-500 transition duration-300 flex items-center justify-center text-2xl cursor-pointer relative z-10">
                   {step.icon}
                 </div>
 
-                <h3
-                  className="mt-4 text-sm font-bold text-slate-800 transition duration-300 group-hover:text-amber-600"
-                >
+                <h3 className="mt-4 text-sm font-bold text-slate-800 transition duration-300 group-hover:text-amber-600">
                   {step.title}
                 </h3>
                 <p className="mt-1.5 text-xs text-slate-500 leading-relaxed max-w-[210px] mx-auto">
@@ -104,17 +114,16 @@ export default function Process() {
           {/* Row 2 (Steps 4, 5, 6) - Text is BELOW the circle cards, mt-24 provides vertical spacing for S-curve loop */}
           <div className="grid grid-cols-3 gap-8 relative z-10 mt-24">
             {steps.slice(3, 6).map((step) => (
-              <div key={step.id} className="group flex flex-col items-center text-center px-4 h-[170px]">
+              <div
+                key={step.id}
+                className="group flex flex-col items-center text-center px-4 h-[170px]"
+              >
                 {/* Circle Card */}
-                <div
-                  className="w-20 h-20 rounded-full bg-white border-2 border-slate-200 shadow-sm text-slate-400 group-hover:border-amber-500 group-hover:shadow-md group-hover:scale-105 group-hover:text-amber-500 transition duration-300 flex items-center justify-center text-2xl cursor-pointer relative z-10"
-                >
+                <div className="w-20 h-20 rounded-full bg-white border-2 border-slate-200 shadow-sm text-slate-400 group-hover:border-amber-500 group-hover:shadow-md group-hover:scale-105 group-hover:text-amber-500 transition duration-300 flex items-center justify-center text-2xl cursor-pointer relative z-10">
                   {step.icon}
                 </div>
 
-                <h3
-                  className="mt-4 text-sm font-bold text-slate-800 transition duration-300 group-hover:text-amber-600"
-                >
+                <h3 className="mt-4 text-sm font-bold text-slate-800 transition duration-300 group-hover:text-amber-600">
                   {step.title}
                 </h3>
                 <p className="mt-1.5 text-xs text-slate-500 leading-relaxed max-w-[210px] mx-auto">
@@ -136,9 +145,7 @@ export default function Process() {
                 )}
 
                 {/* Circle Card */}
-                <div
-                  className="w-12 h-12 rounded-full bg-white border-2 border-slate-200 shadow-sm text-slate-400 flex items-center justify-center text-lg relative z-10 flex-shrink-0"
-                >
+                <div className="w-12 h-12 rounded-full bg-white border-2 border-slate-200 shadow-sm text-slate-400 flex items-center justify-center text-lg relative z-10 flex-shrink-0">
                   {step.icon}
                 </div>
 
