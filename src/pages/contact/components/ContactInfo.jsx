@@ -16,9 +16,9 @@ const cards = [
   {
     icon: <FaEnvelope />,
     title: "Email Us",
-    primary: " vipconstruction.14@gmail.com",
+    primary: "vipconstruction.14@gmail.com",
     secondary: "We'll respond within 24 hours.",
-    link: "mailto: vipconstruction.14@gmail.com",
+    link: "mailto:vipconstruction.14@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt />,
@@ -43,7 +43,6 @@ export default function ContactInfo() {
 
         {/* Heading */}
         <div className="text-center mb-14">
-
           <p className="uppercase tracking-[4px] text-[#F5A623] font-semibold">
             Contact Information
           </p>
@@ -56,60 +55,22 @@ export default function ContactInfo() {
             Reach out to our team through any of the following channels.
             We'd be happy to discuss your project and answer your questions.
           </p>
-
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
-
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
           {cards.map((item, index) => (
-
             <div
               key={index}
-              className="
-                group
-                relative
-                bg-white
-                rounded-2xl
-                border
-                border-gray-200
-                shadow-md
-                hover:shadow-2xl
-                transition-all
-                duration-300
-                hover:-translate-y-3
-                overflow-hidden
-              "
+              className="group relative bg-white rounded-2xl border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden"
             >
-
-              {/* Gold Top Border */}
+              {/* Top Border */}
               <div className="h-1 bg-[#F5A623]"></div>
 
-              <div className="p-8">
+              <div className="p-6 sm:p-8">
 
                 {/* Icon */}
-                <div
-                  className="
-                    w-18
-                    h-18
-                    w-[72px]
-                    h-[72px]
-                    rounded-full
-                    bg-[#F5A623]/10
-                    border-2
-                    border-[#F5A623]
-                    flex
-                    items-center
-                    justify-center
-                    text-[#F5A623]
-                    text-3xl
-                    mb-6
-                    group-hover:bg-[#F5A623]
-                    group-hover:text-white
-                    transition-all
-                    duration-300
-                  "
-                >
+                <div className="w-[72px] h-[72px] rounded-full border-2 border-[#F5A623] bg-[#F5A623]/10 flex items-center justify-center text-[#F5A623] text-3xl mb-6 group-hover:bg-[#F5A623] group-hover:text-white transition-all duration-300">
                   {item.icon}
                 </div>
 
@@ -118,13 +79,25 @@ export default function ContactInfo() {
                   {item.title}
                 </h3>
 
-                {/* Main Text */}
+                {/* Primary Text */}
                 {item.link ? (
                   <a
                     href={item.link}
-                    className="block mt-5 text-lg font-semibold text-[#1A1F2E] hover:text-[#F5A623] transition"
+                    className="block mt-5 font-semibold text-[#1A1F2E] hover:text-[#F5A623] transition"
                   >
-                    {item.primary}
+                    {item.title === "Email Us" ? (
+                      <>
+                        <span className="text-sm sm:text-base lg:text-lg">
+                          vipconstruction.14
+                        </span>
+                        <wbr />
+                        <span className="text-sm sm:text-base lg:text-lg">
+                          @gmail.com
+                        </span>
+                      </>
+                    ) : (
+                      <span className="text-lg">{item.primary}</span>
+                    )}
                   </a>
                 ) : (
                   <p className="mt-5 text-lg font-semibold text-[#1A1F2E]">
@@ -132,17 +105,14 @@ export default function ContactInfo() {
                   </p>
                 )}
 
-                {/* Secondary Text */}
+                {/* Secondary */}
                 <p className="mt-3 text-gray-500 leading-7">
                   {item.secondary}
                 </p>
 
               </div>
-
             </div>
-
           ))}
-
         </div>
 
       </div>
