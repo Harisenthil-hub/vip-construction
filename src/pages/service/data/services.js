@@ -9,7 +9,6 @@ import commercial2 from "../images/commercial2.webp";
 import commercial3 from "../images/commercial3.webp";
 import commercial4 from "../images/commercial4.webp";
 
-import industrial1 from "../images/industrial1.webp";
 import architecture1 from "../images/architecture1.webp";
 import interior1 from "../images/interior1.webp";
 import renovation1 from "../images/renovation1.webp";
@@ -57,27 +56,6 @@ export const services = [
       "Hotels & Resorts",
       "Hospitals & Clinics",
       "Educational Institutions",
-    ],
-  },
-  {
-    id: "industrial",
-    title: "Industrial",
-    subtitle: "Robust Industrial Infrastructure Built To Last",
-    description:
-      "We engineer and construct high-performance industrial buildings for warehouses, factories, manufacturing plants and logistics hubs. Our industrial projects are built to withstand heavy operational loads with structural integrity, fire safety compliance and efficient workflow layouts.",
-    images: [
-      industrial1,
-      commercial1,
-      commercial3,
-      residential2,
-    ],
-    features: [
-      "Factories & Manufacturing Plants",
-      "Warehouses & Cold Storage",
-      "Industrial Parks & SEZ",
-      "Logistics & Distribution Centers",
-      "Pre-Engineered Steel Buildings",
-      "Utility & Power Infrastructure",
     ],
   },
   {
@@ -136,11 +114,36 @@ export const services = [
     ],
     features: [
       "Full Villa & Home Renovation",
-      "Office & Commercial Refurbishment",
-      "Kitchen & Bathroom Remodeling",
+      "Commercial Refurbishment",
+      "Elevated Customised Designs",
       "Exterior Painting & Cladding",
       "Waterproofing & Damp Treatment",
       "Structural Repair & Strengthening",
     ],
   },
+
+  {
+    id: "bankloans",
+    title: "Bank Loan Assistance",
+    subtitle: "Reliable Financing Support for Your Dream Project",
+    description:
+      "Our team helps you connect with leading banks to arrange home and construction loans with ease. From documentation to loan processing, we provide complete assistance to ensure a smooth and hassle-free financing experience.",
+    images: [
+      renovation1,
+      residential3,
+      residential4,
+      villa3,
+    ],
+    features: [
+      "Home Loan Assistance",
+      "Construction Loan Support",
+      "Guidance on Loan Documentation",
+      "Coordination with Leading Banks",
+      "End-to-End Application Support",
+      "Quick & Hassle-Free Processing",
+    ],
+  }
 ];
+
+
+

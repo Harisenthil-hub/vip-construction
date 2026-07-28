@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { WaterMark } from "./WaterMark";
+import { GiRotaryPhone } from "react-icons/gi";
 
 import SymbolLogo from "../assets/logo/SymbolLogo.webp";
 import NameLogo from "../assets/logo/NameLogo.webp";
@@ -15,9 +16,9 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   const social = [
-    { icon: FaFacebookF, label: "Facebook" },
-    { icon: FaInstagram, label: "Instagram" },
-    { icon: FaYoutube, label: "YouTube" },
+    { icon: FaFacebookF, label: "Facebook", link: 'https://www.facebook.com/share/1DGh2xRqHR/?mibextid=wwXIfr' },
+    { icon: FaInstagram, label: "Instagram", link: 'https://www.instagram.com/vipconstruction_udumalpet?utm_source=qr&igsh=aDhjbGI4ZW1yamw2' },
+    { icon: FaYoutube, label: "YouTube", link: 'https://www.youtube.com/@vipconstruction_offical' },
   ];
 
   const quickLinks = [
@@ -31,7 +32,7 @@ export default function Footer() {
   return (
     <footer className="relative bg-slate-950 text-slate-300">
       {/* Top */}
-      <div className="mx-auto max-w-7xl px-6 py-10">
+      <div className="mx-auto max-w-7xl px-3 py-10">
         <div className="grid gap-10 lg:grid-cols-4">
           {/* Company */}
           <div>
@@ -45,7 +46,7 @@ export default function Footer() {
                 />
               </div>
 
-              <div className="h-15 w-45 lg:w-60">
+              <div className="h-15 w-45 lg:w-65">
                 <img
                   className="w-full h-full object-contain"
                   src={NameLogo}
@@ -65,8 +66,9 @@ export default function Footer() {
                 return (
                   <a
                     key={index}
-                    href="#"
+                    href={item.link}
                     aria-label={item.label}
+                    target="_a"
                     className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-900 transition duration-300 hover:bg-amber-500 hover:text-slate-900 text-lg border border-slate-800"
                   >
                     <Icon />
@@ -94,20 +96,22 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-xl font-bold text-white">
-              Branches
-            </h3>
+            <h3 className="text-xl font-bold text-white">Branches</h3>
 
             <div className="space-y-3 mt-3">
               <div className="space-y-1">
-                <p className="font-bold text-secondary brightness-150">Udumalpet Branch</p>
+                <p className="font-bold text-secondary brightness-150">
+                  Udumalpet Branch
+                </p>
                 <span>
                   8, Durairam layout, S.V Mill (P.O), Udumalpet, Tiruppur Dist –
                   642128.
                 </span>
               </div>
               <div className="space-y-1">
-                <p className="font-bold text-secondary brightness-150">Coimbatore Branch</p>
+                <p className="font-bold text-secondary brightness-150">
+                  Coimbatore Branch
+                </p>
                 <span>
                   No: 46 Srinagar, KK nagar, Ganapathi, Coimbatore – 641006.
                 </span>
@@ -127,6 +131,17 @@ export default function Footer() {
                     className="hover:text-amber-400 transition"
                   >
                     +91 9080273030
+                  </a>
+                </span>
+              </div>
+              <div className="flex gap-4 items-center">
+                <GiRotaryPhone size={25} className="text-amber-400 text-lg flex-shrink-0" />
+                <span>
+                  <a
+                    href="tel:+919344432923"
+                    className="hover:text-amber-400 transition"
+                  >
+                    +91 9344432923
                   </a>
                 </span>
               </div>
