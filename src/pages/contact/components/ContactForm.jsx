@@ -28,7 +28,7 @@ export default function ContactForm() {
         {/* Form & Map */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
-          {/* Form */}
+          {/* Contact Form */}
           <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8 lg:p-10">
 
             <h3 className="text-2xl font-bold text-[#1A1F2E] mb-8">
@@ -37,28 +37,18 @@ export default function ContactForm() {
 
             <form className="space-y-5">
 
-              {/* Name & Email */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              {/* Full Name */}
+              <input
+                type="text"
+                placeholder="Full Name"
+                className="w-full rounded-lg border border-gray-300 p-4 outline-none transition-all duration-300 focus:border-[#F5A623] focus:ring-2 focus:ring-[#F5A623]"
+              />
 
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  className="w-full rounded-lg border border-gray-300 p-4 outline-none transition focus:border-[#F5A623] focus:ring-2 focus:ring-[#F5A623]"
-                />
-
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  className="w-full rounded-lg border border-gray-300 p-4 outline-none transition focus:border-[#F5A623] focus:ring-2 focus:ring-[#F5A623]"
-                />
-
-              </div>
-
-              {/* Phone */}
+              {/* Phone Number */}
               <input
                 type="tel"
                 placeholder="Phone Number"
-                className="w-full rounded-lg border border-gray-300 p-4 outline-none transition focus:border-[#F5A623] focus:ring-2 focus:ring-[#F5A623]"
+                className="w-full rounded-lg border border-gray-300 p-4 outline-none transition-all duration-300 focus:border-[#F5A623] focus:ring-2 focus:ring-[#F5A623]"
               />
 
               {/* Project Type */}
@@ -66,7 +56,7 @@ export default function ContactForm() {
 
                 <select
                   defaultValue=""
-                  className="w-full appearance-none rounded-lg border border-gray-300 bg-white p-4 pr-12 outline-none transition focus:border-[#F5A623] focus:ring-2 focus:ring-[#F5A623]"
+                  className="w-full appearance-none rounded-lg border border-gray-300 bg-white p-4 pr-12 outline-none transition-all duration-300 focus:border-[#F5A623] focus:ring-2 focus:ring-[#F5A623]"
                 >
 
                   <option value="" disabled>
@@ -99,14 +89,12 @@ export default function ContactForm() {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
                       d="M19 9l-7 7-7-7"
                     />
-
                   </svg>
 
                 </div>
@@ -117,13 +105,13 @@ export default function ContactForm() {
               <textarea
                 rows="6"
                 placeholder="Tell us about your project..."
-                className="w-full rounded-lg border border-gray-300 p-4 outline-none transition focus:border-[#F5A623] focus:ring-2 focus:ring-[#F5A623]"
+                className="w-full rounded-lg border border-gray-300 p-4 outline-none resize-none transition-all duration-300 focus:border-[#F5A623] focus:ring-2 focus:ring-[#F5A623]"
               ></textarea>
 
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-[#F5A623] hover:bg-[#E09200] transition-all duration-300 text-white font-semibold py-4 rounded-lg shadow-lg hover:shadow-xl"
+                className="w-full bg-[#F5A623] hover:bg-[#E09200] text-white font-semibold py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 Send Message
               </button>
@@ -137,7 +125,7 @@ export default function ContactForm() {
 
             <iframe
               title="Google Maps"
-              src="https://www.google.com/maps?q=Coimbatore,Tamil%20Nadu&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6369198.873677671!2d68.03758697500002!3d10.585389600000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9cdc269835d37%3A0xfedeee2f5ee3146a!2sVIP%20CONSTRUCTION%20%EF%B8%8F!5e1!3m2!1sen!2sin!4v1785217848837!5m2!1sen!2sin"
               className="w-full h-full"
               loading="lazy"
               allowFullScreen
@@ -151,3 +139,4 @@ export default function ContactForm() {
     </section>
   );
 }
+
