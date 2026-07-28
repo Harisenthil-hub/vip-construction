@@ -7,7 +7,7 @@ import { CTA } from "./components/CTA";
 export function Home() {
   return (
     <>
-
+      <title>Home | VIP Construction</title>
       <HeroSection />
 
       <ServiceSection />

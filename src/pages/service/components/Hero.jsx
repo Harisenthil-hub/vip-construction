@@ -40,7 +40,7 @@ export default function Hero() {
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500 mt-1">
               Excellence
             </span>
-            Since 2005
+            Since 2019
           </h1>
 
           {/* Description */}

@@ -25,9 +25,9 @@ export const faqs = [
   },
   {
     id: 5,
-    question: "How can I get a free consultation or site visit?",
+    question: "How can I get a consultation or site visit?",
     answer:
-      "Simply contact us through our website enquiry form, call us on +91 98765 43210 or visit our office in Pollachi. We offer a free initial consultation and a no-obligation site visit anywhere within Tamil Nadu. Our team will assess your requirements and provide a detailed proposal within 48 hours of the site visit.",
+      "Simply contact us through our website enquiry form, call us on +91 9080273030 or visit our office in Udumalpet. We offer a free initial consultation and a no-obligation site visit anywhere within Tamil Nadu. Our team will assess your requirements and provide a detailed proposal within 48 hours of the site visit.",
   },
   {
     id: 6,

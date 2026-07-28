@@ -1,11 +1,11 @@
 const ProjectStats = () => {
   const stats = [
     {
-      number: "250+",
+      number: "100+",
       title: "Projects Completed",
     },
     {
-      number: "15+",
+      number: "7+",
       title: "Years of Experience",
     },
     {

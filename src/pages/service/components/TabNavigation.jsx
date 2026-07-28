@@ -1,14 +1,14 @@
 import { FaHome } from "react-icons/fa";
 import { FaBuilding } from "react-icons/fa";
-import { FaIndustry } from "react-icons/fa";
 import { FaCompassDrafting } from "react-icons/fa6";
 import { FaCouch } from "react-icons/fa";
 import { FaHammer } from "react-icons/fa";
+import { BsBank } from "react-icons/bs";
 
 const icons = {
   residential: <FaHome />,
   commercial: <FaBuilding />,
-  industrial: <FaIndustry />,
+  bankloans: <BsBank />,
   architecture: <FaCompassDrafting />,
   interior: <FaCouch />,
   renovation: <FaHammer />,
