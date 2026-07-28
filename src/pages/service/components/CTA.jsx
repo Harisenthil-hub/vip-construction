@@ -3,30 +3,27 @@ import { Link } from "react-router-dom";
 
 export default function CTA() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 py-16 sm:py-24">
+    <section className="relative overflow-hidden bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 py-10 sm:py-14 lg:py-16">
       {/* Background Glow Blobs */}
       <div className="absolute -top-40 -left-32 h-80 w-80 rounded-full bg-amber-500/10 blur-3xl pointer-events-none"></div>
       <div className="absolute -bottom-40 -right-32 h-80 w-80 rounded-full bg-orange-500/10 blur-3xl pointer-events-none"></div>
 
       {/* Content Container */}
-      <div className="relative z-10 mx-auto max-w-7xl px-6">
-        <div className="rounded-2xl sm:rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-10 md:p-12 backdrop-blur-lg lg:flex lg:items-center lg:justify-between gap-10">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-5 sm:p-8 backdrop-blur-lg lg:flex lg:items-center lg:justify-between gap-8">
           
           {/* Left Column: Text */}
-          <div className="max-w-2xl">
-            <span className="inline-block rounded-full bg-amber-500 px-4 py-1.5 text-xs font-extrabold uppercase tracking-[3px] text-slate-950 mb-4 shadow-sm">
+          <div className="max-w-xl">
+            <span className="inline-block rounded-full bg-[#F5A623] px-3.5 py-1 text-[11px] font-extrabold uppercase tracking-wider text-slate-950 mb-3 shadow-sm">
               Let's Build Together
             </span>
 
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black leading-tight text-white">
-              Ready To Start
-              <span className="block text-amber-400 mt-1">
-                Your Dream Project?
-              </span>
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold leading-tight text-white">
+              Ready To Start <span className="text-[#F5A623]">Your Dream Project?</span>
             </h2>
 
-            <p className="mt-4 text-xs sm:text-sm md:text-base leading-relaxed text-slate-300">
-              Whether you're planning a residential home, commercial building, industrial facility, or renovation project, our experienced team is ready to help. Contact VIP Construction today for a free consultation and quotation.
+            <p className="mt-2.5 text-xs sm:text-sm leading-relaxed text-slate-300 font-normal">
+              Whether you're planning a residential villa, commercial building, or architectural renovation, our team is ready. Contact VIP Construction for transparent estimations and site consultation.
             </p>
           </div>
 

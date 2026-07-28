@@ -3,18 +3,18 @@ import { testimonials } from "../data/testimonials";
 
 export default function Testimonials() {
   return (
-    <section className="py-16 sm:py-24 bg-slate-100">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-10 sm:py-14 lg:py-16 bg-slate-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <div className="text-center mb-10 sm:mb-12">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-amber-100 text-amber-700 font-bold uppercase tracking-wider text-xs border border-amber-200">
+        <div className="text-center mb-8 sm:mb-10">
+          <span className="inline-block px-3.5 py-1 rounded-full bg-amber-100 text-amber-800 font-bold uppercase tracking-wider text-[11px] sm:text-xs border border-amber-200">
             Testimonials
           </span>
-          <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
+          <h2 className="mt-3 text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 leading-tight">
             What Our Clients Say
           </h2>
-          <p className="mt-4 text-slate-500 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-            Customer satisfaction is at the heart of everything we do. Here's what our clients say about working with VIP Construction.
+          <p className="mt-2.5 text-xs sm:text-sm text-slate-600 max-w-xl mx-auto leading-relaxed font-normal">
+            Customer satisfaction is at the heart of everything we do. Here's feedback from our clients.
           </p>
         </div>
 

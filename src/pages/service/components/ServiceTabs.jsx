@@ -10,23 +10,23 @@ export default function ServiceTabs() {
     services.find((service) => service.id === activeTab) || services[0];
 
   return (
-    <section id="services" className="bg-slate-50 py-16 sm:py-24">
-      <div className="mx-auto max-w-7xl px-6">
+    <section id="services" className="bg-slate-50 py-10 sm:py-14 lg:py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-block rounded-full bg-amber-100 px-4 py-1.5 text-xs font-bold uppercase tracking-[3px] text-amber-700 border border-amber-200">
+        <div className="mx-auto max-w-2xl text-center">
+          <span className="inline-block rounded-full bg-amber-100 px-3.5 py-1 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-amber-800 border border-amber-200">
             Our Services
           </span>
-          <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
+          <h2 className="mt-3 text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 leading-tight">
             Construction Solutions
           </h2>
-          <p className="mt-4 text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed">
-            We provide complete construction solutions from planning and architecture to execution, interiors, renovation, and industrial projects with exceptional quality.
+          <p className="mt-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed max-w-xl mx-auto font-normal">
+            Complete construction solutions from architectural planning and structural execution to interiors, renovation, and commercial complexes with engineering precision.
           </p>
         </div>
 
         {/* Tabs */}
-        <div className="mt-10 sm:mt-12">
+        <div className="mt-8 sm:mt-10">
           <TabNavigation
             services={services}
             activeTab={activeTab}
@@ -35,7 +35,7 @@ export default function ServiceTabs() {
         </div>
 
         {/* Active Content */}
-        <div className="mt-8 sm:mt-12 rounded-3xl bg-white p-6 sm:p-10 shadow-xl lg:p-12 border border-slate-100">
+        <div className="mt-6 sm:mt-8 rounded-2xl bg-white p-5 sm:p-8 shadow-lg border border-slate-200/80">
           <ServiceContent service={activeService} />
         </div>
       </div>

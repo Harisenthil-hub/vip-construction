@@ -1,5 +1,5 @@
 import { FaArrowRight, FaPhoneAlt } from "react-icons/fa";
-import heroImage from "../assets/images/contact-hero.png";
+import heroImage from "../../../assets/photos/hero-home.webp";
 
 const ContactHero = () => {
 

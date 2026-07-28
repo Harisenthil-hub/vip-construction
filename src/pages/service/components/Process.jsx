@@ -47,15 +47,15 @@ const steps = [
 
 export default function Process() {
   return (
-    <section id="process" className="bg-slate-50 py-16 sm:py-24 border-t border-slate-200/50">
-      <div className="max-w-5xl mx-auto px-6">
-        {/* Left-Aligned Heading (Dribbble Style) */}
-        <div className="text-left mb-16 max-w-xl">
-          <span className="text-amber-500 font-bold text-xs uppercase tracking-widest">
+    <section id="process" className="bg-slate-50 py-10 sm:py-14 lg:py-16 border-t border-slate-200/50">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Left-Aligned Heading */}
+        <div className="text-left mb-10 max-w-xl">
+          <span className="text-[#F5A623] font-extrabold text-xs uppercase tracking-widest block mb-1">
             STEP BY STEP PROCESS
           </span>
-          <h2 className="mt-2 text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 leading-tight">
-            We Complete every Step Carefully
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 leading-tight">
+            We Execute Every Milestone Carefully
           </h2>
         </div>
 
