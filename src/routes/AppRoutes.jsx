@@ -3,6 +3,8 @@ import { Home } from "../pages/home/Home";
 import { Service } from "../pages/service/Service";
 import { MainLayout } from "../layouts/MainLayout";
 import  Project  from "../pages/project/Project";
+import Contact from "../pages/contact/pages/Contact";
+
 
 export function AppRoutes() {
   return (
@@ -11,6 +13,7 @@ export function AppRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/service" element={<Service />} />
         <Route path="/project" element={<Project/>} />
+        <Route path="/contact" element={<Contact />} />
       </Route>
     </Routes>
   );

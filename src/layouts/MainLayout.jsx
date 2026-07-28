@@ -9,7 +9,7 @@ export function MainLayout() {
       {/* TOP HEADER */}
       <TopBar />
 
-      <nav className="relative z-50 bg-white">
+      <nav className="relative z-50  border-t border-t-text-muted">
         <NavBar />
       </nav>
       <main>

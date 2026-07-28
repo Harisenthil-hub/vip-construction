@@ -19,7 +19,6 @@ const ContactHero = () => {
 
   return (
     <section className="relative w-full min-h-screen overflow-hidden">
-
       {/* Background Image */}
       <img
         src="/images/contact-hero.webp"
@@ -167,11 +166,8 @@ const ContactHero = () => {
               </span>
 
             </div>
-
           </div>
-
         </div>
-
       </div>
     </section>
   );
