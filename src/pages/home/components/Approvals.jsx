@@ -20,15 +20,15 @@ const banks = [
 
 export default function Approvals() {
   return (
-    <section className="py-20 bg-slate-100">
+    <section className="py-10 lg:py-20 bg-slate-100">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
-        <div className="text-center mb-14">
-          <h2 className="text-4xl font-bold text-primary">
+        <div className="text-center mb-10 lg:mb-14">
+          <h2 className="h2-heading">
             Approvals & Loan Assistance
           </h2>
 
-          <p className="mt-4 text-slate-600 max-w-3xl mx-auto">
+          <p className="mt-2 lg:mt-4 text-slate-600 lg:max-w-3xl lg:mx-auto">
             We simplify your construction journey by taking care of approvals,
             documentation, and home loan assistance through trusted banking
             partners.
@@ -36,12 +36,13 @@ export default function Approvals() {
         </div>
 
         {/* Cards */}
-        <div className="flex rounded-2xl shadow-xl overflow-hidden">
+        <div className="flex flex-col lg:flex-row divide-y lg:divide-y-0 lg:divide-x divide-slate-200 rounded-2xl shadow-xl overflow-hidden">
+
           {/* Approvals Card */}
-          <div className="flex-1/2 bg-white p-8">
+          <div className="flex-1 bg-white p-6 md:p-8">
             <div className="flex items-center gap-5 mb-8">
-              <div className="h-15 w-15 rounded-2xl bg-secondary/20 flex items-center justify-center">
-                <FaFileSignature className="text-3xl text-secondary" />
+              <div className="h-15 w-15 md:h-16 md:w-16 rounded-2xl lg:bg-secondary/20 flex items-center justify-center">
+                <FaFileSignature className="text-2xl md:text-3xl text-secondary" />
               </div>
 
               <div>
@@ -49,7 +50,7 @@ export default function Approvals() {
                   Legal Services
                 </p>
 
-                <h3 className="text-2xl font-bold text-primary">
+                <h3 className="text-xl md:text-2xl font-bold text-primary">
                   Approvals & Documentation
                 </h3>
               </div>
@@ -60,7 +61,7 @@ export default function Approvals() {
               begins without delays.
             </p>
 
-            <div className="grid grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
               {approvals.map((item, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <div className="h-8 w-8 rounded-full bg-secondary/20 flex items-center justify-center">
@@ -72,8 +73,8 @@ export default function Approvals() {
               ))}
             </div>
 
-            <div className="mt-18 p-5 bg-secondary/10 rounded-xl border border-secondary/20">
-              <p className="text-sm leading-7 text-slate-600">
+            <div className="mt-7 lg:mt-18 p-5 bg-secondary/10 rounded-xl border border-secondary/20">
+              <p className="text-sm md:text-base leading-6 md:leading-7 text-slate-600">
                 <span className="font-semibold text-primary">
                   {" "}
                   Need Approval Assistance?{" "}
@@ -86,10 +87,10 @@ export default function Approvals() {
 
           {/* Loan Card */}
 
-          <div className="flex-1/2 bg-[#0F172A] text-white p-8">
+          <div className="flex-1 bg-[#0F172A] text-white p-6 md:p-8">
             <div className="flex items-center gap-5 mb-8">
-              <div className="h-15 w-15 rounded-2xl bg-white/10 backdrop-blur flex items-center justify-center">
-                <FaUniversity className="text-3xl text-secondary" />
+              <div className="h-14 w-14 md:h-16 md:w-16 rounded-2xl bg-white/10 backdrop-blur flex items-center justify-center">
+                <FaUniversity className="text-2xl md:text-3xl text-secondary" />
               </div>
 
               <div>
@@ -97,7 +98,7 @@ export default function Approvals() {
                   Financial Support
                 </p>
 
-                <h3 className="text-2xl font-bold">Home Loan Assistance</h3>
+                <h3 className="text-xl md:text-2xl font-bold">Home Loan Assistance</h3>
               </div>
             </div>
 
@@ -106,7 +107,7 @@ export default function Approvals() {
               end-to-end documentation support.
             </p>
 
-            <div className="grid grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
               {banks.map((item, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <div className="h-8 w-8 rounded-full bg-white/10 flex items-center justify-center">
@@ -118,8 +119,8 @@ export default function Approvals() {
               ))}
             </div>
 
-            <div className="mt-10 rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-5">
-              <p className="text-sm leading-7 text-gray-300">
+            <div className="mt-7 lg:mt-10 rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-5">
+              <p className="text-sm md:text-base leading-6 md:leading-7 text-gray-300">
                 <span className="text-yellow-400 font-semibold">25+ Banks</span>{" "}
                 available to help you secure the right home or construction loan
                 with a smooth and transparent approval process.
