@@ -65,8 +65,8 @@ export default function Process() {
           <span className="text-amber-500 font-bold text-xs uppercase tracking-widest">
             STEP BY STEP PROCESS
           </span>
-          <h2 className="mt-2 text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 leading-tight">
-            We Complete every Step Carefully
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 leading-tight">
+            We Execute Every Milestone Carefully
           </h2>
         </div>
 

@@ -4,30 +4,30 @@ import ServiceGallery from "./ServiceGallery";
 
 export default function ServiceContent({ service }) {
   return (
-    <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center py-6 sm:py-10">
+    <div className="grid lg:grid-cols-2 gap-6 lg:gap-10 items-center py-2 sm:py-4">
       {/* Left Column: Details */}
       <div className="flex flex-col">
         {/* Tag */}
-        <span className="inline-block self-start rounded-full bg-amber-100 text-amber-700 px-4 py-1.5 text-xs font-bold tracking-wider uppercase border border-amber-200">
+        <span className="inline-block self-start rounded-full bg-amber-100 text-amber-800 px-3 py-1 text-[11px] font-bold tracking-wider uppercase border border-amber-200">
           {service.title} Construction
         </span>
 
         {/* Title */}
-        <h3 className="mt-4 text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 leading-tight">
+        <h3 className="mt-3 text-lg sm:text-xl lg:text-2xl font-bold text-slate-900 leading-tight">
           {service.subtitle}
         </h3>
 
         {/* Description */}
-        <p className="mt-4 text-slate-600 leading-relaxed text-sm sm:text-base">
+        <p className="mt-3 text-slate-600 leading-relaxed text-xs sm:text-sm">
           {service.description}
         </p>
 
         {/* Features List */}
-        <div className="grid sm:grid-cols-2 gap-3.5 mt-6">
+        <div className="grid sm:grid-cols-2 gap-2.5 mt-5">
           {service.features.map((feature) => (
-            <div key={feature} className="flex items-center gap-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0" />
-              <span className="text-slate-700 text-sm font-medium">
+            <div key={feature} className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#F5A623] flex-shrink-0" />
+              <span className="text-slate-700 text-xs font-medium">
                 {feature}
               </span>
             </div>
@@ -35,13 +35,13 @@ export default function ServiceContent({ service }) {
         </div>
 
         {/* Call to Actions */}
-        <div className="flex flex-wrap gap-4 mt-8">
+        <div className="flex flex-wrap gap-3 mt-6">
           <Link
             to="/project"
-            className="bg-amber-500 hover:bg-amber-400 text-slate-900 transition duration-300 px-6 py-3 rounded-full font-bold flex items-center gap-2 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 text-sm"
+            className="h-10 px-4 rounded-xl bg-[#F5A623] text-[#0F172A] font-bold text-xs inline-flex items-center gap-2 hover:bg-[#e0941f] hover:scale-105 active:scale-95 transition-all duration-300 shadow-sm"
           >
-            View Projects
-            <FaArrowRight className="text-xs" />
+            <span>View Projects</span>
+            <FaArrowRight className="text-[10px]" />
           </Link>
         </div>
       </div>

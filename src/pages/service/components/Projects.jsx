@@ -4,23 +4,23 @@ import { projects } from "../data/projects";
 
 export default function Projects() {
   return (
-    <section id="projects" className="bg-slate-900 py-16 sm:py-24">
-      <div className="mx-auto max-w-7xl px-6">
+    <section id="projects" className="bg-slate-900 py-10 sm:py-14 lg:py-16 text-white">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center">
-          <span className="rounded-full bg-amber-500/20 px-4 py-1.5 text-xs font-bold uppercase tracking-[3px] text-amber-400 border border-amber-500/30">
+          <span className="inline-block rounded-full bg-amber-500/20 px-3.5 py-1 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-amber-400 border border-amber-500/30">
             Portfolio
           </span>
-          <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight">
+          <h2 className="mt-3 text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
             Featured Projects
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-sm sm:text-base text-slate-300 leading-relaxed">
-            Explore some of our successfully completed residential, commercial, industrial, and interior projects.
+          <p className="mx-auto mt-2.5 max-w-xl text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
+            Explore our successfully completed residential, commercial, industrial, and interior projects.
           </p>
         </div>
 
-        {/* Cards Grid - 2 columns on mobile, 3 on tablet, 4 on desktop */}
-        <div className="mt-8 sm:mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
+        {/* Cards Grid */}
+        <div className="mt-8 sm:mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
           {projects.map((project) => (
             <div
               key={project.id}

@@ -6,18 +6,18 @@ export default function FAQ() {
   const [open, setOpen] = useState(0);
 
   return (
-    <section id="faq" className="bg-white py-16 sm:py-24">
-      <div className="mx-auto max-w-4xl px-6">
+    <section id="faq" className="bg-white py-10 sm:py-14 lg:py-16">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <div className="text-center mb-10 sm:mb-12">
-          <span className="rounded-full bg-amber-100 px-4 py-1.5 text-xs font-bold uppercase tracking-[3px] text-amber-700 border border-amber-200">
+        <div className="text-center mb-8 sm:mb-10">
+          <span className="inline-block rounded-full bg-amber-100 px-3.5 py-1 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-amber-800 border border-amber-200">
             FAQ
           </span>
-          <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
+          <h2 className="mt-3 text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 leading-tight">
             Frequently Asked Questions
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-sm sm:text-base text-slate-500 leading-relaxed">
-            Find answers to the most common questions about our construction services and project process.
+          <p className="mx-auto mt-2.5 max-w-xl text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+            Find answers to common questions about our construction services, estimations, and site process.
           </p>
         </div>
 
