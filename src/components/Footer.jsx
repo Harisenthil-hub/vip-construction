@@ -100,7 +100,7 @@ export default function Footer() {
 
             <div className="space-y-3 mt-3">
               <div className="space-y-1">
-                <p className="font-bold text-secondary brightness-150">
+                <p className="font-bold text-secondary">
                   Udumalpet Branch
                 </p>
                 <span>
@@ -109,7 +109,7 @@ export default function Footer() {
                 </span>
               </div>
               <div className="space-y-1">
-                <p className="font-bold text-secondary brightness-150">
+                <p className="font-bold text-secondary">
                   Coimbatore Branch
                 </p>
                 <span>

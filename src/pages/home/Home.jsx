@@ -5,6 +5,7 @@ import Testimonials from '../service/components/Testimonials'
 import { Certifications } from "./components/Certifications";
 import { CTA } from "./components/CTA";
 import Approvals from "./components/Approvals";
+import { BankScroll } from "./components/BankScroll";
 export function Home() {
   return (
     <>
@@ -14,6 +15,8 @@ export function Home() {
       <ServiceSection />
 
       <Approvals />
+
+      <BankScroll />
 
       <Projects />
 
