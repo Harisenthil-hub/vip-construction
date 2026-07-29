@@ -3,6 +3,7 @@ import {
   FaMapMarkerAlt,
   FaEnvelope,
   FaClock,
+  FaArrowRight,
 } from "react-icons/fa";
 
 const cards = [
@@ -12,6 +13,7 @@ const cards = [
     primary: "+91 9080273030",
     secondary: "We're available for project discussions.",
     link: "tel:+919080273030",
+    action: "Call Now",
   },
   {
     icon: <FaEnvelope />,
@@ -19,20 +21,23 @@ const cards = [
     primary: "vipconstruction.14@gmail.com",
     secondary: "We'll respond within 24 hours.",
     link: "mailto:vipconstruction.14@gmail.com",
+    action: "Send Email",
   },
   {
     icon: <FaMapMarkerAlt />,
     title: "Visit Our Office",
     primary: "Udumalpet",
     secondary: "Tamil Nadu, India",
-    link: null,
+    link: "https://maps.google.com/?q=Udumalpet,Tamil Nadu",
+    action: "Get Directions",
   },
   {
     icon: <FaClock />,
     title: "Working Hours",
     primary: "Mon – Sat",
     secondary: "9:00 AM – 8:00 PM",
-    link: null,
+    link: "#contact-form",
+    action: "Book Consultation",
   },
 ];
 
@@ -59,15 +64,17 @@ export default function ContactInfo() {
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+
           {cards.map((item, index) => (
             <div
               key={index}
               className="group relative bg-white rounded-2xl border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden"
             >
-              {/* Top Border */}
+
+              {/* Top Gold Border */}
               <div className="h-1 bg-[#F5A623]"></div>
 
-              <div className="p-6 sm:p-8">
+              <div className="p-6 sm:p-8 flex flex-col h-full">
 
                 {/* Icon */}
                 <div className="w-[72px] h-[72px] rounded-full border-2 border-[#F5A623] bg-[#F5A623]/10 flex items-center justify-center text-[#F5A623] text-3xl mb-6 group-hover:bg-[#F5A623] group-hover:text-white transition-all duration-300">
@@ -79,11 +86,11 @@ export default function ContactInfo() {
                   {item.title}
                 </h3>
 
-                {/* Primary Text */}
-                {item.link ? (
+                {/* Main Text */}
+                {(item.link.startsWith("tel") || item.link.startsWith("mailto")) ? (
                   <a
                     href={item.link}
-                    className="block mt-5 font-semibold text-[#1A1F2E] hover:text-[#F5A623] transition"
+                    className="block mt-5 font-semibold text-[#1A1F2E] hover:text-[#F5A623] transition break-words"
                   >
                     {item.title === "Email Us" ? (
                       <>
@@ -105,14 +112,39 @@ export default function ContactInfo() {
                   </p>
                 )}
 
-                {/* Secondary */}
-                <p className="mt-3 text-gray-500 leading-7">
+                {/* Secondary Text */}
+                <p className="mt-3 text-gray-500 leading-7 flex-grow">
                   {item.secondary}
                 </p>
 
+                {/* Bottom Divider */}
+                <div className="border-t border-gray-200 mt-6 pt-5">
+
+                  <a
+                    href={item.link}
+                    target={
+                      item.action === "Get Directions"
+                        ? "_blank"
+                        : undefined
+                    }
+                    rel={
+                      item.action === "Get Directions"
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
+                    className="inline-flex items-center gap-2 font-semibold text-[#F5A623] hover:gap-4 transition-all duration-300"
+                  >
+                    {item.action}
+                    <FaArrowRight />
+                  </a>
+
+                </div>
+
               </div>
+
             </div>
           ))}
+
         </div>
 
       </div>
