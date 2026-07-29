@@ -21,7 +21,7 @@ const banks = [
 export default function Approvals() {
   return (
     <section className="py-10 lg:py-20 bg-slate-100">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="lg:max-w-[1200px] mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-10 lg:mb-14">
           <h2 className="h2-heading">
@@ -36,7 +36,7 @@ export default function Approvals() {
         </div>
 
         {/* Cards */}
-        <div className="flex flex-col lg:flex-row divide-y lg:divide-y-0 lg:divide-x divide-slate-200 rounded-2xl shadow-xl overflow-hidden">
+        <div className="flex flex-col lg:flex-row divide-y lg:divide-y-0 lg:divide-x divide-slate-200 rounded-2xl shadow-xl overflow-hidden lg:max-w-[1200px] m-auto">
 
           {/* Approvals Card */}
           <div className="flex-1 bg-white p-6 md:p-8">
@@ -73,7 +73,7 @@ export default function Approvals() {
               ))}
             </div>
 
-            <div className="mt-7 lg:mt-18 p-5 bg-secondary/10 rounded-xl border border-secondary/20">
+            <div className="mt-7 lg:mt-22 p-5 bg-secondary/10 rounded-xl border border-secondary/20">
               <p className="text-sm md:text-base leading-6 md:leading-7 text-slate-600">
                 <span className="font-semibold text-primary">
                   {" "}
