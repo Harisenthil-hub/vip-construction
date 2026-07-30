@@ -6,29 +6,36 @@ const MaterialGallery = () => {
   const [selectedMaterial, setSelectedMaterial] = useState(null);
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-surface">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900">
+        <div className="home-container-header">
+          <span className="span-heading">
+            Premium Quality
+          </span>
+
+          <h2 className="h2-heading">
             Materials We Use
           </h2>
 
-          <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
+          <div className="divider mb-6"></div>
+
+          <p className="max-w-3xl mx-auto text-text-dark-muted leading-8">
             We partner with trusted brands to ensure superior quality,
-            durability, and reliability in every construction project.
+            durability, and reliability in every construction project,
+            delivering strong foundations and long-lasting structures.
           </p>
         </div>
 
         {materialCategories.map((category) => (
           <div key={category.category} className="mb-16">
 
-            {/* Category Name */}
+            {/* Category Heading */}
             <div className="flex items-center gap-4 mb-8">
-              <div className="h-1 w-14 bg-orange-500 rounded-full"></div>
+              <div className="h-1 w-14 bg-secondary rounded-full"></div>
 
-              <h3 className="text-3xl font-bold text-gray-900">
+              <h3 className="text-2xl lg:text-3xl font-bold text-primary">
                 {category.category}
               </h3>
 
@@ -36,7 +43,8 @@ const MaterialGallery = () => {
             </div>
 
             {/* Logos */}
-            <div className="flex flex-wrap items-center gap-8">
+            <div className="flex flex-wrap items-center gap-8 md:gap-10">
+
               {category.items.map((item) => (
                 <div
                   key={item.id}
@@ -47,7 +55,19 @@ const MaterialGallery = () => {
 
                     {/* Circular Image */}
                     <div
-                      className=" w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full overflow-hidden shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
+                      className="
+                        w-16 h-16
+                        sm:w-20 sm:h-20
+                        md:w-24 md:h-24
+                        rounded-full
+                        overflow-hidden
+                        shadow-md
+                        bg-white
+                        transition-all
+                        duration-300
+                        group-hover:scale-105
+                        group-hover:shadow-xl
+                      "
                     >
                       <img
                         src={item.logo}
@@ -57,13 +77,14 @@ const MaterialGallery = () => {
                     </div>
 
                     {/* Material Name */}
-                    <p className="mt-3 text-sm md:text-base font-semibold text-gray-800 text-center">
+                    <p className="mt-3 text-sm md:text-base font-semibold text-primary text-center">
                       {item.name}
                     </p>
 
                   </div>
                 </div>
               ))}
+
             </div>
 
           </div>
