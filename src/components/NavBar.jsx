@@ -16,7 +16,7 @@ export function NavBar() {
     <>
       <div className="mx-auto lg:max-w-[1300px] py-2 flex justify-between lg:px-1 items-center px-3 pr-5">
         {/* LOGO */}
-        <Link className="flex" to='/'>
+        <Link className="flex" to="/">
           <div className="h-15 w-20 lg:w-25">
             <img
               className="w-full h-full object-contain"
@@ -43,8 +43,8 @@ export function NavBar() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/about-us" className="nav-link-underline">
-                About Us
+              <NavLink to="/project" className="nav-link-underline">
+                Project
               </NavLink>
             </li>
             <li>
@@ -53,8 +53,8 @@ export function NavBar() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/project" className="nav-link-underline">
-                Project
+              <NavLink to="/about-us" className="nav-link-underline">
+                About Us
               </NavLink>
             </li>
             <li className="">
