@@ -12,17 +12,17 @@ export function BankScroll() {
         </div>
 
         {/* BANK SCROLL */}
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden mx-8 md:mx-0">
           <div className="flex animate-bank-scroll w-max">
             {[...banks, ...banks].map((bank, index) => (
               <div
                 key={index}
-                className="mx-8 flex m-4 h-28 w-52 shrink-0 items-center justify-center rounded-xl bg-white p-6"
+                className="mx-8 flex  h-28 w-35 shrink-0 items-center justify-center rounded-xl bg-white"
               >
                 <img
                   src={bank.logo}
                   alt={bank.name}
-                  className="max-h-14 w-full h-full object-contain hover:grayscale-0 transition duration-300"
+                  className="max-h-14 w-full h-full object-contain transition duration-300"
                 />
               </div>
             ))}
