@@ -1,115 +1,118 @@
 import {
-    LayoutGrid,
-    Home,
-    Building2,
-    Factory,
-    Clock,
-    CheckCircle,
-    Wrench,
-    Sofa,
-    ChevronLeft,
-    ChevronRight,
+  LayoutGrid,
+  Home,
+  Building2,
+  Factory,
+  Clock,
+  CheckCircle,
+  Wrench,
+  Sofa,
 } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 
 const filters = [
-    { name: "All Projects", icon: LayoutGrid },
-    { name: "Residential", icon: Home },
-    { name: "Commercial", icon: Building2 },
-    { name: "Industrial", icon: Factory },
-    { name: "Ongoing", icon: Clock },
-    { name: "Completed", icon: CheckCircle },
-    { name: "Renovation", icon: Wrench },
-    { name: "Interior", icon: Sofa },
+  { name: "All Projects", icon: LayoutGrid },
+  { name: "Residential", icon: Home },
+  { name: "Commercial", icon: Building2 },
+  { name: "Industrial", icon: Factory },
+  { name: "Ongoing", icon: Clock },
+  { name: "Completed", icon: CheckCircle },
+  { name: "Renovation", icon: Wrench },
+  { name: "Interior", icon: Sofa },
 ];
 
 const ProjectFilter = ({ activeFilter, setActiveFilter }) => {
-    const scrollRef = useRef(null);
-    const [showLeftArrow, setShowLeftArrow] = useState(false);
-    const [showRightArrow, setShowRightArrow] = useState(true);
+  const scrollRef = useRef(null);
+  const [showLeftFade, setShowLeftFade] = useState(false);
+  const [showRightFade, setShowRightFade] = useState(true);
 
-    const checkScrollButtons = () => {
-        const container = scrollRef.current;
-        if (container) {
-            const { scrollLeft, scrollWidth, clientWidth } = container;
-            setShowLeftArrow(scrollLeft > 10);
-            setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 10);
-        }
-    };
+  const checkScrollButtons = () => {
+    const container = scrollRef.current;
 
-    const scroll = (direction) => {
-        const container = scrollRef.current;
-        if (!container) return;
+    if (container) {
+      const { scrollLeft, scrollWidth, clientWidth } = container;
 
-        const scrollAmount = 300;
-        const targetScroll = direction === 'left'
-            ? container.scrollLeft - scrollAmount
-            : container.scrollLeft + scrollAmount;
+      setShowLeftFade(scrollLeft > 10);
+      setShowRightFade(scrollLeft < scrollWidth - clientWidth - 10);
+    }
+  };
 
-        container.scrollTo({
-            left: targetScroll,
-            behavior: 'smooth'
-        });
-    };
+  useEffect(() => {
+    const container = scrollRef.current;
 
-    useEffect(() => {
-        const container = scrollRef.current;
-        if (container) {
-            container.addEventListener('scroll', checkScrollButtons);
-            window.addEventListener('resize', checkScrollButtons);
-            checkScrollButtons();
+    if (container) {
+      container.addEventListener("scroll", checkScrollButtons);
+      window.addEventListener("resize", checkScrollButtons);
 
-            return () => {
-                container.removeEventListener('scroll', checkScrollButtons);
-                window.removeEventListener('resize', checkScrollButtons);
-            };
-        }
-    }, []);
+      checkScrollButtons();
 
-    return (
-        <div className="relative">
+      return () => {
+        container.removeEventListener("scroll", checkScrollButtons);
+        window.removeEventListener("resize", checkScrollButtons);
+      };
+    }
+  }, []);
 
-            {/* Left Fade - Desktop Only */}
-            {showLeftArrow && (
-                <div className="hidden md:block pointer-events-none absolute left-0 top-0 bottom-0 z-10 w-16 lg:w-20 bg-gradient-to-r from-white via-white/80 to-transparent" />
-            )}
+  return (
+    <div className="relative">
 
-            {/* Right Fade - Desktop Only */}
-            {showRightArrow && (
-                <div className="hidden md:block pointer-events-none absolute right-0 top-0 bottom-0 z-10 w-16 lg:w-20 bg-gradient-to-l from-white via-white/80 to-transparent" />
-            )}
+      {/* Left Fade */}
+      {showLeftFade && (
+        <div className="hidden md:block pointer-events-none absolute left-0 top-0 bottom-0 z-10 w-16 lg:w-20 bg-gradient-to-r from-surface via-surface/80 to-transparent" />
+      )}
 
-            {/* Scroll Container */}
-            <div
-                ref={scrollRef}
-                className=" flex gap-3 overflow-x-auto scrollbar-hide scroll-smooth py-2 px-4 md:px-0"
-                style={{
-                    scrollbarWidth: "none",
-                    msOverflowStyle: "none",
-                }}
+      {/* Right Fade */}
+      {showRightFade && (
+        <div className="hidden md:block pointer-events-none absolute right-0 top-0 bottom-0 z-10 w-16 lg:w-20 bg-gradient-to-l from-surface via-surface/80 to-transparent" />
+      )}
+
+      {/* Filter Buttons */}
+      <div
+        ref={scrollRef}
+        className="flex gap-3 overflow-x-auto scrollbar-hide scroll-smooth py-2 px-4 md:px-0"
+        style={{
+          scrollbarWidth: "none",
+          msOverflowStyle: "none",
+        }}
+      >
+        {filters.map((filter) => {
+          const Icon = filter.icon;
+
+          const active = activeFilter === filter.name;
+
+          return (
+            <button
+              key={filter.name}
+              onClick={() => setActiveFilter(filter.name)}
+              className={`
+                flex-shrink-0
+                flex
+                items-center
+                gap-2
+                px-5
+                py-3
+                rounded-full
+                border
+                font-medium
+                transition-all
+                duration-300
+
+                ${
+                  active
+                    ? "bg-secondary text-white border-secondary shadow-lg"
+                    : "bg-white border-gray-200 text-text-primary hover:bg-secondary hover:text-white hover:border-secondary"
+                }
+              `}
             >
-                {filters.map((filter) => {
-                    const Icon = filter.icon;
+              <Icon size={18} />
 
-                    return (
-                        <button
-                            key={filter.name}
-                            onClick={() => setActiveFilter(filter.name)}
-                            className={`flex-shrink-0 flex items-center gap-2 px-5 py-3 rounded-full border transition-all duration-300
-
-            ${activeFilter === filter.name
-                                    ? "bg-orange-500 text-white border-orange-500 shadow-lg"
-                                    : "bg-white border-gray-300 text-gray-700 hover:bg-orange-50 hover:border-orange-300 hover:text-orange-500"
-                                }`}
-                        >
-                            <Icon size={18} />
-                            <span className="font-semibold">{filter.name}</span>
-                        </button>
-                    );
-                })}
-            </div>
-        </div>
-    );
+              <span>{filter.name}</span>
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
 };
 
 export default ProjectFilter;

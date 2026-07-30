@@ -1,59 +1,102 @@
 import { useState } from "react";
-import MaterialCard from "./MaterialCard";
-import MaterialFilter from "./MaterialFilter";
 import MaterialModal from "./MaterialModal";
-import materials from "../utils/MaterialData";
+import materialCategories from "../utils/MaterialData";
 
 const MaterialGallery = () => {
-  const [activeFilter, setActiveFilter] = useState("All Materials");
   const [selectedMaterial, setSelectedMaterial] = useState(null);
 
-  const filteredMaterials = materials.filter((material) => {
-    if (activeFilter === "All Materials") return true;
-    return material.category === activeFilter;
-  });
-
   return (
-    <section className="py-20 bg-gray-50">
-      {/* Same container as ProjectGallery */}
+    <section className="py-20 bg-surface">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* Optional Heading */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900">
-            Explore Our Materials
+        {/* Heading */}
+        <div className="home-container-header">
+          <span className="span-heading">
+            Premium Quality
+          </span>
+
+          <h2 className="h2-heading">
+            Materials We Use
           </h2>
 
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-            We use premium quality construction materials from trusted brands
-            to ensure durability and excellence in every project.
+          <div className="divider mb-6"></div>
+
+          <p className="max-w-3xl mx-auto text-text-dark-muted leading-8">
+            We partner with trusted brands to ensure superior quality,
+            durability, and reliability in every construction project,
+            delivering strong foundations and long-lasting structures.
           </p>
         </div>
 
-        {/* Filter */}
-        <MaterialFilter
-          activeFilter={activeFilter}
-          setActiveFilter={setActiveFilter}
-        />
+        {materialCategories.map((category) => (
+          <div key={category.category} className="mb-16">
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-          {filteredMaterials.map((material) => (
-            <MaterialCard
-              key={material.id}
-              material={material}
-              onView={() => setSelectedMaterial(material)}
-            />
-          ))}
-        </div>
+            {/* Category Heading */}
+            <div className="flex items-center gap-4 mb-8">
+              <div className="h-1 w-14 bg-secondary rounded-full"></div>
 
-        {/* Modal */}
+              <h3 className="text-2xl lg:text-3xl font-bold text-primary">
+                {category.category}
+              </h3>
+
+              <div className="flex-1 h-px bg-gray-300"></div>
+            </div>
+
+            {/* Logos */}
+            <div className="flex flex-wrap items-center gap-8 md:gap-10">
+
+              {category.items.map((item) => (
+                <div
+                  key={item.id}
+                  onClick={() => setSelectedMaterial(item)}
+                  className="group cursor-pointer"
+                >
+                  <div className="flex flex-col items-center">
+
+                    {/* Circular Image */}
+                    <div
+                      className="
+                        w-16 h-16
+                        sm:w-20 sm:h-20
+                        md:w-24 md:h-24
+                        rounded-full
+                        overflow-hidden
+                        shadow-md
+                        bg-white
+                        transition-all
+                        duration-300
+                        group-hover:scale-105
+                        group-hover:shadow-xl
+                      "
+                    >
+                      <img
+                        src={item.logo}
+                        alt={item.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    {/* Material Name */}
+                    <p className="mt-3 text-sm md:text-base font-semibold text-primary text-center">
+                      {item.name}
+                    </p>
+
+                  </div>
+                </div>
+              ))}
+
+            </div>
+
+          </div>
+        ))}
+
         {selectedMaterial && (
           <MaterialModal
             material={selectedMaterial}
             onClose={() => setSelectedMaterial(null)}
           />
         )}
+
       </div>
     </section>
   );

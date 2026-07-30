@@ -11,10 +11,7 @@ const ProjectGallery = () => {
   const filteredProjects = projects.filter((project) => {
     if (activeFilter === "All Projects") return true;
 
-    if (
-      activeFilter === "Completed" ||
-      activeFilter === "Ongoing"
-    ) {
+    if (activeFilter === "Completed" || activeFilter === "Ongoing") {
       return project.status === activeFilter;
     }
 
@@ -22,20 +19,29 @@ const ProjectGallery = () => {
   });
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-surface">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900">
+        <div className="home-container-header">
+
+          <span className="span-heading">
+            Our Portfolio
+          </span>
+
+          <h2 className="h2-heading">
             Explore Our Projects
           </h2>
 
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          <div className="divider mb-6"></div>
+
+          <p className="max-w-3xl mx-auto text-text-dark-muted leading-8">
             Browse through our completed and ongoing construction
-            projects across residential, commercial and industrial
-            sectors.
+            projects across residential, commercial, industrial,
+            renovation, and interior sectors, reflecting our commitment
+            to quality, innovation, and customer satisfaction.
           </p>
+
         </div>
 
         {/* Filter */}
@@ -44,8 +50,8 @@ const ProjectGallery = () => {
           setActiveFilter={setActiveFilter}
         />
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+        {/* Project Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
           {filteredProjects.map((project) => (
             <ProjectCard
               key={project.id}

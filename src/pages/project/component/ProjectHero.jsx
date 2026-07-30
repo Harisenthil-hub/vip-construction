@@ -6,15 +6,15 @@ import ProjectWave from "./ProjectWave";
 const ProjectHero = () => {
   return (
     <section
-      className="relative min-h-[85vh] md:min-h-[700px] flex items-center overflow-hidden"
+      className="relative min-h-[60vh] md:min-h-[550px] flex items-center overflow-hidden"
       style={{
         backgroundImage: `url(${banner})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/75 to-black/55"></div>
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-bg-black/90 via-primary/80 to-primary/60"></div>
 
       {/* Pattern */}
       <div
@@ -29,15 +29,22 @@ const ProjectHero = () => {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-16 py-24">
         <div className="max-w-4xl">
 
-          <h1 className="mt-6 font-bold leading-tight text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+          {/* Subtitle */}
+          <span className="span-heading text-secondary">
+            Our Portfolio
+          </span>
+
+          {/* Main Heading */}
+          <h1 className="mt-5 font-extrabold leading-tight text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
             Our{" "}
-            <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+            <span className="text-secondary">
               Projects
             </span>{" "}
             Portfolio
           </h1>
 
-          <p className="mt-6 max-w-3xl text-gray-300 leading-8 text-base sm:text-lg lg:text-xl">
+          {/* Description */}
+          <p className="mt-6 max-w-3xl text-white/80 leading-8 text-base sm:text-lg lg:text-xl">
             Discover our portfolio of residential, commercial, and industrial
             construction projects that showcase engineering excellence,
             innovative design, superior craftsmanship, and timely delivery.
@@ -48,6 +55,7 @@ const ProjectHero = () => {
           <ProjectStats />
 
           <ProjectButtons />
+
         </div>
       </div>
 
