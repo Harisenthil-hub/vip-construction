@@ -14,6 +14,13 @@ import SBI from "../assets/banks/SBI.webp"
 import TATACAPITAL from "../assets/banks/TATA-CAPITAL.webp"
 import TMB from "../assets/banks/TMB.webp"
 import UBI from "../assets/banks/UBI.webp"
+import LIC from "../assets/banks/LIC.webp"
+import SHF from "../assets/banks/SHF.webp"
+import DB from "../assets/banks/DB.webp"
+import JB from "../assets/banks/JB.webp"
+import DBS from "../assets/banks/DBS.webp"
+import AUL from "../assets/banks/AUL.webp"
+import UJB from "../assets/banks/UJB.webp"
 
 
 export const banks = [
@@ -62,7 +69,7 @@ export const banks = [
         name: "IDBI Bank",
         logo: IDBI,
     },
-    
+
     {
         id: 10,
         name: "Federal Bank",
@@ -92,5 +99,40 @@ export const banks = [
         id: 15,
         name: "Tamil Mercantile Bank",
         logo: TMB,
+    },
+    {
+        id: 16,
+        name: "LIC Housing Finance",
+        logo: LIC,
+    },
+    {
+        id: 17,
+        name: "Sundaram Housing Finance",
+        logo: SHF,
+    },
+    {
+        id: 18,
+        name: "Dhanalakshmi Bank",
+        logo: DB,
+    },
+    {
+        id: 19,
+        name: "Jana Small Finance",
+        logo: JB,
+    },
+    {
+        id: 20,
+        name: "DBS",
+        logo: DBS,
+    },
+    {
+        id: 21,
+        name: "AUL Small Finance",
+        logo: AUL,
+    },
+    {
+        id: 22,
+        name: "Ujjivan",
+        logo: UJB,
     },
 ];

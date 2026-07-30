@@ -6,7 +6,10 @@ export default function FloatingContact() {
 
   useEffect(() => {
     const footer = document.querySelector("footer");
-    if (!footer) return;
+    const hero = document.querySelector("#hero");
+
+    if (!footer || !hero) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         setShowButtons(!entry.isIntersecting);
