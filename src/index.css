@@ -59,7 +59,7 @@
 
 
 @utility nav-link-underline {
-    @apply relative font-medium cursor-pointer text-slate-700 hover:text-gold-hover transition-colors duration-300 px-1 py-1;
+    @apply relative font-medium cursor-pointer text-white hover:text-gold-hover transition-colors duration-300 px-1 py-1;
     @apply after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-center after:scale-x-0 after:bg-gold-hover after:transition-transform after:duration-300 hover:after:scale-x-100;
 
     &.active {
@@ -104,7 +104,7 @@
 
 .animate-bank-scroll {
 
-    animation: bank-scroll 60s linear infinite;
+    animation: bank-scroll 70s linear infinite;
 
 }
 

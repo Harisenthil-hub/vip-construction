@@ -18,18 +18,18 @@ export function Certifications() {
           {certifications.map((item) => (
             <div
               key={item.id}
-              className=" group min-h-[170px] px-5 py-6 flex flex-col items-center justify-center text-center bg-white border border-text-muted/30 rounded-xl transition-all duration-300 ease-in-out hover:border-secondary hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(212,175,55,0.15)] " >
+              className=" group min-h-[170px] px-5 py-6 flex flex-col items-center justify-center text-center bg-white" >
 
 
               {/* LOGO */}
               <div
-                className=" h-16 w-full flex items-center justify-center mb-4 "
+                className=" h-25 w-full flex items-center justify-center mb-4 "
               >
                 <img
                   src={item.logo}
                   alt={`${item.name} logo`}
                   loading="lazy"
-                  className=" max-h-full max-w-[120px] object-contain grayscale opacity-70 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 " />
+                  className=" max-h-full max-w-full object-cover transition-all duration-300 group-hover:scale-105 " />
               </div>
 
               {/* NAME */}
