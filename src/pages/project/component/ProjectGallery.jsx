@@ -2,12 +2,10 @@ import { useState, useEffect } from "react";
 import { HardHat, FolderOpen } from "lucide-react";
 import ProjectFilter from "./ProjectFilter";
 import ProjectCard from "./ProjectCard";
-import ProjectModal from "./ProjectModal";
 import { projects } from "../utils/ProjectData";
 
 const ProjectGallery = () => {
   const [activeFilter, setActiveFilter] = useState("All Projects");
-  const [selectedProject, setSelectedProject] = useState(null);
   const [showAll, setShowAll] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -85,7 +83,6 @@ const ProjectGallery = () => {
                 <ProjectCard
                   key={project.id}
                   project={project}
-                  onView={() => setSelectedProject(project)}
                 />
               ))}
             </div>
@@ -141,14 +138,6 @@ const ProjectGallery = () => {
 
           </div>
 
-        )}
-
-        {/* Modal */}
-        {selectedProject && (
-          <ProjectModal
-            project={selectedProject}
-            onClose={() => setSelectedProject(null)}
-          />
         )}
 
       </div>
