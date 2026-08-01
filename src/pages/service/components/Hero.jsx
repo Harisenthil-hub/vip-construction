@@ -24,7 +24,7 @@ export default function Hero() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 lg:gap-10 items-center">
           {/* Left Column Text Content */}
           <div className="lg:col-span-7 w-full text-left">
             {/* Category Tag */}
@@ -34,7 +34,7 @@ export default function Hero() {
             </div>
 
             {/* Compact H1 Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl  font-bold leading-[1.1] lg:leading-[1.2] text-white">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-[67px]  font-bold leading-[1.1] lg:leading-[1.2] text-white">
               Comprehensive <br className="hidden sm:inline" />
               <span className="text-secondary block mt-1">
                 Building Solutions
@@ -53,7 +53,7 @@ export default function Hero() {
             <div className="flex flex-wrap items-center gap-4 mb-8">
               <Link
                 to="/project"
-                className="h-11 px-5 rounded-md bg-secondary text-white font-bold text-xs sm:text-sm inline-flex items-center justify-center gap-2 hover:bg-[#e0941f] hover:scale-[1.02] hover:shadow-lg hover:shadow-[#F5A623]/25 active:scale-[0.98] transition-all duration-300 group"
+                className="h-11 px-5 rounded-md bg-secondary w-full md:w-auto text-white font-bold text-xs sm:text-sm inline-flex items-center justify-center gap-2 hover:bg-[#e0941f] hover:scale-[1.02] hover:shadow-lg hover:shadow-[#F5A623]/25 active:scale-[0.98] transition-all duration-300 group"
               >
                 <Compass className="w-4 h-4" />
                 <span>View Portfolio</span>
@@ -62,14 +62,14 @@ export default function Hero() {
 
               <Link
                 href="/services"
-                className="h-11 px-5 rounded-lg bg-black/10 border border-white/50 text-white font-bold text-xs sm:text-sm inline-flex items-center justify-center gap-2 hover:bg-white/10 transition-all duration-300"
+                className="h-11 px-5 w-full md:w-auto rounded-lg bg-black/10 border border-white/50 text-white font-bold text-xs sm:text-sm inline-flex items-center justify-center gap-2 hover:bg-white/10 transition-all duration-300"
               >
                 <span>Explore Services</span>
               </Link>
             </div>
 
             {/* Feature Highlights */}
-            <div className="pt-4 border-t border-white/10 grid grid-cols-3 gap-2 sm:gap-4">
+            <div className="hidden pt-4 border-t border-white/10 md:grid grid-cols-3 gap-2 sm:gap-4">
               <div className="flex items-center gap-2 p-1.5">
                 <ShieldCheck className="text-secondary" size={30} />
 
@@ -115,15 +115,15 @@ export default function Hero() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/80 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
 
-              <div className="absolute bottom-3 left-3 right-3 p-3.5 rounded-xl bg-[#0F172A]/85 group-hover:bg-[#0F172A]/95 backdrop-blur-md border border-white/10 group-hover:border-[#F5A623]/40 flex items-center gap-3 transition-all duration-300 transform group-hover:-translate-y-1 group-hover:shadow-lg">
+              <div className="absolute bottom-1 md:bottom-3 left-3 right-3 p-1 md:p-3.5 rounded-xl bg-[#0F172A]/85 group-hover:bg-[#0F172A]/95 backdrop-blur-md border border-white/10 group-hover:border-[#F5A623]/40 flex items-center gap-3 transition-all duration-300 transform group-hover:-translate-y-1 group-hover:shadow-lg">
                 <div className="w-9 h-9 rounded-lg bg-[#F5A623]/20 border border-[#F5A623]/40 text-[#F5A623] group-hover:bg-[#F5A623] group-hover:text-[#0F172A] flex items-center justify-center flex-shrink-0 transition-all duration-300">
                   <Building2 className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-white group-hover:text-[#F5A623] transition-colors">
+                  <p className="text-xs md:text-sm font-bold text-white group-hover:text-[#F5A623] transition-colors">
                     VIP Construction Services
                   </p>
-                  <p className="text-[11px] text-slate-300">
+                  <p className="text-[10px] md:text-[11px] text-slate-300">
                     Turnkey & Commercial Execution
                   </p>
                 </div>

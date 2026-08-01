@@ -72,7 +72,7 @@ export function NavBar() {
         <button
           type="button"
           onClick={() => setIsMenuOpen((prev) => !prev)}
-          className=" lg:hidden flex items-center justify-center text-slate-700 hover:text-gold-hover transition-colors duration-300 cursor-pointer"
+          className=" lg:hidden flex items-center justify-center text-slate-100 hover:text-gold-hover transition-colors duration-300 cursor-pointer"
           aria-label="Toggle navigation menu"
           aria-expanded={isMenuOpen}
         >

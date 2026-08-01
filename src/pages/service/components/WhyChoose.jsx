@@ -9,10 +9,10 @@ export default function WhyChoose() {
           <span className="inline-block rounded-full bg-amber-100 px-3.5 py-1 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-amber-800 border border-amber-200">
             Why Choose Us
           </span>
-          <h2 className="mt-3 text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 leading-tight">
+          <h2 className="h2-heading mt-3 mb-2">
             Our Quality Commitment
           </h2>
-          <p className="mt-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed max-w-xl mx-auto font-normal">
+          <p className="mt-2.5 text-xs md:text-sm text-slate-600 leading-relaxed max-w-xl mx-auto font-normal">
             Dedicated to providing the highest standards of structural safety, transparent estimations, and field supervision.
           </p>
         </div>
@@ -37,7 +37,7 @@ export default function WhyChoose() {
                 </h3>
 
                 {/* Description */}
-                <p className="mt-1.5 text-[11px] sm:text-xs text-slate-600 leading-relaxed max-w-[220px]">
+                <p className="mt-1.5 text-[11px] md:text-sm text-slate-600 leading-relaxed max-w-[220px]">
                   {item.description}
                 </p>
               </div>
