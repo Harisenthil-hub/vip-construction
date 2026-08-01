@@ -1,8 +1,8 @@
 import ContactHero from "../components/ContactHero";
 import ContactInfo from "../components/ContactInfo";
 import ContactForm from "../components/ContactForm";
-import FAQ from "../components/FAQ";
 import CTA from "../components/CTA";
+import ProcessSteps from "../components/ProcessSteps";
 
 export default function Contact() {
   return (
@@ -14,7 +14,7 @@ export default function Contact() {
 
       <ContactForm />
 
-      <FAQ />
+      <ProcessSteps />
 
       <CTA />
     </div>

@@ -8,14 +8,6 @@ import {
 
 const cards = [
   {
-    icon: <FaPhoneAlt />,
-    title: "Call Us",
-    primary: "+91 9080273030",
-    secondary: "We're available for project discussions.",
-    link: "tel:+919080273030",
-    action: "Call Now",
-  },
-  {
     icon: <FaEnvelope />,
     title: "Email Us",
     primary: "vipconstruction.14@gmail.com",
@@ -26,16 +18,16 @@ const cards = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Visit Our Office",
-    primary: "Udumalpet",
-    secondary: "Tamil Nadu, India",
+    primary: "Udumalpet, Tamil Nadu",
+    secondary: "Drop by and walk us through your project.",
     link: "https://maps.google.com/?q=Udumalpet,Tamil Nadu",
     action: "Get Directions",
   },
   {
     icon: <FaClock />,
     title: "Working Hours",
-    primary: "Mon – Sat",
-    secondary: "9:00 AM – 8:00 PM",
+    primary: "Mon – Sat · 9 AM – 8 PM",
+    secondary: "Book a slot and we'll block time for you.",
     link: "#contact-form",
     action: "Book Consultation",
   },
@@ -43,110 +35,123 @@ const cards = [
 
 export default function ContactInfo() {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-15">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
-
         {/* Heading */}
-        <div className="text-center mb-14">
-          <p className="uppercase tracking-[4px] text-[#F5A623] font-semibold">
+        <div className="text-center mb-12">
+          <p className="uppercase tracking-[4px] text-[#F5A623] font-semibold text-sm">
             Contact Information
           </p>
 
-          <h2 className="text-3xl md:text-5xl font-bold text-[#1A1F2E] mt-3">
+          <h2 className="h2-heading mt-3">
             We're Here To Help
           </h2>
 
           <p className="mt-5 text-gray-600 max-w-3xl mx-auto leading-8">
-            Reach out to our team through any of the following channels.
-            We'd be happy to discuss your project and answer your questions.
+            Reach out to our team through any of the following channels. We'd be
+            happy to discuss your project and answer your questions.
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+        {/* Layout: featured call panel + 3 stacked cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+          {/* Featured "Call Us" panel */}
+          <div className="lg:col-span-2 relative bg-primary rounded-2xl p-8 sm:p-10 flex flex-col justify-between overflow-hidden">
 
-          {cards.map((item, index) => (
-            <div
-              key={index}
-              className="group relative bg-white rounded-2xl border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden"
+            
+            {/* Decorative amber glow */}
+            <div className="absolute -top-16 -right-16 w-56 h-56 bg-[#F5A623]/20 rounded-full blur-3xl"></div>
+
+            <div className="relative">
+              <div className="w-12 h-12 rounded-xl bg-[#F5A623] flex items-center justify-center text-[#1A1F2E] text-2xl mb-8">
+                <FaPhoneAlt />
+              </div>
+
+              <p className="uppercase tracking-[3px] text-[#F5A623] text-xs font-semibold mb-3">
+                Prefer To Talk Now?
+              </p>
+
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+                Call Our Site Office
+              </h3>
+
+              <a
+                href="tel:+919080273030"
+                className="block text-2xl sm:text-3xl font-bold text-white hover:text-[#F5A623] transition break-words"
+              >
+                +91 90802 73030
+              </a>
+
+              <p className="mt-4 text-gray-400 leading-7 max-w-sm">
+                We're available for project discussions during working hours, or
+                leave a message and we'll call you back the same day.
+              </p>
+            </div>
+
+            <a
+              href="tel:+919080273030"
+              className="relative mt-8 inline-flex w-fit items-center gap-2 bg-[#F5A623] text-[#1A1F2E] font-semibold px-6 py-3 rounded-full hover:gap-4 hover:bg-white transition-all duration-300"
             >
+              Call Now
+              <FaArrowRight />
+            </a>
+          </div>
 
-              {/* Top Gold Border */}
-              <div className="h-1 bg-[#F5A623]"></div>
-
-              <div className="p-6 sm:p-8 flex flex-col h-full">
-
-                {/* Icon */}
-                <div className="w-[72px] h-[72px] rounded-full border-2 border-[#F5A623] bg-[#F5A623]/10 flex items-center justify-center text-[#F5A623] text-3xl mb-6 group-hover:bg-[#F5A623] group-hover:text-white transition-all duration-300">
-                  {item.icon}
+          {/* Remaining cards */}
+          <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {cards.map((item, index) => (
+              <div
+                key={index}
+                className={`group relative bg-white rounded-2xl border border-gray-200 p-6 sm:p-7 flex flex-col hover:border-[#F5A623] hover:shadow-xl transition-all duration-300 ${
+                  index === 0 ? "sm:col-span-2" : ""
+                }`}
+              >
+                <div className="flex items-start justify-between mb-6">
+                  <div className="w-12 h-12 rounded-lg bg-[#1A1F2E] flex items-center justify-center text-[#F5A623] text-lg group-hover:bg-[#F5A623] group-hover:text-[#1A1F2E] transition-all duration-300">
+                    {item.icon}
+                  </div>
                 </div>
 
-                {/* Title */}
-                <h3 className="text-2xl font-bold text-[#1A1F2E]">
+                <h3 className="text-lg font-bold text-[#1A1F2E]">
                   {item.title}
                 </h3>
 
-                {/* Main Text */}
-                {(item.link.startsWith("tel") || item.link.startsWith("mailto")) ? (
+                {item.link.startsWith("mailto") ? (
                   <a
                     href={item.link}
-                    className="block mt-5 font-semibold text-[#1A1F2E] hover:text-[#F5A623] transition break-words"
+                    className="block mt-2 font-semibold text-[#1A1F2E] hover:text-[#F5A623] transition break-words text-sm sm:text-base"
                   >
-                    {item.title === "Email Us" ? (
-                      <>
-                        <span className="text-sm sm:text-base lg:text-lg">
-                          vipconstruction.14
-                        </span>
-                        <wbr />
-                        <span className="text-sm sm:text-base lg:text-lg">
-                          @gmail.com
-                        </span>
-                      </>
-                    ) : (
-                      <span className="text-lg">{item.primary}</span>
-                    )}
+                    {item.primary}
                   </a>
                 ) : (
-                  <p className="mt-5 text-lg font-semibold text-[#1A1F2E]">
+                  <p className="mt-2 font-semibold text-[#1A1F2E] text-sm sm:text-base">
                     {item.primary}
                   </p>
                 )}
 
-                {/* Secondary Text */}
-                <p className="mt-3 text-gray-500 leading-7 flex-grow">
+                <p className="mt-2 text-gray-500 text-sm leading-6 flex-grow">
                   {item.secondary}
                 </p>
 
-                {/* Bottom Divider */}
-                <div className="border-t border-gray-200 mt-6 pt-5">
-
-                  <a
-                    href={item.link}
-                    target={
-                      item.action === "Get Directions"
-                        ? "_blank"
-                        : undefined
-                    }
-                    rel={
-                      item.action === "Get Directions"
-                        ? "noopener noreferrer"
-                        : undefined
-                    }
-                    className="inline-flex items-center gap-2 font-semibold text-[#F5A623] hover:gap-4 transition-all duration-300"
-                  >
-                    {item.action}
-                    <FaArrowRight />
-                  </a>
-
-                </div>
-
+                <a
+                  href={item.link}
+                  target={
+                    item.action === "Get Directions" ? "_blank" : undefined
+                  }
+                  rel={
+                    item.action === "Get Directions"
+                      ? "noopener noreferrer"
+                      : undefined
+                  }
+                  className="inline-flex items-center gap-2 mt-5 text-sm font-semibold text-[#F5A623] hover:gap-3 transition-all duration-300 w-fit"
+                >
+                  {item.action}
+                  <FaArrowRight size={12} />
+                </a>
               </div>
-
-            </div>
-          ))}
-
+            ))}
+          </div>
         </div>
-
       </div>
     </section>
   );

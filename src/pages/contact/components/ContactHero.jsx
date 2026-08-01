@@ -1,37 +1,16 @@
-import { FaArrowRight, FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FaFileAlt } from "react-icons/fa";
 
 const ContactHero = () => {
-  const scrollToContactForm = () => {
-    const form = document.getElementById("contact-form");
-
-    if (form) {
-      form.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-
-      setTimeout(() => {
-        const firstInput = form.querySelector("input");
-        firstInput?.focus();
-      }, 600);
-    }
-  };
-
   return (
-    <section className="relative w-full min-h-screen overflow-hidden">
+    <section className="relative w-full overflow-hidden">
       {/* Background Image */}
       <img
         src="/images/contact-hero.webp"
         alt="VIP Construction"
-        className="
-          absolute inset-0
-          w-full
-          h-full
-          object-cover
-          object-center
-        "
+        className=" absolute inset-0 w-full h-full object-cover object-center "
       />
-
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/35"></div>
 
@@ -42,131 +21,44 @@ const ContactHero = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_65%_50%,rgba(245,166,35,0.15),transparent_35%)]"></div>
 
       {/* Content */}
-      <div className="relative z-10 flex items-center min-h-screen">
+      <div className=" relative z-10 w-full max-w-[1300px] mx-auto px-5 py-16 sm:px-8 sm:py-20 lg:px-4 lg:py-24">
+        {/* Content width */}
+        <div className="max-w-[750px]">
+          {/* MAIN SEO HEADING */}
+          <h1 className="font-bold text-white text-4xl leading-[1.1] sm:text-5xl lg:text-6xl xl:text-7xl lg:leading-[1.05] ">
+            Let's Build Your Dream Project
+            <span className=" block text-secondary mt-1 ">Project</span>
+          </h1>
 
-        <div className="max-w-7xl mx-auto w-full px-6 sm:px-10 lg:px-16">
+          {/* DESCRIPTION */}
+          <p className=" mt-6 max-w-[650px] text-slate-300 text-base leading-7 sm:text-lg sm:leading-8 lg:text-lg ">
+            Whether it's residential, commercial or industrial construction, our
+            experienced team is ready to transform your vision into reality.
+            Contact us today for a free consultation and let's build something
+            extraordinary.
+          </p>
 
-          <div className="max-w-3xl">
-
-            {/* Label */}
-            <div className="flex items-center gap-5 mb-8">
-
-              <div className="w-14 h-[2px] bg-[#F5A623]"></div>
-
-              <span className="uppercase tracking-[6px] text-[#F5A623] text-sm font-semibold">
-                CONTACT US
-              </span>
-
-            </div>
-
-            {/* Heading */}
-            <h1
-              className="
-                font-black
-                text-white
-                leading-none
-                tracking-tight
-                text-5xl
-                sm:text-6xl
-                md:text-7xl
-                xl:text-[82px]
-              "
+          {/* CTA BUTTONS */}
+          <div className=" mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center lg:mt-10 ">
+            {/* VIEW PROJECTS */}
+            <Link
+              to="/project"
+              className="inline-flex items-center justify-center gap-2 bg-secondary hover:bg-gold-hover text-white font-semibold px-6 py-3 rounded-md transition-colors duration-300 "
             >
-              Let's Build
-              <br />
-              Your Dream Project
-              <br />
-              <span className="text-[#F5A623]">
-                Together
-              </span>
-            </h1>
+              <FaFileAlt size={15} />
+              View Projects
+            </Link>
 
-            {/* Description */}
-            <p
-              className="
-                mt-8
-                max-w-2xl
-                text-gray-200
-                text-lg
-                md:text-xl
-                leading-8
-              "
+            {/* CONTACT */}
+            <a
+              href="tel:+919080273030"
+              className="inline-flex items-center justify-center gap-2 border border-white/50 bg-black/10 hover:bg-white/10 text-white font-semibold px-6 py-3 rounded-md backdrop-blur-sm transition-colors duration-300"
             >
-              Whether it's residential, commercial or industrial
-              construction, our experienced team is ready to transform
-              your vision into reality. Contact us today for a free
-              consultation and let's build something extraordinary.
-            </p>
-
-            {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-5 mt-10">
-
-              <button
-                onClick={scrollToContactForm}
-                className="
-                  bg-[#F5A623]
-                  hover:bg-[#E09200]
-                  text-[#1A1F2E]
-                  px-8
-                  py-4
-                  rounded-lg
-                  font-bold
-                  transition-all
-                  duration-300
-                  flex
-                  items-center
-                  justify-center
-                  gap-3
-                  hover:scale-105
-                  shadow-xl
-                "
-              >
-                <FaArrowRight />
-                Get Free Quote
-              </button>
-
-              <a
-                href="tel:+919876543210"
-                className="
-                  border-2
-                  border-white
-                  hover:bg-white
-                  hover:text-[#1A1F2E]
-                  text-white
-                  px-8
-                  py-4
-                  rounded-lg
-                  font-bold
-                  transition-all
-                  duration-300
-                  flex
-                  items-center
-                  justify-center
-                  gap-3
-                  hover:scale-105
-                "
-              >
-                <FaPhoneAlt />
-                Call Now
-              </a>
-
-            </div>
-
-            {/* Breadcrumb */}
-            <div className="flex items-center gap-4 mt-12 text-lg">
-
-              <span className="text-white hover:text-[#F5A623] cursor-pointer transition">
-                Home
-              </span>
-
-              <span className="text-white">/</span>
-
-              <span className="text-[#F5A623] font-semibold">
-                Contact
-              </span>
-
-            </div>
+              <FaPhoneAlt size={15} />
+              Contact Us
+            </a>
           </div>
+
         </div>
       </div>
     </section>

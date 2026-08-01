@@ -87,7 +87,9 @@
 }
 
 
-
+@utility contact-input {
+   @apply w-full rounded-lg border border-gray-300 p-2 text-sm lg:p-4 outline-none transition-all duration-300 focus:border-secondary focus:ring-1 focus:ring-secondary;
+}
 
 /* BANK SCROLL */
 @keyframes bank-scroll {
