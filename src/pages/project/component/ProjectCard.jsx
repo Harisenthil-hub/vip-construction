@@ -4,16 +4,18 @@ import {
   Maximize,
   IndianRupee,
   Calendar,
-  Clock3,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
-const ProjectCard = ({ project, onView }) => {
+const ProjectCard = ({ project }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="group cursor-pointer">
 
       {/* Image Card */}
       <div
-        onClick={onView}
+        onClick={() => navigate(`/project/${project.id}`)}
         className="relative overflow-hidden rounded-2xl shadow-lg"
       >
         <img
@@ -28,15 +30,15 @@ const ProjectCard = ({ project, onView }) => {
         {/* Status */}
         <div
           className={`absolute top-4 left-4 px-3 py-1 rounded-md text-xs font-bold uppercase text-white shadow-md transition-all duration-300
-    ${project.status === "Completed"
-              ? "bg-green-600"
-              : project.status === "Ongoing"
+            ${
+              project.status === "Completed"
+                ? "bg-green-600"
+                : project.status === "Ongoing"
                 ? "bg-amber-500"
                 : project.status === "Upcoming"
-                  ? "bg-blue-600"
-                  : "bg-gray-600"
-            }
-  `}
+                ? "bg-blue-600"
+                : "bg-gray-600"
+            }`}
         >
           {project.status}
         </div>
@@ -44,7 +46,7 @@ const ProjectCard = ({ project, onView }) => {
         {/* Content */}
         <div className="absolute bottom-0 left-0 w-full p-6">
 
-          <div className="flex items-center gap-2 mt-2 text-secondary">
+          <div className="flex items-center gap-2 text-secondary">
             <MapPin size={18} />
             <span className="text-white/90">
               {project.location}
@@ -54,22 +56,9 @@ const ProjectCard = ({ project, onView }) => {
           <button
             onClick={(e) => {
               e.stopPropagation();
-              onView();
+              navigate(`/project/${project.id}`);
             }}
-            className="
-              mt-5
-              inline-flex
-              items-center
-              gap-2
-              text-secondary
-              font-semibold
-              opacity-0
-              translate-y-4
-              group-hover:opacity-100
-              group-hover:translate-y-0
-              transition-all
-              duration-300
-            "
+            className="mt-5 inline-flex items-center gap-2 text-secondary font-semibold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
           >
             View Gallery
 
@@ -82,6 +71,7 @@ const ProjectCard = ({ project, onView }) => {
         </div>
       </div>
 
+      {/* Bottom Details */}
       <div className="grid grid-cols-3 gap-3 mt-5">
 
         <div className="flex items-center justify-center gap-2 min-w-0">
@@ -104,7 +94,7 @@ const ProjectCard = ({ project, onView }) => {
             {project.year}
           </span>
         </div>
-        
+
       </div>
 
     </div>
