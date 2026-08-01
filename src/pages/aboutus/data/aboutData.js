@@ -1,5 +1,18 @@
 // Data for About Us Page - VIP Construction
 
+import img1 from "../images/image1.webp";
+import img2 from "../images/image2.webp";
+import img3 from "../images/image3.webp";
+import img4 from "../images/image4.webp";
+import img5 from "../images/image5.webp";
+import img6 from "../images/image6.webp";
+import img7 from "../images/image7.webp";
+import img8 from "../images/image8.webp";
+import img9 from "../images/image9.webp";
+import img10 from "../images/image10.webp";
+import img11 from "../images/image11.webp";
+import img12 from "../images/image12.webp";
+
 export const companyJourney = [
   {
     year: "2019",
@@ -73,6 +86,21 @@ export const ownerTimeline = [
     location: "Tamil Nadu",
     iconName: "HardHat"
   }
+];
+
+export const galleryImages = [
+  { id: 1, src: img1, title: "img-1" },
+  { id: 2, src: img2, title: "img-2" },
+  { id: 3, src: img3, title: "img-3" },
+  { id: 4, src: img4, title: "img-4" },
+  { id: 5, src: img5, title: "img-5" },
+  { id: 6, src: img6, title: "img-6" },
+  { id: 7, src: img7, title: "img-7" },
+  { id: 8, src: img8, title: "img-8" },
+  { id: 9, src: img9, title: "img-9" },
+  { id: 10, src: img10, title: "img-10" },
+  { id: 11, src: img11, title: "img-11" },
+  { id: 12, src: img12, title: "img-12" }
 ];
 
 export const awardsList = [
@@ -160,3 +188,4 @@ export const missionVision = {
     ]
   }
 };
+
