@@ -35,9 +35,8 @@ export default function Footer() {
 
   const quickLinks = [
     { name: "Home", path: "/" },
-    { name: "Services", path: "/service" },
-    { name: "Projects", path: "/project" },
-    { name: "FAQ", path: "/service#faq" },
+    { name: "Project", path: "/project" },
+    { name: "Service", path: "/service" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -180,7 +179,7 @@ export default function Footer() {
       <div className="border-t border-slate-900 bg-slate-950/50">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-4 px-6 py-3 md:flex-row">
           <p className="text-slate-500 text-sm text-center">
-            © {year} VIP Constructions. All Rights Reserved. | Designed with
+            © {year} VIP Construction. All Rights Reserved. | Designed with
             excellence in Tamil Nadu.
           </p>
         </div>

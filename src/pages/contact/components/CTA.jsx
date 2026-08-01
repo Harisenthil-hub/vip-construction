@@ -1,3 +1,5 @@
+import { FaUserTie } from "react-icons/fa";
+
 export default function CTA() {
   const handleScroll = () => {
     const form = document.getElementById("contact-form");
@@ -7,9 +9,7 @@ export default function CTA() {
     const navbarOffset = 100;
 
     const top =
-      form.getBoundingClientRect().top +
-      window.scrollY -
-      navbarOffset;
+      form.getBoundingClientRect().top + window.scrollY - navbarOffset;
 
     window.scrollTo({
       top,
@@ -26,49 +26,29 @@ export default function CTA() {
   };
 
   return (
-    <section className="bg-[#111111] py-24 text-white">
+    <section className="bg-primary py-10 lg:py-15 text-secondary">
       <div className="max-w-6xl mx-auto px-6 text-center">
-
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+        <h2 className="h2-heading text-secondary text-3xl lg:text-5xl">
           Ready to Start Your Project?
         </h2>
 
         {/* Description */}
-        <p className="mt-6 max-w-3xl mx-auto text-lg leading-8 text-gray-300">
-          Partner with experienced builders committed to quality,
-          innovation, and timely delivery. Let our experts guide you
-          through every stage of your construction journey.
+        <p className="mt-6 max-w-3xl mx-auto text-sm lg:text-base leading-8 text-white">
+          Partner with experienced builders committed to quality, innovation,
+          and timely delivery. Let our experts guide you through every stage of
+          your construction journey.
         </p>
 
         {/* Button */}
         <button
           onClick={handleScroll}
-          className="
-            mt-10
-            inline-flex
-            items-center
-            justify-center
-            bg-[#F5A623]
-            hover:bg-[#E09200]
-            text-[#1A1F2E]
-            font-bold
-            px-10
-            py-4
-            rounded-lg
-            shadow-lg
-            hover:shadow-2xl
-            transition-all
-            duration-300
-            hover:-translate-y-1
-            hover:scale-105
-          "
+          className="mt-7 inline-flex items-center justify-center bg-[#F5A623] hover:bg-[#E09200] text-[#1A1F2E] font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:scale-101 cursor-pointer"
         >
-          Get Free Consultation
+          <FaUserTie className="inline mr-2" size={25} />
+          Get Consultation
         </button>
-
       </div>
     </section>
   );
 }
-
