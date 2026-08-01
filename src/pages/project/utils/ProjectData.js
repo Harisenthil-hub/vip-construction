@@ -15,6 +15,10 @@ export const projects = [
     location: "Hyderabad, TS",
     category: "Residential",
     status: "Completed",
+    area: "5,800 sq.ft",
+    price: "Rs 2.8 Cr",
+    year: "2023",
+
     cover: villa1,
     images: [villa1, villa2, villa3, villa4],
   },
@@ -25,6 +29,10 @@ export const projects = [
     location: "Bangalore, KA",
     category: "Commercial",
     status: "Completed",
+    area: "18,500 sq.ft",
+    price: "Rs 12 Cr",
+    year: "2024",
+
     cover: office1,
     images: [office1, office2, office3, office4],
   },

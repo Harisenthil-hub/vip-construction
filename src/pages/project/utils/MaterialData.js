@@ -8,7 +8,6 @@ const materialCategories = [
       {
         id: 1,
         name: "Cement",
-        brand: "Premium Cement",
         logo: cement1,
         images: [cement1],
       },
@@ -21,7 +20,6 @@ const materialCategories = [
       {
         id: 2,
         name: "Steel",
-        brand: "Premium Steel",
         logo: steel1,
         images: [steel1],
       },

@@ -1,71 +1,251 @@
-import { X, MapPin } from "lucide-react";
+import { useState, useEffect } from "react";
+import {
+  X,
+  ChevronLeft,
+  ChevronRight,
+  MapPin,
+  Maximize,
+  IndianRupee,
+  Calendar,
+} from "lucide-react";
 
 const ProjectModal = ({ project, onClose }) => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    setCurrentImage(0);
+  }, [project]);
+
   if (!project) return null;
 
+  const nextImage = () => {
+    setCurrentImage((prev) =>
+      prev === project.images.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const prevImage = () => {
+    setCurrentImage((prev) =>
+      prev === 0 ? project.images.length - 1 : prev - 1
+    );
+  };
+
   return (
-    <div className="fixed inset-0 z-50 bg-bg-black/80 flex items-center justify-center p-5">
-      <div className="bg-surface rounded-2xl shadow-2xl max-w-6xl w-full max-h-[90vh] overflow-y-auto">
+    <div className="fixed inset-0 z-50 bg-bg-black/80 backdrop-blur-sm flex items-center justify-center p-2 sm:p-4">
 
-        {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b border-gray-200">
+      <div
+        className="
+          relative
+          bg-surface
+          rounded-3xl
+          shadow-2xl
+          w-full
+          max-w-6xl
+          max-h-[95vh]
+          overflow-y-auto
+          overflow-x-hidden
+        "
+      >
+        {/* Close Button */}
+        <button
+          onClick={onClose}
+          className="
+            absolute
+            top-3
+            right-3
+            md:top-5
+            md:right-5
+            z-50
+            w-9
+            h-9
+            md:w-12
+            md:h-12
+            rounded-full
+            bg-white
+            shadow-lg
+            flex
+            items-center
+            justify-center
+            text-primary
+            transition-all
+            duration-300
+            hover:bg-secondary
+            hover:text-white
+          "
+        >
+          <X className="w-4 h-4 md:w-6 md:h-6" />
+        </button>
 
-          <div>
+        <div className="grid lg:grid-cols-3">
+
+          {/* ================= IMAGE ================= */}
+
+          <div className="relative lg:col-span-2 bg-black">
+
+            <img
+              src={project.images[currentImage]}
+              alt={project.title}
+              className="w-full h-[220px] sm:h-[280px] md:h-[550px] object-cover"
+            />
+
+            {/* Previous */}
+
+            <button
+              onClick={prevImage}
+              className="
+                absolute
+                left-3
+                md:left-4
+                top-1/2
+                -translate-y-1/2
+                w-9
+                h-9
+                md:w-11
+                md:h-11
+                rounded-full
+                bg-white/90
+                shadow-lg
+                flex
+                items-center
+                justify-center
+                hover:bg-secondary
+                hover:text-white
+                transition-all
+              "
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+
+            {/* Next */}
+
+            <button
+              onClick={nextImage}
+              className="
+                absolute
+                right-3
+                md:right-4
+                top-1/2
+                -translate-y-1/2
+                w-9
+                h-9
+                md:w-11
+                md:h-11
+                rounded-full
+                bg-white/90
+                shadow-lg
+                flex
+                items-center
+                justify-center
+                hover:bg-secondary
+                hover:text-white
+                transition-all
+              "
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+
+            {/* Counter */}
+
+            <div className="absolute bottom-4 right-4 bg-black/70 text-white px-3 py-1.5 rounded-full text-xs md:text-sm font-semibold">
+              {currentImage + 1} / {project.images.length}
+            </div>
+          </div>
+
+          {/* ================= DETAILS ================= */}
+
+          <div className="p-5 md:p-8 flex flex-col justify-center">
+
             <span className="span-heading">
               Project Gallery
             </span>
 
-            <h2 className="text-2xl md:text-3xl font-bold text-primary mt-1">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mt-2">
               {project.title}
             </h2>
 
-            <div className="flex items-center gap-2 mt-2 text-text-dark-muted">
-              <MapPin size={18} className="text-secondary" />
+            <div className="flex items-center gap-2 mt-4 text-text-dark-muted">
+              <MapPin
+                size={18}
+                className="text-secondary"
+              />
+
               <span>{project.location}</span>
             </div>
-          </div>
 
-          <button
-            onClick={onClose}
-            className="
-              w-11
-              h-11
-              rounded-full
-              bg-white
-              shadow-md
-              flex
-              items-center
-              justify-center
-              transition-all
-              duration-300
-              hover:bg-secondary
-              hover:text-white
-            "
-          >
-            <X size={22} />
-          </button>
+            <p className="mt-5 md:mt-8 text-text-dark-muted leading-7 md:leading-8">
+              Browse through our completed construction photographs using
+              the navigation arrows. Every image showcases the quality,
+              craftsmanship, engineering excellence and finishing
+              standards delivered throughout this project.
+            </p>
 
-        </div>
+            {/* Project Details */}
 
-        {/* Gallery */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+            <div className="mt-6 border-t border-gray-200 pt-5">
 
-          {project.images.map((image, index) => (
-            <div
-              key={index}
-              className="overflow-hidden rounded-2xl shadow-lg"
-            >
-              <img
-                src={image}
-                alt={`${project.title}-${index}`}
-                className="w-full h-72 object-cover transition-transform duration-500 hover:scale-105"
-              />
+              <div className="grid grid-cols-3 gap-3">
+
+                <div className="flex flex-col items-center text-center">
+
+                  <Maximize
+                    size={18}
+                    className="text-secondary mb-2"
+                  />
+
+                  <p className="text-[10px] uppercase tracking-wide text-text-dark-muted">
+                    Area
+                  </p>
+
+                  <p className="font-semibold text-primary text-xs md:text-sm">
+                    {project.area}
+                  </p>
+
+                </div>
+
+                <div className="flex flex-col items-center text-center">
+
+                  <IndianRupee
+                    size={18}
+                    className="text-secondary mb-2"
+                  />
+
+                  <p className="text-[10px] uppercase tracking-wide text-text-dark-muted">
+                    Price
+                  </p>
+
+                  <p className="font-semibold text-primary text-xs md:text-sm">
+                    {project.price}
+                  </p>
+
+                </div>
+
+                <div className="flex flex-col items-center text-center">
+
+                  <Calendar
+                    size={18}
+                    className="text-secondary mb-2"
+                  />
+
+                  <p className="text-[10px] uppercase tracking-wide text-text-dark-muted">
+                    Year
+                  </p>
+
+                  <p className="font-semibold text-primary text-xs md:text-sm">
+                    {project.year}
+                  </p>
+
+                </div>
+
+              </div>
+
             </div>
-          ))}
+
+          </div>
 
         </div>
 
       </div>
+
     </div>
   );
 };
