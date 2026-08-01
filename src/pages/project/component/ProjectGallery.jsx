@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { HardHat, FolderOpen } from "lucide-react";
 import ProjectFilter from "./ProjectFilter";
 import ProjectCard from "./ProjectCard";
@@ -8,21 +8,44 @@ import { projects } from "../utils/ProjectData";
 const ProjectGallery = () => {
   const [activeFilter, setActiveFilter] = useState("All Projects");
   const [selectedProject, setSelectedProject] = useState(null);
+  const [showAll, setShowAll] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect mobile screen
+  useEffect(() => {
+    const checkScreen = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
+
+  // Reset "Show More" when filter changes
+  useEffect(() => {
+    setShowAll(false);
+  }, [activeFilter]);
 
   const filteredProjects = projects.filter((project) => {
     if (activeFilter === "All Projects") return true;
 
-    if (
-      ["Completed", "Ongoing", "Upcoming"].includes(activeFilter)
-    ) {
+    if (["Completed", "Ongoing", "Upcoming"].includes(activeFilter)) {
       return project.status === activeFilter;
     }
 
     return project.category === activeFilter;
   });
 
+  // Show only first 3 projects on mobile
+  const displayedProjects =
+    isMobile && !showAll
+      ? filteredProjects.slice(0, 3)
+      : filteredProjects;
+
   return (
-    <section className="py-20 bg-surface">
+    <section className="pt-0 pb-20">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
@@ -56,15 +79,29 @@ const ProjectGallery = () => {
         {/* Projects */}
         {filteredProjects.length > 0 ? (
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
-            {filteredProjects.map((project) => (
-              <ProjectCard
-                key={project.id}
-                project={project}
-                onView={() => setSelectedProject(project)}
-              />
-            ))}
-          </div>
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
+              {displayedProjects.map((project) => (
+                <ProjectCard
+                  key={project.id}
+                  project={project}
+                  onView={() => setSelectedProject(project)}
+                />
+              ))}
+            </div>
+
+            {/* Show More / Show Less Button (Only Mobile) */}
+            {isMobile && filteredProjects.length > 3 && (
+              <div className="flex justify-center mt-10">
+                <button
+                  onClick={() => setShowAll(!showAll)}
+                  className="px-6 py-3 rounded-lg bg-primary text-white font-semibold transition-all duration-300 hover:bg-primary/90 hover:scale-105"
+                >
+                  {showAll ? "Show Less" : "Show More"}
+                </button>
+              </div>
+            )}
+          </>
 
         ) : (
 
