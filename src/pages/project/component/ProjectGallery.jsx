@@ -45,7 +45,7 @@ const ProjectGallery = () => {
       : filteredProjects;
 
   return (
-    <section className="pt-0 pb-20">
+    <section className="pt-10 pb-20 bg-surface">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
