@@ -20,12 +20,13 @@ export function MobileNavDropDown({ closeMenu, isMenuOpen }) {
           </NavLink>
         </li>
 
-       
         <li>
-          <NavLink to="/about-us" onClick={closeMenu} className={({ isActive }) => ` block py-3 border-b border-mobile-nav border-b-2 transition-colors duration-300 ${ isActive ? "text-gold-hover" : "text-white hover:text-gold-hover" } ` } >
-            About Us
+          <NavLink to="/project" onClick={closeMenu} className={({ isActive }) => ` block py-3 border-b border-mobile-nav border-b-2 transition-colors duration-300 ${ isActive ? "text-gold-hover" : "text-white hover:text-gold-hover" } ` } >
+            Project
           </NavLink>
         </li>
+       
+        
 
         <li>
           <NavLink to="/service" onClick={closeMenu} className={({ isActive }) => ` block py-3 border-b border-mobile-nav border-b-2 transition-colors duration-300 ${ isActive ? "text-gold-hover" : "text-white hover:text-gold-hover" } ` }
@@ -34,13 +35,14 @@ export function MobileNavDropDown({ closeMenu, isMenuOpen }) {
           </NavLink>
         </li>
 
-        
+
         <li>
-          <NavLink to="/project" onClick={closeMenu} className={({ isActive }) => ` block py-3 border-b border-mobile-nav border-b-2 transition-colors duration-300 ${ isActive ? "text-gold-hover" : "text-white hover:text-gold-hover" } ` } >
-            Project
+          <NavLink to="/about-us" onClick={closeMenu} className={({ isActive }) => ` block py-3 border-b border-mobile-nav border-b-2 transition-colors duration-300 ${ isActive ? "text-gold-hover" : "text-white hover:text-gold-hover" } ` } >
+            About Us
           </NavLink>
         </li>
 
+        
     
         <li>
           <NavLink

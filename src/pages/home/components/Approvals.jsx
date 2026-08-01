@@ -15,7 +15,7 @@ const banks = [
   "Construction Loan Support",
   "Loan Documentation Guidance",
   "Approval Process Assistance",
-  "Quick & Hassle-Free Processing",
+  "Fast & Easy Processing",
 ];
 
 export default function Approvals() {
@@ -25,19 +25,18 @@ export default function Approvals() {
         {/* Heading */}
         <div className="text-center mb-10 lg:mb-14">
           <h2 className="h2-heading">
-            Approvals & Loan Assistance
+            No Paperwork Headaches, Just Your Dream Home
           </h2>
 
           <p className="mt-2 lg:mt-4 text-slate-600 lg:max-w-3xl lg:mx-auto">
-            We simplify your construction journey by taking care of approvals,
-            documentation, and home loan assistance through trusted banking
-            partners.
+            Approvals, documentation, home loan assistance — we take care of it
+            all with trusted banking partners, so you don't have to run around
+            offices.
           </p>
         </div>
 
         {/* Cards */}
         <div className="flex flex-col lg:flex-row divide-y lg:divide-y-0 lg:divide-x divide-slate-200 rounded-2xl shadow-xl overflow-hidden lg:max-w-[1200px] m-auto">
-
           {/* Approvals Card */}
           <div className="flex-1 bg-white p-6 md:p-8">
             <div className="flex items-center gap-5 mb-8">
@@ -57,8 +56,9 @@ export default function Approvals() {
             </div>
 
             <p className="text-slate-600 leading-7 mb-8">
-              We take care of every required approval so your construction
-              begins without delays.
+              Panchayat, municipality, corporation, building plan — whatever
+              approval your site needs, we handle the paperwork end-to-end so
+              work starts without delay.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
@@ -73,14 +73,14 @@ export default function Approvals() {
               ))}
             </div>
 
-            <div className="mt-7 lg:mt-22 p-5 bg-secondary/10 rounded-xl border border-secondary/20">
+            <div className="mt-7 lg:mt-15 p-5 bg-secondary/10 rounded-xl border border-secondary/20">
               <p className="text-sm md:text-base leading-6 md:leading-7 text-slate-600">
                 <span className="font-semibold text-primary">
                   {" "}
-                  Need Approval Assistance?{" "}
+                  Confused about approvals?{" "}
                 </span>
-                Our team handles documentation and approvals, making your
-                construction process smooth and hassle-free.
+                Our team handles all the paperwork, so you get a clean approval
+                without running around offices.
               </p>
             </div>
           </div>
@@ -98,13 +98,15 @@ export default function Approvals() {
                   Financial Support
                 </p>
 
-                <h3 className="text-xl md:text-2xl font-bold">Home Loan Assistance</h3>
+                <h3 className="text-xl md:text-2xl font-bold">
+                  Home Loan Assistance
+                </h3>
               </div>
             </div>
 
             <p className="text-slate-200 leading-7 mb-8">
-              Complete loan assistance through 25+ trusted banking partners with
-              end-to-end documentation support.
+              Need a loan for your house? We connect you with 25+ banks and help
+              with all the paperwork, start to finish.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
@@ -122,8 +124,8 @@ export default function Approvals() {
             <div className="mt-7 lg:mt-10 rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-5">
               <p className="text-sm md:text-base leading-6 md:leading-7 text-gray-300">
                 <span className="text-yellow-400 font-semibold">25+ Banks</span>{" "}
-                available to help you secure the right home or construction loan
-                with a smooth and transparent approval process.
+                ready to help you get the right home or construction loan —
+                clear terms, honest process, no surprises.
               </p>
             </div>
           </div>

@@ -11,28 +11,28 @@ export const data_container_1 = [
     {
         id: 1, 
         icon: TiHome,
-        heading: "Residential Construction",
-        description: "Custom homes and luxury residences built with precision and care."
+        heading: "House Construction",
+        description: "New homes built strong and on time — from foundation to finishing."
 
     },
     {
         id: 2,
         icon: BsBuildingsFill,
-        heading: 'Commercial Construction',
-        description: 'Modern commercial spaces designed for businesses to thrive.'
+        heading: 'Commercial Buildings',
+        description: 'Shops, showrooms, and offices built to help your business grow.'
     },
     {
         id: 3, 
         icon: GiSofa,
         heading: "Interior Design",
-        description: "Creative interior solutions combining aesthetics and functionality."
+        description: "Interiors that look good and work well for everyday family life."
         
     },
     {
         id: 4,
         icon: FaTools,
         heading: 'Renovation & Remodeling',
-        description: 'Transforming spaces with innovative renovation solutions.'
+        description: 'Give your old house or shop a fresh, modern look — no need to rebuild.'
     }
 ]
 
@@ -42,7 +42,7 @@ export const data_container_2 = [
         id: 5, 
         icon: FaDraftingCompass,
         heading: "Architectural Planning",
-        description: "Custom homes and luxury residences built with precision and care."
+        description: "Clear house plans and designs, explained simply before we build."
         
 
     },
@@ -50,14 +50,14 @@ export const data_container_2 = [
         id: 6, 
         icon: SiMoleculer,
         heading: "Structural Engineering",
-        description: "Safe, durable, and sustainable structural engineering solutions."
+        description: "We build strong, safe structures that stand the test of time."
 
     },
     {
         id: 7, 
         icon: BsBank,
-        heading: 'Bank Loan Assistance',
-        description: 'We help clients obtain home loans from reputed banks to make their construction journey simple and stress-free.'
+        heading: 'Home Loan Assistance',
+        description: 'We help you get a home loan easily, from banks you can trust.'
 
     },
 ]

@@ -7,16 +7,16 @@ export function HeroContent() {
       {/* Content width */}
       <div className="max-w-[750px]">
         {/* MAIN SEO HEADING */}
-        <h1 className=" font-bold text-white text-4xl leading-[1.1] sm:text-5xl lg:text-6xl xl:text-7xl lg:leading-[1.05] " >
-          Building Better
-          <span className=" block text-secondary mt-1 ">Every Day</span>
+        <h1 className="font-bold text-white text-4xl leading-[1.1] sm:text-5xl lg:text-6xl xl:text-7xl lg:leading-[1.05] ">
+          From Blueprint to
+          <span className=" block text-secondary mt-1 "> Doorstep</span>
         </h1>
 
         {/* DESCRIPTION */}
         <p className=" mt-6 max-w-[650px] text-slate-300 text-base leading-7 sm:text-lg sm:leading-8 lg:text-lg ">
-          VIP Construction delivers excellence in every structure. From vision
-          to creation, we build your dreams with quality, integrity, and
-          innovation.
+          VIP Construction builds homes and commercial spaces with quality,
+          honest work, and on-time delivery — serving Coimbatore, Udumalpet,
+          Pollachi, Dharapuram, and Palani.
         </p>
 
         {/* CTA BUTTONS */}

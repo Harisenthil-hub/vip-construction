@@ -6,12 +6,8 @@ export function ServiceSection() {
       <div>
         {/* SERVICE HEADER */}
         <div className="home-container-header">
-          <span className="span-heading">
-            Our Services
-          </span>
-          <h2 className="h2-heading">
-            Comprehensive Construction Solutions
-          </h2>
+          <span className="span-heading">What We Do</span>
+          <h2 className="h2-heading">From Foundation to Finish, We Handle It All</h2>
           <div className="divider" />
         </div>
 
@@ -32,12 +28,13 @@ export function ServiceSection() {
                   />
                 </div>
                 <h3 className="mb-1 font-bold font-xs">{service.heading}</h3>
-                <p className="text-sm leading-[1.6] text-text-dark-muted">{service.description}</p>
+                <p className="text-sm leading-[1.6] text-text-dark-muted">
+                  {service.description}
+                </p>
               </div>
             );
           })}
         </div>
-
 
         {/* 2'ND GRID CONTAINER */}
         <div className="grid lg:grid-cols-3 gap-4 mt-5 lg:mx-2 mx-4">
@@ -56,13 +53,13 @@ export function ServiceSection() {
                   />
                 </div>
                 <h3 className="mb-1 font-bold font-sm">{service.heading}</h3>
-                <p className="text-sm leading-[1.6] text-text-dark-muted">{service.description}</p>
+                <p className="text-sm leading-[1.6] text-text-dark-muted">
+                  {service.description}
+                </p>
               </div>
             );
           })}
         </div>
-
-
       </div>
     </section>
   );
