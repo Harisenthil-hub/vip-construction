@@ -4,6 +4,7 @@ import {
   Maximize,
   IndianRupee,
   Calendar,
+  Clock3,
 } from "lucide-react";
 
 const ProjectCard = ({ project, onView }) => {
@@ -26,21 +27,22 @@ const ProjectCard = ({ project, onView }) => {
 
         {/* Status */}
         <div
-          className={`absolute top-4 left-4 px-3 py-1 rounded-md text-xs font-bold uppercase text-white ${
-            project.status === "Completed"
-              ? "bg-secondary"
-              : "bg-green-600"
-          }`}
+          className={`absolute top-4 left-4 px-3 py-1 rounded-md text-xs font-bold uppercase text-white shadow-md transition-all duration-300
+    ${project.status === "Completed"
+              ? "bg-green-600"
+              : project.status === "Ongoing"
+                ? "bg-amber-500"
+                : project.status === "Upcoming"
+                  ? "bg-blue-600"
+                  : "bg-gray-600"
+            }
+  `}
         >
           {project.status}
         </div>
 
         {/* Content */}
         <div className="absolute bottom-0 left-0 w-full p-6">
-
-          <h2 className="text-2xl font-bold text-white">
-            {project.title}
-          </h2>
 
           <div className="flex items-center gap-2 mt-2 text-secondary">
             <MapPin size={18} />
@@ -80,39 +82,29 @@ const ProjectCard = ({ project, onView }) => {
         </div>
       </div>
 
-      {/* Bottom Details */}
-      <div className="flex items-center justify-between mt-5 px-1">
+      <div className="grid grid-cols-3 gap-3 mt-5">
 
-        <div className="flex items-center gap-2 text-text-dark-muted">
-          <Maximize
-            size={18}
-            className="text-secondary"
-          />
-          <span className="font-medium text-sm">
+        <div className="flex items-center justify-center gap-2 min-w-0">
+          <Maximize size={18} className="text-secondary flex-shrink-0" />
+          <span className="text-sm font-medium whitespace-nowrap">
             {project.area}
           </span>
         </div>
 
-        <div className="flex items-center gap-2 text-text-dark-muted">
-          <IndianRupee
-            size={18}
-            className="text-secondary"
-          />
-          <span className="font-medium text-sm">
+        <div className="flex items-center justify-center gap-2 min-w-0">
+          <IndianRupee size={18} className="text-secondary flex-shrink-0" />
+          <span className="text-sm font-medium whitespace-nowrap">
             {project.price}
           </span>
         </div>
 
-        <div className="flex items-center gap-2 text-text-dark-muted">
-          <Calendar
-            size={18}
-            className="text-secondary"
-          />
-          <span className="font-medium text-sm">
+        <div className="flex items-center justify-center gap-2 min-w-0">
+          <Calendar size={18} className="text-secondary flex-shrink-0" />
+          <span className="text-sm font-medium whitespace-nowrap">
             {project.year}
           </span>
         </div>
-
+        
       </div>
 
     </div>

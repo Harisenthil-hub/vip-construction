@@ -6,7 +6,7 @@ import {
   Clock,
   CheckCircle,
   Wrench,
-  Sofa,
+  Rocket,
 } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 
@@ -15,10 +15,10 @@ const filters = [
   { name: "Residential", icon: Home },
   { name: "Commercial", icon: Building2 },
   { name: "Industrial", icon: Factory },
+  { name: "Renovation", icon: Wrench },
   { name: "Ongoing", icon: Clock },
   { name: "Completed", icon: CheckCircle },
-  { name: "Renovation", icon: Wrench },
-  { name: "Interior", icon: Sofa },
+  { name: "Upcoming", icon: Rocket },
 ];
 
 const ProjectFilter = ({ activeFilter, setActiveFilter }) => {
