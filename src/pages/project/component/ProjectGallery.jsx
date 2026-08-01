@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { HardHat, FolderOpen } from "lucide-react";
 import ProjectFilter from "./ProjectFilter";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
@@ -11,7 +12,9 @@ const ProjectGallery = () => {
   const filteredProjects = projects.filter((project) => {
     if (activeFilter === "All Projects") return true;
 
-    if (activeFilter === "Completed" || activeFilter === "Ongoing") {
+    if (
+      ["Completed", "Ongoing", "Upcoming"].includes(activeFilter)
+    ) {
       return project.status === activeFilter;
     }
 
@@ -36,10 +39,10 @@ const ProjectGallery = () => {
           <div className="divider mb-6"></div>
 
           <p className="max-w-3xl mx-auto text-text-dark-muted leading-8">
-            Browse through our completed and ongoing construction
-            projects across residential, commercial, industrial,
-            renovation, and interior sectors, reflecting our commitment
-            to quality, innovation, and customer satisfaction.
+            Browse through our completed, ongoing and upcoming construction
+            projects across residential, commercial, industrial and
+            renovation sectors, reflecting our commitment to quality,
+            innovation and customer satisfaction.
           </p>
 
         </div>
@@ -50,18 +53,60 @@ const ProjectGallery = () => {
           setActiveFilter={setActiveFilter}
         />
 
-        {/* Project Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
-          {filteredProjects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              onView={() => setSelectedProject(project)}
-            />
-          ))}
-        </div>
+        {/* Projects */}
+        {filteredProjects.length > 0 ? (
 
-        {/* Project Modal */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
+            {filteredProjects.map((project) => (
+              <ProjectCard
+                key={project.id}
+                project={project}
+                onView={() => setSelectedProject(project)}
+              />
+            ))}
+          </div>
+
+        ) : (
+
+          <div className="mt-20 flex justify-center animate-in fade-in zoom-in-95 duration-500">
+
+            <div className="flex flex-col items-center text-center">
+
+              {/* Icon */}
+              <div className="w-24 h-24 rounded-full bg-secondary/10 flex items-center justify-center shadow-lg">
+                <HardHat
+                  size={46}
+                  className="text-secondary animate-pulse"
+                />
+              </div>
+
+              {/* Heading */}
+              <h3 className="mt-6 text-3xl font-bold text-primary">
+                No Projects Available
+              </h3>
+
+              {/* Description */}
+              <p className="mt-4 max-w-xl text-text-dark-muted leading-8">
+                We currently don't have any projects under the{" "}
+                <span className="font-semibold text-primary">
+                  "{activeFilter}"
+                </span>{" "}
+                category.
+              </p>
+
+              {/* Footer */}
+              <div className="mt-5 flex items-center gap-2 text-secondary font-semibold">
+                <FolderOpen size={20} />
+                New projects will be added soon.
+              </div>
+
+            </div>
+
+          </div>
+
+        )}
+
+        {/* Modal */}
         {selectedProject && (
           <ProjectModal
             project={selectedProject}
