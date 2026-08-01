@@ -60,7 +60,7 @@ export function NavBar() {
             <li className="">
               <NavLink
                 to="/contact"
-                className="px-2 py-2 font-medium bg-secondary hover:bg-gold-hover text-white rounded-sm flex items-center transition-transform duration-300 hover:-translate-y-0.5"
+                className="px-2 py-2 font-medium bg-secondary hover:bg-gold-hover text-white rounded-lg flex items-center transition-transform duration-300 hover:-translate-y-0.5"
               >
                 Contact Us <MdCallMade size={20} />
               </NavLink>
@@ -72,7 +72,7 @@ export function NavBar() {
         <button
           type="button"
           onClick={() => setIsMenuOpen((prev) => !prev)}
-          className=" lg:hidden flex items-center justify-center text-slate-700 hover:text-gold-hover transition-colors duration-300 cursor-pointer"
+          className=" lg:hidden flex items-center justify-center text-slate-100 hover:text-gold-hover transition-colors duration-300 cursor-pointer"
           aria-label="Toggle navigation menu"
           aria-expanded={isMenuOpen}
         >

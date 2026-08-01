@@ -16,10 +16,11 @@ export function CTA() {
           {/* TEXT DIV */}
           <div>
             <h3 className="text-xl sm:text-2xl font-extrabold text-white leading-tight">
-              Let's Build Something Great Together!
+              Ready to Start Your Construction?
             </h3>
             <p className="text-sm text-white mt-1">
-              Partner with VIP Constructions for your next home.
+              Get a free consultation with VIP Construction, Tamil Nadu's
+              trusted builder.
             </p>
           </div>
         </div>
@@ -34,7 +35,12 @@ export function CTA() {
             <FaPhoneAlt size={15} className="text-white inline py-0" />
             <span>Contact Us</span>
           </a>
-          <Link to="/project" className="flex items-center justify-center gap-2 w-full sm:w-auto bg-transparent border-2 px-4 py-3 font-semibold text-white border-white/50 hover:border-white/80 hover:bg-white/10 py-3 rounded hover:-translate-y-1 transition ease-in-out duration-300">View Projects <FaArrowRight size={15} className="inline" /></Link>
+          <Link
+            to="/project"
+            className="flex items-center justify-center gap-2 w-full sm:w-auto bg-transparent border-2 px-4 py-3 font-semibold text-white border-white/50 hover:border-white/80 hover:bg-white/10 py-3 rounded hover:-translate-y-1 transition ease-in-out duration-300"
+          >
+            View Projects <FaArrowRight size={15} className="inline" />
+          </Link>
         </div>
       </div>
     </section>

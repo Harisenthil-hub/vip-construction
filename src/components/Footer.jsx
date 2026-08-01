@@ -16,9 +16,21 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   const social = [
-    { icon: FaFacebookF, label: "Facebook", link: 'https://www.facebook.com/share/1DGh2xRqHR/?mibextid=wwXIfr' },
-    { icon: FaInstagram, label: "Instagram", link: 'https://www.instagram.com/vipconstruction_udumalpet?utm_source=qr&igsh=aDhjbGI4ZW1yamw2' },
-    { icon: FaYoutube, label: "YouTube", link: 'https://www.youtube.com/@vipconstruction_offical' },
+    {
+      icon: FaFacebookF,
+      label: "Facebook",
+      link: "https://www.facebook.com/share/1DGh2xRqHR/?mibextid=wwXIfr",
+    },
+    {
+      icon: FaInstagram,
+      label: "Instagram",
+      link: "https://www.instagram.com/vipconstruction_udumalpet?utm_source=qr&igsh=aDhjbGI4ZW1yamw2",
+    },
+    {
+      icon: FaYoutube,
+      label: "YouTube",
+      link: "https://www.youtube.com/@vipconstruction_offical",
+    },
   ];
 
   const quickLinks = [
@@ -55,9 +67,9 @@ export default function Footer() {
               </div>
             </Link>
             <p className="mt-4 leading-8 text-slate-400">
-              Building premium residential, commercial, industrial and
-              architectural projects across Tamil Nadu with innovation, trust
-              and quality since 2010.
+              Building homes, offices, and landmark projects across Coimbatore,
+              Udumalpet, Pollachi, Dharapuram, and Palani with quality and trust
+              since 2019.
             </p>
             {/* Social */}
             <div className="mt-8 flex gap-4">
@@ -100,18 +112,14 @@ export default function Footer() {
 
             <div className="space-y-3 mt-3">
               <div className="space-y-1">
-                <p className="font-bold text-secondary">
-                  Udumalpet Branch
-                </p>
+                <p className="font-bold text-secondary">Udumalpet Branch</p>
                 <span>
                   8, Durairam layout, S.V Mill (P.O), Udumalpet, Tiruppur Dist –
                   642128.
                 </span>
               </div>
               <div className="space-y-1">
-                <p className="font-bold text-secondary">
-                  Coimbatore Branch
-                </p>
+                <p className="font-bold text-secondary">Coimbatore Branch</p>
                 <span>
                   No: 46 Srinagar, KK nagar, Ganapathi, Coimbatore – 641006.
                 </span>
@@ -135,7 +143,10 @@ export default function Footer() {
                 </span>
               </div>
               <div className="flex gap-4 items-center">
-                <GiRotaryPhone size={25} className="text-amber-400 text-lg flex-shrink-0" />
+                <GiRotaryPhone
+                  size={25}
+                  className="text-amber-400 text-lg flex-shrink-0"
+                />
                 <span>
                   <a
                     href="tel:+919344432923"
@@ -150,7 +161,7 @@ export default function Footer() {
                 <span>
                   <a
                     href="mailto:vipconstruction.14@gmail.com"
-                    className="hover:text-amber-400 transition"
+                    className="hover:text-amber-400 transition min-w-0 break-all"
                   >
                     vipconstruction.14@gmail.com
                   </a>

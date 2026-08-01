@@ -18,11 +18,11 @@ export default function CTA() {
               Let's Build Together
             </span>
 
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold leading-tight text-white">
+            <h2 className="h2-heading text-white">
               Ready To Start <span className="text-[#F5A623]">Your Dream Project?</span>
             </h2>
 
-            <p className="mt-2.5 text-xs sm:text-sm leading-relaxed text-slate-300 font-normal">
+            <p className="mt-2.5 text-sm md:text-base leading-relaxed text-slate-300 font-normal">
               Whether you're planning a residential villa, commercial building, or architectural renovation, our team is ready. Contact VIP Construction for transparent estimations and site consultation.
             </p>
           </div>
@@ -31,7 +31,7 @@ export default function CTA() {
           <div className="mt-6 flex flex-wrap gap-4 lg:mt-0 flex-shrink-0">
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-amber-500 px-6 py-3.5 font-bold text-slate-900 shadow-md hover:shadow-lg transition duration-300 hover:bg-amber-400 active:scale-95 text-sm"
+              className="inline-flex items-center w-full justify-center md:w-auto gap-2 rounded-full bg-amber-500 px-6 py-3.5 font-bold text-slate-900 shadow-md hover:shadow-lg transition duration-300 hover:bg-amber-400 active:scale-95 text-sm"
             >
               Contact Us
               <FaArrowRight className="text-xs" />
@@ -39,7 +39,7 @@ export default function CTA() {
 
             <a
               href="tel:+919876543210"
-              className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3.5 font-bold text-white transition duration-300 hover:bg-white hover:text-slate-900 active:scale-95 text-sm"
+              className="inline-flex w-full justify-center md:w-auto items-center gap-2 rounded-full border border-white/20 px-6 py-3.5 font-bold text-white transition duration-300 hover:bg-white hover:text-slate-900 active:scale-95 text-sm"
             >
               <FaPhoneAlt className="text-xs" />
               Call Now

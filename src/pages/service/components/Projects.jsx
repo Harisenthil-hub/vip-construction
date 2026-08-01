@@ -11,7 +11,7 @@ export default function Projects() {
           <span className="inline-block rounded-full bg-amber-500/20 px-3.5 py-1 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-amber-400 border border-amber-500/30">
             Portfolio
           </span>
-          <h2 className="mt-3 text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-tight">
+          <h2 className="h2-heading text-white mt-3 mb-2">
             Featured Projects
           </h2>
           <p className="mx-auto mt-2.5 max-w-xl text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">

@@ -51,7 +51,7 @@ export default function ServiceGallery({ images, title }) {
           />
 
           {/* Caption */}
-          <div
+          {/* <div
             className="
               absolute
               bottom-3
@@ -66,13 +66,14 @@ export default function ServiceGallery({ images, title }) {
               duration-300
             "
           >
+            
             <h4 className="text-white text-xs sm:text-sm md:text-base font-bold">
               {title} Project
             </h4>
             <p className="text-amber-400 text-[10px] sm:text-xs">
               VIP Construction
             </p>
-          </div>
+          </div> */}
         </div>
       ))}
     </div>

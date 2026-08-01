@@ -13,7 +13,7 @@ export default function FAQ() {
           <span className="inline-block rounded-full bg-amber-100 px-3.5 py-1 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-amber-800 border border-amber-200">
             FAQ
           </span>
-          <h2 className="mt-3 text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 leading-tight">
+          <h2 className="h2-heading mt-3 mb-2">
             Frequently Asked Questions
           </h2>
           <p className="mx-auto mt-2.5 max-w-xl text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">

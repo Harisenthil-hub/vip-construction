@@ -57,12 +57,12 @@ export default function Process() {
   return (
     <section
       id="process"
-      className="bg-slate-50 py-16 sm:py-24 border-t border-slate-200/50"
+      className="bg-slate-50 py-10 md:py-10 border-t border-slate-200/50"
     >
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-7">
         {/* Left-Aligned Heading (Dribbble Style) */}
-        <div className="text-left mb-16 max-w-xl">
-          <span className="text-amber-500 font-bold text-xs uppercase tracking-widest">
+        <div className="text-left mb-12 md:mb-15px max-w-xl">
+          <span className="span-heading">
             STEP BY STEP PROCESS
           </span>
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 leading-tight">
@@ -90,11 +90,11 @@ export default function Process() {
           </svg>
 
           {/* Row 1 (Steps 1, 2, 3) - Text is BELOW the circle cards */}
-          <div className="grid grid-cols-3 gap-8 relative z-10">
+          <div className="grid grid-cols-3 gap-8 relative z-10 mr-6">
             {steps.slice(0, 3).map((step) => (
               <div
                 key={step.id}
-                className="group flex flex-col items-center text-center px-4 h-[170px]"
+                className="group flex flex-col items-center text-center px-4 h-[200px]"
               >
                 {/* Circle Card */}
                 <div className="w-20 h-20 rounded-full bg-white border-2 border-slate-200 shadow-sm text-slate-400 group-hover:border-amber-500 group-hover:shadow-md group-hover:scale-105 group-hover:text-amber-500 transition duration-300 flex items-center justify-center text-2xl cursor-pointer relative z-10">
@@ -135,7 +135,7 @@ export default function Process() {
         </div>
 
         {/* ================= MOBILE VIEW: VERTICAL TIMELINE LIST (1 COL) ================= */}
-        <div className="relative md:hidden max-w-md mx-auto px-2 py-4">
+        <div className="relative md:hidden max-w-md mx-auto px-2 py-0">
           <div className="space-y-8 relative">
             {steps.map((step, index) => (
               <div key={step.id} className="relative flex gap-5 items-start">

@@ -7,16 +7,16 @@ export function HeroContent() {
       {/* Content width */}
       <div className="max-w-[750px]">
         {/* MAIN SEO HEADING */}
-        <h1 className=" font-bold text-white text-4xl leading-[1.1] sm:text-5xl lg:text-6xl xl:text-7xl lg:leading-[1.05] " >
-          Building Better
-          <span className=" block text-secondary mt-1 ">Every Day</span>
+        <h1 className="font-bold text-white text-4xl leading-[1.1] sm:text-5xl lg:text-6xl xl:text-7xl lg:leading-[1.05] ">
+          From Blueprint to
+          <span className=" block text-secondary mt-1 "> Doorstep</span>
         </h1>
 
         {/* DESCRIPTION */}
-        <p className=" mt-6 max-w-[650px] text-slate-300 text-base leading-7 sm:text-lg sm:leading-8 lg:text-xl ">
-          VIP Construction delivers excellence in every structure. From vision
-          to creation, we build your dreams with quality, integrity, and
-          innovation.
+        <p className=" mt-6 max-w-[650px] text-slate-300 text-base leading-7 sm:text-lg sm:leading-8 lg:text-lg ">
+          VIP Construction builds homes and commercial spaces with quality,
+          honest work, and on-time delivery — serving Coimbatore, Udumalpet,
+          Pollachi, Dharapuram, and Palani.
         </p>
 
         {/* CTA BUTTONS */}
@@ -33,7 +33,7 @@ export function HeroContent() {
           {/* CONTACT */}
           <a
             href="tel:+919080273030"
-            className="inline-flex items-center justify-center gap-2 border border-white/50 bg-black/10 hover:bg-white/10 text-white font-semibold px-6 py-3.5 rounded-md backdrop-blur-sm transition-colors duration-300 "
+            className="inline-flex items-center justify-center gap-2 border border-white/50 bg-black/10 hover:bg-white/10 text-white font-semibold px-6 py-3 rounded-md backdrop-blur-sm transition-colors duration-300"
           >
             <FaPhoneAlt size={15} />
             Contact Us
