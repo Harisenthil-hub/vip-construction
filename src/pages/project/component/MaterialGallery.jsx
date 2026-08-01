@@ -2,7 +2,7 @@ import materialCategories from "../utils/MaterialData";
 
 const MaterialGallery = () => {
   return (
-    <section className="py-20 bg-surface">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
@@ -39,46 +39,39 @@ const MaterialGallery = () => {
             </div>
 
             {/* Materials */}
-            <div className="flex flex-wrap items-center gap-8 md:gap-10">
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6 md:gap-8">
 
-              {category.items.map((item) => (
-                <div
-                  key={item.id}
-                  className="group"
-                >
-                  <div className="flex flex-col items-center">
-
-                    {/* Circular Image */}
+              {category.items.map((item) =>
+                item.images.map((image, index) => (
+                  <div
+                    key={`${item.id}-${index}`}
+                    className="group flex flex-col items-center"
+                  >
                     <div
                       className="
-                        w-16 h-16
-                        sm:w-20 sm:h-20
-                        md:w-24 md:h-24
-                        rounded-full
-                        overflow-hidden
-                        shadow-md
-                        bg-white
-                        transition-all
-                        duration-300
-                        group-hover:scale-105
-                        group-hover:shadow-xl
-                      "
+            w-20 h-20
+            sm:w-24 sm:h-24
+            md:w-28 md:h-28
+            overflow-hidden
+            bg-white
+            transition-all
+            duration-300
+            group-hover:scale-105
+          "
                     >
                       <img
-                        src={item.logo}
-                        alt={item.name}
-                        className="w-full h-full object-cover"
+                        src={image}
+                        alt={`${item.name}-${index + 1}`}
+                        className="w-full h-full object-contain"
                       />
                     </div>
 
-                    {/* Material Name */}
-                    <p className="mt-3 text-sm md:text-base font-semibold text-primary text-center">
+                    {/* <p className="mt-2 text-xs sm:text-sm md:text-base font-semibold text-primary text-center">
                       {item.name}
-                    </p>
-
+                    </p> */}
                   </div>
-                </div>
-              ))}
+                ))
+              )}
 
             </div>
 
