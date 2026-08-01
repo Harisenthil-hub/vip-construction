@@ -1,10 +1,6 @@
-import { useState } from "react";
-import MaterialModal from "./MaterialModal";
 import materialCategories from "../utils/MaterialData";
 
 const MaterialGallery = () => {
-  const [selectedMaterial, setSelectedMaterial] = useState(null);
-
   return (
     <section className="py-20 bg-surface">
       <div className="max-w-7xl mx-auto px-6">
@@ -42,14 +38,13 @@ const MaterialGallery = () => {
               <div className="flex-1 h-px bg-gray-300"></div>
             </div>
 
-            {/* Logos */}
+            {/* Materials */}
             <div className="flex flex-wrap items-center gap-8 md:gap-10">
 
               {category.items.map((item) => (
                 <div
                   key={item.id}
-                  onClick={() => setSelectedMaterial(item)}
-                  className="group cursor-pointer"
+                  className="group"
                 >
                   <div className="flex flex-col items-center">
 
@@ -89,13 +84,6 @@ const MaterialGallery = () => {
 
           </div>
         ))}
-
-        {selectedMaterial && (
-          <MaterialModal
-            material={selectedMaterial}
-            onClose={() => setSelectedMaterial(null)}
-          />
-        )}
 
       </div>
     </section>
