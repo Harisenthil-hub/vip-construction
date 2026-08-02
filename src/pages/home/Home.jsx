@@ -40,7 +40,7 @@ export function Home() {
         />
         <meta
           property="og:image"
-          content="https://vip-construction.vercel.app/vip-construction-og-image.png.png"
+          content="https://vip-construction.vercel.app/vip-construction-og-image.png"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
