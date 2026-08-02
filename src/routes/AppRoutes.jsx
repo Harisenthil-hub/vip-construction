@@ -6,6 +6,7 @@ import Project from "../pages/project/Project";
 import ProjectDetails from "../pages/project/component/ProjectDetails";
 import Aboutus from "../pages/aboutus/Aboutus";
 import Contact from "../pages/contact/pages/Contact";
+import NotFoundPage from "../pages/error/NotFoundPage";
 
 export function AppRoutes() {
   return (
@@ -18,6 +19,8 @@ export function AppRoutes() {
         <Route path="/project/:id" element={<ProjectDetails />} />
         <Route path="/contact" element={<Contact />} />
       </Route>
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 }
+

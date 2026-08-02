@@ -1,0 +1,306 @@
+/* ═════════════════════════════════════════════════════════════════
+   VIP Construction 404 — Perfect Cable Expansion (Zero Gap at Trolley)
+   ═════════════════════════════════════════════════════════════════ */
+
+/* Outer Viewport (100vh Single Screen) */
+.page-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-surface);
+  font-family: var(--font-body);
+  overflow: hidden;
+  padding: 1.25rem;
+}
+
+/* Background Watermark Faded Crane */
+.bg-watermark-crane {
+  position: absolute;
+  left: -5%;
+  top: 10%;
+  width: 45%;
+  height: 80%;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Central Main Card Container */
+.central-card {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 880px;
+  height: 92vh;
+  max-height: 560px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 20px 50px rgba(26, 31, 46, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* Card Body (Main Stage) */
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1.5rem 0.5rem;
+  overflow: hidden;
+}
+
+/* Graphic Stage Sizing */
+.graphic-stage {
+  width: 100%;
+  max-width: 800px;
+  height: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   EXACT SYNCHRONIZED CRANE WINCH KEYFRAMES
+   ───────────────────────────────────────────────────────────── */
+
+/* 1. Horizontal Trolley Slide across Jib Arm (Left Pick -> Center Fit) */
+@keyframes craneHorizontalSlide {
+  0%, 20% {
+    transform: translateX(-140px);
+  }
+  40%, 100% {
+    transform: translateX(0px);
+  }
+}
+
+/* 2. Vertical Hook & '0' Digit Movement */
+@keyframes hookVerticalMotion {
+  0% {
+    transform: translateY(32px); /* Lowered to pick '0' from ground */
+  }
+  18% {
+    transform: translateY(0px);  /* Lifted high in air */
+  }
+  45% {
+    transform: translateY(0px);  /* Held high during trolley slide */
+  }
+  65% {
+    transform: translateY(30px); /* Lowered into place between 4s */
+  }
+  85%, 100% {
+    transform: translateY(30px); /* Placed securely */
+  }
+}
+
+/* 3. Cable Clip Height Expansion (Fixed at y=44 under trolley, expands downwards to hook) */
+@keyframes cableClipExpand {
+  0% {
+    height: 96px;  /* Extended down to y=140 at pickup */
+  }
+  18% {
+    height: 64px;  /* Retracted up to y=108 in transit */
+  }
+  45% {
+    height: 64px;  /* Retracted up to y=108 in transit */
+  }
+  65% {
+    height: 94px;  /* Extended down to y=138 between 4s */
+  }
+  85%, 100% {
+    height: 94px;
+  }
+}
+
+/* 4. Gentle Hook Sway */
+@keyframes cableHookSway {
+  0%, 100% { transform: rotate(0deg); }
+  22% { transform: rotate(-1.5deg); }
+  42% { transform: rotate(1.8deg); }
+  62% { transform: rotate(-0.8deg); }
+}
+
+/* 5. Drifting Clouds */
+@keyframes cloudDriftRight {
+  0% { transform: translateX(-180px); }
+  100% { transform: translateX(880px); }
+}
+
+@keyframes cloudDriftLeft {
+  0% { transform: translateX(880px); }
+  100% { transform: translateX(-180px); }
+}
+
+@keyframes beaconPulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.crane-carrier-group {
+  animation: craneHorizontalSlide 9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.cable-mask-rect {
+  animation: cableClipExpand 9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.hook-and-block-group {
+  animation: hookVerticalMotion 9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.cable-hook-sway {
+  animation: cableHookSway 9s ease-in-out infinite;
+  transform-origin: 432px 40px;
+}
+
+/* Cloud Animations */
+.anim-cloud-1 {
+  animation: cloudDriftRight 36s linear infinite;
+}
+
+.anim-cloud-2 {
+  animation: cloudDriftRight 52s linear infinite;
+  animation-delay: -22s;
+}
+
+.anim-cloud-3 {
+  animation: cloudDriftRight 42s linear infinite;
+  animation-delay: -14s;
+}
+
+.anim-cloud-4 {
+  animation: cloudDriftLeft 60s linear infinite;
+  animation-delay: -30s;
+}
+
+.beacon-flash {
+  animation: beaconPulse 1.4s ease-in-out infinite;
+}
+
+/* Content Section Below Illustration */
+.content-section {
+  text-align: center;
+  max-width: 580px;
+  margin-top: 0.25rem;
+}
+
+.sub-message {
+  font-size: 0.95rem;
+  color: var(--color-text-dark-muted);
+  font-weight: 400;
+  margin-bottom: 0.65rem;
+}
+
+.divider-line {
+  width: 50px;
+  height: 2px;
+  background: var(--color-secondary);
+  margin: 0 auto 0.65rem;
+  border-radius: 2px;
+}
+
+.try-pages-title {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  margin-bottom: 0.6rem;
+}
+
+/* Quick Links Row */
+.quick-links-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.link-item {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.link-item:hover {
+  color: var(--color-gold-hover);
+  transform: translateY(-1px);
+}
+
+.link-separator {
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+}
+
+/* Card Footer */
+.card-footer {
+  position: relative;
+  height: 46px;
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  color: #ffffff;
+  font-size: 0.78rem;
+  flex-shrink: 0;
+}
+
+.card-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3.5px;
+  background: var(--color-secondary);
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.social-icon {
+  color: #ffffff;
+  opacity: 0.85;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  opacity: 1;
+  color: var(--color-secondary);
+  transform: translateY(-1px);
+}
+
+/* Responsive Viewport */
+@media (max-height: 650px) {
+  .central-card {
+    height: 96vh;
+    max-height: 540px;
+  }
+  .graphic-stage {
+    height: 240px;
+  }
+}
+
+@media (max-width: 640px) {
+  .card-footer {
+    padding: 0 1rem;
+  }
+  .quick-links-row {
+    gap: 0.6rem;
+  }
+}
