@@ -81,6 +81,22 @@ const materialCategories = [
   },
 
   {
+    category: "Brick",
+    items: [
+      {
+        id: 9,
+        name: "Brick",
+        logo: brick1,
+        images: [
+          { src: brick1, alt: "Concrete hollow blocks used in VIP Construction projects" },
+          { src: brick2, alt: "Solid concrete block – strong construction material" },
+          { src: brick3, alt: "Red clay bricks used for quality wall construction" },
+        ],
+      },
+    ],
+  },
+
+  {
     category: "Tiles",
     items: [
       {
@@ -91,6 +107,37 @@ const materialCategories = [
           { src: tiles1, alt: "Anuj Tiles – flooring and tiling brand partner" },
           { src: tiles2, alt: "Kajaria Ceramics – premium tiles brand" },
           { src: tiles3, alt: "Simpolo Tiles & Bathware – quality tiles and bathware brand" },
+        ],
+      },
+    ],
+  },
+
+  {
+    category: "Wood",
+    items: [
+      {
+        id: 10,
+        name: "Wood",
+        logo: wood1,
+        images: [
+          { src: wood1, alt: "Wood veneer sheet – quality wood material used by VIP Construction" },
+          { src: wood2, alt: "Teak wood blocks – durable wood material for construction" },
+          { src: wood3, alt: "Wooden planks and beams – strong wood material for structural use" },
+        ],
+      },
+    ],
+  },
+
+  {
+    category: "Wire",
+    items: [
+      {
+        id: 7,
+        name: "Wire",
+        logo: wire1,
+        images: [
+          { src: wire1, alt: "Kundan Cab – trusted wiring cables brand" },
+          { src: wire2, alt: "RR Kabel  quality wires and cables brand" },
         ],
       },
     ],
@@ -131,38 +178,6 @@ const materialCategories = [
   },
 
   {
-    category: "Paint",
-    items: [
-      {
-        id: 6,
-        name: "Paint",
-        logo: paint1,
-        images: [
-          { src: paint1, alt: "Asian Paints – trusted wall paint brand" },
-          { src: paint2, alt: "Berger Paints – premium paint brand" },
-          { src: paint3, alt: "Birla Opus Paints – quality paint brand" },
-          { src: paint4, alt: "JSW Paints – reliable paint brand" },
-        ],
-      },
-    ],
-  },
-
-  {
-    category: "Wire",
-    items: [
-      {
-        id: 7,
-        name: "Wire",
-        logo: wire1,
-        images: [
-          { src: wire1, alt: "Kundan Cab – trusted wiring cables brand" },
-          { src: wire2, alt: "RR Kabel  quality wires and cables brand" },
-        ],
-      },
-    ],
-  },
-
-  {
     category: "Sanitary Fitting",
     items: [
       {
@@ -180,36 +195,22 @@ const materialCategories = [
   },
 
   {
-    category: "Brick",
+    category: "Paint",
     items: [
       {
-        id: 9,
-        name: "Brick",
-        logo: brick1,
+        id: 6,
+        name: "Paint",
+        logo: paint1,
         images: [
-          { src: brick1, alt: "Concrete hollow blocks used in VIP Construction projects" },
-          { src: brick2, alt: "Solid concrete block – strong construction material" },
-          { src: brick3, alt: "Red clay bricks used for quality wall construction" },
+          { src: paint1, alt: "Asian Paints – trusted wall paint brand" },
+          { src: paint2, alt: "Berger Paints – premium paint brand" },
+          { src: paint3, alt: "Birla Opus Paints – quality paint brand" },
+          { src: paint4, alt: "JSW Paints – reliable paint brand" },
         ],
       },
     ],
   },
 
-  {
-    category: "Wood",
-    items: [
-      {
-        id: 10,
-        name: "Wood",
-        logo: wood1,
-        images: [
-          { src: wood1, alt: "Wood veneer sheet – quality wood material used by VIP Construction" },
-          { src: wood2, alt: "Teak wood blocks – durable wood material for construction" },
-          { src: wood3, alt: "Wooden planks and beams – strong wood material for structural use" },
-        ],
-      },
-    ],
-  },
 ];
 
 export default materialCategories;

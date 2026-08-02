@@ -111,7 +111,7 @@ export default function Footer() {
 
             <div className="space-y-3 mt-3">
               <div className="space-y-1">
-                <p className="font-bold text-secondary">Udumalpet Branch</p>
+                <p className="font-bold text-secondary">Udumalpet Branch, <span className="text-gray-500 ml-1">Main Branch</span></p>
                 <span>
                   8, Durairam layout, S.V Mill (P.O), Udumalpet, Tiruppur Dist –
                   642128.
@@ -159,10 +159,10 @@ export default function Footer() {
                 <FaEnvelope className="text-amber-400 text-lg flex-shrink-0" />
                 <span>
                   <Link
-                    to="mailto:vipconstruction.14@gmail.com"
+                    to="mailto:vipconstruction.13@gmail.com"
                     className="hover:text-amber-400 transition min-w-0 break-all"
                   >
-                    vipconstruction.14@gmail.com
+                    vipconstruction.13@gmail.com
                   </Link>
                 </span>
               </div>

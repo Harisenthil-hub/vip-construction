@@ -23,14 +23,14 @@ export function TopBar() {
               className="flex items-center text-wrap gap-1 hover:text-white"
             >
               <FaPhoneAlt size={15} className="text-secondary inline" />
-              <span>+91 9080273030</span>
+              <span>+91 9080-27-3030</span>
             </Link>
             <Link
-              to="mailto:vipconstruction.14@gmail.com"
+              to="mailto:vipconstruction.13@gmail.com"
               className="flex items-center gap-1 hover:text-white"
             >
               <MdEmail size={19} className="text-secondary inline" />
-              <span>vipconstruction.14@gmail.com</span>
+              <span>vipconstruction.13@gmail.com</span>
             </Link>
             <div className="flex items-center gap-1">
               <FaClock size={17} className="text-secondary" />
