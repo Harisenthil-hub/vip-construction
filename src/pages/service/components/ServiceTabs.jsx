@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 import { services } from "../data/services";
 import TabNavigation from "./TabNavigation";
 import ServiceContent from "./ServiceContent";
@@ -35,8 +36,10 @@ export default function ServiceTabs() {
         </div>
 
         {/* Active Content */}
-        <div className="mt-6 sm:mt-8 rounded-2xl bg-white p-5 sm:p-8 shadow-lg border border-slate-200/80">
-          <ServiceContent service={activeService} />
+        <div className="mt-6 sm:mt-8 rounded-2xl bg-white p-5 sm:p-8 shadow-lg border border-slate-200/80 overflow-hidden">
+          <AnimatePresence mode="wait">
+            <ServiceContent key={activeService.id} service={activeService} />
+          </AnimatePresence>
         </div>
       </div>
     </section>

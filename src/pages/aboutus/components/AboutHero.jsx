@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import heroImage from "../images/hero.webp";
 import {
   ArrowRight,
@@ -27,12 +26,7 @@ export default function AboutHero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 lg:gap-10 items-center">
           {/* Left Column Text Content */}
-          <motion.div 
-            className="lg:col-span-7 w-full text-left"
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
+          <div className="lg:col-span-7 w-full text-left">
             {/* Category Tag */}
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] sm:text-xs font-medium uppercase tracking-wider text-slate-300 mb-4">
               <span className="w-1.5 h-1.5 rounded-full bg-[#F5A623]" />
@@ -97,15 +91,10 @@ export default function AboutHero() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Right Column Image Card */}
-          <motion.div 
-            className="lg:col-span-5 w-full mt-6 lg:mt-0"
-            initial={{ opacity: 0, x: 30, scale: 0.95 }}
-            animate={{ opacity: 1, x: 0, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
-          >
+          <div className="lg:col-span-5 w-full mt-6 lg:mt-0">
             <div className="group relative rounded-2xl overflow-hidden border border-white/10 shadow-xl hover:border-[#F5A623]/50 hover:shadow-2xl hover:shadow-[#F5A623]/10 transition-all duration-500 cursor-pointer">
               <img
                 src={heroImage}
@@ -128,7 +117,7 @@ export default function AboutHero() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

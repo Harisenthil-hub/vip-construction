@@ -18,12 +18,13 @@ export default function CTA() {
               LET'S BUILD TOGETHER
             </span>
 
-            <h2 className="h2-heading text-white">
-              Ready to Start<span className="text-[#F5A623]">Your Dream Project?</span>
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white tracking-tight leading-tight mb-2">
+              Ready to Start <span className="text-[#F5A623]">Your Dream Project?</span>
             </h2>
 
-            <p className="mt-2.5 text-sm md:text-base leading-relaxed text-slate-300 font-normal">
-Whether it's a home, shop, office, or renovation — our team is ready to help. Contact VIP Construction for a free site visit and honest quote.            </p>
+            <p className="mt-2.5 text-xs sm:text-sm lg:text-base leading-relaxed text-slate-300 font-normal">
+              Whether it's a home, shop, office, or renovation — our team is ready to help. Contact VIP Construction for a free site visit and honest quote.
+            </p>
           </div>
 
           {/* Right Column: Actions */}

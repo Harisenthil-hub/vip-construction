@@ -34,15 +34,13 @@ export default function Hero() {
             </div>
 
             {/* Compact H1 Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-[67px]  font-bold leading-[1.1] lg:leading-[1.2] text-white">
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-4">
               Complete <br className="hidden sm:inline" />
-              <span className="text-secondary block mt-1">
-                Building Solutions
-              </span>
+              <span className="text-[#F5A623]">Building Solutions</span>
             </h1>
 
             {/* Compact Paragraph */}
-            <p className="mt-6 text-base sm:text-lg lg:text-lg sm:leading-8 text-slate-300 font-normal leading-relaxed max-w-xl mb-6">
+            <p className="text-xs sm:text-sm lg:text-base text-slate-300 font-normal leading-relaxed max-w-xl mb-6">
               VIP Construction handles homes, shops, offices, and commercial buildings across Coimbatore, Udumalpet, Pollachi, Dharapuram, and Palani — with strong structures, honest pricing, and on-time handover.
             </p>
 

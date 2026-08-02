@@ -4,7 +4,10 @@ import ServiceGallery from "./ServiceGallery";
 
 export default function ServiceContent({ service }) {
   return (
-    <div className="grid lg:grid-cols-2 gap-6 lg:gap-10 items-center">
+    <div 
+      key={service.id}
+      className="grid lg:grid-cols-2 gap-6 lg:gap-10 items-center"
+    >
       {/* Left Column: Details */}
       <div className="flex flex-col h-full">
         {/* Tag */}

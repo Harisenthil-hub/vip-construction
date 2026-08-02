@@ -33,13 +33,7 @@ export default function AboutGallery() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <motion.div 
-          className="max-w-2xl mb-8 lg:mb-10"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.5 }}
-        >
+        <div className="max-w-2xl mb-8 lg:mb-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F5A623]/10 border border-[#F5A623]/30 text-[#F5A623] text-xs font-bold uppercase tracking-wider mb-3 shadow-xs">
             <Camera className="w-3.5 h-3.5 text-[#F5A623]" />
             <span>Project & Site Gallery</span>
@@ -52,7 +46,7 @@ export default function AboutGallery() {
           <p className="text-xs sm:text-sm lg:text-base text-slate-300 font-normal leading-relaxed mt-2">
             Explore our verified site execution, heavy equipment fleet, structural rebar audits, and completed residential & commercial projects across Tamil Nadu.
           </p>
-        </motion.div>
+        </div>
 
         {/* Primary Image Grid (First 6 on mobile, All on desktop) */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-4 lg:gap-6">
@@ -60,12 +54,8 @@ export default function AboutGallery() {
             const isExtraMobile = index >= 6;
 
             return (
-              <motion.div
+              <div
                 key={`main-${img.id}`}
-                initial={{ opacity: 0, scale: 0.94 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true, margin: "-30px" }}
-                transition={{ duration: 0.4, delay: (index % 6) * 0.05, ease: "easeOut" }}
                 className={`group relative bg-slate-900/80 border border-slate-700/60 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:border-[#F5A623]/70 hover:-translate-y-1 transition-all duration-500 aspect-[4/3] cursor-pointer ${
                   isExtraMobile ? 'hidden md:block' : 'block'
                 }`}
@@ -76,7 +66,7 @@ export default function AboutGallery() {
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                 />
-              </motion.div>
+              </div>
             );
           })}
         </div>
@@ -88,16 +78,12 @@ export default function AboutGallery() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
+              transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
               className="grid grid-cols-2 gap-2.5 mt-2.5 md:hidden overflow-hidden"
             >
-              {extraMobileImages.map((img, index) => (
-                <motion.div
+              {extraMobileImages.map((img) => (
+                <div
                   key={`extra-${img.id}`}
-                  initial={{ opacity: 0, y: 20, scale: 0.92 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  exit={{ opacity: 0, y: 15, scale: 0.92, transition: { duration: 0.25, delay: (extraMobileImages.length - 1 - index) * 0.03 } }}
-                  transition={{ duration: 0.35, delay: index * 0.04, ease: "easeOut" }}
                   className="group relative bg-slate-900/80 border border-slate-700/60 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:border-[#F5A623]/70 aspect-[4/3] cursor-pointer"
                 >
                   <img
@@ -106,7 +92,7 @@ export default function AboutGallery() {
                     loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                   />
-                </motion.div>
+                </div>
               ))}
             </motion.div>
           )}
@@ -120,12 +106,7 @@ export default function AboutGallery() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-transparent border border-[#F5A623]/40 hover:border-[#F5A623] text-[#F5A623] hover:text-amber-300 font-bold text-xs uppercase tracking-wider active:scale-95 transition-all duration-300 cursor-pointer"
             >
               <span>{showAllMobile ? "Show Less" : "View More Photos"}</span>
-              <motion.div
-                animate={{ rotate: showAllMobile ? 180 : 0 }}
-                transition={{ duration: 0.35, ease: "easeInOut" }}
-              >
-                <ChevronDown className="w-4 h-4" />
-              </motion.div>
+              <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${showAllMobile ? 'rotate-180' : ''}`} />
             </button>
           </div>
         )}

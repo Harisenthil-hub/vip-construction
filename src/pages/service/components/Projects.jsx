@@ -16,10 +16,10 @@ export default function Projects() {
           <span className="inline-block rounded-full bg-amber-500/20 px-3.5 py-1 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-amber-400 border border-amber-500/30">
             Portfolio
           </span>
-          <h2 className="h2-heading text-white mt-3 mb-2">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight leading-tight mt-3 mb-2">
             Featured Projects
           </h2>
-          <p className="mx-auto mt-2.5 max-w-xl text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
+          <p className="mx-auto mt-2.5 max-w-xl text-xs sm:text-sm lg:text-base text-slate-300 leading-relaxed font-normal">
             A look at our completed homes, shops, offices, and commercial buildings across Coimbatore, Udumalpet, Pollachi, Dharapuram, and Palani.
           </p>
         </div>

@@ -10,10 +10,24 @@ import commercial3 from "../images/commercial3.webp";
 import commercial4 from "../images/commercial4.webp";
 
 import architecture1 from "../images/architecture1.webp";
+import architecture2 from "../images/architecture2.webp";
+import architecture3 from "../images/architecture3.webp";
+import architecture4 from "../images/architecture4.webp";
+
 import interior1 from "../images/interior1.webp";
+import interior2 from "../images/interior2.webp";
+import interior3 from "../images/interior3.webp";
+import interior4 from "../images/interior4.webp";
+
 import renovation1 from "../images/renovation1.webp";
-import villa1 from "../images/villa1.webp";
-import villa3 from "../images/villa3.webp";
+import renovation2 from "../images/renovation2.webp";
+import renovation3 from "../images/renovation3.webp";
+import renovation4 from "../images/renovation4.webp";
+
+import bankloan1 from "../images/bankloan1.webp";
+import bankloan2 from "../images/bankloan2.webp";
+import bankloan3 from "../images/bankloan3.webp";
+import bankloan4 from "../images/bankloan4.webp";
 
 export const services = [
   {
@@ -66,9 +80,9 @@ export const services = [
       "Our architects blend aesthetics with engineering to create elegant, sustainable and innovative structures. We produce detailed 2D floor plans, 3D elevations, structural drawings and landscape designs that bring your vision to life on paper before the first brick is laid.",
     images: [
       architecture1,
-      residential1,
-      commercial4,
-      villa1,
+      architecture2,
+      architecture3,
+      architecture4,
     ],
     features: [
       "2D Floor Plans & Layouts",
@@ -87,9 +101,9 @@ export const services = [
       "We transform raw spaces into luxurious, comfortable and modern interiors using premium materials, bespoke furniture and timeless design principles. Our interior designers work closely with clients to craft spaces that reflect personality, maximise comfort and optimise functionality.",
     images: [
       interior1,
-      residential3,
-      residential4,
-      commercial2,
+      interior2,
+      interior3,
+      interior4,
     ],
     features: [
       "Modular Kitchen Design",
@@ -108,9 +122,9 @@ export const services = [
       "Breathe new life into ageing properties with our comprehensive renovation services. We renovate villas, apartments, offices and commercial buildings with modern finishes, structural improvements, energy-efficient upgrades and premium interior remodelling.",
     images: [
       renovation1,
-      residential3,
-      residential4,
-      villa3,
+      renovation2,
+      renovation3,
+      renovation4,
     ],
     features: [
       "Full Villa & Home Renovation",
@@ -129,10 +143,10 @@ export const services = [
     description:
       "Our team helps you connect with leading banks to arrange home and construction loans with ease. From documentation to loan processing, we provide complete assistance to ensure a smooth and hassle-free financing experience.",
     images: [
-      renovation1,
-      residential3,
-      residential4,
-      villa3,
+      bankloan1,
+      bankloan2,
+      bankloan3,
+      bankloan4,
     ],
     features: [
       "Home Loan Assistance",

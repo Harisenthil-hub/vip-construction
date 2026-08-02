@@ -10,10 +10,10 @@ export default function Testimonials() {
           <span className="inline-block px-3.5 py-1 rounded-full bg-amber-100 text-amber-800 font-bold uppercase tracking-wider text-[11px] sm:text-xs border border-amber-200">
             Testimonials
           </span>
-          <h2 className="h2-heading mt-3">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mt-3 mb-2">
             What Our Clients Say
           </h2>
-          <p className="mt-2.5 text-xs sm:text-sm text-slate-600 max-w-xl mx-auto leading-relaxed font-normal">
+          <p className="mt-2.5 text-xs sm:text-sm lg:text-base text-slate-600 max-w-xl mx-auto leading-relaxed font-normal">
             Customer satisfaction is at the heart of everything we do. Here's feedback from our clients.
           </p>
         </div>
