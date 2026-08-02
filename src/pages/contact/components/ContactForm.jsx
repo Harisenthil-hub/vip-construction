@@ -44,9 +44,9 @@ export default function ContactForm() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         {/* Heading */}
         <div className="text-center mb-10 lg:mb-14">
-          <p className="uppercase tracking-[4px] text-[#F5A623] font-semibold">
+          <span className="span-heading">
             Get In Touch
-          </p>
+          </span>
 
           <h2 className="h2-heading mt-3">Request A Consultation</h2>
 

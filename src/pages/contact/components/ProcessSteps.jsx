@@ -46,9 +46,9 @@ export default function ProcessSteps() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 relative">
         {/* Heading */}
         <div className="text-center mb-8">
-          <p className="uppercase tracking-[4px] text-secondary font-semibold text-sm">
+          <span className="span-heading">
             How We Work
-          </p>
+          </span>
 
           <h2 className="h2-heading mt-3">
             Our Construction Process

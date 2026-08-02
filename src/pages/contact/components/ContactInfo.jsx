@@ -39,11 +39,11 @@ export default function ContactInfo() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         {/* Heading */}
         <div className="text-center mb-12">
-          <p className="uppercase tracking-[4px] text-[#F5A623] font-semibold text-sm">
+          <span className="span-heading">
             Contact Information
-          </p>
+          </span>
 
-          <h2 className="h2-heading mt-3">
+          <h2 className="h2-heading">
             We're Here To Help
           </h2>
 
