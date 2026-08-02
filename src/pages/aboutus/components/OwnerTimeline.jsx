@@ -18,13 +18,12 @@ export default function OwnerTimeline() {
             Founder's Track Record
           </span>
 
-          <h2 className="h2-heading">
-            Tier-1 Corporate Engineering Roots
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0F172A] tracking-tight leading-tight mb-2">
+            Real Experience, Real Foundations
           </h2>
 
           <p className="text-xs sm:text-sm lg:text-base text-slate-600 font-normal leading-relaxed">
-            Honing field engineering expertise at India's premier infrastructure giants before founding VIP Construction.
-          </p>
+Before starting VIP Construction, our founder learned the trade at India's top construction companies — bringing that same discipline, skill, and honesty to every project we build today.          </p>
         </div>
 
         {/* 1 Row Grid for Owner Timeline */}

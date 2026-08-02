@@ -9,21 +9,23 @@ const awardIconMap = {
 
 export default function AwardsSection() {
   return (
-    <section id="awards" className="py-10 sm:py-14 lg:py-16 bg-white text-primary relative overflow-hidden">
+    <section
+      id="awards"
+      className="py-10 sm:py-14 lg:py-16 bg-white text-primary relative overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
         {/* Section Header */}
         <div className="max-w-xl mb-8 lg:mb-10">
-          <span className="span-heading">
-            Honors & Recognitions
-          </span>
+          <span className="span-heading">Honors & Recognitions</span>
 
           <h2 className="h2-heading">
-            Awards of <span className="text-[#F5A623]">Engineering Excellence</span>
+            Awards of{" "}
+            <span className="text-[#F5A623]">Engineering Excellence</span>
           </h2>
 
-          <p className="text-xs sm:text-sm lg:text-base text-gray-600 font-normal leading-relaxed">
-            Recognized by civil engineering associations and state federations for technical precision and safety.
+          <p className="text-xs sm:text-sm lg:text-base text-slate-300 font-normal leading-relaxed">
+            Recognized by civil engineering associations and state bodies for
+            quality, safety, and honest construction practices.
           </p>
         </div>
 
@@ -33,8 +35,8 @@ export default function AwardsSection() {
             const IconComp = awardIconMap[award.iconName] || Trophy;
 
             return (
-              <div 
-                key={award.id} 
+              <div
+                key={award.id}
                 className="bg-primary border border-slate-800 rounded-2xl p-3.5 sm:p-5 lg:p-6 shadow-md hover:border-[#F5A623]/60  hover:-translate-y-0.5 hover:shadow-xl hover:shadow-[#F5A623]/10 transition-all duration-300 flex flex-col justify-between gap-3 group cursor-pointer"
               >
                 <div>
@@ -52,7 +54,8 @@ export default function AwardsSection() {
                   </h3>
 
                   <p className="text-[10px] sm:text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
-                    {award.organization} • <span className="text-[#F5A623]">{award.badge}</span>
+                    {award.organization} •{" "}
+                    <span className="text-[#F5A623]">{award.badge}</span>
                   </p>
 
                   <p className="text-xs text-slate-300 font-normal leading-relaxed group-hover:text-white transition-colors">
@@ -61,17 +64,17 @@ export default function AwardsSection() {
                 </div>
 
                 <div className="pt-2.5 border-t border-slate-800/80 flex items-center justify-between">
-                  <span className="text-[10px] text-slate-400 font-medium">Recognized</span>
+                  <span className="text-[10px] text-slate-400 font-medium">
+                    Recognized
+                  </span>
                   <span className="px-2 py-0.5 rounded-full text-xs font-mono font-bold bg-white/10 text-slate-200 border border-white/10 group-hover:bg-[#F5A623] group-hover:text-[#0F172A] transition-colors">
                     {award.year}
                   </span>
                 </div>
-
               </div>
             );
           })}
         </div>
-
       </div>
     </section>
   );
