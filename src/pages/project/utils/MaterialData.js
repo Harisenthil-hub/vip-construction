@@ -1,50 +1,48 @@
-import cement1 from "../../../assets/project/material_gallery/cement/cement1.webp";
-import cement2 from "../../../assets/project/material_gallery/cement/cement2.webp";
-import cement3 from "../../../assets/project/material_gallery/cement/cement3.webp";
-import cement4 from "../../../assets/project/material_gallery/cement/cement4.webp";
+import cement1 from "../../../assets/project/material_gallery/cement/chettinad.webp";
+import cement2 from "../../../assets/project/material_gallery/cement/Dalmia.webp";
+import cement3 from "../../../assets/project/material_gallery/cement/Ramco.webp";
+import cement4 from "../../../assets/project/material_gallery/cement/Ultratech.webp";
 
-import steel1 from "../../../assets/project/material_gallery/steel/steel1.webp";
-import steel2 from "../../../assets/project/material_gallery/steel/steel2.webp";
-import steel3 from "../../../assets/project/material_gallery/steel/steel3.webp";
-import steel4 from "../../../assets/project/material_gallery/steel/steel4.webp";
-import steel5 from "../../../assets/project/material_gallery/steel/steel5.webp";
+import steel1 from "../../../assets/project/material_gallery/steel/JSW.webp";
+import steel2 from "../../../assets/project/material_gallery/steel/PRS.webp";
+import steel3 from "../../../assets/project/material_gallery/steel/Pulkit.webp";
+import steel4 from "../../../assets/project/material_gallery/steel/TATA.webp";
+import steel5 from "../../../assets/project/material_gallery/steel/Vizag.webp";
 
-import brick1 from "../../../assets/project/material_gallery/brick/brick1.webp";
-import brick2 from "../../../assets/project/material_gallery/brick/brick2.webp";
-import brick3 from "../../../assets/project/material_gallery/brick/brick3.webp";
+import brick1 from "../../../assets/project/material_gallery/brick/Fly_Ash.webp";
+import brick2 from "../../../assets/project/material_gallery/brick/Solid_Block.webp";
+import brick3 from "../../../assets/project/material_gallery/brick/Wirecut.webp";
 
-import wood1 from "../../../assets/project/material_gallery/wood/wood1.webp";
-import wood2 from "../../../assets/project/material_gallery/wood/wood2.webp";
-import wood3 from "../../../assets/project/material_gallery/wood/wood3.webp";
+import wood1 from "../../../assets/project/material_gallery/wood/Burma_Teak.webp";
+import wood2 from "../../../assets/project/material_gallery/wood/Nilambur_Teak.webp";
+import wood3 from "../../../assets/project/material_gallery/wood/Sal_Wood.webp";
 
-import tiles1 from "../../../assets/project/material_gallery/tiles/tiles1.webp";
-import tiles2 from "../../../assets/project/material_gallery/tiles/tiles2.webp";
-import tiles3 from "../../../assets/project/material_gallery/tiles/tiles3.webp";
+import tiles1 from "../../../assets/project/material_gallery/tiles/Anuj.webp";
+import tiles2 from "../../../assets/project/material_gallery/tiles/Kajaria.webp";
+import tiles3 from "../../../assets/project/material_gallery/tiles/Simpolo.webp";
 
-import electrical1 from "../../../assets/project/material_gallery/electrical/electrical1.webp";
-import electrical2 from "../../../assets/project/material_gallery/electrical/electrical2.webp";
-import electrical3 from "../../../assets/project/material_gallery/electrical/electrical3.webp";
-import electrical4 from "../../../assets/project/material_gallery/electrical/electrical4.webp";
-import electrical5 from "../../../assets/project/material_gallery/electrical/electrical5.webp";
-import electrical6 from "../../../assets/project/material_gallery/electrical/electrical6.webp";
+import electrical1 from "../../../assets/project/material_gallery/electrical/Crompton.webp";
+import electrical2 from "../../../assets/project/material_gallery/electrical/Finolex.webp";
+import electrical3 from "../../../assets/project/material_gallery/electrical/GM.webp";
+import electrical4 from "../../../assets/project/material_gallery/electrical/Legrand.webp";
+import electrical5 from "../../../assets/project/material_gallery/electrical/Phlips.webp";
+import electrical6 from "../../../assets/project/material_gallery/electrical/Wipro.webp";
 
-import plumbing1 from "../../../assets/project/material_gallery/plumbing/plumbing1.webp";
-import plumbing2 from "../../../assets/project/material_gallery/plumbing/plumbing2.webp";
-// import plumbing3 from "../../../assets/project/material_gallery/plumbing/plumbing3.webp";
+import plumbing1 from "../../../assets/project/material_gallery/plumbing/Ashirvad.webp";
+import plumbing2 from "../../../assets/project/material_gallery/plumbing/Supreme.webp";
 
-import paint1 from "../../../assets/project/material_gallery/paint/paint1.webp";
-import paint2 from "../../../assets/project/material_gallery/paint/paint2.webp";
-import paint3 from "../../../assets/project/material_gallery/paint/paint3.webp";
-import paint4 from "../../../assets/project/material_gallery/paint/paint4.webp";
+import paint1 from "../../../assets/project/material_gallery/paint/Asianpaint.webp";
+import paint2 from "../../../assets/project/material_gallery/paint/Berger.webp";
+import paint3 from "../../../assets/project/material_gallery/paint/Birla_Opus.webp";
+import paint4 from "../../../assets/project/material_gallery/paint/JSW.webp";
 
-import wire1 from "../../../assets/project/material_gallery/wire/wire1.webp";
-import wire2 from "../../../assets/project/material_gallery/wire/wire2.webp";
-// import wire3 from "../../../assets/project/material_gallery/wire/wire3.webp";
+import wire1 from "../../../assets/project/material_gallery/wire/Kundan_Cab.webp";
+import wire2 from "../../../assets/project/material_gallery/wire/RR_Kabel.webp";
 
-import sanfit1 from "../../../assets/project/material_gallery/sanitary_fitting/sanfit1.webp";
-import sanfit2 from "../../../assets/project/material_gallery/sanitary_fitting/sanfit2.webp";
-import sanfit3 from "../../../assets/project/material_gallery/sanitary_fitting/sanfit3.webp";
-import sanfit4 from "../../../assets/project/material_gallery/sanitary_fitting/sanfit4.webp";
+import sanfit1 from "../../../assets/project/material_gallery/sanitary_fitting/Hindware.webp";
+import sanfit2 from "../../../assets/project/material_gallery/sanitary_fitting/Jaguar.webp";
+import sanfit3 from "../../../assets/project/material_gallery/sanitary_fitting/Kohler.webp";
+import sanfit4 from "../../../assets/project/material_gallery/sanitary_fitting/Parryware.webp";
 
 const materialCategories = [
   {

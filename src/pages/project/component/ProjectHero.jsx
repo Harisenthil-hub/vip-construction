@@ -27,16 +27,12 @@ const ProjectHero = () => {
 
           {/* Heading */}
           <h1 className="mt-4 font-extrabold leading-tight text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-            Our <span className="text-secondary">Projects</span> Portfolio
+            Our <span className="text-secondary">Work</span> Our <span className="text-secondary">Pride</span>
           </h1>
 
           {/* Description */}
           <p className="mt-5 max-w-3xl text-white/80 leading-7 text-sm sm:text-base lg:text-lg">
-            Discover our portfolio of residential, commercial, and industrial
-            construction projects that showcase engineering excellence,
-            innovative design, superior craftsmanship, and timely delivery.
-            Every project reflects our commitment to quality, safety, and
-            customer satisfaction.
+            Houses, shops, and offices we've built across Coimbatore, Udumalpet, Pollachi, Dharapuram, and Palani. See the work for yourself before you decide.
           </p>
 
           {/* Stats */}

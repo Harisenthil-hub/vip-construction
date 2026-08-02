@@ -18,9 +18,7 @@ const MaterialGallery = () => {
           <div className="divider mb-6"></div>
 
           <p className="max-w-3xl mx-auto text-text-dark-muted leading-8">
-            We partner with trusted brands to ensure superior quality,
-            durability, and reliability in every construction project,
-            delivering strong foundations and long-lasting structures.
+           We use branded, tested materials on every site — proper cement and steel, checked before they go into your building.
           </p>
         </div>
 
