@@ -15,16 +15,15 @@ export default function CTA() {
           {/* Left Column: Text */}
           <div className="max-w-xl">
             <span className="inline-block rounded-full bg-[#F5A623] px-3.5 py-1 text-[11px] font-extrabold uppercase tracking-wider text-slate-950 mb-3 shadow-sm">
-              Let's Build Together
+              LET'S BUILD TOGETHER
             </span>
 
             <h2 className="h2-heading text-white">
-              Ready To Start <span className="text-[#F5A623]">Your Dream Project?</span>
+              Ready to Start<span className="text-[#F5A623]">Your Dream Project?</span>
             </h2>
 
             <p className="mt-2.5 text-sm md:text-base leading-relaxed text-slate-300 font-normal">
-              Whether you're planning a residential villa, commercial building, or architectural renovation, our team is ready. Contact VIP Construction for transparent estimations and site consultation.
-            </p>
+Whether it's a home, shop, office, or renovation — our team is ready to help. Contact VIP Construction for a free site visit and honest quote.            </p>
           </div>
 
           {/* Right Column: Actions */}

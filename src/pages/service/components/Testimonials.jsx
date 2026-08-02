@@ -47,14 +47,7 @@ export default function Testimonials() {
               </div>
 
               {/* User Identity */}
-              <div className="flex items-center gap-2 sm:gap-3 mt-3 sm:mt-5 pt-3 sm:pt-4 border-t border-slate-100">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-7 h-7 sm:w-10 sm:h-10 rounded-full object-cover border border-amber-500 shadow-sm flex-shrink-0"
-                />
+              <div className="mt-3 sm:mt-5 pt-3 sm:pt-4 border-t border-slate-100">
                 <div className="min-w-0">
                   <h3 className="font-bold text-[10px] sm:text-xs md:text-sm text-slate-900 leading-snug truncate">
                     {item.name}

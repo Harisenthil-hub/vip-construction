@@ -14,42 +14,42 @@ const steps = [
     icon: <FaComments />,
     title: "01. Consultation",
     description:
-      "Detailed discussion of your vision, requirements, budget and project timeline.",
+      "We discuss your vision, budget, and timeline before anything is planned.",
   },
   {
     id: "02",
     icon: <FaDraftingCompass />,
     title: "02. Planning",
     description:
-      "Complete site planning with architectural, structural, and 2D & 3D elevation designs.",
+      "Complete site planning with architectural, structural, and 2D & 3D design layouts.",
   },
   {
     id: "03",
     icon: <FaFileInvoiceDollar />,
     title: "03. Quotation",
     description:
-      "Customized quotations for every budget without compromising on quality or design.",
+      "A clear, customized quote for your budget — no compromise on quality or design.",
   },
   {
     id: "04",
     icon: <MdEngineering size={30} />,
     title: "04. Construction",
     description:
-      "Execution with precision, premium materials and strict safety protocols.",
+      "Work carried out with precision, quality materials, and strict safety standards.",
   },
   {
     id: "05",
     icon: <FaClipboardCheck />,
     title: "05. Quality Check",
     description:
-      "Inspections at critical milestones to ensure structural integrity.",
+      "Regular inspections at every stage to ensure a strong, safe structure.",
   },
   {
     id: "06",
     icon: <FaKey />,
     title: "06. Handover",
     description:
-      "Project handover with full documentation, warranties and ongoing support.",
+      "Final handover with complete documentation, warranty details, and ongoing support.",
   },
 ];
 
@@ -66,7 +66,7 @@ export default function Process() {
             STEP BY STEP PROCESS
           </span>
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 leading-tight">
-            We Execute Every Milestone Carefully
+            We Handle Every Step Carefully
           </h2>
         </div>
 

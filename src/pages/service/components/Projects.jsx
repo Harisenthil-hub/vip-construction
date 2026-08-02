@@ -1,8 +1,13 @@
-import { FaArrowRight, FaMapMarkerAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { projects } from "../data/projects";
+import { ArrowRight } from "lucide-react";
+import { projects } from "../../project/utils/ProjectData";
+import ProjectCard from "../../project/component/ProjectCard";
 
 export default function Projects() {
+  const completedProjects = projects
+    .filter((project) => project.status === "Completed")
+    .slice(0, 4);
+
   return (
     <section id="projects" className="bg-slate-900 py-10 sm:py-14 lg:py-16 text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -15,51 +20,26 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="mx-auto mt-2.5 max-w-xl text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
-            Explore our successfully completed residential, commercial, industrial, and interior projects.
+            A look at our completed homes, shops, offices, and commercial buildings across Coimbatore, Udumalpet, Pollachi, Dharapuram, and Palani.
           </p>
         </div>
 
-        {/* Cards Grid */}
-        <div className="mt-8 sm:mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
-          {projects.map((project) => (
-            <div
-              key={project.id}
-              className="group overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-xl transition duration-300 flex flex-col justify-between"
-            >
-              {/* Image Container */}
-              <div className="relative overflow-hidden aspect-[4/3]">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  loading="lazy"
-                  decoding="async"
-                  className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-black/25 transition group-hover:bg-black/45" />
-                <span className="absolute left-2.5 top-2.5 sm:left-4 sm:top-4 rounded-full bg-amber-500 px-2 py-0.5 sm:px-3 sm:py-1 text-[9px] sm:text-xs font-bold text-slate-900 shadow-sm">
-                  {project.category}
-                </span>
-              </div>
-
-              {/* Card Details */}
-              <div className="p-3 sm:p-5 flex-grow flex flex-col justify-between">
-                <div>
-                  <h3 className="text-xs sm:text-base font-bold text-slate-900 line-clamp-1 sm:line-clamp-none">
-                    {project.title}
-                  </h3>
-                  <div className="mt-1 sm:mt-2 flex items-center gap-1.5 text-slate-500 text-[9px] sm:text-xs">
-                    <FaMapMarkerAlt className="text-amber-500 text-[10px] sm:text-xs" />
-                    <span className="truncate">{project.location}</span>
-                  </div>
-                </div>
-
-                <Link to="/project" className="mt-3 sm:mt-5 flex items-center gap-1.5 text-[9px] sm:text-xs font-bold text-amber-600 transition hover:gap-3.5 self-start active:scale-95 duration-200">
-                  View Project
-                  <FaArrowRight className="text-[8px] sm:text-xs" />
-                </Link>
-              </div>
-            </div>
+        {/* Cards Grid using Project Page Component */}
+        <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {completedProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
           ))}
+        </div>
+
+        {/* Common View All Projects Button */}
+        <div className="mt-10 sm:mt-12 text-center">
+          <Link
+            to="/project"
+            className="inline-flex items-center justify-center gap-2.5 rounded-full bg-amber-500 px-8 py-3.5 font-bold text-slate-950 shadow-md hover:shadow-lg transition duration-300 hover:bg-amber-400 active:scale-95 text-sm sm:text-base"
+          >
+            <span>View All Projects</span>
+            <ArrowRight size={18} />
+          </Link>
         </div>
       </div>
     </section>
