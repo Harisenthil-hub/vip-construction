@@ -10,13 +10,12 @@ export default function MissionVision() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="max-w-2xl mb-8 lg:mb-10">
-          <span className="span-heading">Guiding Principles</span>
-
+          <span className="span-heading">GUIDING PRINCIPLES</span>
           <h2 className="h2-heading">Our Mission & Vision</h2>
 
           <p className="text-xs sm:text-sm lg:text-base text-slate-600 font-normal leading-relaxed">
-            The core philosophy that directs every foundation we excavate and
-            layout we draw.
+            The core values that guide every project we build, from the ground
+            up.
           </p>
         </div>
 

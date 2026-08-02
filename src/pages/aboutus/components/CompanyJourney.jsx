@@ -25,7 +25,7 @@ export default function CompanyJourney() {
           </h2>
 
           <p className="text-xs sm:text-sm lg:text-base text-slate-600 font-normal leading-relaxed">
-            From founding VIP Construction in 2019 to scaling commercial engineering capacity and digital client tracking.
+            From founding VIP Construction in 2019 to growing into commercial projects and launching our digital client tracking platform.
           </p>
         </div>
 

@@ -30,22 +30,18 @@ export default function AboutHero() {
             {/* Category Tag */}
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] sm:text-xs font-medium uppercase tracking-wider text-slate-300 mb-4">
               <span className="w-1.5 h-1.5 rounded-full bg-[#F5A623]" />
-              <span>VIP Construction Services • Est. 2019</span>
+              <span>ABOUT VIP CONSTRUCTION • EST. 2019</span>
             </div>
 
             {/* Compact H1 Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-[67px]  font-bold leading-[1.1] lg:leading-[1.2] text-white">
-              Engineering Precision,
-              <br className="hidden sm:inline" />
-              <span className="text-secondary block mt-1">Building Legacy</span>
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-4">
+              Real Experience,<br className="hidden sm:inline" />
+              <span className="text-[#F5A623]">Honest Building</span>
             </h1>
 
             {/* Compact Paragraph */}
-            <p className="mt-6 text-base sm:text-lg lg:text-lg sm:leading-8 text-slate-300 font-normal leading-relaxed max-w-xl mb-6">
-              From Tier-1 corporate engineering foundations at L&T and TATA
-              Construction to founding VIP Construction in 2019 — we merge field
-              integrity, structural precision, and modern architecture into
-              enduring structures.
+            <p className="text-xs sm:text-sm lg:text-base text-slate-300 font-normal leading-relaxed max-w-xl mb-6">
+              Our founder worked at L&T and TATA Construction before starting VIP Construction in 2019 — bringing that same discipline and precision to every home and building we construct across Tamil Nadu.
             </p>
 
             {/* Action Buttons */}
