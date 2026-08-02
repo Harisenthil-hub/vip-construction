@@ -1,5 +1,6 @@
 import { vipInspiration } from "../data/aboutData";
 import { Quote, HardHat, ShieldCheck, Ruler, Compass } from "lucide-react";
+import onsiteImg from "../images/Onsite.webp";
 
 const pillarIcons = {
   HardHat,
@@ -35,7 +36,7 @@ export default function VipInspiration() {
           <div className="lg:col-span-5 w-full flex flex-col">
             <div className="group relative rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:border-[#F5A623]/60 hover:-translate-y-1 transition-all duration-500 h-full min-h-[220px] sm:min-h-[280px] lg:min-h-[360px] cursor-pointer">
               <img
-                src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?q=80&w=2070&auto=format&fit=crop"
+                src={onsiteImg}
                 alt="VIP Construction Operations on site"
                 className="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-700 ease-out"
               />
