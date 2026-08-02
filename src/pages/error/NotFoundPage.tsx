@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './NotFoundPage.css';
 
 /* ─────────────────────────────────────────────────────────────
@@ -233,15 +234,15 @@ export default function NotFoundPage() {
 
             {/* Horizontal Text Links */}
             <div className="quick-links-row">
-              <a href="/" className="link-item">Home</a>
+              <Link to="/" className="link-item">Home</Link>
               <span className="link-separator">•</span>
-              <a href="/project" className="link-item">Projects</a>
+              <Link to="/project" className="link-item">Projects</Link>
               <span className="link-separator">•</span>
-              <a href="/service" className="link-item">Services</a>
+              <Link to="/service" className="link-item">Services</Link>
               <span className="link-separator">•</span>
-              <a href="/about-us" className="link-item">About Us</a>
+              <Link to="/about-us" className="link-item">About Us</Link>
               <span className="link-separator">•</span>
-              <a href="/contact" className="link-item">Contact Us</a>
+              <Link to="/contact" className="link-item">Contact Us</Link>
             </div>
           </div>
         </main>
@@ -255,14 +256,26 @@ export default function NotFoundPage() {
           {/* Updated Social Icons: Facebook, Instagram, YouTube */}
           <div className="footer-socials">
             {/* Facebook */}
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-icon" title="Facebook">
+            <a
+              href="https://www.facebook.com/share/1DGh2xRqHR/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+              title="Facebook"
+            >
               <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
               </svg>
             </a>
 
             {/* Instagram */}
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="social-icon" title="Instagram">
+            <a
+              href="https://www.instagram.com/vipconstruction_udumalpet?utm_source=qr&igsh=aDhjbGI4ZW1yamw2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+              title="Instagram"
+            >
               <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" strokeWidth="2" />
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" strokeWidth="2" />
@@ -271,7 +284,13 @@ export default function NotFoundPage() {
             </a>
 
             {/* YouTube */}
-            <a href="https://youtube.com" target="_blank" rel="noreferrer" className="social-icon" title="YouTube">
+            <a
+              href="https://www.youtube.com/@vipconstruction_offical"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+              title="YouTube"
+            >
               <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
               </svg>
