@@ -9,20 +9,20 @@ const awardIconMap = {
 
 export default function AwardsSection() {
   return (
-    <section id="awards" className="py-10 sm:py-14 lg:py-16 bg-[#0F172A] text-white relative overflow-hidden">
+    <section id="awards" className="py-10 sm:py-14 lg:py-16 bg-white text-primary relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="max-w-xl mb-8 lg:mb-10">
-          <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#F5A623] mb-1 block">
+          <span className="span-heading">
             Honors & Recognitions
           </span>
 
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white tracking-tight leading-tight mb-2">
+          <h2 className="h2-heading">
             Awards of <span className="text-[#F5A623]">Engineering Excellence</span>
           </h2>
 
-          <p className="text-xs sm:text-sm lg:text-base text-slate-300 font-normal leading-relaxed">
+          <p className="text-xs sm:text-sm lg:text-base text-gray-600 font-normal leading-relaxed">
             Recognized by civil engineering associations and state federations for technical precision and safety.
           </p>
         </div>
@@ -35,7 +35,7 @@ export default function AwardsSection() {
             return (
               <div 
                 key={award.id} 
-                className="bg-slate-900/60 border border-slate-800 rounded-2xl p-3.5 sm:p-5 lg:p-6 shadow-md hover:border-[#F5A623]/60 hover:bg-slate-800/90 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-[#F5A623]/10 transition-all duration-300 flex flex-col justify-between gap-3 group cursor-pointer"
+                className="bg-primary border border-slate-800 rounded-2xl p-3.5 sm:p-5 lg:p-6 shadow-md hover:border-[#F5A623]/60  hover:-translate-y-0.5 hover:shadow-xl hover:shadow-[#F5A623]/10 transition-all duration-300 flex flex-col justify-between gap-3 group cursor-pointer"
               >
                 <div>
                   <div className="flex items-center justify-between mb-3">

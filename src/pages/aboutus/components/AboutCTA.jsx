@@ -20,7 +20,7 @@ export default function AboutCTA() {
           
           {/* Left Text */}
           <div className="lg:col-span-8">
-            <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#F5A623] mb-2 block">
+            <span className="text-[11px] text-base lg:text-lg font-bold uppercase tracking-wider text-[#F5A623] mb-2 block">
               Ready to Build Your Dream Project?
             </span>
 
@@ -40,7 +40,7 @@ export default function AboutCTA() {
               className="h-11 px-5 rounded-xl bg-[#F5A623] text-[#0F172A] font-bold text-xs sm:text-sm inline-flex items-center gap-2 hover:bg-[#e0941f] hover:scale-105 hover:shadow-lg hover:shadow-[#F5A623]/25 active:scale-95 transition-all duration-300 w-full sm:w-auto justify-center group/btn"
             >
               <CalendarDays className="w-4 h-4 text-[#0F172A]" />
-              <span>Schedule Site Meeting</span>
+              <span>Schedule Call</span>
               <ArrowRight className="w-4 h-4 text-[#0F172A] group-hover/btn:translate-x-1 transition-transform" />
             </Link>
           </div>
