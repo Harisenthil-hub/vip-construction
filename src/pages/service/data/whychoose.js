@@ -11,21 +11,21 @@ export const whyChoose = [
     icon: FaAward,
     title: "Premium Quality",
     description:
-      "We use high-quality materials and follow strict quality standards for every project.",
+      "We use high-quality materials and follow strict standards on every project.",
   },
   {
     id: 2,
     icon: FaShieldAlt,
     title: "Trusted & Reliable",
     description:
-      "Built on trust, transparency, and a commitment to customer satisfaction.",
+      "Built on honesty, clear communication, and real care for every client.",
   },
   {
     id: 3,
     icon: FaUsers,
     title: "Expert Team",
     description:
-      "Our architects, engineers, and skilled labourers bring over 15 years of experience to deliver exceptional results.",
+      "Our architects, engineers, and skilled workers bring 7+ years of experience to every project.",
   },
   {
     id: 4,

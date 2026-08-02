@@ -1,38 +1,30 @@
-import client1 from "../images/client1.webp";
-import client2 from "../images/client2.webp";
-import client3 from "../images/client3.webp";
-
 export const testimonials = [
   {
     id: 1,
-    name: "Ramesh Kumar",
-    role: "Villa Owner, Coimbatore",
-    image: client1,
+    name: "Karthik Raja",
+    role: "Business Owner, Coimbatore",
     review:
-      "VIP Construction delivered our dream home exactly on schedule. The quality of work and attention to detail truly exceeded our expectations. Highly recommended.",
+      "VIP handled our office construction in Coimbatore end to end, including approvals. Strong structure, skilled engineers, and zero unnecessary delays.",
   },
   {
     id: 2,
-    name: "Arun Prakash",
-    role: "Business Owner, Tiruppur",
-    image: client2,
+    name: "Saravanan Muthu",
+    role: "Business Owner, Pollachi",
     review:
-      "Excellent planning, fully transparent pricing and a truly professional team throughout. Our office complex was handed over two weeks ahead of schedule.",
+      "Our showroom in Pollachi was completed ahead of schedule with excellent finishing. The team stayed professional and communication was clear throughout.",
   },
   {
     id: 3,
-    name: "Priya Sharma",
-    role: "Home Owner, Pollachi",
-    image: client3,
+    name: "Priya Lakshmi",
+    role: "Home Owner, Udumalpet",
     review:
-      "Professional engineers, premium quality materials and outstanding customer service from start to finish. Our new home is exactly what we dreamed of.",
+      "VIP Construction built our new home in Udumalpet exactly as promised. Quality work, honest pricing, and finished right on time. Highly recommended team.",
   },
   {
     id: 4,
-    name: "Suresh Kumar",
-    role: "Project Manager, Erode",
-    image: client1,
+    name: "Vijayakumar Selvam",
+    role: "Home Owner, Dharapuram",
     review:
-      "Outstanding structural design, exceptionally skilled engineers and a completely stress-free execution. They are our go-to construction partner.",
+      "We renovated our old house in Dharapuram with VIP, and it now looks brand new. No delays, no hidden costs, just clean and reliable work from start.",
   },
 ];

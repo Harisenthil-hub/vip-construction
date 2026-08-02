@@ -17,7 +17,7 @@ export default function FAQ() {
             Frequently Asked Questions
           </h2>
           <p className="mx-auto mt-2.5 max-w-xl text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-            Find answers to common questions about our construction services, estimations, and site process.
+            Find answers to common questions about our construction services, pricing, and site process.
           </p>
         </div>
 

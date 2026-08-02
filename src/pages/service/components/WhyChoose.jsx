@@ -13,7 +13,7 @@ export default function WhyChoose() {
             Our Quality Commitment
           </h2>
           <p className="mt-2.5 text-xs md:text-sm text-slate-600 leading-relaxed max-w-xl mx-auto font-normal">
-            Dedicated to providing the highest standards of structural safety, transparent estimations, and field supervision.
+            Committed to strong structural safety, honest pricing, and hands-on site supervision on every project.
           </p>
         </div>
 

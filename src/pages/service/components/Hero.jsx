@@ -35,7 +35,7 @@ export default function Hero() {
 
             {/* Compact H1 Heading */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-[67px]  font-bold leading-[1.1] lg:leading-[1.2] text-white">
-              Comprehensive <br className="hidden sm:inline" />
+              Complete <br className="hidden sm:inline" />
               <span className="text-secondary block mt-1">
                 Building Solutions
               </span>
@@ -43,10 +43,7 @@ export default function Hero() {
 
             {/* Compact Paragraph */}
             <p className="mt-6 text-base sm:text-lg lg:text-lg sm:leading-8 text-slate-300 font-normal leading-relaxed max-w-xl mb-6">
-              VIP Construction delivers turnkey residential, commercial,
-              industrial, and architectural engineering across Tamil Nadu.
-              Structural integrity, transparent pricing, and 100% on-time
-              handover.
+              VIP Construction handles homes, shops, offices, and commercial buildings across Coimbatore, Udumalpet, Pollachi, Dharapuram, and Palani — with strong structures, honest pricing, and on-time handover.
             </p>
 
             {/* Action Buttons */}
@@ -124,7 +121,7 @@ export default function Hero() {
                     VIP Construction Services
                   </p>
                   <p className="text-[10px] md:text-[11px] text-slate-300">
-                    Turnkey & Commercial Execution
+                    Homes, Offices & Commercial Buildings
                   </p>
                 </div>
               </div>
