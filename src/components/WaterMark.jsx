@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import genkitLogo from "../assets/photos/watermark/transparent-white-text-cutted-logo.webp";
 
 export function WaterMark() {
   return (
     <div className="flex lg:justify-end px-4 lg:px-0 mr-10 mb-5">
-      <a
-        href="https://genkit.in"
+      <Link
+        to="https://genkit.in"
         target="_blank"
         rel="noopener noreferrer"
         className=" group inline-flex flex-col items-start "
@@ -23,7 +24,7 @@ export function WaterMark() {
           alt="Genkit Webservices"
           className=" w-32 h-auto object-contain"
         />
-      </a>
+      </Link>
     </div>
   );
 }

@@ -76,12 +76,12 @@ export default function ContactInfo() {
                 Call Our Site Office
               </h3>
 
-              <a
-                href="tel:+919080273030"
+              <Link
+                to="tel:+919080273030"
                 className="block text-2xl sm:text-3xl font-bold text-white hover:text-[#F5A623] transition break-words"
               >
                 +91 90802 73030
-              </a>
+              </Link>
 
               <p className="mt-4 text-gray-400 leading-7 max-w-sm">
                 We're available for project discussions during working hours, or
@@ -118,12 +118,12 @@ export default function ContactInfo() {
                 </h3>
 
                 {item.link.startsWith("mailto") ? (
-                  <a
-                    href={item.link}
+                  <Link
+                    to={item.link}
                     className="block mt-2 font-semibold text-[#1A1F2E] hover:text-[#F5A623] transition break-words text-sm sm:text-base"
                   >
                     {item.primary}
-                  </a>
+                  </Link>
                 ) : (
                   <p className="mt-2 font-semibold text-[#1A1F2E] text-sm sm:text-base">
                     {item.primary}
@@ -134,8 +134,8 @@ export default function ContactInfo() {
                   {item.secondary}
                 </p>
 
-                <a
-                  href={item.link}
+                <Link
+                  to={item.link}
                   target={
                     item.action === "Get Directions" ? "_blank" : undefined
                   }
@@ -148,7 +148,7 @@ export default function ContactInfo() {
                 >
                   {item.action}
                   <FaArrowRight size={12} />
-                </a>
+                </Link>
               </div>
             ))}
           </div>

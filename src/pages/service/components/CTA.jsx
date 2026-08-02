@@ -37,13 +37,13 @@ export default function CTA() {
               <FaArrowRight className="text-xs" />
             </Link>
 
-            <a
-              href="tel:+919876543210"
+            <Link
+              to="tel:+919876543210"
               className="inline-flex w-full justify-center md:w-auto items-center gap-2 rounded-full border border-white/20 px-6 py-3.5 font-bold text-white transition duration-300 hover:bg-white hover:text-slate-900 active:scale-95 text-sm"
             >
               <FaPhoneAlt className="text-xs" />
               Call Now
-            </a>
+            </Link>
           </div>
 
         </div>
