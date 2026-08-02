@@ -1,7 +1,7 @@
-import cement1 from "../../../assets/project/material_gallery/cement/chettinad.webp";
+import cement1 from "../../../assets/project/material_gallery/cement/Chettinad.webp";
 import cement2 from "../../../assets/project/material_gallery/cement/Dalmia.webp";
 import cement3 from "../../../assets/project/material_gallery/cement/Ramco.webp";
-import cement4 from "../../../assets/project/material_gallery/cement/Ultratech.webp";
+import cement4 from "../../../assets/project/material_gallery/cement/UltraTech.webp";
 
 import steel1 from "../../../assets/project/material_gallery/steel/JSW.webp";
 import steel2 from "../../../assets/project/material_gallery/steel/PRS.webp";
