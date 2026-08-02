@@ -69,7 +69,7 @@ const ProjectGallery = () => {
     <section
       ref={galleryRef}
       id="project-gallery"
-      className="pt-10 pb-20 bg-surface"
+      className="pt-8 pb-8 bg-surface"
     >
       <div className="max-w-7xl mx-auto px-6">
 
