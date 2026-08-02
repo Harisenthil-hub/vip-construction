@@ -57,15 +57,17 @@ export default function Process() {
   return (
     <section
       id="process"
-      className="bg-slate-50 py-10 md:py-10 border-t border-slate-200/50"
+      className="bg-slate-50 py-10 sm:py-14 lg:py-16 border-t border-slate-200/50"
     >
-      <div className="max-w-6xl mx-auto px-7">
-        {/* Left-Aligned Heading (Dribbble Style) */}
-        <div className="text-left mb-12 md:mb-15px max-w-xl">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Left-Aligned Heading */}
+        <div 
+          className="text-left mb-8 lg:mb-10 max-w-xl"
+        >
           <span className="span-heading">
             STEP BY STEP PROCESS
           </span>
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
             We Handle Every Step Carefully
           </h2>
         </div>

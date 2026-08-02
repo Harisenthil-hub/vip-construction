@@ -5,14 +5,16 @@ export default function WhyChoose() {
     <section className="bg-white py-10 sm:py-14 lg:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="mx-auto max-w-2xl text-center">
+        <div 
+          className="mx-auto max-w-2xl text-center"
+        >
           <span className="inline-block rounded-full bg-amber-100 px-3.5 py-1 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-amber-800 border border-amber-200">
             Why Choose Us
           </span>
-          <h2 className="h2-heading mt-3 mb-2">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mt-3 mb-2">
             Our Quality Commitment
           </h2>
-          <p className="mt-2.5 text-xs md:text-sm text-slate-600 leading-relaxed max-w-xl mx-auto font-normal">
+          <p className="mt-2.5 text-xs sm:text-sm lg:text-base text-slate-600 leading-relaxed max-w-xl mx-auto font-normal">
             Committed to strong structural safety, honest pricing, and hands-on site supervision on every project.
           </p>
         </div>

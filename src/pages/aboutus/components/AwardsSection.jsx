@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { awardsList } from "../data/aboutData";
 import { Trophy, Award, Medal } from "lucide-react";
 
@@ -16,16 +15,10 @@ export default function AwardsSection() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <motion.div 
-          className="max-w-xl mb-8 lg:mb-10"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.5 }}
-        >
+        <div className="max-w-xl mb-8 lg:mb-10">
           <span className="span-heading">Honors & Recognitions</span>
 
-          <h2 className="h2-heading">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight leading-tight mb-2">
             Awards of{" "}
             <span className="text-[#F5A623]">Engineering Excellence</span>
           </h2>
@@ -34,20 +27,16 @@ export default function AwardsSection() {
             Recognized by civil engineering associations and state bodies for
             quality, safety, and honest construction practices.
           </p>
-        </motion.div>
+        </div>
 
         {/* 1 Row Grid for Awards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 lg:gap-6 items-stretch">
-          {awardsList.map((award, idx) => {
+          {awardsList.map((award) => {
             const IconComp = awardIconMap[award.iconName] || Trophy;
 
             return (
-              <motion.div
+              <div
                 key={award.id}
-                initial={{ opacity: 0, y: 30, scale: 0.96 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.5, delay: idx * 0.1, ease: "easeOut" }}
                 className="bg-primary border border-slate-800 rounded-2xl p-3.5 sm:p-5 lg:p-6 shadow-md hover:border-[#F5A623]/60  hover:-translate-y-0.5 hover:shadow-xl hover:shadow-[#F5A623]/10 transition-all duration-300 flex flex-col justify-between gap-3 group cursor-pointer"
               >
                 <div>
@@ -82,7 +71,7 @@ export default function AwardsSection() {
                     {award.year}
                   </span>
                 </div>
-              </motion.div>
+              </div>
             );
           })}
         </div>

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import { ArrowRight, CalendarDays } from "lucide-react";
 
 export default function AboutCTA() {
@@ -17,11 +16,7 @@ export default function AboutCTA() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <motion.div 
-          initial={{ opacity: 0, y: 30, scale: 0.98 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          viewport={{ once: true, margin: "-40px" }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+        <div 
           className="bg-slate-900/80 border border-slate-800 hover:border-[#F5A623]/50 rounded-2xl p-5 sm:p-6 lg:p-8 text-left grid grid-cols-1 lg:grid-cols-12 gap-6 items-center shadow-xl hover:shadow-2xl hover:shadow-[#F5A623]/10 transition-all duration-500 relative overflow-hidden group"
         >
           
@@ -32,11 +27,12 @@ export default function AboutCTA() {
             </span>
 
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white tracking-tight leading-tight mb-2 group-hover:text-amber-100 transition-colors">
-              Let's Turn Your<span className="text-[#F5A623]">Vision Into Reality</span>
+              Let's Turn Your <span className="text-[#F5A623]">Vision Into Reality</span>
             </h2>
 
             <p className="text-xs sm:text-sm lg:text-base text-slate-300 font-normal leading-relaxed max-w-xl">
-              Partner with VIP Construction for expert engineering, honest pricing, and dedicated on-site supervision — from start to finish.            </p>
+              Partner with VIP Construction for expert engineering, honest pricing, and dedicated on-site supervision — from start to finish.
+            </p>
           </div>
 
           {/* Right Action Button */}
@@ -44,7 +40,6 @@ export default function AboutCTA() {
             <Link
               to="/contact"
               state={{ scrollTo: 'contact-form' }}
-
               className="h-11 px-5 rounded-xl bg-[#F5A623] text-[#0F172A] font-bold text-xs sm:text-sm inline-flex items-center gap-2 hover:bg-[#e0941f] hover:scale-105 hover:shadow-lg hover:shadow-[#F5A623]/25 active:scale-95 transition-all duration-300 w-full sm:w-auto justify-center group/btn"
             >
               <CalendarDays className="w-4 h-4 text-[#0F172A]" />
@@ -53,7 +48,7 @@ export default function AboutCTA() {
             </Link>
           </div>
 
-        </motion.div>
+        </div>
 
       </div>
     </section>
