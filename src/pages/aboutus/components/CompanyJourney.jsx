@@ -17,15 +17,15 @@ export default function CompanyJourney() {
         {/* Section Header */}
         <div className="max-w-2xl mb-8 lg:mb-12">
           <span className="text-xs font-bold uppercase tracking-wider text-[#F5A623] mb-1.5 block">
-            Company Roadmap • 2019 to Present
+            COMPANY ROADMAP • 2019 TO PRESENT
           </span>
 
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0F172A] tracking-tight leading-tight mb-2">
-            Building Our Legacy Step by Step
+            Building Our Legacy, Step by Step
           </h2>
 
           <p className="text-xs sm:text-sm lg:text-base text-slate-600 font-normal leading-relaxed">
-            From founding VIP Construction in 2019 to scaling commercial engineering capacity and digital client tracking.
+            From founding VIP Construction in 2019 to growing into commercial projects and launching our digital client tracking platform.
           </p>
         </div>
 

@@ -21,18 +21,18 @@ export default function AboutHero() {
             {/* Small Category Tag */}
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] sm:text-xs font-medium uppercase tracking-wider text-slate-300 mb-4">
               <span className="w-1.5 h-1.5 rounded-full bg-[#F5A623]" />
-              <span>About VIP Construction • Est. 2019</span>
+              <span>ABOUT VIP CONSTRUCTION • EST. 2019</span>
             </div>
 
             {/* Compact H1 Heading */}
             <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white mb-4">
-              Engineering Precision, <br className="hidden sm:inline" />
-              <span className="text-[#F5A623]">Building Legacy</span>
+              Real Experience,<br className="hidden sm:inline" />
+              <span className="text-[#F5A623]">Honest Building</span>
             </h1>
 
             {/* Compact Paragraph */}
             <p className="text-xs sm:text-sm lg:text-base text-slate-300 font-normal leading-relaxed max-w-xl mb-6">
-              From Tier-1 corporate engineering foundations at L&T and TATA Construction to founding VIP Construction in 2019 — we merge field integrity, structural precision, and modern architecture into enduring structures.
+              Our founder worked at L&T and TATA Construction before starting VIP Construction in 2019 — bringing that same discipline and precision to every home and building we construct across Tamil Nadu.
             </p>
 
             {/* CTA Button */}
@@ -64,7 +64,7 @@ export default function AboutHero() {
                   <Building2 className="w-3.5 h-3.5 text-[#F5A623]" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-white leading-none group-hover:text-[#F5A623] transition-colors">150+ Sites</p>
+                  <p className="text-xs font-bold text-white leading-none group-hover:text-[#F5A623] transition-colors">100+ Sites</p>
                   <p className="text-[10px] text-slate-400 mt-0.5">Handed Over</p>
                 </div>
               </div>

@@ -23,7 +23,7 @@ export default function AwardsSection() {
           </h2>
 
           <p className="text-xs sm:text-sm lg:text-base text-slate-300 font-normal leading-relaxed">
-            Recognized by civil engineering associations and state federations for technical precision and safety.
+            Recognized by civil engineering associations and state bodies for quality, safety, and honest construction practices.
           </p>
         </div>
 

@@ -25,12 +25,11 @@ export default function AboutCTA() {
             </span>
 
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white tracking-tight leading-tight mb-2 group-hover:text-amber-100 transition-colors">
-              Let's Engineer Your Vision into <span className="text-[#F5A623]">Rock-Solid Reality</span>
+              Let's Turn Your<span className="text-[#F5A623]">Vision Into Reality</span>
             </h2>
 
             <p className="text-xs sm:text-sm lg:text-base text-slate-300 font-normal leading-relaxed max-w-xl">
-              Partner with VIP Construction for corporate-grade engineering precision, transparent estimation, and dedicated on-site supervision.
-            </p>
+              Partner with VIP Construction for expert engineering, honest pricing, and dedicated on-site supervision — from start to finish.            </p>
           </div>
 
           {/* Right Action Button */}
