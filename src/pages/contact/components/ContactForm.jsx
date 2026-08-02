@@ -2,7 +2,6 @@ import { useState } from "react";
 import { LuSend } from "react-icons/lu";
 
 export default function ContactForm() {
-  
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "",
@@ -44,15 +43,13 @@ export default function ContactForm() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         {/* Heading */}
         <div className="text-center mb-10 lg:mb-14">
-          <span className="span-heading">
-            Get In Touch
-          </span>
+          <span className="span-heading">Get In Touch</span>
 
           <h2 className="h2-heading mt-3">Request A Consultation</h2>
 
           <p className="text-[#666666] mt-5 max-w-3xl mx-auto leading-8">
-            We'd love to hear about your construction project. Fill out the form
-            below and our experts will get back to you within 24 hours.
+            Tell us about your project, and our team will get back to you within
+            24 hours.
           </p>
         </div>
 

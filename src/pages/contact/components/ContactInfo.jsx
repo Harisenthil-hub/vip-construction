@@ -12,7 +12,7 @@ const cards = [
     icon: <FaEnvelope />,
     title: "Email Us",
     primary: "vipconstruction.14@gmail.com",
-    secondary: "We'll respond within 24 hours.",
+    secondary: "We reply within 24 hours.",
     link: "mailto:vipconstruction.14@gmail.com",
     action: "Send Email",
   },
@@ -28,7 +28,7 @@ const cards = [
     icon: <FaClock />,
     title: "Working Hours",
     primary: "Mon – Sat · 9 AM – 8 PM",
-    secondary: "Book a slot and we'll block time for you.",
+    secondary: "Book a slot and we'll block time just for you.",
     link: "#contact-form",
     action: "Book Consultation",
   },
@@ -40,17 +40,13 @@ export default function ContactInfo() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         {/* Heading */}
         <div className="text-center mb-12">
-          <span className="span-heading">
-            Contact Information
-          </span>
+          <span className="span-heading">Contact Information</span>
 
-          <h2 className="h2-heading">
-            We're Here To Help
-          </h2>
+          <h2 className="h2-heading">We're Here To Help</h2>
 
           <p className="mt-5 text-gray-600 max-w-3xl mx-auto leading-8">
-            Reach out to our team through any of the following channels. We'd be
-            happy to discuss your project and answer your questions.
+            Reach us anytime through the details below — we're happy to answer
+            your questions and talk through your project.
           </p>
         </div>
 
@@ -58,8 +54,6 @@ export default function ContactInfo() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
           {/* Featured "Call Us" panel */}
           <div className="lg:col-span-2 relative bg-primary rounded-2xl p-8 sm:p-10 flex flex-col justify-between overflow-hidden">
-
-            
             {/* Decorative amber glow */}
             <div className="absolute -top-16 -right-16 w-56 h-56 bg-[#F5A623]/20 rounded-full blur-3xl"></div>
 
@@ -84,8 +78,8 @@ export default function ContactInfo() {
               </Link>
 
               <p className="mt-4 text-gray-400 leading-7 max-w-sm">
-                We're available for project discussions during working hours, or
-                leave a message and we'll call you back the same day.
+                Available for project discussions during working hours, or leave
+                a message and we'll call you back the same day.
               </p>
             </div>
 
@@ -94,7 +88,7 @@ export default function ContactInfo() {
               className="relative mt-8 inline-flex w-fit items-center gap-2 bg-[#F5A623] text-[#1A1F2E] font-semibold px-6 py-3 rounded-full hover:gap-4 hover:bg-white transition-all duration-300"
             >
               Call Now
-              <FaArrowRight  />
+              <FaArrowRight />
             </Link>
           </div>
 

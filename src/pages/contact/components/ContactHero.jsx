@@ -1,7 +1,7 @@
 import { FaPhoneAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaFileAlt } from "react-icons/fa";
-import heroImg from '../assets/hero.webp'
+import heroImg from "../assets/hero.webp";
 
 const ContactHero = () => {
   return (
@@ -27,16 +27,14 @@ const ContactHero = () => {
         <div className="max-w-[750px]">
           {/* MAIN SEO HEADING */}
           <h1 className="font-bold text-white text-4xl leading-[1.1] sm:text-5xl lg:text-6xl xl:text-7xl lg:leading-[1.05] ">
-            Let's Build Your Dream Project
+            Let's Talk About Your Building
             <span className=" block text-secondary mt-1 ">Project</span>
           </h1>
 
           {/* DESCRIPTION */}
           <p className=" mt-6 max-w-[650px] text-slate-300 text-base leading-7 sm:text-lg sm:leading-8 lg:text-lg ">
-            Whether it's residential, commercial or industrial construction, our
-            experienced team is ready to transform your vision into reality.
-            Contact us today for a free consultation and let's build something
-            extraordinary.
+            House, shop, office, or renovation — tell us what you're planning.
+            Free site visit, honest quote, no pressure to sign.
           </p>
 
           {/* CTA BUTTONS */}
@@ -59,7 +57,6 @@ const ContactHero = () => {
               Contact Us
             </Link>
           </div>
-
         </div>
       </div>
     </section>

@@ -29,7 +29,8 @@ export default function CTA() {
         }
       }, 700);
     }
-  }),[location];
+  }),
+    [location];
 
   return (
     <section className="bg-primary py-10 lg:py-15 text-secondary">
@@ -41,15 +42,14 @@ export default function CTA() {
 
         {/* Description */}
         <p className="mt-6 max-w-3xl mx-auto text-sm lg:text-base leading-8 text-white">
-          Partner with experienced builders committed to quality, innovation,
-          and timely delivery. Let our experts guide you through every stage of
-          your construction journey.
+          Tell us what you're building — house, shop, or renovation — and we'll
+          guide you through every step, no pressure.
         </p>
 
         {/* Button */}
         <Link
-          to='/contact'
-          state={{ scrollTo: 'contact-form' }}
+          to="/contact"
+          state={{ scrollTo: "contact-form" }}
           className="mt-7 inline-flex items-center justify-center bg-[#F5A623] hover:bg-[#E09200] text-[#1A1F2E] font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:scale-101 cursor-pointer"
         >
           <FaUserTie className="inline mr-2" size={25} />
