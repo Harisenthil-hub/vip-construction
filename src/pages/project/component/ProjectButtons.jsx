@@ -1,37 +1,15 @@
-import { ChevronRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { FaPhoneAlt } from "react-icons/fa";
 
 const ProjectButtons = () => {
   return (
-    <div className="mt-12 flex flex-wrap gap-5">
-      <Link
-        to="/contact"
-        className="
-          group
-          border-2
-          border-white/50
-          hover:border-white
-          text-white
-          hover:bg-white
-          hover:text-primary
-          px-10
-          py-4
-          rounded-full
-          font-semibold
-          transition-all
-          duration-300
-          hover:scale-105
-          inline-flex
-          items-center
-          gap-2
-        "
+    <div className="mt-12">
+      <a
+        href="tel:+919080273030"
+        className="inline-flex items-center justify-center gap-2 border border-white/50 bg-black/10 hover:bg-white/10 text-white font-semibold px-6 py-3 rounded-md backdrop-blur-sm transition-colors duration-300"
       >
+        <FaPhoneAlt size={15} />
         Contact Us
-
-        <ChevronRight
-          className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
-        />
-      </Link>
+      </a>
     </div>
   );
 };

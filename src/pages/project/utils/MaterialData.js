@@ -1,50 +1,48 @@
-import cement1 from "../../../assets/project/material_gallery/cement/cement1.webp";
-import cement2 from "../../../assets/project/material_gallery/cement/cement2.webp";
-import cement3 from "../../../assets/project/material_gallery/cement/cement3.webp";
-import cement4 from "../../../assets/project/material_gallery/cement/cement4.webp";
+import cement1 from "../../../assets/project/material_gallery/cement/chettinad.webp";
+import cement2 from "../../../assets/project/material_gallery/cement/Dalmia.webp";
+import cement3 from "../../../assets/project/material_gallery/cement/Ramco.webp";
+import cement4 from "../../../assets/project/material_gallery/cement/Ultratech.webp";
 
-import steel1 from "../../../assets/project/material_gallery/steel/steel1.webp";
-import steel2 from "../../../assets/project/material_gallery/steel/steel2.webp";
-import steel3 from "../../../assets/project/material_gallery/steel/steel3.webp";
-import steel4 from "../../../assets/project/material_gallery/steel/steel4.webp";
-import steel5 from "../../../assets/project/material_gallery/steel/steel5.webp";
+import steel1 from "../../../assets/project/material_gallery/steel/JSW.webp";
+import steel2 from "../../../assets/project/material_gallery/steel/PRS.webp";
+import steel3 from "../../../assets/project/material_gallery/steel/Pulkit.webp";
+import steel4 from "../../../assets/project/material_gallery/steel/TATA.webp";
+import steel5 from "../../../assets/project/material_gallery/steel/Vizag.webp";
 
-import brick1 from "../../../assets/project/material_gallery/brick/brick1.webp";
-import brick2 from "../../../assets/project/material_gallery/brick/brick2.webp";
-import brick3 from "../../../assets/project/material_gallery/brick/brick3.webp";
+import brick1 from "../../../assets/project/material_gallery/brick/Fly_Ash.webp";
+import brick2 from "../../../assets/project/material_gallery/brick/Solid_Block.webp";
+import brick3 from "../../../assets/project/material_gallery/brick/Wirecut.webp";
 
-import wood1 from "../../../assets/project/material_gallery/wood/wood1.webp";
-import wood2 from "../../../assets/project/material_gallery/wood/wood2.webp";
-import wood3 from "../../../assets/project/material_gallery/wood/wood3.webp";
+import wood1 from "../../../assets/project/material_gallery/wood/Burma_Teak.webp";
+import wood2 from "../../../assets/project/material_gallery/wood/Nilambur_Teak.webp";
+import wood3 from "../../../assets/project/material_gallery/wood/Sal_Wood.webp";
 
-import tiles1 from "../../../assets/project/material_gallery/tiles/tiles1.webp";
-import tiles2 from "../../../assets/project/material_gallery/tiles/tiles2.webp";
-import tiles3 from "../../../assets/project/material_gallery/tiles/tiles3.webp";
+import tiles1 from "../../../assets/project/material_gallery/tiles/Anuj.webp";
+import tiles2 from "../../../assets/project/material_gallery/tiles/Kajaria.webp";
+import tiles3 from "../../../assets/project/material_gallery/tiles/Simpolo.webp";
 
-import electrical1 from "../../../assets/project/material_gallery/electrical/electrical1.webp";
-import electrical2 from "../../../assets/project/material_gallery/electrical/electrical2.webp";
-import electrical3 from "../../../assets/project/material_gallery/electrical/electrical3.webp";
-import electrical4 from "../../../assets/project/material_gallery/electrical/electrical4.webp";
-import electrical5 from "../../../assets/project/material_gallery/electrical/electrical5.webp";
-import electrical6 from "../../../assets/project/material_gallery/electrical/electrical6.webp";
+import electrical1 from "../../../assets/project/material_gallery/electrical/Crompton.webp";
+import electrical2 from "../../../assets/project/material_gallery/electrical/Finolex.webp";
+import electrical3 from "../../../assets/project/material_gallery/electrical/GM.webp";
+import electrical4 from "../../../assets/project/material_gallery/electrical/Legrand.webp";
+import electrical5 from "../../../assets/project/material_gallery/electrical/Phlips.webp";
+import electrical6 from "../../../assets/project/material_gallery/electrical/Wipro.webp";
 
-import plumbing1 from "../../../assets/project/material_gallery/plumbing/plumbing1.webp";
-import plumbing2 from "../../../assets/project/material_gallery/plumbing/plumbing2.webp";
-// import plumbing3 from "../../../assets/project/material_gallery/plumbing/plumbing3.webp";
+import plumbing1 from "../../../assets/project/material_gallery/plumbing/Ashirvad.webp";
+import plumbing2 from "../../../assets/project/material_gallery/plumbing/Supreme.webp";
 
-import paint1 from "../../../assets/project/material_gallery/paint/paint1.webp";
-import paint2 from "../../../assets/project/material_gallery/paint/paint2.webp";
-import paint3 from "../../../assets/project/material_gallery/paint/paint3.webp";
-import paint4 from "../../../assets/project/material_gallery/paint/paint4.webp";
+import paint1 from "../../../assets/project/material_gallery/paint/Asianpaint.webp";
+import paint2 from "../../../assets/project/material_gallery/paint/Berger.webp";
+import paint3 from "../../../assets/project/material_gallery/paint/Birla_Opus.webp";
+import paint4 from "../../../assets/project/material_gallery/paint/JSW.webp";
 
-import wire1 from "../../../assets/project/material_gallery/wire/wire1.webp";
-import wire2 from "../../../assets/project/material_gallery/wire/wire2.webp";
-// import wire3 from "../../../assets/project/material_gallery/wire/wire3.webp";
+import wire1 from "../../../assets/project/material_gallery/wire/Kundan_Cab.webp";
+import wire2 from "../../../assets/project/material_gallery/wire/RR_Kabel.webp";
 
-import sanfit1 from "../../../assets/project/material_gallery/sanitary_fitting/sanfit1.webp";
-import sanfit2 from "../../../assets/project/material_gallery/sanitary_fitting/sanfit2.webp";
-import sanfit3 from "../../../assets/project/material_gallery/sanitary_fitting/sanfit3.webp";
-import sanfit4 from "../../../assets/project/material_gallery/sanitary_fitting/sanfit4.webp";
+import sanfit1 from "../../../assets/project/material_gallery/sanitary_fitting/Hindware.webp";
+import sanfit2 from "../../../assets/project/material_gallery/sanitary_fitting/Jaguar.webp";
+import sanfit3 from "../../../assets/project/material_gallery/sanitary_fitting/Kohler.webp";
+import sanfit4 from "../../../assets/project/material_gallery/sanitary_fitting/Parryware.webp";
 
 const materialCategories = [
   {
@@ -54,7 +52,12 @@ const materialCategories = [
         id: 1,
         name: "Cement",
         logo: cement1,
-        images: [cement1, cement2, cement3, cement4],
+        images: [
+          { src: cement1, alt: "Chettinad Cement – trusted cement brand used by VIP Construction" },
+          { src: cement2, alt: "Dalmia Bharat Cement – premium cement partner brand" },
+          { src: cement3, alt: "Ramco Supergrade Cement – strong, reliable cement brand" },
+          { src: cement4, alt: "UltraTech Cement – engineer's choice cement brand" },
+        ],
       },
     ],
   },
@@ -66,31 +69,13 @@ const materialCategories = [
         id: 2,
         name: "Steel",
         logo: steel1,
-        images: [steel1, steel2, steel3, steel4, steel5],
-      },
-    ],
-  },
-
-  {
-    category: "Brick",
-    items: [
-      {
-        id: 3,
-        name: "Brick",
-        logo: brick1,
-        images: [brick1, brick2, brick3],
-      },
-    ],
-  },
-
-  {
-    category: "Wood",
-    items: [
-      {
-        id: 4,
-        name: "Wood",
-        logo: wood1,
-        images: [wood1, wood2, wood3],
+        images: [
+          { src: steel1, alt: "JSW Steel – high-quality structural steel brand" },
+          { src: steel2, alt: "PRS Steels & Building Materials logo" },
+          { src: steel3, alt: "Pulkit TMT Bars – trusted steel reinforcement brand" },
+          { src: steel4, alt: "TATA Steel – premium construction steel brand" },
+          { src: steel5, alt: "Vizag Steel – pride of steel, trusted construction material" },
+        ],
       },
     ],
   },
@@ -99,10 +84,14 @@ const materialCategories = [
     category: "Tiles",
     items: [
       {
-        id: 5,
+        id: 3,
         name: "Tiles",
         logo: tiles1,
-        images: [tiles1, tiles2, tiles3],
+        images: [
+          { src: tiles1, alt: "Anuj Tiles – flooring and tiling brand partner" },
+          { src: tiles2, alt: "Kajaria Ceramics – premium tiles brand" },
+          { src: tiles3, alt: "Simpolo Tiles & Bathware – quality tiles and bathware brand" },
+        ],
       },
     ],
   },
@@ -111,16 +100,16 @@ const materialCategories = [
     category: "Electrical",
     items: [
       {
-        id: 6,
+        id: 4,
         name: "Electrical",
         logo: electrical1,
         images: [
-          electrical1,
-          electrical2,
-          electrical3,
-          electrical4,
-          electrical5,
-          electrical6,
+          { src: electrical1, alt: "Crompton – trusted electrical fittings brand" },
+          { src: electrical2, alt: "Finolex Cables Limited – quality electrical wiring brand" },
+          { src: electrical3, alt: "GM Switches – reliable electrical switches brand" },
+          { src: electrical4, alt: "Legrand – premium electrical solutions brand" },
+          { src: electrical5, alt: "Philips – trusted lighting and electrical brand" },
+          { src: electrical6, alt: "Wipro – quality lighting and electrical brand" },
         ],
       },
     ],
@@ -130,10 +119,13 @@ const materialCategories = [
     category: "Plumbing",
     items: [
       {
-        id: 7,
+        id: 5,
         name: "Plumbing",
         logo: plumbing1,
-        images: [plumbing1, plumbing2],
+        images: [
+          { src: plumbing1, alt: "Ashirvad Pipes – trusted plumbing pipes brand" },
+          { src: plumbing2, alt: "Quality plumbing pipes and fittings used by VIP Construction" },
+        ],
       },
     ],
   },
@@ -142,10 +134,15 @@ const materialCategories = [
     category: "Paint",
     items: [
       {
-        id: 8,
+        id: 6,
         name: "Paint",
         logo: paint1,
-        images: [paint1, paint2, paint3, paint4],
+        images: [
+          { src: paint1, alt: "Asian Paints – trusted wall paint brand" },
+          { src: paint2, alt: "Berger Paints – premium paint brand" },
+          { src: paint3, alt: "Birla Opus Paints – quality paint brand" },
+          { src: paint4, alt: "JSW Paints – reliable paint brand" },
+        ],
       },
     ],
   },
@@ -154,10 +151,13 @@ const materialCategories = [
     category: "Wire",
     items: [
       {
-        id: 9,
+        id: 7,
         name: "Wire",
         logo: wire1,
-        images: [wire1, wire2],
+        images: [
+          { src: wire1, alt: "Kundan Cab – trusted wiring cables brand" },
+          { src: wire2, alt: "RR Kabel  quality wires and cables brand" },
+        ],
       },
     ],
   },
@@ -166,10 +166,47 @@ const materialCategories = [
     category: "Sanitary Fitting",
     items: [
       {
-        id: 10,
+        id: 8,
         name: "Sanitary Fitting",
         logo: sanfit1,
-        images: [sanfit1, sanfit2, sanfit3, sanfit4],
+        images: [
+          { src: sanfit1, alt: "Hindware – trusted sanitary fittings brand" },
+          { src: sanfit2, alt: "Jaquar Bathroom – premium sanitary fittings brand" },
+          { src: sanfit3, alt: "Kohler – quality bathroom fittings brand" },
+          { src: sanfit4, alt: "Parryware – reliable sanitary ware brand" },
+        ],
+      },
+    ],
+  },
+
+  {
+    category: "Brick",
+    items: [
+      {
+        id: 9,
+        name: "Brick",
+        logo: brick1,
+        images: [
+          { src: brick1, alt: "Concrete hollow blocks used in VIP Construction projects" },
+          { src: brick2, alt: "Solid concrete block – strong construction material" },
+          { src: brick3, alt: "Red clay bricks used for quality wall construction" },
+        ],
+      },
+    ],
+  },
+
+  {
+    category: "Wood",
+    items: [
+      {
+        id: 10,
+        name: "Wood",
+        logo: wood1,
+        images: [
+          { src: wood1, alt: "Wood veneer sheet – quality wood material used by VIP Construction" },
+          { src: wood2, alt: "Teak wood blocks – durable wood material for construction" },
+          { src: wood3, alt: "Wooden planks and beams – strong wood material for structural use" },
+        ],
       },
     ],
   },

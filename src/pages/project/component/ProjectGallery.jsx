@@ -52,10 +52,7 @@ const ProjectGallery = () => {
           <div className="divider mb-6"></div>
 
           <p className="max-w-3xl mx-auto text-text-dark-muted leading-8">
-            Browse through our completed, ongoing and upcoming construction
-            projects across residential, commercial, industrial and renovation
-            sectors, reflecting our commitment to quality, innovation and
-            customer satisfaction.
+            A few of the houses, shops, and offices we've completed — more photos added as new sites finish.
           </p>
         </div>
 

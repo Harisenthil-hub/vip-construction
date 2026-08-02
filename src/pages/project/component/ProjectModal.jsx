@@ -91,7 +91,7 @@ const ProjectModal = ({ project, onClose }) => {
             </div>
 
             <p className="mt-5 md:mt-8 text-text-dark-muted leading-7 md:leading-8">
-              Browse through our completed construction photographs using the navigation arrows. Every image showcases the quality, craftsmanship, engineering excellence and finishing standards delivered throughout this project.
+              Browse through the photos using the arrows to see the quality, materials, and finishing work completed on this project.
             </p>
 
             {/* Project Details */}
