@@ -1,29 +1,20 @@
-import banner from "../../../assets/project/hero_section/Project_Banner.png";
+import banner from "../../../assets/project/hero_section/Project_Banner.webp";
 import ProjectStats from "./ProjectStats";
 import ProjectButtons from "./ProjectButtons";
 
 const ProjectHero = () => {
   return (
-    <section
-      className="relative min-h-[40vh] md:min-h-[420px] flex items-center overflow-hidden"
-      style={{
-        backgroundImage: `url(${banner})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <section className="relative min-h-[40vh] md:min-h-[420px] flex items-center overflow-hidden">
+
+      {/* Background Image */}
+      <img
+        src={banner}
+        alt="VIP Construction Projects"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-bg-black/90 via-primary/80 to-primary/60"></div>
-
-      {/* Background Pattern */}
-      <div
-        className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
-          backgroundSize: "35px 35px",
-        }}
-      ></div>
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-16 py-14 md:py-16">
@@ -36,11 +27,7 @@ const ProjectHero = () => {
 
           {/* Heading */}
           <h1 className="mt-4 font-extrabold leading-tight text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-            Our{" "}
-            <span className="text-secondary">
-              Projects
-            </span>{" "}
-            Portfolio
+            Our <span className="text-secondary">Projects</span> Portfolio
           </h1>
 
           {/* Description */}
