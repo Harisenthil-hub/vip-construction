@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { missionVision } from "../data/aboutData";
 import { Target, Eye, Check } from "lucide-react";
 
@@ -9,7 +10,13 @@ export default function MissionVision() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="max-w-2xl mb-8 lg:mb-10">
+        <motion.div 
+          className="max-w-2xl mb-8 lg:mb-10"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.5 }}
+        >
           <span className="span-heading">GUIDING PRINCIPLES</span>
           <h2 className="h2-heading">Our Mission & Vision</h2>
 
@@ -17,12 +24,18 @@ export default function MissionVision() {
             The core values that guide every project we build, from the ground
             up.
           </p>
-        </div>
+        </motion.div>
 
         {/* 2-Column Responsive Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 items-stretch">
           {/* Mission Card: bg-white */}
-          <div className="bg-white border border-slate-200 rounded-2xl p-4 sm:p-5 lg:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#F5A623]/50 transition-all duration-300 flex flex-col justify-between group cursor-pointer">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="bg-white border border-slate-200 rounded-2xl p-4 sm:p-5 lg:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#F5A623]/50 transition-all duration-300 flex flex-col justify-between group cursor-pointer"
+          >
             <div>
               <div className="flex items-center justify-between mb-3">
                 <div className="w-8 h-8 rounded-lg bg-[#F5A623]/15 border border-[#F5A623]/30 text-[#F5A623] group-hover:bg-[#F5A623] group-hover:text-[#0F172A] flex items-center justify-center transition-all duration-300 group-hover:scale-110">
@@ -54,10 +67,16 @@ export default function MissionVision() {
                 ))}
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Vision Card: bg-[#F1F5F9] */}
-          <div className="bg-white border border-slate-200/90 rounded-2xl p-4 sm:p-5 lg:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#F5A623]/50 transition-all duration-300 flex flex-col justify-between group cursor-pointer">
+          <motion.div 
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+            className="bg-white border border-slate-200/90 rounded-2xl p-4 sm:p-5 lg:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#F5A623]/50 transition-all duration-300 flex flex-col justify-between group cursor-pointer"
+          >
             <div>
               <div className="flex items-center justify-between mb-3">
                 <div className="w-8 h-8 rounded-lg bg-[#F5A623]/15 bg-slate-100 border border-[#F5A623]/30 text-[#F5A623] group-hover:bg-[#F5A623] group-hover:text-[#0F172A] flex items-center justify-center transition-all duration-300 group-hover:scale-110">
@@ -89,7 +108,7 @@ export default function MissionVision() {
                 ))}
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

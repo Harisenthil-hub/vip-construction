@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { companyJourney } from "../data/aboutData";
 import { Flag, Building2, ShieldCheck, Milestone, CalendarDays, Check } from "lucide-react";
 
@@ -15,7 +16,13 @@ export default function CompanyJourney() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="max-w-2xl mb-8 lg:mb-12">
+        <motion.div 
+          className="max-w-2xl mb-8 lg:mb-12"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.5 }}
+        >
           <span className="span-heading">
             Company Roadmap • 2019 to Present
           </span>
@@ -27,7 +34,7 @@ export default function CompanyJourney() {
           <p className="text-xs sm:text-sm lg:text-base text-slate-600 font-normal leading-relaxed">
             From founding VIP Construction in 2019 to growing into commercial projects and launching our digital client tracking platform.
           </p>
-        </div>
+        </motion.div>
 
         {/* Timeline Container with Vertical Line Design */}
         <div className="relative">
@@ -41,8 +48,12 @@ export default function CompanyJourney() {
               const isEven = idx % 2 === 0;
 
               return (
-                <div
+                <motion.div
                   key={step.year}
+                  initial={{ opacity: 0, y: 35 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-40px" }}
+                  transition={{ duration: 0.5, delay: idx * 0.1, ease: "easeOut" }}
                   className={`relative flex flex-col lg:flex-row items-start lg:items-center ${
                     isEven ? "lg:flex-row-reverse" : ""
                   }`}
@@ -98,7 +109,7 @@ export default function CompanyJourney() {
                   {/* Empty Spacer Column for Desktop Alternating Grid */}
                   <div className="hidden lg:block w-[calc(50%-28px)]" />
 
-                </div>
+                </motion.div>
               );
             })}
           </div>

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { awardsList } from "../data/aboutData";
 import { Trophy, Award, Medal } from "lucide-react";
 
@@ -15,7 +16,13 @@ export default function AwardsSection() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="max-w-xl mb-8 lg:mb-10">
+        <motion.div 
+          className="max-w-xl mb-8 lg:mb-10"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.5 }}
+        >
           <span className="span-heading">Honors & Recognitions</span>
 
           <h2 className="h2-heading">
@@ -23,20 +30,24 @@ export default function AwardsSection() {
             <span className="text-[#F5A623]">Engineering Excellence</span>
           </h2>
 
-          <p className="text-xs sm:text-sm lg:text-base text-slate-300 font-normal leading-relaxed">
+          <p className="text-xs sm:text-sm lg:text-base text-slate-600 font-normal leading-relaxed">
             Recognized by civil engineering associations and state bodies for
             quality, safety, and honest construction practices.
           </p>
-        </div>
+        </motion.div>
 
         {/* 1 Row Grid for Awards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 lg:gap-6 items-stretch">
-          {awardsList.map((award) => {
+          {awardsList.map((award, idx) => {
             const IconComp = awardIconMap[award.iconName] || Trophy;
 
             return (
-              <div
+              <motion.div
                 key={award.id}
+                initial={{ opacity: 0, y: 30, scale: 0.96 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.5, delay: idx * 0.1, ease: "easeOut" }}
                 className="bg-primary border border-slate-800 rounded-2xl p-3.5 sm:p-5 lg:p-6 shadow-md hover:border-[#F5A623]/60  hover:-translate-y-0.5 hover:shadow-xl hover:shadow-[#F5A623]/10 transition-all duration-300 flex flex-col justify-between gap-3 group cursor-pointer"
               >
                 <div>
@@ -71,7 +82,7 @@ export default function AwardsSection() {
                     {award.year}
                   </span>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
