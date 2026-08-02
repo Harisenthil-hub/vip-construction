@@ -34,20 +34,23 @@ export default function VipInspiration() {
           
           {/* Large Image (lg:col-span-5) */}
           <div className="lg:col-span-5 w-full flex flex-col">
-            <div className="group relative rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:border-[#F5A623]/60 hover:-translate-y-1 transition-all duration-500 h-full min-h-[220px] sm:min-h-[280px] lg:min-h-[360px] cursor-pointer">
+            <div className="group relative rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:border-[#F5A623]/60 hover:-translate-y-1 transition-all duration-500 aspect-[4/5] lg:aspect-auto lg:h-full lg:min-h-[380px] cursor-pointer">
               <img
                 src={onsiteImg}
-                alt="VIP Construction Operations on site"
-                className="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-700 ease-out"
+                alt="VIP Construction Managing Director on site"
+                className="w-full h-full object-cover object-center rounded-2xl group-hover:scale-105 transition-transform duration-700 ease-out"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/70 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/80 via-transparent to-transparent opacity-85 group-hover:opacity-95 transition-opacity" />
               
-              <div className="absolute bottom-3 left-3 right-3 p-3.5 rounded-xl bg-white/90 group-hover:bg-white backdrop-blur-md border border-slate-200 shadow-xs group-hover:shadow-md transition-all duration-300 transform group-hover:-translate-y-0.5">
-                <p className="text-xs font-bold text-slate-900 uppercase tracking-wide group-hover:text-[#F5A623] transition-colors">
-                  Ground-Level Field Operations
-                </p>
+              <div className="absolute bottom-3 left-3 right-3 p-3.5 sm:p-4 rounded-xl bg-white/95 group-hover:bg-white backdrop-blur-md border border-slate-200 shadow-xs group-hover:shadow-md transition-all duration-300 transform group-hover:-translate-y-0.5">
+                <div className="flex items-center justify-between mb-0.5">
+                  <p className="text-xs font-bold text-slate-900 uppercase tracking-wide group-hover:text-[#F5A623] transition-colors">
+                    Founder & Managing Director
+                  </p>
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#F5A623]" />
+                </div>
                 <p className="text-xs text-slate-600">
-                  Managed directly by qualified civil engineers
+                  Project planning & direct leadership at VIP Construction
                 </p>
               </div>
             </div>
@@ -57,14 +60,14 @@ export default function VipInspiration() {
           <div className="lg:col-span-7 w-full flex flex-col justify-between space-y-4 sm:space-y-6">
             
             {/* 4 Story Pillars Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+            <div className="grid grid-cols-2 gap-2.5 sm:gap-4">
               {vipInspiration.pillars.map((pillar, idx) => {
                 const IconComp = pillarIcons[pillar.iconName] || HardHat;
 
                 return (
                   <div 
                     key={idx} 
-                    className="bg-white border border-slate-200 rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#F5A623]/50 transition-all duration-300 group cursor-pointer"
+                    className="bg-white border border-slate-200 rounded-2xl p-3 sm:p-4 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#F5A623]/50 transition-all duration-300 group cursor-pointer"
                   >
                     <div className="w-8 h-8 rounded-lg bg-[#F5A623]/15 border border-[#F5A623]/30 text-[#F5A623] group-hover:bg-[#F5A623] group-hover:text-[#0F172A] flex items-center justify-center mb-2 transition-all duration-300 group-hover:scale-110">
                       <IconComp className="w-4 h-4 text-[#F5A623] group-hover:text-[#0F172A] transition-colors" />
@@ -81,33 +84,47 @@ export default function VipInspiration() {
               })}
             </div>
 
-            {/* Quote Card - Complete Text Display */}
-            <div className="bg-white border border-slate-200 rounded-2xl p-4 sm:p-5 lg:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#F5A623]/50 transition-all duration-300 relative overflow-hidden flex-1 flex flex-col justify-between group cursor-pointer">
+            {/* Quote Card - Complete Text Display with Balanced Fill */}
+            <div className="bg-gradient-to-br from-white via-slate-50/50 to-amber-500/5 border border-slate-200/80 rounded-2xl p-5 sm:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#F5A623]/60 transition-all duration-300 relative overflow-hidden flex-1 flex flex-col justify-between gap-4 group cursor-pointer">
+              
+              {/* Background Watermark Icon */}
+              <Quote className="absolute -right-3 -bottom-3 w-32 h-32 text-amber-500/5 group-hover:text-amber-500/10 transition-colors pointer-events-none select-none" />
+
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <div className="w-8 h-8 rounded-lg bg-[#F5A623]/15 border border-[#F5A623]/30 text-[#F5A623] group-hover:bg-[#F5A623] group-hover:text-[#0F172A] flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-                    <Quote className="w-4 h-4 text-[#F5A623] group-hover:text-[#0F172A] transition-colors" />
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-[#F5A623]/15 border border-[#F5A623]/30 text-[#F5A623] group-hover:bg-[#F5A623] group-hover:text-[#0F172A] flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+                      <Quote className="w-4 h-4 text-[#F5A623] group-hover:text-[#0F172A] transition-colors" />
+                    </div>
+                    <span className="text-xs font-bold uppercase tracking-wider text-amber-700/80">
+                      Founder Statement
+                    </span>
                   </div>
-                  <span className="text-xs font-semibold px-2.5 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200 group-hover:bg-[#0F172A] group-hover:text-white transition-colors">
+                  <span className="text-xs font-semibold px-2.5 py-0.5 rounded-md bg-slate-900 text-white border border-slate-800 shadow-xs">
                     Engineering Creed
                   </span>
                 </div>
 
-                <p className="text-xs sm:text-sm lg:text-base text-slate-800 italic font-medium leading-relaxed mb-4 group-hover:text-slate-900 transition-colors">
+                <p className="text-sm sm:text-base lg:text-lg text-slate-900 italic font-semibold leading-relaxed group-hover:text-slate-950 transition-colors">
                   "{vipInspiration.quote}"
                 </p>
               </div>
 
-              <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <div className="pt-3.5 border-t border-slate-200/60 flex items-center justify-between relative z-10">
                 <div>
                   <p className="text-xs font-bold text-[#0F172A] uppercase tracking-wide group-hover:text-[#F5A623] transition-colors">
                     Managing Director
                   </p>
-                  <p className="text-xs text-slate-500">
-                    VIP Construction
+                  <p className="text-xs text-slate-500 font-medium">
+                    VIP Construction • Tamil Nadu
                   </p>
                 </div>
-                <span className="w-2 h-2 rounded-full bg-[#F5A623] group-hover:scale-150 transition-transform" />
+                <div className="flex items-center gap-2">
+                  <span className="text-[11px] font-semibold text-amber-700 bg-amber-100/80 border border-amber-200 px-2 py-0.5 rounded-full">
+                    Site Driven
+                  </span>
+                  <span className="w-2 h-2 rounded-full bg-[#F5A623] group-hover:scale-150 transition-transform" />
+                </div>
               </div>
             </div>
 
