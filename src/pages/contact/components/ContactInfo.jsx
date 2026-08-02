@@ -5,6 +5,7 @@ import {
   FaClock,
   FaArrowRight,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const cards = [
   {
@@ -20,7 +21,7 @@ const cards = [
     title: "Visit Our Office",
     primary: "Udumalpet, Tamil Nadu",
     secondary: "Drop by and walk us through your project.",
-    link: "https://maps.google.com/?q=Udumalpet,Tamil Nadu",
+    link: "https://maps.app.goo.gl/kYRmjNgXxi8iuauPA",
     action: "Get Directions",
   },
   {
@@ -39,11 +40,11 @@ export default function ContactInfo() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         {/* Heading */}
         <div className="text-center mb-12">
-          <p className="uppercase tracking-[4px] text-[#F5A623] font-semibold text-sm">
+          <span className="span-heading">
             Contact Information
-          </p>
+          </span>
 
-          <h2 className="h2-heading mt-3">
+          <h2 className="h2-heading">
             We're Here To Help
           </h2>
 
@@ -75,12 +76,12 @@ export default function ContactInfo() {
                 Call Our Site Office
               </h3>
 
-              <a
-                href="tel:+919080273030"
+              <Link
+                to="tel:+919080273030"
                 className="block text-2xl sm:text-3xl font-bold text-white hover:text-[#F5A623] transition break-words"
               >
                 +91 90802 73030
-              </a>
+              </Link>
 
               <p className="mt-4 text-gray-400 leading-7 max-w-sm">
                 We're available for project discussions during working hours, or
@@ -88,13 +89,13 @@ export default function ContactInfo() {
               </p>
             </div>
 
-            <a
-              href="tel:+919080273030"
+            <Link
+              to="tel:+919080273030"
               className="relative mt-8 inline-flex w-fit items-center gap-2 bg-[#F5A623] text-[#1A1F2E] font-semibold px-6 py-3 rounded-full hover:gap-4 hover:bg-white transition-all duration-300"
             >
               Call Now
-              <FaArrowRight />
-            </a>
+              <FaArrowRight  />
+            </Link>
           </div>
 
           {/* Remaining cards */}
@@ -117,12 +118,12 @@ export default function ContactInfo() {
                 </h3>
 
                 {item.link.startsWith("mailto") ? (
-                  <a
-                    href={item.link}
+                  <Link
+                    to={item.link}
                     className="block mt-2 font-semibold text-[#1A1F2E] hover:text-[#F5A623] transition break-words text-sm sm:text-base"
                   >
                     {item.primary}
-                  </a>
+                  </Link>
                 ) : (
                   <p className="mt-2 font-semibold text-[#1A1F2E] text-sm sm:text-base">
                     {item.primary}
@@ -133,8 +134,8 @@ export default function ContactInfo() {
                   {item.secondary}
                 </p>
 
-                <a
-                  href={item.link}
+                <Link
+                  to={item.link}
                   target={
                     item.action === "Get Directions" ? "_blank" : undefined
                   }
@@ -147,7 +148,7 @@ export default function ContactInfo() {
                 >
                   {item.action}
                   <FaArrowRight size={12} />
-                </a>
+                </Link>
               </div>
             ))}
           </div>

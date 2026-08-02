@@ -16,11 +16,11 @@ export default function CompanyJourney() {
         
         {/* Section Header */}
         <div className="max-w-2xl mb-8 lg:mb-12">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#F5A623] mb-1.5 block">
+          <span className="span-heading">
             Company Roadmap • 2019 to Present
           </span>
 
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0F172A] tracking-tight leading-tight mb-2">
+          <h2 className="h2-heading">
             Building Our Legacy Step by Step
           </h2>
 

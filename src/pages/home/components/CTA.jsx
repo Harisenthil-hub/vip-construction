@@ -28,13 +28,13 @@ export function CTA() {
         {/* RIGHT CONTAINER */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:shrink-0">
           {/* ACTION BUTTONS */}
-          <a
-            href="tel:+919080273030"
+          <Link
+            to="tel:+919080273030"
             className="flex justify-center w-full sm:w-auto items-center gap-1 text-white bg-primary px-4 py-3 font-semibold rounded hover:-translate-y-1 transition ease-in-out duration-300"
           >
             <FaPhoneAlt size={15} className="text-white inline py-0" />
             <span>Contact Us</span>
-          </a>
+          </Link>
           <Link
             to="/project"
             className="flex items-center justify-center gap-2 w-full sm:w-auto bg-transparent border-2 px-4 py-3 font-semibold text-white border-white/50 hover:border-white/80 hover:bg-white/10 py-3 rounded hover:-translate-y-1 transition ease-in-out duration-300"

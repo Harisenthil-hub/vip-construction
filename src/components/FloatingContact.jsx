@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function FloatingContact() {
   const [showButtons, setShowButtons] = useState(true);
@@ -30,8 +31,8 @@ export default function FloatingContact() {
       } `}
     >
       {/* WhatsApp */}
-      <a
-        href="https://wa.me/919876543210"
+      <Link
+        to="https://wa.me/919876543210"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
@@ -40,15 +41,15 @@ export default function FloatingContact() {
         <FaWhatsapp
           className="text-2xl text-white transition-transform duration-300 group-hover:rotate-12"
         />
-      </a>
+      </Link>
 
       {/* Call */}
-      <a
-        href="tel:+919876543210" aria-label="Call Us" className="group h-10 w-10 lg:h-13 lg:w-13 rounded-full bg-primary flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl " >
+      <Link
+        to="tel:+919876543210" aria-label="Call Us" className="group h-10 w-10 lg:h-13 lg:w-13 rounded-full bg-primary flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl " >
         <FaPhoneAlt
           className="text-white transition-transform duration-300 group-hover:rotate-12"
         />
-      </a>
+      </Link>
     </div>
   );
 }

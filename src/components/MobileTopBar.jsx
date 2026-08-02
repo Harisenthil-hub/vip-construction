@@ -7,25 +7,26 @@ import {
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export const MobileTopBar = () => {
   return (
     <div className="flex items-center gap-8 px-4 shrink-0">
-      <a
-        href="tel:+919080273030"
+      <Link
+        to="tel:+919080273030"
         className="flex items-center gap-1 whitespace-nowrap"
       >
         <FaPhoneAlt size={15} className="text-secondary" />
         <span>+91 9080273030</span>
-      </a>
+      </Link>
 
-      <a
-        href="mailto:vipconstruction.14@gmail.com"
+      <Link
+        to="mailto:vipconstruction.14@gmail.com"
         className="flex items-center gap-1 whitespace-nowrap"
       >
         <MdEmail size={19} className="text-secondary" />
         <span>vipconstruction.13@gmail.com</span>
-      </a>
+      </Link>
 
       <div className="flex items-center gap-1 whitespace-nowrap">
         <FaClock size={17} className="text-secondary" />
@@ -37,27 +38,27 @@ export const MobileTopBar = () => {
         <span>Coimbatore, Udumalpet</span>
       </div>
       <div className="flex gap-2">
-        <a
-          href="https://www.facebook.com/share/1DGh2xRqHR/?mibextid=wwXIfr"
+        <Link
+          to="https://www.facebook.com/share/1DGh2xRqHR/?mibextid=wwXIfr"
           target="_a"
           className="p-2 bg-secondary/20 rounded-full text-secondary hover:bg-secondary hover:text-text-primary"
         >
           <FaFacebookF size={14} strokeWidth={5} />
-        </a>
-        <a
-          href="https://www.instagram.com/vipconstruction_udumalpet?utm_source=qr&igsh=aDhjbGI4ZW1yamw2"
+        </Link>
+        <Link
+          to="https://www.instagram.com/vipconstruction_udumalpet?utm_source=qr&igsh=aDhjbGI4ZW1yamw2"
           target="_a"
           className="p-2 bg-secondary/20 rounded-full text-secondary hover:bg-secondary hover:text-text-primary"
         >
           <FaInstagram size={14} strokeWidth={5} />
-        </a>
-        <a
-          href="https://www.youtube.com/@vipconstruction_offical"
+        </Link>
+        <Link
+          to="https://www.youtube.com/@vipconstruction_offical"
           target="_a"
           className="p-2 bg-secondary/20 rounded-full text-secondary hover:bg-secondary hover:text-text-primary"
         >
           <FaYoutube size={14} strokeWidth={5} />
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -3,27 +3,25 @@ import { Target, Eye, Check } from "lucide-react";
 
 export default function MissionVision() {
   return (
-    <section id="mission-vision" className="py-10 sm:py-14 lg:py-16 bg-[#F8FAFC] text-slate-900 relative overflow-hidden">
+    <section
+      id="mission-vision"
+      className="py-10 sm:py-14 lg:py-16 bg-slate-100 text-gray-600 relative overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
         {/* Section Header */}
         <div className="max-w-2xl mb-8 lg:mb-10">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#F5A623] mb-1.5 block">
-            Guiding Principles
-          </span>
+          <span className="span-heading">Guiding Principles</span>
 
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0F172A] tracking-tight leading-tight mb-2">
-            Our Mission & Vision
-          </h2>
+          <h2 className="h2-heading">Our Mission & Vision</h2>
 
           <p className="text-xs sm:text-sm lg:text-base text-slate-600 font-normal leading-relaxed">
-            The core philosophy that directs every foundation we excavate and layout we draw.
+            The core philosophy that directs every foundation we excavate and
+            layout we draw.
           </p>
         </div>
 
         {/* 2-Column Responsive Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 items-stretch">
-          
           {/* Mission Card: bg-white */}
           <div className="bg-white border border-slate-200 rounded-2xl p-4 sm:p-5 lg:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#F5A623]/50 transition-all duration-300 flex flex-col justify-between group cursor-pointer">
             <div>
@@ -47,7 +45,10 @@ export default function MissionVision() {
               {/* All Bullet Points - Complete text */}
               <div className="space-y-1.5 pt-2.5 border-t border-slate-100">
                 {missionVision.mission.points.map((pt, idx) => (
-                  <div key={idx} className="flex items-start gap-2 text-xs font-medium text-slate-700 group-hover:text-slate-900 transition-colors">
+                  <div
+                    key={idx}
+                    className="flex items-start gap-2 text-xs font-medium text-slate-700 group-hover:text-slate-900 transition-colors"
+                  >
                     <Check className="w-3.5 h-3.5 text-[#F5A623] flex-shrink-0 mt-0.5" />
                     <span className="leading-snug">{pt}</span>
                   </div>
@@ -57,13 +58,13 @@ export default function MissionVision() {
           </div>
 
           {/* Vision Card: bg-[#F1F5F9] */}
-          <div className="bg-[#F1F5F9] border border-slate-200/90 rounded-2xl p-4 sm:p-5 lg:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#F5A623]/50 transition-all duration-300 flex flex-col justify-between group cursor-pointer">
+          <div className="bg-white border border-slate-200/90 rounded-2xl p-4 sm:p-5 lg:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#F5A623]/50 transition-all duration-300 flex flex-col justify-between group cursor-pointer">
             <div>
               <div className="flex items-center justify-between mb-3">
-                <div className="w-8 h-8 rounded-lg bg-[#F5A623]/15 border border-[#F5A623]/30 text-[#F5A623] group-hover:bg-[#F5A623] group-hover:text-[#0F172A] flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+                <div className="w-8 h-8 rounded-lg bg-[#F5A623]/15 bg-slate-100 border border-[#F5A623]/30 text-[#F5A623] group-hover:bg-[#F5A623] group-hover:text-[#0F172A] flex items-center justify-center transition-all duration-300 group-hover:scale-110">
                   <Eye className="w-4 h-4" />
                 </div>
-                <span className="text-xs font-semibold px-2.5 py-0.5 rounded-md bg-white text-slate-700 border border-slate-200 group-hover:bg-[#0F172A] group-hover:text-white transition-colors">
+                <span className="text-xs font-semibold px-2.5 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200 group-hover:bg-[#0F172A] group-hover:text-white transition-colors">
                   Future Horizon
                 </span>
               </div>
@@ -79,7 +80,10 @@ export default function MissionVision() {
               {/* All Bullet Points - Complete text */}
               <div className="space-y-1.5 pt-2.5 border-t border-slate-200/60">
                 {missionVision.vision.points.map((pt, idx) => (
-                  <div key={idx} className="flex items-start gap-2 text-xs font-medium text-slate-700 group-hover:text-slate-900 transition-colors">
+                  <div
+                    key={idx}
+                    className="flex items-start gap-2 text-xs font-medium text-slate-700 group-hover:text-slate-900 transition-colors"
+                  >
                     <Check className="w-3.5 h-3.5 text-[#F5A623] flex-shrink-0 mt-0.5" />
                     <span className="leading-snug">{pt}</span>
                   </div>
@@ -87,9 +91,7 @@ export default function MissionVision() {
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
     </section>
   );

@@ -75,15 +75,15 @@ export default function Footer() {
               {social.map((item, index) => {
                 const Icon = item.icon;
                 return (
-                  <a
+                  <Link
                     key={index}
-                    href={item.link}
+                    to={item.link}
                     aria-label={item.label}
                     target="_a"
                     className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-900 transition duration-300 hover:bg-amber-500 hover:text-slate-900 text-lg border border-slate-800"
                   >
                     <Icon />
-                  </a>
+                  </Link>
                 );
               })}
             </div>
@@ -133,12 +133,12 @@ export default function Footer() {
               <div className="flex gap-4 items-center">
                 <FaPhoneAlt className="text-amber-400 text-lg flex-shrink-0" />
                 <span>
-                  <a
-                    href="tel:+919080273030"
+                  <Link
+                    to="tel:+919080273030"
                     className="hover:text-amber-400 transition"
                   >
                     +91 9080273030
-                  </a>
+                  </Link>
                 </span>
               </div>
               <div className="flex gap-4 items-center">
@@ -147,23 +147,23 @@ export default function Footer() {
                   className="text-amber-400 text-lg flex-shrink-0"
                 />
                 <span>
-                  <a
-                    href="tel:+919344432923"
+                  <Link
+                    to="tel:+919344432923"
                     className="hover:text-amber-400 transition"
                   >
                     +91 9344432923
-                  </a>
+                  </Link>
                 </span>
               </div>
               <div className="flex gap-4 items-center">
                 <FaEnvelope className="text-amber-400 text-lg flex-shrink-0" />
                 <span>
-                  <a
-                    href="mailto:vipconstruction.14@gmail.com"
+                  <Link
+                    to="mailto:vipconstruction.14@gmail.com"
                     className="hover:text-amber-400 transition min-w-0 break-all"
                   >
                     vipconstruction.14@gmail.com
-                  </a>
+                  </Link>
                 </span>
               </div>
             </div>

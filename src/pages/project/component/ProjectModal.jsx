@@ -26,9 +26,9 @@ const ProjectModal = ({ project, onClose }) => {
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 md:top-5 md:right-5 z-50 w-9 h-9 md:w-12 md:h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-primary transition-all duration-300 hover:bg-secondary hover:text-white"
+          className="absolute top-3 right-3 md:top-5 md:right-5 z-50 w-9 h-9 md:w-10 md:h-10 rounded-full bg-white shadow-lg flex items-center justify-center text-primary transition-all duration-300 hover:bg-secondary hover:text-white"
         >
-          <X className="w-4 h-4 md:w-6 md:h-6" />
+          <X className="w-4 h-4 md:w-5 md:h-5" />
         </button>
 
         <div className="grid lg:grid-cols-3">
