@@ -70,36 +70,11 @@ const materialCategories = [
       },
     ],
   },
-
-  {
-    category: "Brick",
-    items: [
-      {
-        id: 3,
-        name: "Brick",
-        logo: brick1,
-        images: [brick1, brick2, brick3],
-      },
-    ],
-  },
-
-  {
-    category: "Wood",
-    items: [
-      {
-        id: 4,
-        name: "Wood",
-        logo: wood1,
-        images: [wood1, wood2, wood3],
-      },
-    ],
-  },
-
   {
     category: "Tiles",
     items: [
       {
-        id: 5,
+        id: 3,
         name: "Tiles",
         logo: tiles1,
         images: [tiles1, tiles2, tiles3],
@@ -111,7 +86,7 @@ const materialCategories = [
     category: "Electrical",
     items: [
       {
-        id: 6,
+        id: 4,
         name: "Electrical",
         logo: electrical1,
         images: [
@@ -130,7 +105,7 @@ const materialCategories = [
     category: "Plumbing",
     items: [
       {
-        id: 7,
+        id: 5,
         name: "Plumbing",
         logo: plumbing1,
         images: [plumbing1, plumbing2],
@@ -142,7 +117,7 @@ const materialCategories = [
     category: "Paint",
     items: [
       {
-        id: 8,
+        id: 6,
         name: "Paint",
         logo: paint1,
         images: [paint1, paint2, paint3, paint4],
@@ -154,7 +129,7 @@ const materialCategories = [
     category: "Wire",
     items: [
       {
-        id: 9,
+        id: 7,
         name: "Wire",
         logo: wire1,
         images: [wire1, wire2],
@@ -166,13 +141,36 @@ const materialCategories = [
     category: "Sanitary Fitting",
     items: [
       {
-        id: 10,
+        id: 8,
         name: "Sanitary Fitting",
         logo: sanfit1,
         images: [sanfit1, sanfit2, sanfit3, sanfit4],
       },
     ],
   },
+  {
+    category: "Brick",
+    items: [
+      {
+        id: 9,
+        name: "Brick",
+        logo: brick1,
+        images: [brick1, brick2, brick3],
+      },
+    ],
+  },
+
+  {
+    category: "Wood",
+    items: [
+      {
+        id: 10,
+        name: "Wood",
+        logo: wood1,
+        images: [wood1, wood2, wood3],
+      },
+    ],
+  }
 ];
 
 export default materialCategories;
