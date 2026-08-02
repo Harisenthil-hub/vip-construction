@@ -11,9 +11,9 @@ const cards = [
   {
     icon: <FaEnvelope />,
     title: "Email Us",
-    primary: "vipconstruction.13@gmail.com",
+    primary: "vipconstruction.14@gmail.com",
     secondary: "We reply within 24 hours.",
-    link: "mailto:vipconstruction.13@gmail.com",
+    link: "mailto:vipconstruction.14@gmail.com",
     action: "Send Email",
   },
   {

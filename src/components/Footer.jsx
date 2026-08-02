@@ -159,10 +159,10 @@ export default function Footer() {
                 <FaEnvelope className="text-amber-400 text-lg flex-shrink-0" />
                 <span>
                   <Link
-                    to="mailto:vipconstruction.13@gmail.com"
+                    to="mailto:vipconstruction.14@gmail.com"
                     className="hover:text-amber-400 transition min-w-0 break-all"
                   >
-                    vipconstruction.13@gmail.com
+                    vipconstruction.14@gmail.com
                   </Link>
                 </span>
               </div>

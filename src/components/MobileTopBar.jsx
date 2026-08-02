@@ -17,15 +17,15 @@ export const MobileTopBar = () => {
         className="flex items-center gap-1 whitespace-nowrap"
       >
         <FaPhoneAlt size={15} className="text-secondary" />
-        <span>+91 9080273030</span>
+        <span>+91 9080-27-3030</span>
       </Link>
 
       <Link
-        to="mailto:vipconstruction.13@gmail.com"
+        to="mailto:vipconstruction.14@gmail.com"
         className="flex items-center gap-1 whitespace-nowrap"
       >
         <MdEmail size={19} className="text-secondary" />
-        <span>vipconstruction.13@gmail.com</span>
+        <span>vipconstruction.14@gmail.com</span>
       </Link>
 
       <div className="flex items-center gap-1 whitespace-nowrap">
@@ -35,7 +35,8 @@ export const MobileTopBar = () => {
 
       <div className="flex items-center gap-1 whitespace-nowrap">
         <FaLocationDot size={17} className="text-secondary" />
-        <span>Coimbatore, Udumalpet</span>
+        <Link to='https://maps.app.goo.gl/kYRmjNgXxi8iuauPA' target="_a">Main Branch - Udumalpet, &nbsp;</Link>
+        <span>Sub Office - Coimbatore</span>
       </div>
       <div className="flex gap-2">
         <Link

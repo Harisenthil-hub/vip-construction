@@ -26,11 +26,11 @@ export function TopBar() {
               <span>+91 9080-27-3030</span>
             </Link>
             <Link
-              to="mailto:vipconstruction.13@gmail.com"
+              to="mailto:vipconstruction.14@gmail.com"
               className="flex items-center gap-1 hover:text-white"
             >
               <MdEmail size={19} className="text-secondary inline" />
-              <span>vipconstruction.13@gmail.com</span>
+              <span>vipconstruction.14@gmail.com</span>
             </Link>
             <div className="flex items-center gap-1">
               <FaClock size={17} className="text-secondary" />
@@ -43,7 +43,7 @@ export function TopBar() {
             <div className="flex items-center gap-2">
               <FaLocationDot size={17} className="text-secondary" />
               <Link
-                to="https://maps.app.goo.gl/CFg6UpyqERAGcK6p8?g_st=aw"
+                to="https://maps.app.goo.gl/kYRmjNgXxi8iuauPA"
                 className="hover:text-white"
                 target="_a"
               >
