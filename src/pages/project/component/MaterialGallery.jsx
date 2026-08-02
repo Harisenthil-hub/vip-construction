@@ -18,7 +18,7 @@ const MaterialGallery = () => {
           <div className="divider mb-6"></div>
 
           <p className="max-w-3xl mx-auto text-text-dark-muted leading-8">
-           We use branded, tested materials on every site — proper cement and steel, checked before they go into your building.
+            We use branded, tested materials on every site — proper cement and steel, checked before they go into your building.
           </p>
         </div>
 
@@ -58,9 +58,10 @@ const MaterialGallery = () => {
           "
                     >
                       <img
-                        src={image}
-                        alt={`${item.name}-${index + 1}`}
+                        src={image.src}
+                        alt={image.alt}
                         className="w-full h-full object-contain"
+                        loading="lazy"
                       />
                     </div>
 

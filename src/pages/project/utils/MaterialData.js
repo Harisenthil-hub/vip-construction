@@ -52,7 +52,12 @@ const materialCategories = [
         id: 1,
         name: "Cement",
         logo: cement1,
-        images: [cement1, cement2, cement3, cement4],
+        images: [
+          { src: cement1, alt: "Chettinad Cement – trusted cement brand used by VIP Construction" },
+          { src: cement2, alt: "Dalmia Bharat Cement – premium cement partner brand" },
+          { src: cement3, alt: "Ramco Supergrade Cement – strong, reliable cement brand" },
+          { src: cement4, alt: "UltraTech Cement – engineer's choice cement brand" },
+        ],
       },
     ],
   },
@@ -64,10 +69,17 @@ const materialCategories = [
         id: 2,
         name: "Steel",
         logo: steel1,
-        images: [steel1, steel2, steel3, steel4, steel5],
+        images: [
+          { src: steel1, alt: "JSW Steel – high-quality structural steel brand" },
+          { src: steel2, alt: "PRS Steels & Building Materials logo" },
+          { src: steel3, alt: "Pulkit TMT Bars – trusted steel reinforcement brand" },
+          { src: steel4, alt: "TATA Steel – premium construction steel brand" },
+          { src: steel5, alt: "Vizag Steel – pride of steel, trusted construction material" },
+        ],
       },
     ],
   },
+
   {
     category: "Tiles",
     items: [
@@ -75,7 +87,11 @@ const materialCategories = [
         id: 3,
         name: "Tiles",
         logo: tiles1,
-        images: [tiles1, tiles2, tiles3],
+        images: [
+          { src: tiles1, alt: "Anuj Tiles – flooring and tiling brand partner" },
+          { src: tiles2, alt: "Kajaria Ceramics – premium tiles brand" },
+          { src: tiles3, alt: "Simpolo Tiles & Bathware – quality tiles and bathware brand" },
+        ],
       },
     ],
   },
@@ -88,12 +104,12 @@ const materialCategories = [
         name: "Electrical",
         logo: electrical1,
         images: [
-          electrical1,
-          electrical2,
-          electrical3,
-          electrical4,
-          electrical5,
-          electrical6,
+          { src: electrical1, alt: "Crompton – trusted electrical fittings brand" },
+          { src: electrical2, alt: "Finolex Cables Limited – quality electrical wiring brand" },
+          { src: electrical3, alt: "GM Switches – reliable electrical switches brand" },
+          { src: electrical4, alt: "Legrand – premium electrical solutions brand" },
+          { src: electrical5, alt: "Philips – trusted lighting and electrical brand" },
+          { src: electrical6, alt: "Wipro – quality lighting and electrical brand" },
         ],
       },
     ],
@@ -106,7 +122,10 @@ const materialCategories = [
         id: 5,
         name: "Plumbing",
         logo: plumbing1,
-        images: [plumbing1, plumbing2],
+        images: [
+          { src: plumbing1, alt: "Ashirvad Pipes – trusted plumbing pipes brand" },
+          { src: plumbing2, alt: "Quality plumbing pipes and fittings used by VIP Construction" },
+        ],
       },
     ],
   },
@@ -118,7 +137,12 @@ const materialCategories = [
         id: 6,
         name: "Paint",
         logo: paint1,
-        images: [paint1, paint2, paint3, paint4],
+        images: [
+          { src: paint1, alt: "Asian Paints – trusted wall paint brand" },
+          { src: paint2, alt: "Berger Paints – premium paint brand" },
+          { src: paint3, alt: "Birla Opus Paints – quality paint brand" },
+          { src: paint4, alt: "JSW Paints – reliable paint brand" },
+        ],
       },
     ],
   },
@@ -130,7 +154,10 @@ const materialCategories = [
         id: 7,
         name: "Wire",
         logo: wire1,
-        images: [wire1, wire2],
+        images: [
+          { src: wire1, alt: "Kundan Cab – trusted wiring cables brand" },
+          { src: wire2, alt: "RR Kabel  quality wires and cables brand" },
+        ],
       },
     ],
   },
@@ -142,10 +169,16 @@ const materialCategories = [
         id: 8,
         name: "Sanitary Fitting",
         logo: sanfit1,
-        images: [sanfit1, sanfit2, sanfit3, sanfit4],
+        images: [
+          { src: sanfit1, alt: "Hindware – trusted sanitary fittings brand" },
+          { src: sanfit2, alt: "Jaquar Bathroom – premium sanitary fittings brand" },
+          { src: sanfit3, alt: "Kohler – quality bathroom fittings brand" },
+          { src: sanfit4, alt: "Parryware – reliable sanitary ware brand" },
+        ],
       },
     ],
   },
+
   {
     category: "Brick",
     items: [
@@ -153,7 +186,11 @@ const materialCategories = [
         id: 9,
         name: "Brick",
         logo: brick1,
-        images: [brick1, brick2, brick3],
+        images: [
+          { src: brick1, alt: "Concrete hollow blocks used in VIP Construction projects" },
+          { src: brick2, alt: "Solid concrete block – strong construction material" },
+          { src: brick3, alt: "Red clay bricks used for quality wall construction" },
+        ],
       },
     ],
   },
@@ -165,10 +202,14 @@ const materialCategories = [
         id: 10,
         name: "Wood",
         logo: wood1,
-        images: [wood1, wood2, wood3],
+        images: [
+          { src: wood1, alt: "Wood veneer sheet – quality wood material used by VIP Construction" },
+          { src: wood2, alt: "Teak wood blocks – durable wood material for construction" },
+          { src: wood3, alt: "Wooden planks and beams – strong wood material for structural use" },
+        ],
       },
     ],
-  }
+  },
 ];
 
 export default materialCategories;
