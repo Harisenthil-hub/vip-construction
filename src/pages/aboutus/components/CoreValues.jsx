@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { coreValues } from "../data/aboutData";
 import { ShieldCheck, Award, CheckCircle2, Clock, Sparkles } from "lucide-react";
 

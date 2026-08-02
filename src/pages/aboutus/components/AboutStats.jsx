@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { companyStats } from "../data/aboutData";
 import { Building2, HardHat, Users, Handshake } from "lucide-react";

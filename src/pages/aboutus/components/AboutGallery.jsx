@@ -1,12 +1,11 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { galleryImages } from "../data/aboutData";
-import { Camera, ChevronDown, ChevronUp } from "lucide-react";
+import { Camera, ChevronDown } from "lucide-react";
 
 export default function AboutGallery() {
   const [showAllMobile, setShowAllMobile] = useState(false);
 
-  const initialMobileImages = galleryImages.slice(0, 6);
   const extraMobileImages = galleryImages.slice(6);
 
   const handleToggleMobile = () => {
@@ -15,7 +14,7 @@ export default function AboutGallery() {
       if (galleryElement) {
         const headerOffset = 90;
         const elementPosition = galleryElement.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        const offsetPosition = elementPosition + window.scrollY - headerOffset;
         window.scrollTo({
           top: offsetPosition,
           behavior: "smooth"
@@ -62,7 +61,7 @@ export default function AboutGallery() {
 
             return (
               <motion.div
-                key={img.id}
+                key={`main-${img.id}`}
                 initial={{ opacity: 0, scale: 0.94 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, margin: "-30px" }}
@@ -94,7 +93,7 @@ export default function AboutGallery() {
             >
               {extraMobileImages.map((img, index) => (
                 <motion.div
-                  key={img.id}
+                  key={`extra-${img.id}`}
                   initial={{ opacity: 0, y: 20, scale: 0.92 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 15, scale: 0.92, transition: { duration: 0.25, delay: (extraMobileImages.length - 1 - index) * 0.03 } }}
