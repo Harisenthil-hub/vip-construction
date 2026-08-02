@@ -2,37 +2,54 @@ import {
   FaClipboardList,
   FaDraftingCompass,
   FaHardHat,
+  FaUserTie,
   FaKey,
 } from "react-icons/fa";
+
+import { AiOutlineSafetyCertificate } from 'react-icons/ai';
 
 const steps = [
   {
     id: "01",
-    icon: <FaClipboardList />,
+    icon: <FaUserTie />,
     title: "Consultation & Site Visit",
     description:
-      "We understand your requirements, budget and timeline, then visit your site to assess ground realities before anything is planned.",
+      "Every project starts with a conversation. We understand your requirements, budget, and timeline, then visit your site in person to assess ground conditions before any planning begins.",
   },
   {
     id: "02",
     icon: <FaDraftingCompass />,
     title: "Design & Planning",
     description:
-      "Our team prepares layouts, structural plans and material estimates, walking you through every detail until you're confident to proceed.",
+      "Our architects and engineers prepare detailed 2D and 3D layouts, structural drawings, and material estimates, giving you complete clarity on design and cost before construction starts.",
   },
   {
     id: "03",
-    icon: <FaHardHat />,
-    title: "Construction & Execution",
+    icon: <FaClipboardList />,
+    title: "Transparent Quotation",
     description:
-      "Work begins on-site with regular quality checks and progress updates, so you always know exactly where your project stands.",
+      "We provide a clear, itemized quotation covering materials, labor, and timelines, so you know exactly what you're paying for with no hidden costs or compromise on quality.",
   },
   {
     id: "04",
+    icon: <FaHardHat />,
+    title: "Construction & Execution",
+    description:
+      "Our skilled team carries out construction using quality-tested materials and strict safety standards, with regular site updates so you always know exactly where your project stands.",
+  },
+  {
+    id: "05",
+    icon: <AiOutlineSafetyCertificate />,
+    title: "Quality Check & Inspection",
+    description:
+      "Every stage undergoes rigorous quality inspections, from foundation to finishing, ensuring a strong, safe, and durable structure built to code.",
+  },
+  {
+    id: "06",
     icon: <FaKey />,
     title: "Handover & Support",
     description:
-      "We complete final inspections, hand over the keys, and stay available for any support you need after the project is done.",
+      "We complete final inspections, hand over your keys with full documentation and warranty details, and stay available for support long after the project is done.",
   },
 ];
 
@@ -46,16 +63,12 @@ export default function ProcessSteps() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 relative">
         {/* Heading */}
         <div className="text-center mb-8">
-          <span className="span-heading">
-            How We Work
-          </span>
+          <span className="span-heading">How We Work</span>
 
-          <h2 className="h2-heading mt-3">
-            Our Construction Process
-          </h2>
+          <h2 className="h2-heading mt-3">Our Construction Process</h2>
 
           <p className="mt-5 text-gray-600 max-w-3xl mx-auto leading-8">
-            A clear, four-step process from first conversation to final handover
+            A clear, six-step process from first conversation to final handover
             — so you always know what happens next.
           </p>
         </div>
@@ -79,7 +92,7 @@ export default function ProcessSteps() {
             />
           </svg>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6">
             {steps.map((step, index) => (
               <div
                 key={step.id}
@@ -87,27 +100,27 @@ export default function ProcessSteps() {
                   index % 2 === 1 ? "lg:mt-16" : ""
                 }`}
               >
-                <div className="relative bg-white rounded-[28px] border border-gray-100 shadow-[0_10px_40px_-15px_rgba(26,31,46,0.15)] hover:shadow-[0_25px_60px_-20px_rgba(245,166,35,0.45)] hover:-translate-y-2 transition-all duration-500 p-8 pt-10 h-full">
+                <div className="h-max relative bg-white rounded-[28px] border border-gray-100 shadow-[0_10px_40px_-15px_rgba(26,31,46,0.15)] hover:shadow-[0_25px_60px_-20px_rgba(245,166,35,0.45)] hover:-translate-y-2 transition-all duration-500 p-8 pt-10 h-full">
                   {/* Gradient numeral */}
-                  <span className="block text-6xl font-black leading-none bg-gradient-to-br from-secondary to-primary bg-clip-text text-transparent select-none">
+                  <span className="block text-4xl lg:text-5xl font-black leading-none bg-gradient-to-br from-secondary to-primary bg-clip-text text-transparent select-none">
                     {step.id}
                   </span>
 
                   {/* Icon badge, overlapping the numeral */}
-                  <div className="absolute top-8 right-7 w-14 h-14 rounded-2xl bg-primary flex items-center justify-center text-secondary text-xl shadow-lg group-hover:bg-secondary group-hover:text-primary group-hover:rotate-6 transition-all duration-500">
+                  <div className="absolute top-5 right-5 w-10 h-10 lg:h-14 lg:w-14 rounded-2xl bg-primary flex items-center justify-center text-secondary text-lg lg:text-2xl shadow-lg group-hover:bg-secondary group-hover:text-primary group-hover:rotate-6 transition-all duration-500">
                     {step.icon}
                   </div>
 
                   {/* Title */}
-                  <h3 className="mt-6 text-lg font-bold text-primary">
+                  <h3 className="mt-6 text-base lg:text-lg font-bold text-primary">
                     {step.title}
                   </h3>
 
                   {/* Divider */}
-                  <div className="w-10 h-[3px] bg-secondary rounded-full my-4 group-hover:w-16 transition-all duration-500" />
+                  <div className="w-10 h-[3px] lg:h-[4px] bg-secondary rounded-full my-4 group-hover:w-16 transition-all duration-500" />
 
                   {/* Description */}
-                  <p className="text-[#666666] text-sm leading-7">
+                  <p className="text-[#666666] text-sm lg:text-sm leading-7">
                     {step.description}
                   </p>
                 </div>
