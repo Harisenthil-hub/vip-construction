@@ -2,7 +2,7 @@ import materialCategories from "../utils/MaterialData";
 
 const MaterialGallery = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="pt-20 pb-8 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
@@ -22,8 +22,11 @@ const MaterialGallery = () => {
           </p>
         </div>
 
-        {materialCategories.map((category) => (
-          <div key={category.category} className="mb-16">
+        {materialCategories.map((category, index) => (
+          <div
+            key={category.category}
+            className={index !== materialCategories.length - 1 ? "mb-16" : ""}
+          >
 
             {/* Category Heading */}
             <div className="flex items-center gap-4 mb-8">
@@ -65,9 +68,6 @@ const MaterialGallery = () => {
                       />
                     </div>
 
-                    {/* <p className="mt-2 text-xs sm:text-sm md:text-base font-semibold text-primary text-center">
-                      {item.name}
-                    </p> */}
                   </div>
                 ))
               )}
