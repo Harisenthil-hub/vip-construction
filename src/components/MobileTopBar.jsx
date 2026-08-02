@@ -21,7 +21,7 @@ export const MobileTopBar = () => {
       </Link>
 
       <Link
-        to="mailto:vipconstruction.14@gmail.com"
+        to="mailto:vipconstruction.13@gmail.com"
         className="flex items-center gap-1 whitespace-nowrap"
       >
         <MdEmail size={19} className="text-secondary" />

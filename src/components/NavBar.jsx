@@ -25,7 +25,7 @@ export function NavBar() {
             />
           </div>
 
-          <div className="h-15 w-45 lg:w-60">
+          <div className="h-16 w-50 lg:w-60">
             <img
               className="w-full h-full object-contain"
               src={NameLogo}

@@ -7,6 +7,7 @@ const approvals = [
   "Municipality Approval",
   "Corporation Approval",
   "Building Plan Approval",
+  "DTCP & RERA Approval"
 ];
 
 const banks = [
@@ -73,7 +74,7 @@ export default function Approvals() {
               ))}
             </div>
 
-            <div className="mt-7 lg:mt-15 p-5 bg-secondary/10 rounded-xl border border-secondary/20">
+            <div className="mt-5 p-5 bg-secondary/10 rounded-xl border border-secondary/20">
               <p className="text-sm md:text-base leading-6 md:leading-7 text-slate-600">
                 <span className="font-semibold text-primary">
                   {" "}
@@ -121,7 +122,7 @@ export default function Approvals() {
               ))}
             </div>
 
-            <div className="mt-7 lg:mt-10 rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-5">
+            <div className="mt-7 lg:mt-13 rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-5">
               <p className="text-sm md:text-base leading-6 md:leading-7 text-gray-300">
                 <span className="text-yellow-400 font-semibold">25+ Banks</span>{" "}
                 ready to help you get the right home or construction loan —
