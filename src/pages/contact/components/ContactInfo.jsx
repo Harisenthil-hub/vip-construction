@@ -5,6 +5,7 @@ import {
   FaClock,
   FaArrowRight,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const cards = [
   {
@@ -20,7 +21,7 @@ const cards = [
     title: "Visit Our Office",
     primary: "Udumalpet, Tamil Nadu",
     secondary: "Drop by and walk us through your project.",
-    link: "https://maps.google.com/?q=Udumalpet,Tamil Nadu",
+    link: "https://maps.app.goo.gl/kYRmjNgXxi8iuauPA",
     action: "Get Directions",
   },
   {
@@ -88,13 +89,13 @@ export default function ContactInfo() {
               </p>
             </div>
 
-            <a
-              href="tel:+919080273030"
+            <Link
+              to="tel:+919080273030"
               className="relative mt-8 inline-flex w-fit items-center gap-2 bg-[#F5A623] text-[#1A1F2E] font-semibold px-6 py-3 rounded-full hover:gap-4 hover:bg-white transition-all duration-300"
             >
               Call Now
-              <FaArrowRight />
-            </a>
+              <FaArrowRight  />
+            </Link>
           </div>
 
           {/* Remaining cards */}
