@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { vipInspiration } from "../data/aboutData";
 import { Quote, HardHat, ShieldCheck, Ruler, Compass } from "lucide-react";
 import onsiteImg from "../images/Onsite.webp";
@@ -15,7 +16,13 @@ export default function VipInspiration() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Tag & Heading */}
-        <div className="max-w-2xl mb-8 lg:mb-10">
+        <motion.div 
+          className="max-w-2xl mb-8 lg:mb-10"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.5 }}
+        >
           <span className="span-heading">
             Brand Roots & Engineering Spirit
           </span>
@@ -27,13 +34,19 @@ export default function VipInspiration() {
           <p className="text-xs sm:text-sm lg:text-base text-slate-600 font-normal leading-relaxed">
             {vipInspiration.description}
           </p>
-        </div>
+        </motion.div>
 
         {/* Layout Grid: Large Image, Story Pillars, Quote Card */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
           
           {/* Large Image (lg:col-span-5) */}
-          <div className="lg:col-span-5 w-full flex flex-col">
+          <motion.div 
+            className="lg:col-span-5 w-full flex flex-col"
+            initial={{ opacity: 0, x: -30, scale: 0.96 }}
+            whileInView={{ opacity: 1, x: 0, scale: 1 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
             <div className="group relative rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:border-[#F5A623]/60 hover:-translate-y-1 transition-all duration-500 aspect-[4/5] lg:aspect-auto lg:h-full lg:min-h-[380px] cursor-pointer">
               <img
                 src={onsiteImg}
@@ -54,10 +67,16 @@ export default function VipInspiration() {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Story & Quote Card (lg:col-span-7) */}
-          <div className="lg:col-span-7 w-full flex flex-col justify-between space-y-4 sm:space-y-6">
+          <motion.div 
+            className="lg:col-span-7 w-full flex flex-col justify-between space-y-4 sm:space-y-6"
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+          >
             
             {/* 4 Story Pillars Grid */}
             <div className="grid grid-cols-2 gap-2.5 sm:gap-4">
@@ -128,7 +147,7 @@ export default function VipInspiration() {
               </div>
             </div>
 
-          </div>
+          </motion.div>
 
         </div>
 

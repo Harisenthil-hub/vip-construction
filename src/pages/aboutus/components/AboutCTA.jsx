@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { ArrowRight, CalendarDays } from "lucide-react";
 
 export default function AboutCTA() {
@@ -16,7 +17,13 @@ export default function AboutCTA() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <div className="bg-slate-900/80 border border-slate-800 hover:border-[#F5A623]/50 rounded-2xl p-5 sm:p-6 lg:p-8 text-left grid grid-cols-1 lg:grid-cols-12 gap-6 items-center shadow-xl hover:shadow-2xl hover:shadow-[#F5A623]/10 transition-all duration-500 relative overflow-hidden group">
+        <motion.div 
+          initial={{ opacity: 0, y: 30, scale: 0.98 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="bg-slate-900/80 border border-slate-800 hover:border-[#F5A623]/50 rounded-2xl p-5 sm:p-6 lg:p-8 text-left grid grid-cols-1 lg:grid-cols-12 gap-6 items-center shadow-xl hover:shadow-2xl hover:shadow-[#F5A623]/10 transition-all duration-500 relative overflow-hidden group"
+        >
           
           {/* Left Text */}
           <div className="lg:col-span-8">
@@ -46,7 +53,7 @@ export default function AboutCTA() {
             </Link>
           </div>
 
-        </div>
+        </motion.div>
 
       </div>
     </section>

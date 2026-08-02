@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { ownerTimeline } from "../data/aboutData";
 import { Building2, BriefcaseBusiness, HardHat, MapPin } from "lucide-react";
 
@@ -13,7 +14,13 @@ export default function OwnerTimeline() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="max-w-2xl mb-8 lg:mb-10">
+        <motion.div 
+          className="max-w-2xl mb-8 lg:mb-10"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.5 }}
+        >
           <span className="span-heading">
             Founder's Track Record
           </span>
@@ -24,16 +31,20 @@ export default function OwnerTimeline() {
 
           <p className="text-xs sm:text-sm lg:text-base text-slate-600 font-normal leading-relaxed">
 Before starting VIP Construction, our founder learned the trade at India's top construction companies — bringing that same discipline, skill, and honesty to every project we build today.          </p>
-        </div>
+        </motion.div>
 
         {/* 1 Row Grid for Owner Timeline */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 lg:gap-6 items-stretch">
-          {ownerTimeline.map((item) => {
+          {ownerTimeline.map((item, idx) => {
             const IconComp = iconMap[item.iconName] || Building2;
 
             return (
-              <div 
+              <motion.div 
                 key={item.year} 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.5, delay: idx * 0.1, ease: "easeOut" }}
                 className="bg-white border border-slate-200 rounded-2xl p-3 sm:p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#F5A623]/50 transition-all duration-300 flex flex-col justify-between group cursor-pointer"
               >
                 <div>
@@ -58,19 +69,18 @@ Before starting VIP Construction, our founder learned the trade at India's top c
                     {item.role}
                   </p>
 
-                  {/* Complete Description - No text hidden */}
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal mb-3">
+                  {/* Description */}
+                  <p className="text-xs text-slate-600 leading-relaxed font-normal mb-4">
                     {item.description}
                   </p>
                 </div>
 
-                {/* Footer Location */}
-                <div className="pt-2.5 border-t border-slate-100 flex items-center gap-1.5 text-xs text-slate-500 font-medium group-hover:text-slate-900 transition-colors">
+                {/* Location Footer */}
+                <div className="pt-3 border-t border-slate-100 flex items-center gap-1.5 text-xs text-slate-500 font-medium group-hover:text-slate-800 transition-colors">
                   <MapPin className="w-3.5 h-3.5 text-[#F5A623]" />
                   <span>{item.location}</span>
                 </div>
-
-              </div>
+              </motion.div>
             );
           })}
         </div>
