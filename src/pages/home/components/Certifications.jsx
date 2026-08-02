@@ -27,7 +27,7 @@ export function Certifications() {
               >
                 <img
                   src={item.logo}
-                  alt={`${item.name} logo`}
+                  alt={item.altText}
                   loading="lazy"
                   className=" max-h-full max-w-full object-cover transition-all duration-300 group-hover:scale-105 " />
               </div>
