@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { HardHat, FolderOpen } from "lucide-react";
 import ProjectFilter from "./ProjectFilter";
 import ProjectCard from "./ProjectCard";
@@ -8,6 +9,10 @@ const ProjectGallery = () => {
   const [activeFilter, setActiveFilter] = useState("All Projects");
   const [showAll, setShowAll] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  const location = useLocation();
+  const navigate = useNavigate();
+  const galleryRef = useRef(null);
 
   // Detect mobile screen
   useEffect(() => {
@@ -21,10 +26,28 @@ const ProjectGallery = () => {
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
 
-  // Reset "Show More" when filter changes
+  // Reset Show More when filter changes
   useEffect(() => {
     setShowAll(false);
   }, [activeFilter]);
+
+  // Smooth scroll back to gallery
+  useEffect(() => {
+    if (location.state?.scrollToGallery && galleryRef.current) {
+      setTimeout(() => {
+        galleryRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+
+        // Remove state after scrolling
+        navigate(location.pathname, {
+          replace: true,
+          state: {},
+        });
+      }, 150);
+    }
+  }, [location, navigate]);
 
   const filteredProjects = projects.filter((project) => {
     if (activeFilter === "All Projects") return true;
@@ -38,25 +61,39 @@ const ProjectGallery = () => {
 
   // Show only first 3 projects on mobile
   const displayedProjects =
-    isMobile && !showAll ? filteredProjects.slice(0, 3) : filteredProjects;
+    isMobile && !showAll
+      ? filteredProjects.slice(0, 3)
+      : filteredProjects;
 
   return (
-    <section className="pt-10 pb-20 bg-surface">
+    <section
+      ref={galleryRef}
+      id="project-gallery"
+      className="pt-10 pb-20 bg-surface"
+    >
       <div className="max-w-7xl mx-auto px-6">
+
         {/* Heading */}
         <div className="home-container-header">
-          <span className="span-heading">Our Portfolio</span>
 
-          <h2 className="h2-heading">Explore Our Projects</h2>
+          <span className="span-heading">
+            Our Portfolio
+          </span>
+
+          <h2 className="h2-heading">
+            Explore Our Projects
+          </h2>
 
           <div className="divider mb-6"></div>
 
           <p className="max-w-3xl mx-auto text-text-dark-muted leading-8">
-            A few of the houses, shops, and offices we've completed — more photos added as new sites finish.
+            A few of the houses, shops, and offices we've completed — more
+            photos added as new sites finish.
           </p>
+
         </div>
 
-        {/* Filter */}
+        {/* Filters */}
         <ProjectFilter
           activeFilter={activeFilter}
           setActiveFilter={setActiveFilter}
@@ -67,11 +104,14 @@ const ProjectGallery = () => {
           <>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
               {displayedProjects.map((project) => (
-                <ProjectCard key={project.id} project={project} />
+                <ProjectCard
+                  key={project.id}
+                  project={project}
+                />
               ))}
             </div>
 
-            {/* Show More / Show Less Button (Only Mobile) */}
+            {/* Show More */}
             {isMobile && filteredProjects.length > 3 && (
               <div className="flex justify-center mt-10">
                 <button
@@ -85,18 +125,20 @@ const ProjectGallery = () => {
           </>
         ) : (
           <div className="mt-20 flex justify-center animate-in fade-in zoom-in-95 duration-500">
+
             <div className="flex flex-col items-center text-center">
-              {/* Icon */}
+
               <div className="w-24 h-24 rounded-full bg-secondary/10 flex items-center justify-center shadow-lg">
-                <HardHat size={46} className="text-secondary animate-pulse" />
+                <HardHat
+                  size={46}
+                  className="text-secondary animate-pulse"
+                />
               </div>
 
-              {/* Heading */}
               <h3 className="mt-6 text-3xl font-bold text-primary">
                 No Projects Available
               </h3>
 
-              {/* Description */}
               <p className="mt-4 max-w-xl text-text-dark-muted leading-8">
                 We currently don't have any projects under the{" "}
                 <span className="font-semibold text-primary">
@@ -105,14 +147,16 @@ const ProjectGallery = () => {
                 category.
               </p>
 
-              {/* Footer */}
               <div className="mt-5 flex items-center gap-2 text-secondary font-semibold">
                 <FolderOpen size={20} />
                 New projects will be added soon.
               </div>
+
             </div>
+
           </div>
         )}
+
       </div>
     </section>
   );

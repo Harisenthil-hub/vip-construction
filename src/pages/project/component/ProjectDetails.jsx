@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import ProjectModal from "./ProjectModal";
 import { projects } from "../utils/ProjectData";
@@ -7,13 +7,17 @@ import { HardHat, ArrowLeft } from "lucide-react";
 const ProjectDetails = () => {
     const { id } = useParams();
     const navigate = useNavigate();
+    const location = useLocation();
 
     const project = projects.find(
         (item) => item.id === Number(id)
     );
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        window.scrollTo({
+            top: 0,
+            behavior: "instant",
+        });
     }, []);
 
     if (!project) {
@@ -61,9 +65,13 @@ const ProjectDetails = () => {
 
     return (
         <ProjectModal
-            project={project}
-            onClose={() => navigate("/project")}
-        />
+  project={project}
+  onClose={() =>
+    navigate("/project", {
+      state: { scrollToGallery: true },
+    })
+  }
+/>
     );
 };
 
