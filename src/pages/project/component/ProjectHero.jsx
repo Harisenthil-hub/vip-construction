@@ -4,7 +4,7 @@ import ProjectButtons from "./ProjectButtons";
 
 const ProjectHero = () => {
   return (
-    <section className="relative min-h-[40vh] md:min-h-[420px] flex items-center overflow-hidden">
+    <section className="relative min-h-[70vh] md:min-h-[720px] flex items-center overflow-hidden">
 
       {/* Background Image */}
       <img
