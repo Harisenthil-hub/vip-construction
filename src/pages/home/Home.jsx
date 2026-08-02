@@ -38,20 +38,7 @@ export function Home() {
           property="og:description"
           content="Building homes & commercial spaces across Coimbatore, Udumalpet, Pollachi, Dharapuram & Palani since 2019 — quality work, honest pricing, on-time delivery."
         />
-        <meta
-          property="og:image"
-          content="https://vip-construction.vercel.app/vip-construction-og-image.png"
-        />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="VIP Construction" />
-        <meta property="og:locale" content="en_IN" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:url"
-          content="https://vipconstruction.vercel.app/"
-        />
+        
         <meta
           name="twitter:title"
           content="VIP Construction | Trusted Home & Building Contractors in Tamil Nadu"
@@ -60,10 +47,7 @@ export function Home() {
           name="twitter:description"
           content="Building homes & commercial spaces across Coimbatore, Udumalpet, Pollachi, Dharapuram & Palani since 2019 — quality work, honest pricing."
         />
-        <meta
-          name="twitter:image"
-          content="https://vip-construction.vercel.app/vip-construction-twitter-card.png"
-        />
+        
       </Helmet>
     
       <HeroSection />
