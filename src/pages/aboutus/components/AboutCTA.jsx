@@ -37,6 +37,8 @@ export default function AboutCTA() {
           <div className="lg:col-span-4 flex justify-start lg:justify-end">
             <Link
               to="/contact"
+              state={{ scrollTo: 'contact-form' }}
+
               className="h-11 px-5 rounded-xl bg-[#F5A623] text-[#0F172A] font-bold text-xs sm:text-sm inline-flex items-center gap-2 hover:bg-[#e0941f] hover:scale-105 hover:shadow-lg hover:shadow-[#F5A623]/25 active:scale-95 transition-all duration-300 w-full sm:w-auto justify-center group/btn"
             >
               <CalendarDays className="w-4 h-4 text-[#0F172A]" />

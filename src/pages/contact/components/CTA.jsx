@@ -1,29 +1,35 @@
+import { useEffect } from "react";
 import { FaUserTie } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
 
 export default function CTA() {
-  const handleScroll = () => {
-    const form = document.getElementById("contact-form");
+  const location = useLocation();
 
-    if (!form) return;
+  useEffect(() => {
+    if (location.state?.scrollTo === "contact-form") {
+      const form = document.getElementById("contact-form");
 
-    const navbarOffset = 100;
+      if (!form) return;
 
-    const top =
-      form.getBoundingClientRect().top + window.scrollY - navbarOffset;
+      const navbarOffset = 100;
 
-    window.scrollTo({
-      top,
-      behavior: "smooth",
-    });
+      const top =
+        form.getBoundingClientRect().top + window.scrollY - navbarOffset;
 
-    // Focus the first input after scrolling
-    setTimeout(() => {
-      const firstInput = form.querySelector("input");
-      if (firstInput) {
-        firstInput.focus();
-      }
-    }, 700);
-  };
+      window.scrollTo({
+        top,
+        behavior: "smooth",
+      });
+
+      // Focus the first input after scrolling
+      setTimeout(() => {
+        const firstInput = form.querySelector("input");
+        if (firstInput) {
+          firstInput.focus();
+        }
+      }, 700);
+    }
+  }),[location];
 
   return (
     <section className="bg-primary py-10 lg:py-15 text-secondary">
@@ -41,13 +47,14 @@ export default function CTA() {
         </p>
 
         {/* Button */}
-        <button
-          onClick={handleScroll}
+        <Link
+          to='/contact'
+          state={{ scrollTo: 'contact-form' }}
           className="mt-7 inline-flex items-center justify-center bg-[#F5A623] hover:bg-[#E09200] text-[#1A1F2E] font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:scale-101 cursor-pointer"
         >
           <FaUserTie className="inline mr-2" size={25} />
           Get Consultation
-        </button>
+        </Link>
       </div>
     </section>
   );
