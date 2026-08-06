@@ -5,7 +5,8 @@ import {
   Compass,
   ShieldCheck,
   Building2,
-  Award,
+  HardHat,
+  Users,
 } from "lucide-react";
 
 export default function Hero() {
@@ -77,24 +78,24 @@ export default function Hero() {
               </div>
 
               <div className="flex items-center gap-2 p-1.5">
-                <Building2 className="text-secondary" size={30} />
+                <HardHat className="text-secondary" size={30} />
 
                 <div>
                   <p className="text-md font-bold text-white leading-none">
-                    100+ Sites
+                    15+ Yrs
                   </p>
-                  <p className="text-xs text-slate-400 mt-0.5">Handed Over</p>
+                  <p className="text-xs text-slate-400 mt-0.5">Skilled Labour</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-2 p-1.5">
-                <Award className="text-secondary" size={30} />
+                <Users className="text-secondary" size={30} />
 
                 <div>
                   <p className="text-md font-bold text-white leading-none">
-                    10-Year
+                    150+
                   </p>
-                  <p className="text-xs text-slate-400 mt-0.5">Warranty</p>
+                  <p className="text-xs text-slate-400 mt-0.5">Man Power</p>
                 </div>
               </div>
             </div>
