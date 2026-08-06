@@ -144,22 +144,22 @@ export const vipInspiration = {
   pillars: [
     {
       title: "Direct Site Leadership",
-      desc: "Experienced civil engineers supervise every project to ensure quality construction, safety standards, and timely completion.",
+      desc: "Experienced engineers supervise every project to ensure quality and timely completion.",
       iconName: "HardHat"
     },
     {
       title: "Smart Project Planning",
-      desc: "We create detailed plans and accurate estimates to ensure smooth execution, cost efficiency, and on-time project delivery.",
+      desc: "Accurate planning and cost estimates ensure smooth execution and efficient delivery.",
       iconName: "Ruler"
     },
     {
       title: "Quality Construction Standards",
-      desc: "Premium materials and strict quality checks ensure every structure is durable, safe, and built to last for generations.",
+      desc: "Premium materials and strict quality checks ensure durable, long-lasting structures.",
       iconName: "ShieldCheck"
     },
     {
       title: "Client-First Approach",
-      desc: "Transparent communication, regular updates, and dedicated support keep clients informed throughout every construction stage.",
+      desc: "Dedicated support with regular progress updates at every stage.",
       iconName: "Compass",
       highlighted: true
     }
