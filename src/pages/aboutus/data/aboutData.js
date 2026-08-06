@@ -137,31 +137,31 @@ export const awardsList = [
 ];
 
 export const vipInspiration = {
-  title: "The 'VIP' Movie Spirit — Passion in Engineering",
-  subtitle: "Built from Ground-Level Sweat, Hard-Hat Perseverance & Engineering Integrity",
-  quote: "A good engineer isn't made sitting in an air-conditioned office — he proves himself standing on the site, blueprint in hand, building something that lasts.",
-  movieReference: "Inspired by the spirit of civil engineering dedication (VIP Movie)",
-  description: "That's the spirit VIP Construction is built on — real civil engineering dedication on the ground. We don't cut corners or use cheap materials. We build strong structures meant to last for generations.",
+  badge: "BUILDING TRUST THROUGH ENGINEERING EXCELLENCE",
+  title: "Meet the Founder Behind Every Successful Project",
+  description: "At VIP Construction, every project begins with careful planning, technical expertise, and a commitment to quality. Our founder personally oversees critical stages of construction to ensure every residential and commercial project is delivered with structural integrity, transparent communication, and lasting value across Tamil Nadu.",
+  quote: "Every building represents a family's dream or a business's future. Our responsibility is to build it with precision, honesty, and engineering excellence that stands strong for generations.",
   pillars: [
     {
-      title: "Always On Site",
-      desc: "Our engineers are physically present at every foundation pour and every steel fixing — not just  checking reports.",
+      title: "Direct Site Leadership",
+      desc: "Every project receives hands-on supervision from experienced civil engineers, ensuring construction quality, safety standards, and timely execution from foundation to completion.",
       iconName: "HardHat"
     },
     {
-      title: "No Shortcuts",
-      desc: "Tested cement, proper steel, correct mixing ratios — every time, no exceptions.",
-      iconName: "ShieldCheck"
-    },
-    {
-      title: "Careful Craftsmanship",
-      desc: "Since 2019, we've grown because we genuinely care about getting the details right.",
+      title: "Smart Project Planning",
+      desc: "We prepare detailed construction plans, accurate cost estimates, and practical execution strategies to help clients build with confidence and avoid unnecessary delays.",
       iconName: "Ruler"
     },
     {
-      title: "We Solve Problems",
-      desc: "Difficult soil, tight deadlines — we find practical solutions instead of excuses.",
-      iconName: "Compass"
+      title: "Quality Construction Standards",
+      desc: "From selecting premium materials to maintaining strict quality checks, every stage is monitored to deliver durable, reliable, and long-lasting structures.",
+      iconName: "ShieldCheck"
+    },
+    {
+      title: "Client-First Approach",
+      desc: "Clear communication, transparent pricing, and regular project updates help our clients stay informed throughout every stage of construction.",
+      iconName: "Compass",
+      highlighted: true
     }
   ]
 };
