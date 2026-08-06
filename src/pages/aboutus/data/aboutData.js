@@ -139,27 +139,27 @@ export const awardsList = [
 export const vipInspiration = {
   badge: "BUILDING TRUST THROUGH ENGINEERING EXCELLENCE",
   title: "Meet the Founder Behind Every Successful Project",
-  description: "At VIP Construction, every project begins with careful planning, technical expertise, and a commitment to quality. Our founder personally oversees critical stages of construction to ensure every residential and commercial project is delivered with structural integrity, transparent communication, and lasting value across Tamil Nadu.",
+  description: "VIP Construction provides residential and commercial construction services with expert planning, quality assurance, and reliable execution across Tamil Nadu.",
   quote: "Every building represents a family's dream or a business's future. Our responsibility is to build it with precision, honesty, and engineering excellence that stands strong for generations.",
   pillars: [
     {
       title: "Direct Site Leadership",
-      desc: "Every project receives hands-on supervision from experienced civil engineers, ensuring construction quality, safety standards, and timely execution from foundation to completion.",
+      desc: "Experienced civil engineers supervise every project to ensure quality construction, safety standards, and timely completion.",
       iconName: "HardHat"
     },
     {
       title: "Smart Project Planning",
-      desc: "We prepare detailed construction plans, accurate cost estimates, and practical execution strategies to help clients build with confidence and avoid unnecessary delays.",
+      desc: "We create detailed plans and accurate estimates to ensure smooth execution, cost efficiency, and on-time project delivery.",
       iconName: "Ruler"
     },
     {
       title: "Quality Construction Standards",
-      desc: "From selecting premium materials to maintaining strict quality checks, every stage is monitored to deliver durable, reliable, and long-lasting structures.",
+      desc: "Premium materials and strict quality checks ensure every structure is durable, safe, and built to last for generations.",
       iconName: "ShieldCheck"
     },
     {
       title: "Client-First Approach",
-      desc: "Clear communication, transparent pricing, and regular project updates help our clients stay informed throughout every stage of construction.",
+      desc: "Transparent communication, regular updates, and dedicated support keep clients informed throughout every construction stage.",
       iconName: "Compass",
       highlighted: true
     }
