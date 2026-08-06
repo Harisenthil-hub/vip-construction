@@ -11,7 +11,7 @@ export const testimonials = [
     name: "Saravanan Muthu",
     role: "Business Owner, Pollachi",
     review:
-      "Our showroom in Pollachi was completed ahead of schedule with excellent finishing. The team stayed professional and communication was clear throughout.",
+      "Our construction project in Pollachi was completed ahead of schedule with excellent finishing. The team stayed professional and communication was clear throughout.",
   },
   {
     id: 3,

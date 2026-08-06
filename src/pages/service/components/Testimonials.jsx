@@ -14,7 +14,8 @@ export default function Testimonials() {
             What Our Clients Say
           </h2>
           <p className="mt-2.5 text-xs sm:text-sm lg:text-base text-slate-600 max-w-xl mx-auto leading-relaxed font-normal">
-            Customer satisfaction is at the heart of everything we do. Here's feedback from our clients.
+            Customer satisfaction is at the heart of everything we do. Here's
+            feedback from our clients.
           </p>
         </div>
 

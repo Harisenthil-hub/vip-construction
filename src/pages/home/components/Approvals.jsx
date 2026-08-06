@@ -7,7 +7,8 @@ const approvals = [
   "Municipality Approval",
   "Corporation Approval",
   "Building Plan Approval",
-  "DTCP & RERA Approval"
+  "DTCP & RERA Approval",
+  "House Tax Approval",
 ];
 
 const banks = [
