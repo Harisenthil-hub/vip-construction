@@ -41,7 +41,7 @@ export default function Hero() {
 
             {/* Compact Paragraph */}
             <p className="text-xs sm:text-sm lg:text-base text-slate-300 font-normal leading-relaxed max-w-xl mb-6">
-              VIP Construction handles homes, shops, offices, and commercial buildings across Coimbatore, Udumalpet, Pollachi, Dharapuram, and Palani — with strong structures, honest pricing, and on-time handover.
+              VIP Construction handles homes, shops, offices, and commercial buildings across Coimbatore, Udumalpet, Tiruppur, Pollachi, Dharapuram, and Palani — with strong structures, honest pricing, and on-time handover.
             </p>
 
             {/* Action Buttons */}

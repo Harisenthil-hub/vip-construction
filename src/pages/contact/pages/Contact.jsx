@@ -17,7 +17,7 @@ export default function Contact() {
         />
         <meta
           name="description"
-          content="Talk to VIP Construction for a free site visit & honest quote. Serving Coimbatore, Udumalpet, Pollachi, Dharapuram & Palani. Call or WhatsApp us today."
+          content="Talk to VIP Construction for a free site visit & honest quote. Serving Coimbatore, Udumalpet, Tiruppur, Pollachi, Dharapuram & Palani. Call or WhatsApp us today."
         />
         <meta
           name="keywords"
@@ -61,7 +61,7 @@ export default function Contact() {
         />
         <meta
           name="twitter:description"
-          content="Free site visit, honest quote, no pressure. Talk to VIP Construction — serving Coimbatore, Udumalpet, Pollachi, Dharapuram & Palani."
+          content="Free site visit, honest quote, no pressure. Talk to VIP Construction — serving Coimbatore, Udumalpet, Tiruppur, Pollachi, Dharapuram & Palani."
         />
         <meta
           name="twitter:image"

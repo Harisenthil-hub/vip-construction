@@ -67,7 +67,7 @@ export default function Footer() {
             </Link>
             <p className="mt-4 leading-8 text-slate-400">
               Building homes, offices, and landmark projects across Coimbatore,
-              Udumalpet, Pollachi, Dharapuram, and Palani with quality and trust
+              Udumalpet, Tiruppur, Pollachi, Dharapuram, and Palani with quality and trust
               since 2019.
             </p>
             {/* Social */}
@@ -111,14 +111,20 @@ export default function Footer() {
 
             <div className="space-y-3 mt-3">
               <div className="space-y-1">
-                <p className="font-bold text-secondary">Udumalpet Branch, <span className="text-gray-500 ml-1">Main Branch</span></p>
+                <p className="font-bold text-white">
+                  <span className="text-secondary ml-1">Main Branch </span>-
+                  Udumalpet
+                </p>
                 <span>
                   8, Durairam layout, S.V Mill (P.O), Udumalpet, Tiruppur Dist –
                   642128.
                 </span>
               </div>
               <div className="space-y-1">
-                <p className="font-bold text-secondary">Coimbatore Branch</p>
+                <p className="font-bold text-white">
+                  <span className="text-secondary ml-1">Sub Office </span>
+                  - Coimbatore
+                </p>
                 <span>
                   No: 46 Srinagar, KK nagar, Ganapathi, Coimbatore – 641006.
                 </span>
