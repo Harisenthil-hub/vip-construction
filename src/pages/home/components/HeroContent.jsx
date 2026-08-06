@@ -16,27 +16,27 @@ export function HeroContent() {
         <p className=" mt-6 max-w-[650px] text-slate-300 text-base leading-7 sm:text-lg sm:leading-8 lg:text-lg ">
           VIP Construction builds homes and commercial spaces with quality,
           honest work, and on-time delivery — serving Coimbatore, Udumalpet,
-          Pollachi, Dharapuram, and Palani.
+          Tiruppur, Pollachi, Dharapuram, and Palani.
         </p>
 
         {/* CTA BUTTONS */}
         <div className=" mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center lg:mt-10 ">
-          {/* VIEW PROJECTS */}
-          <Link
-            to="/project"
-            className="inline-flex items-center justify-center gap-2 bg-secondary hover:bg-gold-hover text-white font-semibold px-6 py-3 rounded-md transition-colors duration-300 "
-          >
-            <FaFileAlt size={15} />
-            View Projects
-          </Link>
-
           {/* CONTACT */}
           <Link
             to="tel:+919080273030"
-            className="inline-flex items-center justify-center gap-2 border border-white/50 bg-black/10 hover:bg-white/10 text-white font-semibold px-6 py-3 rounded-md backdrop-blur-sm transition-colors duration-300"
+            className="inline-flex items-center justify-center gap-2 bg-secondary hover:bg-gold-hover text-white font-semibold px-6 py-3 rounded-md transition-colors duration-300 animate-glow"
           >
             <FaPhoneAlt size={15} />
             Contact Us
+          </Link>
+
+          {/* VIEW PROJECTS */}
+          <Link
+            to="/project"
+            className="inline-flex items-center justify-center gap-2 border border-white/50 bg-black/10 hover:bg-white/10 text-white font-semibold px-6 py-3 rounded-md backdrop-blur-sm transition-colors duration-300"
+          >
+            <FaFileAlt size={15} />
+            View Projects
           </Link>
         </div>
 

@@ -32,7 +32,7 @@ const ProjectHero = () => {
 
           {/* Description */}
           <p className="mt-5 max-w-3xl text-white/80 leading-7 text-sm sm:text-base lg:text-lg">
-            Houses, shops, and offices we've built across Coimbatore, Udumalpet, Pollachi, Dharapuram, and Palani. See the work for yourself before you decide.
+            Houses, shops, and offices we've built across Coimbatore, Udumalpet, Tiruppur, Pollachi, Dharapuram, and Palani. See the work for yourself before you decide.
           </p>
 
           {/* Stats */}

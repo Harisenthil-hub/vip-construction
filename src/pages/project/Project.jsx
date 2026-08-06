@@ -16,7 +16,7 @@ const Project = () => {
         />
         <meta
           name="description"
-          content="Browse 100+ completed villas, homes & commercial projects by VIP Construction across Coimbatore, Udumalpet, Pollachi, Dharapuram & Palani."
+          content="Browse 100+ completed villas, homes & commercial projects by VIP Construction across Coimbatore, Udumalpet, Tiruppur, Pollachi, Dharapuram & Palani."
         />
         <meta
           name="keywords"
@@ -38,7 +38,7 @@ const Project = () => {
         />
         <meta
           property="og:description"
-          content="A look at the homes, shops, and buildings we've completed across Coimbatore, Udumalpet, Pollachi, Dharapuram & Palani — real work, real quality."
+          content="A look at the homes, shops, and buildings we've completed across Coimbatore, Udumalpet, Tiruppur, Pollachi, Dharapuram & Palani — real work, real quality."
         />
         <meta
           property="og:image"
@@ -60,7 +60,7 @@ const Project = () => {
         />
         <meta
           name="twitter:description"
-          content="100+ completed villas, homes & commercial projects across Coimbatore, Udumalpet, Pollachi, Dharapuram & Palani."
+          content="100+ completed villas, homes & commercial projects across Coimbatore, Udumalpet, Tiruppur, Pollachi, Dharapuram & Palani."
         />
         <meta
           name="twitter:image"

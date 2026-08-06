@@ -20,7 +20,7 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="mx-auto mt-2.5 max-w-xl text-xs sm:text-sm lg:text-base text-slate-300 leading-relaxed font-normal">
-            A look at our completed homes, shops, offices, and commercial buildings across Coimbatore, Udumalpet, Pollachi, Dharapuram, and Palani.
+            A look at our completed homes, shops, offices, and commercial buildings across Coimbatore, Udumalpet, Tiruppur, Pollachi, Dharapuram, and Palani.
           </p>
         </div>
 
