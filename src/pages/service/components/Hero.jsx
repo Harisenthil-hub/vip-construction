@@ -57,10 +57,10 @@ export default function Hero() {
               </Link>
 
               <Link
-                to="/services"
+                to="/about-us"
                 className="h-11 px-5 w-full md:w-auto rounded-lg bg-black/10 border border-white/50 text-white font-bold text-xs sm:text-sm inline-flex items-center justify-center gap-2 hover:bg-white/10 transition-all duration-300"
               >
-                <span>Explore Services</span>
+                <span>Explore Our Journey</span>
               </Link>
             </div>
 

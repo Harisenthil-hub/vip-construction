@@ -38,17 +38,16 @@ export default function FloatingContact() {
         aria-label="Chat on WhatsApp"
         className="contact-pulse group h-10 w-10 lg:h-13 lg:w-13 rounded-full bg-[#25D366] flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-105  hover:shadow-2xl "
       >
-        <FaWhatsapp
-          className="text-2xl text-white transition-transform duration-300 group-hover:rotate-12"
-        />
+        <FaWhatsapp className="text-2xl text-white transition-transform duration-300 group-hover:rotate-12" />
       </Link>
 
       {/* Call */}
       <Link
-        to="tel:+919080273030" aria-label="Call Us" className="group h-10 w-10 lg:h-13 lg:w-13 rounded-full bg-primary flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl " >
-        <FaPhoneAlt
-          className="text-white transition-transform duration-300 group-hover:rotate-12"
-        />
+        to="tel:+919080273030"
+        aria-label="Call Us"
+        className="contact-pulse group h-10 w-10 lg:h-13 lg:w-13 rounded-full bg-primary flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl "
+      >
+        <FaPhoneAlt className="text-white transition-transform duration-300 group-hover:rotate-12" />
       </Link>
     </div>
   );

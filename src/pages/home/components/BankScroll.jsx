@@ -7,7 +7,7 @@ export function BankScroll() {
         {/* BANKSCROLL HEADER */}
         <div className="home-container-header">
           <span className="span-heading text-xs">Banking Assistance</span>
-          <h2 className="h2-heading">25+ Trusted Bank Partners</h2>
+          <h2 className="h2-heading">25+ Banking Collaborations</h2>
           <div className="divider" />
         </div>
 
