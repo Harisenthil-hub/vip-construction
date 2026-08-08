@@ -16,20 +16,24 @@ import brick3 from "../../../assets/project/material_gallery/brick/Wirecut.webp"
 import wood1 from "../../../assets/project/material_gallery/wood/Burma_Teak.webp";
 import wood2 from "../../../assets/project/material_gallery/wood/Nilambur_Teak.webp";
 import wood3 from "../../../assets/project/material_gallery/wood/Sal_Wood.webp";
+import wood4 from "../../../assets/project/material_gallery/wood/Mahogany.webp";
 
 import tiles1 from "../../../assets/project/material_gallery/tiles/Anuj.webp";
 import tiles2 from "../../../assets/project/material_gallery/tiles/Kajaria.webp";
 import tiles3 from "../../../assets/project/material_gallery/tiles/Simpolo.webp";
+import tiles4 from "../../../assets/project/material_gallery/tiles/Somany.webp";
+import tiles5 from "../../../assets/project/material_gallery/tiles/Johnson.webp";
+import tiles6 from "../../../assets/project/material_gallery/tiles/Cera.webp";
 
-import electrical1 from "../../../assets/project/material_gallery/electrical/Crompton.webp";
-import electrical2 from "../../../assets/project/material_gallery/electrical/Finolex.webp";
-import electrical3 from "../../../assets/project/material_gallery/electrical/GM.webp";
-import electrical4 from "../../../assets/project/material_gallery/electrical/Legrand.webp";
-import electrical5 from "../../../assets/project/material_gallery/electrical/Phlips.webp";
-import electrical6 from "../../../assets/project/material_gallery/electrical/Wipro.webp";
+import electrical1 from "../../../assets/project/material_gallery/electrical/Legrand.webp";
+import electrical2 from "../../../assets/project/material_gallery/electrical/GM.webp";
+import electrical3 from "../../../assets/project/material_gallery/electrical/Anchor.webp";
+import electrical4 from "../../../assets/project/material_gallery/electrical/Schneider.webp";
+import electrical5 from "../../../assets/project/material_gallery/electrical/Norwood.webp";
 
 import plumbing1 from "../../../assets/project/material_gallery/plumbing/Ashirvad.webp";
 import plumbing2 from "../../../assets/project/material_gallery/plumbing/Supreme.webp";
+import plumbing3 from "../../../assets/project/material_gallery/plumbing/Astral.webp";
 
 import paint1 from "../../../assets/project/material_gallery/paint/Asianpaint.webp";
 import paint2 from "../../../assets/project/material_gallery/paint/Berger.webp";
@@ -38,11 +42,15 @@ import paint4 from "../../../assets/project/material_gallery/paint/JSW.webp";
 
 import wire1 from "../../../assets/project/material_gallery/wire/Kundan_Cab.webp";
 import wire2 from "../../../assets/project/material_gallery/wire/RR_Kabel.webp";
+import wire3 from "../../../assets/project/material_gallery/wire/Finolex.webp";
+import wire4 from "../../../assets/project/material_gallery/wire/Polycab.webp";
+import wire5 from "../../../assets/project/material_gallery/wire/Orbit.webp";
 
-import sanfit1 from "../../../assets/project/material_gallery/sanitary_fitting/Hindware.webp";
-import sanfit2 from "../../../assets/project/material_gallery/sanitary_fitting/Jaguar.webp";
-import sanfit3 from "../../../assets/project/material_gallery/sanitary_fitting/Kohler.webp";
-import sanfit4 from "../../../assets/project/material_gallery/sanitary_fitting/Parryware.webp";
+import sanfit1 from "../../../assets/project/material_gallery/sanitary_fitting/Jaguar.webp";
+import sanfit2 from "../../../assets/project/material_gallery/sanitary_fitting/Kohler.webp";
+import sanfit3 from "../../../assets/project/material_gallery/sanitary_fitting/Parryware.webp";
+import sanfit4 from "../../../assets/project/material_gallery/sanitary_fitting/Hindware.webp";
+import sanfit5 from "../../../assets/project/material_gallery/sanitary_fitting/American_Standard.webp";
 
 const materialCategories = [
   {
@@ -88,9 +96,9 @@ const materialCategories = [
         name: "Brick",
         logo: brick1,
         images: [
-          { src: brick1, alt: "Concrete hollow blocks used in VIP Construction projects" },
-          { src: brick2, alt: "Solid concrete block – strong construction material" },
-          { src: brick3, alt: "Red clay bricks used for quality wall construction" },
+          { src: brick1, alt: "Flyash Bricks – quality construction material used by VIP Construction" },
+          { src: brick2, alt: "Solid Hallow blocks – strong and durable construction material" },
+          { src: brick3, alt: "Wirecut-RedBricks – quality wall construction material used by VIP Construction" },
         ],
       },
     ],
@@ -107,6 +115,9 @@ const materialCategories = [
           { src: tiles1, alt: "Anuj Tiles – flooring and tiling brand partner" },
           { src: tiles2, alt: "Kajaria Ceramics – premium tiles brand" },
           { src: tiles3, alt: "Simpolo Tiles & Bathware – quality tiles and bathware brand" },
+          { src: tiles4, alt: "Somany Ceramics – premium tiles and flooring brand" },
+          { src: tiles5, alt: "Johnson Tiles – trusted tiles and flooring brand" },
+          { src: tiles6, alt: "CERA – quality tiles and bathroom solutions brand" },
         ],
       },
     ],
@@ -120,9 +131,10 @@ const materialCategories = [
         name: "Wood",
         logo: wood1,
         images: [
-          { src: wood1, alt: "Wood veneer sheet – quality wood material used by VIP Construction" },
-          { src: wood2, alt: "Teak wood blocks – durable wood material for construction" },
-          { src: wood3, alt: "Wooden planks and beams – strong wood material for structural use" },
+          { src: wood1, alt: "Burma Teakwood – quality wood material used by VIP Construction" },
+          { src: wood2, alt: "Nilambur Teakwood – durable wood material for construction" },
+          { src: wood3, alt: "Salwood – strong wood material for structural use" },
+          { src: wood4, alt: "Mahogany wood – premium hardwood material for construction" },
         ],
       },
     ],
@@ -138,6 +150,9 @@ const materialCategories = [
         images: [
           { src: wire1, alt: "Kundan Cab – trusted wiring cables brand" },
           { src: wire2, alt: "RR Kabel  quality wires and cables brand" },
+          { src: wire3, alt: "Finolex – premium electrical wiring brand" },
+          { src: wire4, alt: "Polycab – trusted wires and cables brand" },
+          { src: wire5, alt: "Orbit – quality electrical wires and cables brand" },
         ],
       },
     ],
@@ -151,12 +166,11 @@ const materialCategories = [
         name: "Electrical",
         logo: electrical1,
         images: [
-          { src: electrical1, alt: "Crompton – trusted electrical fittings brand" },
-          { src: electrical2, alt: "Finolex Cables Limited – quality electrical wiring brand" },
-          { src: electrical3, alt: "GM Switches – reliable electrical switches brand" },
-          { src: electrical4, alt: "Legrand – premium electrical solutions brand" },
-          { src: electrical5, alt: "Philips – trusted lighting and electrical brand" },
-          { src: electrical6, alt: "Wipro – quality lighting and electrical brand" },
+          { src: electrical1, alt: "Legrand – premium electrical solutions brand" },
+          { src: electrical2, alt: "GM Switches – reliable electrical switches brand" },
+          { src: electrical3, alt: "Anchor – trusted electrical switches and fittings brand" },
+          { src: electrical4, alt: "Schneider Electric – premium electrical solutions brand" },
+          { src: electrical5, alt: "Norwood – quality electrical and lighting products brand" },
         ],
       },
     ],
@@ -171,7 +185,8 @@ const materialCategories = [
         logo: plumbing1,
         images: [
           { src: plumbing1, alt: "Ashirvad Pipes – trusted plumbing pipes brand" },
-          { src: plumbing2, alt: "Quality plumbing pipes and fittings used by VIP Construction" },
+          { src: plumbing2, alt: "Supreme Pipes – quality plumbing pipes and fittings used by VIP Construction" },
+          { src: plumbing3, alt: "Astral Pipes – reliable plumbing solutions brand" },
         ],
       },
     ],
@@ -185,10 +200,11 @@ const materialCategories = [
         name: "Sanitary Fitting",
         logo: sanfit1,
         images: [
-          { src: sanfit1, alt: "Hindware – trusted sanitary fittings brand" },
-          { src: sanfit2, alt: "Jaquar Bathroom – premium sanitary fittings brand" },
-          { src: sanfit3, alt: "Kohler – quality bathroom fittings brand" },
-          { src: sanfit4, alt: "Parryware – reliable sanitary ware brand" },
+          { src: sanfit1, alt: "Jaquar – premium sanitary and bathroom fittings brand" },
+          { src: sanfit2, alt: "Kohler – quality bathroom and sanitary fittings brand" },
+          { src: sanfit3, alt: "Parryware – reliable sanitary ware and bathroom fittings brand" },
+          { src: sanfit4, alt: "Hindware – trusted sanitary fittings and bathroom brand" },
+          { src: sanfit5, alt: "American Standard – premium sanitary ware and bathroom fittings brand" },
         ],
       },
     ],

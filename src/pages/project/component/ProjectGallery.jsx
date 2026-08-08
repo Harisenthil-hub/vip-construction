@@ -135,18 +135,6 @@ const ProjectGallery = () => {
                 />
               </div>
 
-              <h3 className="mt-6 text-3xl font-bold text-primary">
-                No Projects Available
-              </h3>
-
-              <p className="mt-4 max-w-xl text-text-dark-muted leading-8">
-                We currently don't have any projects under the{" "}
-                <span className="font-semibold text-primary">
-                  "{activeFilter}"
-                </span>{" "}
-                category.
-              </p>
-
               <div className="mt-5 flex items-center gap-2 text-secondary font-semibold">
                 <FolderOpen size={20} />
                 New projects will be added soon.
