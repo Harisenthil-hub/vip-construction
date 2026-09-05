@@ -25,7 +25,7 @@ export default function Projects() {
         </div>
 
         {/* Cards Grid using Project Page Component */}
-        <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-6 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {completedProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

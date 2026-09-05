@@ -37,6 +37,7 @@ export default function Footer() {
     { name: "Home", path: "/" },
     { name: "Project", path: "/project" },
     { name: "Service", path: "/service" },
+    { name: "About Us", path: "/about-us" },
     { name: "Contact", path: "/contact" },
   ];
 
