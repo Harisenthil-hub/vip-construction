@@ -10,7 +10,7 @@ export function MainLayout() {
       {/* TOP HEADER */}
       <TopBar />
 
-      <nav className="relative z-50  border-y border-y-text-muted bg-[#0F172A]">
+      <nav className="relative z-50  border-y border-y-text-muted bg-[#0F172A] sticky top-0 z-50">
         <NavBar />
       </nav>
       <FloatingContact />

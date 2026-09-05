@@ -2,11 +2,11 @@ import certifications from '../data/certifications'
 
 export function Certifications() {
   return (
-    <section className="py-12 lg:py-20 lg:max-w-[1200px] m-auto">
+    <section className="py-8 sm:py-12 lg:py-20 lg:max-w-[1200px] m-auto">
       <div>
         {/* CERTIFICATIONS HEADER */}
         <div className="home-container-header">
-          <span className="span-heading text-xs">
+          <span className="span-heading">
             Certifications & Partners
           </span>
           <h2 className="h2-heading">Proud to Work With</h2>
@@ -18,7 +18,7 @@ export function Certifications() {
           {certifications.map((item) => (
             <div
               key={item.id}
-              className=" group min-h-[170px] px-5 py-6 flex flex-col items-center justify-center text-center bg-white" >
+              className="group rounded-lg shadow-sm border border-slate-100 lg:border-none lg:shadow-none  min-h-[120px] sm:min-h-[170px] px-3 sm:px-5  py-4 sm:py-6 flex flex-col items-center justify-center text-center bg-white" >
 
 
               {/* LOGO */}

@@ -13,7 +13,7 @@ const certifications = [
     {
         id: 2,
         name: "Builders' Association of India",
-        type: "",
+        type: "BAI Affiliated",
         altText: "BAI Member - Builders' Association of India (Established 1941)",
         logo: BAI,
     },

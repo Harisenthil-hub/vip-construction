@@ -44,7 +44,7 @@ export default function Footer() {
     <footer className="relative bg-slate-950 text-slate-300">
       {/* Top */}
       <div className="mx-auto max-w-7xl px-3 py-10">
-        <div className="grid gap-10 lg:grid-cols-4">
+        <div className="grid gap-8 lg:gap-10 lg:grid-cols-4">
           {/* Company */}
           <div>
             {/* LOGO */}
@@ -65,13 +65,13 @@ export default function Footer() {
                 />
               </div>
             </Link>
-            <p className="mt-4 leading-8 text-slate-400">
+            <p className="mt-4 text-xs sm:text-[15px] leading-relaxed text-slate-400">
               Building homes, offices, and landmark projects across Coimbatore,
               Udumalpet, Tiruppur, Pollachi, Dharapuram, and Palani with quality and trust
               since 2019.
             </p>
             {/* Social */}
-            <div className="mt-8 flex gap-4">
+            <div className="mt-6 sm:mt-8 flex gap-4">
               {social.map((item, index) => {
                 const Icon = item.icon;
                 return (

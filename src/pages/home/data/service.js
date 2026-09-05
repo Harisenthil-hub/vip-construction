@@ -31,7 +31,7 @@ export const data_container_1 = [
     {
         id: 4,
         icon: FaTools,
-        heading: 'Renovation & Remodeling',
+        heading: 'Renovations',
         description: 'Give your old house or shop a fresh, modern look — no need to rebuild.'
     }
 ]

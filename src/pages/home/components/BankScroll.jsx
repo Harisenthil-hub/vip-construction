@@ -2,22 +2,22 @@ import { banks } from "../data/banks";
 
 export function BankScroll() {
   return (
-    <section className="py-12 lg:py-20 lg:max-w-[1200px] m-auto">
+    <section className="py-8 sm:py-12 lg:py-20 lg:max-w-[1200px] m-auto">
       <div>
         {/* BANKSCROLL HEADER */}
         <div className="home-container-header">
-          <span className="span-heading text-xs">Banking Assistance</span>
+          <span className="span-heading">Banking Assistance</span>
           <h2 className="h2-heading">25+ Banking Collaborations</h2>
           <div className="divider" />
         </div>
 
         {/* BANK SCROLL */}
-        <div className="relative overflow-hidden mx-8 md:mx-0">
+        <div className="relative overflow-hidden mx-4 sm:mx-8 md:mx-0">
           <div className="flex animate-bank-scroll w-max">
             {[...banks, ...banks].map((bank, index) => (
               <div
                 key={index}
-                className="mx-8 flex  h-28 w-35 shrink-0 items-center justify-center rounded-xl bg-white"
+                className="mx-3 sm:mx-8 flex h-16 w-24 sm:h-28 sm:w-35 shrink-0 items-center justify-center rounded-lg sm:rounded-xl bg-white"
               >
                 <img
                   src={bank.logo}
