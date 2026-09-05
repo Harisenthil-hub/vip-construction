@@ -55,26 +55,26 @@ const steps = [
 
 export default function ProcessSteps() {
   return (
-    <section className="relative bg-white py-15 overflow-hidden">
+    <section className="relative bg-white py-8 sm:py-15 overflow-hidden">
       {/* Decorative ambient glows */}
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-[#F5A623]/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-[#1A1F2E]/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 relative">
         {/* Heading */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-5 sm:mb-8">
           <span className="span-heading">How We Work</span>
 
-          <h2 className="h2-heading mt-3">Our Construction Process</h2>
+          <h2 className="h2-heading">Our Construction Process</h2>
 
-          <p className="mt-5 text-gray-600 max-w-3xl mx-auto leading-8">
+          <p className="mt-2 sm:mt-5 text-xs sm:text-base text-gray-600 max-w-3xl mx-auto leading-relaxed">
             A clear, six-step process from first conversation to final handover
             — so you always know what happens next.
           </p>
         </div>
 
         {/* Flow container */}
-        <div className="relative mt-7 lg:mt-20">
+        <div className="relative mt-5 sm:mt-7 lg:mt-20">
           {/* Connector path (desktop only) */}
           <svg
             className="hidden lg:block absolute top-0 left-0 w-full h-40 -translate-y-24 pointer-events-none"
@@ -92,7 +92,7 @@ export default function ProcessSteps() {
             />
           </svg>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-6">
             {steps.map((step, index) => (
               <div
                 key={step.id}
@@ -100,27 +100,27 @@ export default function ProcessSteps() {
                   index % 2 === 1 ? "lg:mt-16" : ""
                 }`}
               >
-                <div className="h-max relative bg-white rounded-[28px] border border-gray-100 shadow-[0_10px_40px_-15px_rgba(26,31,46,0.15)] hover:shadow-[0_25px_60px_-20px_rgba(245,166,35,0.45)] hover:-translate-y-2 transition-all duration-500 p-8 pt-10 h-full">
+                <div className="h-full p-3.5 pt-5 sm:p-8 sm:pt-10 relative bg-white rounded-2xl sm:rounded-[28px] border border-gray-100 shadow-[0_10px_40px_-15px_rgba(26,31,46,0.15)] hover:shadow-[0_25px_60px_-20px_rgba(245,166,35,0.45)] hover:-translate-y-2 transition-all duration-500 h-full">
                   {/* Gradient numeral */}
-                  <span className="block text-4xl lg:text-5xl font-black leading-none bg-gradient-to-br from-secondary to-primary bg-clip-text text-transparent select-none">
+                  <span className="block text-3xl lg:text-5xl font-black leading-none bg-gradient-to-br from-secondary to-primary bg-clip-text text-transparent select-none">
                     {step.id}
                   </span>
 
                   {/* Icon badge, overlapping the numeral */}
-                  <div className="absolute top-5 right-5 w-10 h-10 lg:h-14 lg:w-14 rounded-2xl bg-primary flex items-center justify-center text-secondary text-lg lg:text-2xl shadow-lg group-hover:bg-secondary group-hover:text-primary group-hover:rotate-6 transition-all duration-500">
+                  <div className="absolute top-3.5 right-3.5 sm:top-5 sm:right-5 w-8 h-8 sm:h-14 sm:w-14 rounded-xl sm:rounded-2xl bg-primary flex items-center justify-center text-secondary text-xs sm:text-xl shadow-md group-hover:bg-secondary group-hover:text-primary group-hover:rotate-6 transition-all duration-500">
                     {step.icon}
                   </div>
 
                   {/* Title */}
-                  <h3 className="mt-6 text-base lg:text-lg font-bold text-primary">
+                  <h3 className="mt-2.5 sm:mt-6 text-xs sm:text-lg font-bold text-primary leading-tight">
                     {step.title}
                   </h3>
 
                   {/* Divider */}
-                  <div className="w-10 h-[3px] lg:h-[4px] bg-secondary rounded-full my-4 group-hover:w-16 transition-all duration-500" />
+                  <div className="w-7.5 sm:w-10 h-[3px] lg:h-[4px] bg-secondary rounded-full my-2 sm:my-4 group-hover:w-16 transition-all duration-500" />
 
                   {/* Description */}
-                  <p className="text-[#666666] text-sm lg:text-sm leading-7">
+                  <p className="text-[#666666] text-[10px] sm:text-sm leading-tight sm:leading-relaxed line-clamp-4 sm:line-clamp-none">
                     {step.description}
                   </p>
                 </div>
