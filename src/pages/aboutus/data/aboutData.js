@@ -137,31 +137,31 @@ export const awardsList = [
 ];
 
 export const vipInspiration = {
-  title: "The 'VIP' Movie Spirit — Passion in Engineering",
-  subtitle: "Built from Ground-Level Sweat, Hard-Hat Perseverance & Engineering Integrity",
-  quote: "A good engineer isn't made sitting in an air-conditioned office — he proves himself standing on the site, blueprint in hand, building something that lasts.",
-  movieReference: "Inspired by the spirit of civil engineering dedication (VIP Movie)",
-  description: "That's the spirit VIP Construction is built on — real civil engineering dedication on the ground. We don't cut corners or use cheap materials. We build strong structures meant to last for generations.",
+  badge: "BUILDING TRUST THROUGH ENGINEERING EXCELLENCE",
+  title: "Meet the Founder Behind Every Successful Project",
+  description: "VIP Construction provides residential and commercial construction services with expert planning, quality assurance, and reliable execution across Tamil Nadu.",
+  quote: "Every building represents a family's dream or a business's future. Our responsibility is to build it with precision, honesty, and engineering excellence that stands strong for generations.",
   pillars: [
     {
-      title: "Always On Site",
-      desc: "Our engineers are physically present at every foundation pour and every steel fixing — not just  checking reports.",
+      title: "Direct Site Leadership",
+      desc: "Experienced engineers supervise every project to ensure quality and timely completion.",
       iconName: "HardHat"
     },
     {
-      title: "No Shortcuts",
-      desc: "Tested cement, proper steel, correct mixing ratios — every time, no exceptions.",
-      iconName: "ShieldCheck"
-    },
-    {
-      title: "Careful Craftsmanship",
-      desc: "Since 2019, we've grown because we genuinely care about getting the details right.",
+      title: "Smart Project Planning",
+      desc: "Accurate planning and cost estimates ensure smooth execution and efficient delivery.",
       iconName: "Ruler"
     },
     {
-      title: "We Solve Problems",
-      desc: "Difficult soil, tight deadlines — we find practical solutions instead of excuses.",
-      iconName: "Compass"
+      title: "Quality Construction Standards",
+      desc: "Premium materials and strict quality checks ensure durable, long-lasting structures.",
+      iconName: "ShieldCheck"
+    },
+    {
+      title: "Client-First Approach",
+      desc: "Dedicated support with regular progress updates at every stage.",
+      iconName: "Compass",
+      highlighted: true
     }
   ]
 };

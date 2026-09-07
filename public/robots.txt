@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.vipconstructions.co.in/sitemap.xml
+Sitemap: https://vipconstructions.co.in/sitemap.xml
