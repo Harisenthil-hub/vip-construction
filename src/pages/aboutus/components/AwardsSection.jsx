@@ -11,11 +11,11 @@ export default function AwardsSection() {
   return (
     <section
       id="awards"
-      className="py-10 sm:py-14 lg:py-16 bg-white text-primary relative overflow-hidden"
+      className="py-8 sm:py-14 lg:py-16 bg-white text-primary relative overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="max-w-xl mb-8 lg:mb-10">
+        <div className="max-w-xl mb-6 sm:mb-8 lg:mb-10">
           <span className="span-heading">Honors & Recognitions</span>
 
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight leading-tight mb-2">
