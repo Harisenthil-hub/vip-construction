@@ -4,7 +4,7 @@ import { MdCallMade } from "react-icons/md";
 import { useState } from "react";
 import SymbolLogo from "../assets/logo/SymbolLogo.webp";
 import NameLogo from "../assets/logo/NameLogo.webp";
-import { MobileNavDropDown } from "./MobileNavDropDown";
+import { MobileNav } from "./MobileNav";
 
 export function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -81,7 +81,7 @@ export function NavBar() {
       </div>
 
       {/* MOBILE / TABLET DROPDOWN */}
-      <MobileNavDropDown closeMenu={closeMenu} isMenuOpen={isMenuOpen} />
+      <MobileNav closeMenu={closeMenu} isMenuOpen={isMenuOpen} />
     </>
   );
 }

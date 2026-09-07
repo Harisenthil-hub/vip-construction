@@ -21,20 +21,20 @@ const ProjectModal = ({ project, onClose }) => {
   return (
     <div className="fixed inset-0 z-50 bg-bg-black/80 backdrop-blur-sm flex items-center justify-center p-2 sm:p-4">
 
-      <div className="relative bg-surface rounded-3xl shadow-2xl w-full max-w-6xl max-h-[95vh] overflow-y-auto overflow-x-hidden">
+      <div className="relative bg-surface rounded-2xl sm:rounded-3xl shadow-2xl w-full max-w-6xl max-h-[95vh] overflow-y-auto overflow-x-hidden">
 
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 md:top-5 md:right-5 z-50 w-9 h-9 md:w-10 md:h-10 rounded-full bg-white shadow-lg flex items-center justify-center text-primary transition-all duration-300 hover:bg-secondary hover:text-white"
+          className="absolute top-2.5 right-2.5 sm:top-4 sm:right-4 z-50 w-8 h-8 md:w-10 md:h-10 rounded-full bg-white shadow-lg flex items-center justify-center text-primary transition-all duration-300 hover:bg-secondary hover:text-white"
         >
-          <X className="w-4 h-4 md:w-5 md:h-5" />
+          <X className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>
 
         <div className="grid lg:grid-cols-3">
 
           {/* ================= IMAGE ================= */}
-          <div className="relative lg:col-span-2 h-[220px] sm:h-[280px] md:h-[550px] overflow-hidden">
+          <div className="relative lg:col-span-2 h-[220px] sm:h-[300px] md:h-[550px] overflow-hidden">
 
             {/* Blurred Background */}
             <img
@@ -77,50 +77,50 @@ const ProjectModal = ({ project, onClose }) => {
           </div>
 
           {/* ================= DETAILS ================= */}
-          <div className="p-5 md:p-8 flex flex-col justify-center">
+          <div className="p-4 sm:p-5 md:p-8 flex flex-col justify-center">
 
             <span className="span-heading">Project Gallery</span>
 
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mt-2">
+            <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-primary mt-1 sm:mt-2">
               {project.title}
             </h2>
 
-            <div className="flex items-center gap-2 mt-4 text-text-dark-muted">
-              <MapPin size={18} className="text-secondary" />
+            <div className="flex items-center gap-1.5 sm:gap-2 mt-2 sm:mt-4 text-text-dark-muted text-xs sm:text-base">
+              <MapPin className="w-4 h-4 text-secondary shrink-0" />
               <span>{project.location}</span>
             </div>
 
-            <p className="mt-5 md:mt-8 text-text-dark-muted leading-7 md:leading-8">
+            <p className="mt-3 sm:mt-5 md:mt-8 text-text-dark-muted text-xs sm:text-base leading-relaxed sm:leading-8">
               Browse through the photos using the arrows to see the quality, materials, and finishing work completed on this project.
             </p>
 
             {/* Project Details */}
-            <div className="mt-6 border-t border-gray-200 pt-5">
+            <div className="mt-4 sm:mt-6 border-t border-gray-200 pt-4 sm:pt-5">
 
-              <div className="grid grid-cols-4 gap-2">
+              <div className="grid grid-cols-4 gap-1.5 sm:gap-2">
 
                 <div className="flex flex-col items-center text-center">
-                  <Maximize size={18} className="text-secondary mb-2" />
-                  <p className="text-[10px] uppercase tracking-wide text-text-dark-muted">Area</p>
-                  <p className="font-semibold text-primary text-[11px] md:text-sm">{project.area}</p>
+                  <Maximize className="text-secondary w-4 h-4 sm:w-[18px] sm:h-[18px] mb-1 sm:mb-2" />
+                  <p className="text-[9px] sm:text-[10px] uppercase tracking-wide text-text-dark-muted">Area</p>
+                  <p className="font-semibold text-primary text-[10px] md:text-sm">{project.area}</p>
                 </div>
 
                 <div className="flex flex-col items-center text-center">
-                  <IndianRupee size={18} className="text-secondary mb-2" />
-                  <p className="text-[10px] uppercase tracking-wide text-text-dark-muted">Price</p>
-                  <p className="font-semibold text-primary text-[11px] md:text-sm">{project.price}</p>
+                  <IndianRupee className="text-secondary w-4 h-4 sm:w-[18px] sm:h-[18px] mb-1 sm:mb-2" />
+                  <p className="text-[9px] sm:text-[10px] uppercase tracking-wide text-text-dark-muted">Price</p>
+                  <p className="font-semibold text-primary text-[10px] sm:text-sm">{project.price}</p>
                 </div>
 
                 <div className="flex flex-col items-center text-center">
-                  <Calendar size={18} className="text-secondary mb-2" />
-                  <p className="text-[10px] uppercase tracking-wide text-text-dark-muted">Year</p>
-                  <p className="font-semibold text-primary text-[11px] md:text-sm">{project.year}</p>
+                  <Calendar className="text-secondary w-4 h-4 sm:w-[18px] sm:h-[18px] mb-1 sm:mb-2" />
+                  <p className="text-[9px] sm:text-[10px] uppercase tracking-wide text-text-dark-muted">Year</p>
+                  <p className="font-semibold text-primary text-[10px] sm:text-sm">{project.year}</p>
                 </div>
 
                 <div className="flex flex-col items-center text-center">
-                  <Clock3 size={18} className="text-secondary mb-2" />
-                  <p className="text-[10px] uppercase tracking-wide text-text-dark-muted">Duration</p>
-                  <p className="font-semibold text-primary text-[11px] md:text-sm">{project.duration}</p>
+                  <Clock3 className="text-secondary w-4 h-4 sm:w-[18px] sm:h-[18px] mb-1 sm:mb-2" />
+                  <p className="text-[9px] sm:text-[10px] uppercase tracking-wide text-text-dark-muted">Duration</p>
+                  <p className="font-semibold text-primary text-[10px] sm:text-sm">{project.duration}</p>
                 </div>
 
               </div>

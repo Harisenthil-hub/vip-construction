@@ -39,29 +39,29 @@ export default function ContactForm() {
     window.open(url, "_blank");
   };
   return (
-    <section id="contact-form" className="py-15 bg-[#F8F8F8] scroll-mt-24">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+    <section id="contact-form" className="py-8 sm:py-15 bg-[#F8F8F8] scroll-mt-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10">
         {/* Heading */}
-        <div className="text-center mb-10 lg:mb-14">
+        <div className="text-center mb-5 sm:mb-10 lg:mb-14">
           <span className="span-heading">Get In Touch</span>
 
-          <h2 className="h2-heading mt-3">Request A Consultation</h2>
+          <h2 className="h2-heading">Request A Consultation</h2>
 
-          <p className="text-[#666666] mt-5 max-w-3xl mx-auto leading-8">
+          <p className="text-[#666666] px-1 mt-2 sm:mt-5 text-xs sm:text-base max-w-3xl mx-auto leading-relaxed">
             Tell us about your project, and our team will get back to you within
             24 hours.
           </p>
         </div>
 
         {/* Form & Map */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10">
           {/* Contact Form */}
-          <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8 lg:p-10">
-            <h3 className="text-xl lg:text-2xl font-bold text-[#1A1F2E] mb-5 lg:mb-8">
+          <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-8 lg:p-10">
+            <h3 className="text-base sm:text-xl lg:text-2xl font-bold text-[#1A1F2E] mb-4 lg:mb-8">
               Send Us A Message
             </h3>
 
-            <form className="space-y-5" onSubmit={handleSubmit}>
+            <form className="space-y-3.5 sm:space-y-5" onSubmit={handleSubmit}>
               {/* Full Name */}
               <input
                 type="text"
@@ -139,7 +139,7 @@ export default function ContactForm() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-secondary hover:bg-[#E09200] text-white font-semibold py-2 lg:py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                className="w-full bg-secondary hover:bg-[#E09200] text-white font-semibold py-2.5 lg:py-4 text-xs sm:text-base rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
               >
                 <LuSend className="inline mr-2 text-lg" />
                 Send Message
@@ -148,7 +148,7 @@ export default function ContactForm() {
           </div>
 
           {/* Google Map */}
-          <div className="rounded-2xl overflow-hidden shadow-xl  h-[320px] sm:h-[400px] md:h-[500px] lg:min-h-[650px]">
+          <div className="rounded-2xl overflow-hidden shadow-xl  h-[260px] sm:h-[400px] md:h-[500px] lg:min-h-[650px]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7813.2210620957885!2d77.2646081!3d10.5846013!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9cdc269835d37%3A0xfedeee2f5ee3146a!2sVIP%20CONSTRUCTION%20%EF%B8%8F!5e1!3m2!1sen!2sin!4v1785590467842!5m2!1sen!2sin"
               className="w-full h-full"

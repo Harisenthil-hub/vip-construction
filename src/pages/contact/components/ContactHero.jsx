@@ -5,7 +5,7 @@ import heroImg from "../assets/hero.webp";
 
 const ContactHero = () => {
   return (
-    <section className="relative w-full overflow-hidden">
+    <section className="relative w-full min-h-0 sm:min-h-[calc(100vh-300px)] lg:min-h-[640px] overflow-hidden">
       {/* Background Image */}
       <img
         src={heroImg}
@@ -22,36 +22,36 @@ const ContactHero = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_65%_50%,rgba(245,166,35,0.15),transparent_35%)]"></div>
 
       {/* Content */}
-      <div className=" relative z-10 w-full max-w-[1300px] mx-auto px-5 py-16 sm:px-8 sm:py-20 lg:px-4 lg:py-24">
+      <div className=" relative z-10 w-full max-w-[1300px] mx-auto px-4 py-8 sm:px-8 sm:py-20 lg:px-4 lg:py-24">
         {/* Content width */}
         <div className="max-w-[750px]">
           {/* MAIN SEO HEADING */}
-          <h1 className="font-bold text-white text-4xl leading-[1.1] sm:text-5xl lg:text-6xl xl:text-7xl lg:leading-[1.05] ">
+          <h1 className="font-extrabold text-white text-3xl leading-[1.1] sm:text-5xl lg:text-6xl xl:text-7xl lg:leading-[1.05] ">
             Let's Talk About Your Building
-            <span className=" block text-secondary mt-1 ">Project</span>
+            <span className="ml-1 text-secondary">Project</span>
           </h1>
 
           {/* DESCRIPTION */}
-          <p className=" mt-6 max-w-[650px] text-slate-300 text-base leading-7 sm:text-lg sm:leading-8 lg:text-lg ">
+          <p className="mt-3 sm:mt-6 max-w-[650px] text-slate-300 text-sm sm:text-base leading-relaxed sm:text-lg sm:leading-8 lg:text-lg ">
             House, shop, office, or renovation — tell us what you're planning.
             Free site visit, honest quote, no pressure to sign.
           </p>
 
           {/* CTA BUTTONS */}
-          <div className=" mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center lg:mt-10 ">
+          <div className="mt-5 sm:mt-8 flex gap-2.5 sm:gap-3 flex-row flex-wrap items-center lg:mt-10 ">
             {/* VIEW PROJECTS */}
             <Link
               to="/project"
-              className="inline-flex items-center justify-center gap-2 bg-secondary hover:bg-gold-hover text-white font-semibold px-6 py-3 rounded-md transition-colors duration-300 "
+              className="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-secondary hover:bg-gold-hover text-white font-semibold px-4 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-base rounded-md transition-colors duration-300 "
             >
-              <FaFileAlt size={15} />
+              <FaFileAlt className="text-[13px] sm:text-[15px]" />
               View Projects
             </Link>
 
             {/* CONTACT */}
             <Link
               to="tel:+919080273030"
-              className="inline-flex items-center justify-center gap-2 border border-white/50 bg-black/10 hover:bg-white/10 text-white font-semibold px-6 py-3 rounded-md backdrop-blur-sm transition-colors duration-300"
+              className="inline-flex items-center justify-center gap-1.5 sm:gap-2 border border-white/50 bg-black/10 hover:bg-white/10 text-white font-semibold px-4 py-2.5 sm:px-6 sm:py-3 rounded-md text-xs sm:text-base backdrop-blur-sm transition-colors duration-300"
             >
               <FaPhoneAlt size={15} />
               Contact Us

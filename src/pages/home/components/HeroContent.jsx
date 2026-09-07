@@ -3,28 +3,28 @@ import { FaPhoneAlt, FaFileAlt } from "react-icons/fa";
 
 export function HeroContent() {
   return (
-    <div className=" relative z-10 w-full max-w-[1300px] mx-auto px-5 py-16 sm:px-8 sm:py-20 lg:px-4 lg:py-24">
+    <div className=" relative z-10 w-full max-w-[1300px] mx-auto px-5 py-10 sm:px-8 sm:py-20 lg:px-4 lg:py-24">
       {/* Content width */}
       <div className="max-w-[750px]">
         {/* MAIN SEO HEADING */}
-        <h1 className="font-bold text-white text-4xl leading-[1.1] sm:text-5xl lg:text-6xl xl:text-7xl lg:leading-[1.05] ">
+        <h1 className="font-extrabold text-white text-3xl leading-[1.1] sm:text-5xl lg:text-6xl xl:text-7xl lg:leading-[1.05] ">
           From Blueprint to
           <span className=" block text-secondary mt-1 "> Doorstep</span>
         </h1>
 
         {/* DESCRIPTION */}
-        <p className=" mt-6 max-w-[650px] text-slate-300 text-base leading-7 sm:text-lg sm:leading-8 lg:text-lg ">
+        <p className=" mt-5 sm:mt-6 max-w-[650px] text-slate-300 text-sm sm:text-base leading-7 sm:text-lg sm:leading-8 lg:text-lg ">
           VIP Construction builds homes and commercial spaces with quality,
           honest work, and on-time delivery — serving Coimbatore, Udumalpet,
           Tiruppur, Pollachi, Dharapuram, and Palani.
         </p>
 
         {/* CTA BUTTONS */}
-        <div className=" mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center lg:mt-10 ">
+        <div className=" mt-6 sm:mt-8 flex flex-row gap-3 flex-wrap sm:items-center lg:mt-10 ">
           {/* CONTACT */}
           <Link
             to="tel:+919080273030"
-            className="inline-flex items-center justify-center gap-2 bg-secondary hover:bg-gold-hover text-white font-semibold px-6 py-3 rounded-md transition-colors duration-300 animate-glow"
+            className="inline-flex items-center justify-center gap-2 bg-secondary hover:bg-gold-hover text-white font-semibold px-5 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-base rounded-md transition-colors duration-300 animate-glow"
           >
             <FaPhoneAlt size={15} />
             Contact Us
@@ -33,7 +33,7 @@ export function HeroContent() {
           {/* VIEW PROJECTS */}
           <Link
             to="/project"
-            className="inline-flex items-center justify-center gap-2 border border-white/50 bg-black/10 hover:bg-white/10 text-white font-semibold px-6 py-3 rounded-md backdrop-blur-sm transition-colors duration-300"
+            className="inline-flex items-center justify-center gap-2 border border-white/50 bg-black/10 hover:bg-white/10 text-white font-semibold px-5 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-base rounded-md backdrop-blur-sm transition-colors duration-300"
           >
             <FaFileAlt size={15} />
             View Projects
@@ -41,7 +41,7 @@ export function HeroContent() {
         </div>
 
         {/* STATS */}
-        <div className=" mt-12 grid grid-cols-3 max-w-[600px] lg:mt-14 ">
+        <div className="mt-8 sm:mt-12 grid grid-cols-3 max-w-[600px] lg:mt-14 ">
           {/* EXPERIENCE */}
           <div className="pr-3 sm:pr-7">
             <p className=" text-secondary font-bold text-2xl sm:text-3xl lg:text-4xl ">

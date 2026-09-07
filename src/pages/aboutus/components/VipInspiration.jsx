@@ -34,7 +34,7 @@ export default function VipInspiration() {
           
           {/* Large Founder Image (lg:col-span-5) */}
           <div className="lg:col-span-5 w-full flex flex-col">
-            <div className="group relative rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:border-[#F5A623]/60 hover:-translate-y-1 transition-all duration-500 aspect-[4/3] sm:aspect-[4/5] lg:aspect-auto lg:h-full lg:min-h-[380px] cursor-pointer">
+            <div className="group relative rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:border-[#F5A623]/60 hover:-translate-y-1 transition-all duration-500 aspect-[16/10] sm:aspect-[4/3] lg:aspect-auto lg:h-full lg:min-h-[380px] cursor-pointer">
               <img
                 src={onsiteImg}
                 alt="VIP Construction Founder and Managing Director"
@@ -42,15 +42,14 @@ export default function VipInspiration() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/85 via-transparent to-transparent opacity-85 group-hover:opacity-95 transition-opacity" />
               
-              {/* Photo Overlay Badge - Optimized for Mobile */}
-              <div className="absolute bottom-2.5 left-2.5 right-2.5 sm:bottom-3 sm:left-3 sm:right-3 p-3 sm:p-4 rounded-xl bg-white/95 group-hover:bg-white backdrop-blur-md border border-slate-200 shadow-xs group-hover:shadow-md transition-all duration-300 transform group-hover:-translate-y-0.5">
+              <div className="absolute bottom-2 left-2 right-2 sm:bottom-3 sm:left-3 sm:right-3 p-2.5 sm:p-4 rounded-xl bg-white/95 group-hover:bg-white backdrop-blur-md border border-slate-200 shadow-xs group-hover:shadow-md transition-all duration-300 transform group-hover:-translate-y-0.5">
                 <div className="flex items-center justify-between mb-0.5">
-                  <p className="text-[11px] sm:text-xs font-bold text-slate-900 uppercase tracking-wide group-hover:text-[#F5A623] transition-colors">
+                  <p className="text-[10px] sm:text-xs font-bold text-slate-900 uppercase tracking-wide group-hover:text-[#F5A623] transition-colors">
                     Founder & Managing Director
                   </p>
                   <span className="w-1.5 h-1.5 rounded-full bg-[#F5A623]" />
                 </div>
-                <p className="text-[11px] sm:text-xs text-slate-600 leading-snug">
+                <p className="text-[10px] sm:text-xs text-slate-600">
                   Project planning & direct leadership at VIP Construction
                 </p>
               </div>
@@ -111,8 +110,7 @@ export default function VipInspiration() {
                       Founder Statement
                     </span>
                   </div>
-
-                  <span className="text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-md bg-slate-900 text-white border border-slate-800 shadow-xs">
+                  <span className="text-xs font-semibold px-2 py-0.5 rounded-md bg-slate-900 text-white border border-slate-800 shadow-xs">
                     Engineering Creed
                   </span>
                 </div>

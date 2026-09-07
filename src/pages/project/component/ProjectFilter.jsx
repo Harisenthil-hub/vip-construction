@@ -69,7 +69,7 @@ const ProjectFilter = ({ activeFilter, setActiveFilter }) => {
       {/* Filter Buttons */}
       <div
         ref={scrollRef}
-        className="flex gap-3 overflow-x-auto scrollbar-hide scroll-smooth py-2 px-4 md:px-0"
+        className="flex gap-2 sm:gap-3 overflow-x-auto scrollbar-hide scroll-smooth py-2 px-2 sm:px-4 md:px-0"
         style={{
           scrollbarWidth: "none",
           msOverflowStyle: "none",
@@ -88,11 +88,16 @@ const ProjectFilter = ({ activeFilter, setActiveFilter }) => {
                 flex-shrink-0
                 flex
                 items-center
-                gap-2
-                px-5
-                py-3
+                gap-1.5
+                sm:gap-2
+                px-3.5
+                py-2
+                sm:px-5
+                sm:py-3
                 rounded-full
                 border
+                text-xs
+                sm:text-sm
                 font-medium
                 transition-all
                 duration-300

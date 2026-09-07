@@ -30,7 +30,7 @@ export default function VideoSection() {
   
 
   return (
-    <section className="relative bg-white py-7 lg:py-10 overflow-hidden">
+    <section className="relative bg-white py-5 sm:py-7 lg:py-10 overflow-hidden">
       {/* Ambient glows */}
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#F5A623]/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-[#F5A623]/10 rounded-full blur-3xl pointer-events-none" />
@@ -39,19 +39,19 @@ export default function VideoSection() {
 
       <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10 relative">
         {/* Heading */}
-        <div className="text-center mb-6 lg:mb-12">
+        <div className="text-center mb-4 sm:mb-6 lg:mb-12">
           <span className="span-heading">See Us In Action</span>
 
-          <h2 className="h2-heading mt-3">A Walkthrough Of Our Work</h2>
+          <h2 className="h2-heading">A Walkthrough Of Our Work</h2>
 
-          <p className="mt-5 text-gray-600 max-w-2xl mx-auto leading-8">
+          <p className=" mt-2 sm:mt-5 text-gray-600 max-w-2xl mx-auto text-xs sm:text-base leading-relaxed">
             Take a quick look at how we plan, build and deliver projects —
             straight from our sites to your screen.
           </p>
         </div>
 
         {/* Video player */}
-        <div className="relative rounded-[28px] overflow-hidden shadow-[0_25px_60px_-20px_rgba(26,31,46,0.35)] aspect-video bg-[#1A1F2E]">
+        <div className="relative rounded-[15px] overflow-hidden shadow-[0_25px_60px_-20px_rgba(26,31,46,0.35)] aspect-video bg-[#1A1F2E]">
           {/* Poster while loading */}
 
 
