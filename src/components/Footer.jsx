@@ -49,7 +49,7 @@ export default function Footer() {
           {/* Company */}
           <div>
             {/* LOGO */}
-            <Link className="flex" to="/">
+            <Link className="flex gap-1" to="/">
               <div className="h-15 w-20 lg:w-25">
                 <img
                   className="w-full h-full object-contain"

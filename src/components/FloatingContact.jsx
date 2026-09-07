@@ -36,7 +36,7 @@ export default function FloatingContact() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
-        className="contact-pulse group h-10 w-10 lg:h-13 lg:w-13 rounded-full bg-[#25D366] flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-105  hover:shadow-2xl "
+        className="group h-10 w-10 lg:h-13 lg:w-13 rounded-full bg-[#25D366] flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-105  hover:shadow-2xl "
       >
         <FaWhatsapp className="text-2xl text-white transition-transform duration-300 group-hover:rotate-12" />
       </Link>
@@ -45,9 +45,13 @@ export default function FloatingContact() {
       <Link
         to="tel:+919080273030"
         aria-label="Call Us"
-        className="contact-pulse group h-10 w-10 lg:h-13 lg:w-13 rounded-full bg-primary flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl "
+        className="relative group h-10 w-10 lg:h-13 lg:w-13 rounded-full bg-primary flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
       >
-        <FaPhoneAlt className="text-white transition-transform duration-300 group-hover:rotate-12" />
+        {/* Glow */}
+        <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-40"></span>
+
+        {/* Icon */}
+        <FaPhoneAlt className="relative z-10 text-white transition-transform duration-300 group-hover:rotate-12" />
       </Link>
     </div>
   );
