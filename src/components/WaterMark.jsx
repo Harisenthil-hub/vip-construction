@@ -13,7 +13,7 @@ export function WaterMark() {
       >
         {/* POWERED BY */}
         <span
-          className=" text-[9px] font-medium tracking-[0.2em] text-white/60 uppercase mb-1 ml-1  transition-all
+          className="text-[9px] font-medium tracking-[0.2em] text-white/60 uppercase mb-1 ml-1  transition-all
             duration-300 ease-in-out group-hover:text-white" >
           Powered By
         </span>
@@ -22,7 +22,7 @@ export function WaterMark() {
         <img
           src={genkitLogo}
           alt="Genkit Webservices"
-          className=" w-32 h-auto object-contain"
+          className="w-27 sm:w-32 h-auto object-contain"
         />
       </Link>
     </div>

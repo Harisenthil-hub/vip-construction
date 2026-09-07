@@ -44,8 +44,8 @@ export default function Footer() {
   return (
     <footer className="relative bg-slate-950 text-slate-300">
       {/* Top */}
-      <div className="mx-auto max-w-7xl px-3 py-10">
-        <div className="grid gap-8 lg:gap-10 lg:grid-cols-4">
+      <div className="mx-auto max-w-7xl px-3 py-5 sm:py-10">
+        <div className="grid gap-6.5 sm:gap-8 lg:gap-10 lg:grid-cols-4">
           {/* Company */}
           <div>
             {/* LOGO */}
@@ -66,7 +66,7 @@ export default function Footer() {
                 />
               </div>
             </Link>
-            <p className="mt-4 text-xs sm:text-[15px] leading-relaxed text-slate-400">
+            <p className="mt-4 text-xs sm:text-[13px] leading-relaxed text-slate-400">
               Building homes, offices, and landmark projects across Coimbatore,
               Udumalpet, Tiruppur, Pollachi, Dharapuram, and Palani with quality and trust
               since 2019.
@@ -81,7 +81,7 @@ export default function Footer() {
                     to={item.link}
                     aria-label={item.label}
                     target="_a"
-                    className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-900 transition duration-300 hover:bg-amber-500 hover:text-slate-900 text-lg border border-slate-800"
+                    className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-slate-900 transition duration-300 hover:bg-amber-500 hover:text-slate-900 text-lg border border-slate-800"
                   >
                     <Icon />
                   </Link>
@@ -92,7 +92,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="lg:text-center">
-            <h3 className="text-xl font-bold text-white mb-6">Quick Links</h3>
+            <h3 className="text-lg sm:text-xl font-bold text-white mb-3">Quick Links</h3>
             <ul className="space-y-4">
               {quickLinks.map((item) => (
                 <li key={item.name}>
@@ -108,7 +108,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-xl font-bold text-white">Branches</h3>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Branches</h3>
 
             <div className="space-y-3 mt-3">
               <div className="space-y-1">
@@ -135,14 +135,14 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-xl font-bold text-white mb-6">Contact Us</h3>
-            <div className="space-y-5">
+            <h3 className="text-lg sm:text-xl font-bold text-white mb-3">Contact Us</h3>
+            <div className="space-y-3 sm:space-y-5">
               <div className="flex gap-4 items-center">
-                <FaPhoneAlt className="text-amber-400 text-lg flex-shrink-0" />
+                <FaPhoneAlt className="text-amber-400 text-base flex-shrink-0" />
                 <span>
                   <Link
                     to="tel:+919080273030"
-                    className="hover:text-amber-400 transition"
+                    className="text-base hover:text-amber-400 transition"
                   >
                     +91 9080273030
                   </Link>
@@ -150,24 +150,23 @@ export default function Footer() {
               </div>
               <div className="flex gap-4 items-center">
                 <GiRotaryPhone
-                  size={25}
-                  className="text-amber-400 text-lg flex-shrink-0"
+                  className="text-amber-400 text-xl flex-shrink-0"
                 />
                 <span>
                   <Link
                     to="tel:+919344432923"
-                    className="hover:text-amber-400 transition"
+                    className="text-base hover:text-amber-400 transition"
                   >
                     +91 9344432923
                   </Link>
                 </span>
               </div>
               <div className="flex gap-4 items-center">
-                <FaEnvelope className="text-amber-400 text-lg flex-shrink-0" />
+                <FaEnvelope className="text-amber-400 text-base flex-shrink-0" />
                 <span>
                   <Link
                     to="mailto:vipconstruction.14@gmail.com"
-                    className="hover:text-amber-400 transition min-w-0 break-all"
+                    className="text-base hover:text-amber-400 transition min-w-0 break-all"
                   >
                     vipconstruction.14@gmail.com
                   </Link>

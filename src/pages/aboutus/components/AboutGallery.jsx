@@ -25,7 +25,7 @@ export default function AboutGallery() {
   };
 
   return (
-    <section id="gallery" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-[#0F172A] via-[#0B132B] to-[#1E293B] text-white relative overflow-hidden">
+    <section id="gallery" className="py-7 sm:py-16 lg:py-20 bg-gradient-to-b from-[#0F172A] via-[#0B132B] to-[#1E293B] text-white relative overflow-hidden">
       {/* Background Subtle Ambient Glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#F5A623]/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 right-10 w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />

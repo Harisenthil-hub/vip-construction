@@ -63,16 +63,10 @@ export default function VipInspiration() {
             <div className="grid grid-cols-2 gap-2.5 sm:gap-4">
               {vipInspiration.pillars.map((pillar, idx) => {
                 const IconComp = pillarIcons[pillar.iconName] || HardHat;
-                const isHighlighted = pillar.highlighted;
-
                 return (
                   <div
                     key={idx}
-                    className={`slide-up bg-white border rounded-2xl p-2.5 sm:p-4 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group cursor-pointer flex flex-col justify-between ${
-                      isHighlighted
-                        ? "border-[#F5A623] border-t-4 border-t-[#F5A623]"
-                        : "border-slate-200 hover:border-[#F5A623]/50"
-                    }`}
+                    className='slide-up bg-white border rounded-2xl p-2.5 sm:p-4 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group cursor-pointer flex flex-col justify-between ${ border-slate-200 hover:border-[#F5A623]/50'
                   >
                     <div>
                       <div className="flex items-center justify-between mb-1.5 sm:mb-2">
@@ -96,8 +90,6 @@ export default function VipInspiration() {
 
             {/* Founder Quote Card - Mobile Wrapping Optimization */}
             <div className="slide-up bg-gradient-to-br from-white via-slate-50/50 to-amber-500/5 border border-slate-200/80 rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#F5A623]/60 transition-all duration-300 relative overflow-hidden flex-1 flex flex-col justify-between gap-3.5 sm:gap-4 group cursor-pointer">
-              {/* Background Watermark Icon */}
-              <Quote className="absolute -right-3 -bottom-3 w-28 h-28 sm:w-32 sm:h-32 text-amber-500/5 group-hover:text-amber-500/10 transition-colors pointer-events-none select-none" />
 
               <div>
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
