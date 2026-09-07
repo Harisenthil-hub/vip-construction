@@ -18,6 +18,15 @@ const ProjectModal = ({ project, onClose }) => {
     setCurrentImage((prev) => (prev === 0 ? project.images.length - 1 : prev - 1));
   };
 
+
+  useEffect(() => {
+    document.body.style.overflow = onClose ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [onClose]);
+
   return (
     <div className="fixed inset-0 z-50 bg-bg-black/50 opacity-100 visible backdrop-blur-sm transition-opacity duration-300 flex items-center justify-center p-2 sm:p-4">
 

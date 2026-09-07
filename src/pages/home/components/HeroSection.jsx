@@ -6,7 +6,7 @@ import { HeroContent } from "./HeroContent";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-0 sm:min-h-[calc(100vh-300px)] lg:min-h-[720px] flex items-center overflow-hidden ">
+    <section className="relative min-h-0 sm:min-h-[calc(100vh-300px)] lg:min-h-[640px] flex items-center overflow-hidden ">
       {/* DESKTOP BACKGROUND VIDEO */}
       <video
         className=" hidden lg:block absolute inset-0 w-full h-full object-cover "

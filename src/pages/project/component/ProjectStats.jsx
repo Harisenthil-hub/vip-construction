@@ -19,7 +19,7 @@ const ProjectStats = () => {
       {stats.map((item, index) => (
         <div
           key={index}
-          className="group flex-1 text-center transition-transform duration-300 hover:-translate-y-1"
+          className="group flex-1 transition-transform duration-300 hover:-translate-y-1"
         >
           <h2
             className="
