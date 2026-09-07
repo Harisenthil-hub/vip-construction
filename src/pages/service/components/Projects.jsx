@@ -35,7 +35,7 @@ export default function Projects() {
         <div className="mt-10 sm:mt-12 text-center">
           <Link
             to="/project"
-            className="inline-flex items-center justify-center gap-2.5 rounded-full bg-amber-500 px-8 py-3.5 font-bold text-slate-950 shadow-md hover:shadow-lg transition duration-300 hover:bg-amber-400 active:scale-95 text-sm sm:text-base"
+            className="inline-flex items-center justify-center gap-2.5 rounded-full bg-amber-500 px-6 py-3 font-bold text-slate-950 shadow-md hover:shadow-lg transition duration-300 hover:bg-amber-400 active:scale-95 text-sm sm:text-base"
           >
             <span>View All Projects</span>
             <ArrowRight size={18} />
