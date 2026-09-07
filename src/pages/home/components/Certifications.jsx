@@ -21,7 +21,7 @@ export function Certifications() {
               className="slide-up group rounded-lg shadow-sm border border-slate-100 lg:border-none lg:shadow-none  min-h-[120px] sm:min-h-[170px] px-3 sm:px-5  py-4 sm:py-6 flex flex-col items-center justify-center text-center bg-white"
             >
               {/* LOGO */}
-              <div className=" h-25 w-full flex items-center justify-center mb-4 ">
+              <div className="h-20 sm:h-25 w-full flex items-center justify-center mb-4 ">
                 <img
                   src={item.logo}
                   alt={item.altText}

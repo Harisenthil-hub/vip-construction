@@ -5,7 +5,7 @@ import heroImg from "../assets/hero.webp";
 
 const ContactHero = () => {
   return (
-    <section className="relative w-full min-h-0 sm:min-h-[calc(100vh-300px)] lg:min-h-[650px] overflow-hidden">
+    <section className="relative flex w-full min-h-[350px] items-center sm:min-h-[calc(100vh-300px)] lg:min-h-[650px] overflow-hidden">
       {/* Background Image */}
       <img
         src={heroImg}
@@ -22,7 +22,7 @@ const ContactHero = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_65%_50%,rgba(245,166,35,0.15),transparent_35%)]"></div>
 
       {/* Content */}
-      <div className=" relative z-10 w-full max-w-[1300px] mx-auto px-4 py-8 sm:px-8 sm:py-20 lg:px-4 lg:py-24">
+      <div className="relative z-10 w-full max-w-[1300px] mx-auto px-4 py-8 sm:px-8 sm:py-20 lg:px-4 lg:py-24">
         {/* Content width */}
         <div className="max-w-[750px]">
           {/* MAIN SEO HEADING */}
