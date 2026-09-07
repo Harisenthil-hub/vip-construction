@@ -6,13 +6,14 @@ import {
   Calendar,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import useSlideUp from "../../../hooks/useSlideUp";
 
 const ProjectCard = ({ project }) => {
   const navigate = useNavigate();
+  useSlideUp();
 
   return (
-    <div className="group cursor-pointer">
-
+    <div className="slide-up group cursor-pointer">
       {/* Image Card */}
       <div
         onClick={() => navigate(`/project/${project.id}`)}
@@ -45,7 +46,6 @@ const ProjectCard = ({ project }) => {
 
         {/* Content */}
         <div className="absolute bottom-0 left-0 w-full p-2.5 sm:p-6">
-
           <div className="flex items-center gap-1 sm:gap-2 text-secondary">
             <MapPin className="w-3.5 h-3.5 sm:w-[18px] sm:h-[18px] shrink-0" />
             <span className="text-white/90 text-sm sm:text-base font-medium truncate">
@@ -61,18 +61,13 @@ const ProjectCard = ({ project }) => {
             className="mt-1 sm:mt-5 inline-flex items-center gap-1 sm:gap-2 text-secondary font-semibold text-sm sm:text-base sm:opacity-0 sm:translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
           >
             View Gallery
-
-            <ArrowRight
-              className="w-4 h-4 sm:w-[18px] sm:h-[18px] group-hover:translate-x-1 transition-transform"
-            />
+            <ArrowRight className="w-4 h-4 sm:w-[18px] sm:h-[18px] group-hover:translate-x-1 transition-transform" />
           </button>
-
         </div>
       </div>
 
       {/* Bottom Details */}
       <div className="grid grid-cols-3 gap-2 sm:gap-3 mt-2 sm:mt-5">
-
         <div className="flex items-center justify-center gap-1 ">
           <Maximize className="text-secondary flex-shrink-0 w-3 h-3 sm:w-[18px] sm:h-[18px]" />
           <span className="text-[11px] sm:text-sm font-medium whitespace-nowrap">
@@ -93,9 +88,7 @@ const ProjectCard = ({ project }) => {
             {project.year}
           </span>
         </div>
-
       </div>
-
     </div>
   );
 };

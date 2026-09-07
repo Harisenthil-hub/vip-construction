@@ -1,7 +1,9 @@
 import { FaStar, FaQuoteLeft } from "react-icons/fa";
 import { testimonials } from "../data/testimonials";
+import useSlideUp from "../../../hooks/useSlideUp";
 
 export default function Testimonials() {
+  useSlideUp();
   return (
     <section className="py-10 sm:py-14 lg:py-16 bg-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -24,7 +26,7 @@ export default function Testimonials() {
           {testimonials.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-2xl shadow-md p-3.5 sm:p-5 md:p-6 hover:-translate-y-1.5 hover:shadow-lg transition duration-300 flex flex-col justify-between border border-slate-200/50"
+              className="slide-up bg-white rounded-2xl shadow-md p-3.5 sm:p-5 md:p-6 hover:-translate-y-1.5 hover:shadow-lg transition duration-300 flex flex-col justify-between border border-slate-200/50"
             >
               <div>
                 {/* Quote Icon */}

@@ -14,7 +14,7 @@ export function NavBar() {
   };
   return (
     <>
-      <div className="mx-auto lg:max-w-[1300px] py-2 flex justify-between lg:px-1 items-center px-3 pr-5">
+      <div className="mx-auto lg:max-w-[1300px] py-1.5 flex justify-between lg:px-1 items-center px-3 pr-5">
         {/* LOGO */}
         <Link className="flex gap-1.5" to="/">
           <div className="h-15 w-20 lg:w-25 lg:my-1 lg:mx-1">

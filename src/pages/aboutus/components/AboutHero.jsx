@@ -4,7 +4,7 @@ import heroImg from "../images/hero.webp";
 
 export default function AboutHero() {
   return (
-    <section className="relative w-full overflow-hidden">
+    <section className="relative w-full overflow-hidden min-h-0 sm:min-h-[calc(100vh-300px)] lg:min-h-[650px]">
       {/* Background Image */}
       <img
         src={heroImg}

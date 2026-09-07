@@ -1,7 +1,9 @@
 import { missionVision } from "../data/aboutData";
 import { Target, Eye, Check } from "lucide-react";
+import useSlideUp from "../../../hooks/useSlideUp";
 
 export default function MissionVision() {
+  useSlideUp();
   return (
     <section
       id="mission-vision"
@@ -11,7 +13,9 @@ export default function MissionVision() {
         {/* Section Header */}
         <div className="max-w-2xl mb-8 lg:mb-10">
           <span className="span-heading">GUIDING PRINCIPLES</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0F172A] tracking-tight leading-tight mb-2">Our Mission & Vision</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0F172A] tracking-tight leading-tight mb-2">
+            Our Mission & Vision
+          </h2>
 
           <p className="text-xs sm:text-sm lg:text-base text-slate-600 font-normal leading-relaxed">
             The core values that guide every project we build, from the ground
@@ -22,7 +26,7 @@ export default function MissionVision() {
         {/* 2-Column Responsive Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 items-stretch">
           {/* Mission Card: bg-white */}
-          <div className="bg-white border border-slate-200 rounded-2xl p-4 sm:p-5 lg:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#F5A623]/50 transition-all duration-300 flex flex-col justify-between group cursor-pointer">
+          <div className="slide-up bg-white border border-slate-200 rounded-2xl p-4 sm:p-5 lg:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#F5A623]/50 transition-all duration-300 flex flex-col justify-between group cursor-pointer">
             <div>
               <div className="flex items-center justify-between mb-3">
                 <div className="w-8 h-8 rounded-lg bg-[#F5A623]/15 border border-[#F5A623]/30 text-[#F5A623] group-hover:bg-[#F5A623] group-hover:text-[#0F172A] flex items-center justify-center transition-all duration-300 group-hover:scale-110">
@@ -57,7 +61,7 @@ export default function MissionVision() {
           </div>
 
           {/* Vision Card: bg-[#F1F5F9] */}
-          <div className="bg-white border border-slate-200/90 rounded-2xl p-4 sm:p-5 lg:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#F5A623]/50 transition-all duration-300 flex flex-col justify-between group cursor-pointer">
+          <div className="slide-up bg-white border border-slate-200/90 rounded-2xl p-4 sm:p-5 lg:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#F5A623]/50 transition-all duration-300 flex flex-col justify-between group cursor-pointer">
             <div>
               <div className="flex items-center justify-between mb-3">
                 <div className="w-8 h-8 rounded-lg bg-[#F5A623]/15 bg-slate-100 border border-[#F5A623]/30 text-[#F5A623] group-hover:bg-[#F5A623] group-hover:text-[#0F172A] flex items-center justify-center transition-all duration-300 group-hover:scale-110">

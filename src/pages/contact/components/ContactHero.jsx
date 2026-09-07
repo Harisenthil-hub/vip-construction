@@ -5,7 +5,7 @@ import heroImg from "../assets/hero.webp";
 
 const ContactHero = () => {
   return (
-    <section className="relative w-full min-h-0 sm:min-h-[calc(100vh-300px)] lg:min-h-[640px] overflow-hidden">
+    <section className="relative w-full min-h-0 sm:min-h-[calc(100vh-300px)] lg:min-h-[650px] overflow-hidden">
       {/* Background Image */}
       <img
         src={heroImg}
