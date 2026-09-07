@@ -15,7 +15,7 @@ const ProjectStats = () => {
   ];
 
   return (
-    <div className="mt-12 flex justify-between items-center gap-6">
+    <div className="mt-5 sm:mt-12 flex justify-between items-center gap-2 sm:gap-6">
       {stats.map((item, index) => (
         <div
           key={index}
@@ -23,7 +23,7 @@ const ProjectStats = () => {
         >
           <h2
             className="
-              text-2xl
+              text-xl
               sm:text-3xl
               md:text-5xl
               font-extrabold
@@ -38,13 +38,14 @@ const ProjectStats = () => {
 
           <p
             className="
-              mt-3
-              text-[10px]
+              mt-1.5
+              sm:mt-3
+              text-[9px]
               sm:text-xs
               md:text-base
               font-medium
               uppercase
-              tracking-widest
+              tracking-wider
               text-white/75
             "
           >

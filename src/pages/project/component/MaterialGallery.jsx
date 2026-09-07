@@ -15,9 +15,9 @@ const MaterialGallery = () => {
             Materials We Use
           </h2>
 
-          <div className="divider mb-6"></div>
+          <div className="divider my-3 sm:my-6"></div>
 
-          <p className="max-w-3xl mx-auto text-text-dark-muted leading-8">
+          <p className="max-w-3xl mx-auto text-text-dark-muted text-xs sm:text-base leading-relaxed sm:leading-8">
             We use branded, tested materials on every site — proper cement and steel, checked before they go into your building.
           </p>
         </div>
@@ -25,14 +25,14 @@ const MaterialGallery = () => {
         {materialCategories.map((category, index) => (
           <div
             key={category.category}
-            className={index !== materialCategories.length - 1 ? "mb-16" : ""}
+            className={index !== materialCategories.length - 1 ? "mb-8 sm:mb-16" : ""}
           >
 
             {/* Category Heading */}
-            <div className="flex items-center gap-4 mb-8">
-              <div className="h-1 w-14 bg-secondary rounded-full"></div>
+            <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-8">
+              <div className="h-1 w-8 sm:w-14 bg-secondary rounded-full"></div>
 
-              <h3 className="text-2xl lg:text-3xl font-bold text-primary">
+              <h3 className="text-lg sm:text-2xl lg:text-3xl font-bold text-primary">
                 {category.category}
               </h3>
 
@@ -40,7 +40,7 @@ const MaterialGallery = () => {
             </div>
 
             {/* Materials */}
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6 md:gap-8">
+            <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3 sm:gap-6 md:gap-8">
 
               {category.items.map((item) =>
                 item.images.map((image, index) => (
@@ -50,7 +50,7 @@ const MaterialGallery = () => {
                   >
                     <div
                       className="
-            w-20 h-20
+            w-16 h-16
             sm:w-24 sm:h-24
             md:w-28 md:h-28
             overflow-hidden

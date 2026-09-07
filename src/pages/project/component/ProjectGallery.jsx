@@ -69,7 +69,7 @@ const ProjectGallery = () => {
     <section
       ref={galleryRef}
       id="project-gallery"
-      className="pt-8 pb-8 bg-surface"
+      className="py-8 sm:py-12 bg-surface"
     >
       <div className="max-w-7xl mx-auto px-6">
 
@@ -84,9 +84,9 @@ const ProjectGallery = () => {
             Explore Our Projects
           </h2>
 
-          <div className="divider mb-6"></div>
+          <div className="divider my-3 sm:mb-6"></div>
 
-          <p className="max-w-3xl mx-auto text-text-dark-muted leading-8">
+          <p className="max-w-3xl mx-auto text-text-dark-muted text-xs sm:text-base leading-relaxed sm:leading-8">
             A few of the houses, shops, and offices we've completed — more
             photos added as new sites finish.
           </p>
@@ -102,7 +102,7 @@ const ProjectGallery = () => {
         {/* Projects */}
         {filteredProjects.length > 0 ? (
           <>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 mt-6 sm:mt-14">
               {displayedProjects.map((project) => (
                 <ProjectCard
                   key={project.id}
@@ -113,10 +113,10 @@ const ProjectGallery = () => {
 
             {/* Show More */}
             {isMobile && filteredProjects.length > 3 && (
-              <div className="flex justify-center mt-10">
+              <div className="flex justify-center mt-6 sm:mt-10">
                 <button
                   onClick={() => setShowAll(!showAll)}
-                  className="px-6 py-3 rounded-lg bg-primary text-white font-semibold transition-all duration-300 hover:bg-primary/90 hover:scale-105"
+                  className="px-5 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-base rounded-lg bg-primary text-white font-semibold transition-all duration-300 hover:bg-primary/90 hover:scale-105"
                 >
                   {showAll ? "Show Less" : "Show More"}
                 </button>

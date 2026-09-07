@@ -4,7 +4,7 @@ import ProjectButtons from "./ProjectButtons";
 
 const ProjectHero = () => {
   return (
-    <section className="relative min-h-[70vh] md:min-h-[720px] flex items-center overflow-hidden">
+    <section className="relative min-h-0 sm:min-h-[70vh] md:min-h-[720px] flex items-center overflow-hidden">
 
       {/* Background Image */}
       <img
@@ -17,7 +17,7 @@ const ProjectHero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-bg-black/90 via-primary/80 to-primary/60"></div>
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-16 py-14 md:py-16">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 py-10 md:py-16">
         <div className="max-w-4xl">
 
           {/* Subtitle */}
@@ -26,22 +26,22 @@ const ProjectHero = () => {
           </span>
 
           {/* Heading */}
-          <h1 className="mt-4 font-extrabold leading-tight text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+          <h1 className="mt-2 sm:mt-4 font-extrabold leading-tight text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
             Our <span className="text-secondary">Work</span> Our <span className="text-secondary">Pride</span>
           </h1>
 
           {/* Description */}
-          <p className="mt-5 max-w-3xl text-white/80 leading-7 text-sm sm:text-base lg:text-lg">
+          <p className="mt-3 sm:mt-5 max-w-3xl text-white/80 leading-relaxed text-xs sm:text-base lg:text-lg">
             Houses, shops, and offices we've built across Coimbatore, Udumalpet, Tiruppur, Pollachi, Dharapuram, and Palani. See the work for yourself before you decide.
           </p>
 
           {/* Stats */}
-          <div className="mt-8">
+          <div className="mt-5 sm:mt-8">
             <ProjectStats />
           </div>
 
           {/* Buttons */}
-          <div className="mt-8">
+          <div className="mt-5 sm:mt-8">
             <ProjectButtons />
           </div>
 
