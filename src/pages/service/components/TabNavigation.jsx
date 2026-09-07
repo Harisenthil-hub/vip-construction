@@ -60,11 +60,7 @@ export default function TabNavigation({ services, activeTab, setActiveTab }) {
               sm:text-2xl
               transition-colors
               duration-300
-              ${
-                activeTab === service.id
-                  ? "text-amber-400"
-                  : "text-amber-500"
-              }
+              ${activeTab === service.id ? "text-amber-400" : "text-amber-500"}
             `}
           >
             {icons[service.id]}
@@ -83,9 +79,7 @@ export default function TabNavigation({ services, activeTab, setActiveTab }) {
                 mt-0.5
                 font-medium
                 ${
-                  activeTab === service.id
-                    ? "text-slate-300"
-                    : "text-slate-500"
+                  activeTab === service.id ? "text-slate-300" : "text-slate-500"
                 }
               `}
             >

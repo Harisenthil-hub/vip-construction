@@ -1,4 +1,5 @@
 import { FaCheckCircle, FaUniversity, FaFileSignature } from "react-icons/fa";
+import useSlideUp from "../../../hooks/useSlideUp";
 
 const approvals = [
   "Bore & Motor Fittings",
@@ -21,6 +22,7 @@ const banks = [
 ];
 
 export default function Approvals() {
+  useSlideUp();
   return (
     <section className="py-8 sm:py-10 lg:py-20 bg-slate-100">
       <div className="lg:max-w-[1200px] mx-auto px-6">
@@ -40,7 +42,7 @@ export default function Approvals() {
         {/* Cards */}
         <div className="flex flex-col gap-5 lg:gap-0 lg:flex-row lg:divide-y lg:divide-y-0 lg:divide-x lg:divide-slate-200 bg-transparent rounded-xl sm:rounded-2xl lg:shadow-lg overflow-hidden lg:max-w-[1200px] m-auto">
           {/* Approvals Card */}
-          <div className="flex-1 bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl lg:rounded-none">
+          <div className="slide-up flex-1 bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl lg:rounded-none">
             <div className="flex items-center gap-3 sm:gap-5 mb-4 sm:mb-8">
               <div className="h-10 w-10 sm:h-14 sm:w-14 md:h-16 md:w-16 rounded-xl bg-secondary/15 flex items-center justify-center shrink-0">
                 <FaFileSignature className="text-lg sm:text-2xl md:text-3xl text-secondary" />
@@ -70,7 +72,9 @@ export default function Approvals() {
                     <FaCheckCircle className="text-secondary text-[10px] sm:text-sm" />
                   </div>
 
-                  <span className="text-gray-700 text-[11px] sm:text-sm font-medium">{item}</span>
+                  <span className="text-gray-700 text-[11px] sm:text-sm font-medium">
+                    {item}
+                  </span>
                 </div>
               ))}
             </div>
@@ -89,7 +93,7 @@ export default function Approvals() {
 
           {/* Loan Card */}
 
-          <div className="flex-1 bg-[#0F172A] text-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl lg:rounded-none">
+          <div className="slide-up flex-1 bg-[#0F172A] text-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl lg:rounded-none">
             <div className="flex items-center gap-3 sm:gap-5 mb-4 sm:mb-8">
               <div className="h-10 w-10 sm:h-14 sm:w-14 md:h-16 md:w-16 rounded-xl bg-white/10 backdrop-blur flex items-center justify-center shrink-0">
                 <FaUniversity className="text-lg sm:text-2xl md:text-3xl text-secondary" />
@@ -118,7 +122,9 @@ export default function Approvals() {
                     <FaCheckCircle className="text-green-400 text-[10px] sm:text-sm" />
                   </div>
 
-                  <span className="text-[11px] sm:text-sm text-gray-200">{item}</span>
+                  <span className="text-[11px] sm:text-sm text-gray-200">
+                    {item}
+                  </span>
                 </div>
               ))}
             </div>

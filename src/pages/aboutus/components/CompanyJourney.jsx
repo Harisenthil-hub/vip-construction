@@ -1,5 +1,13 @@
 import { companyJourney } from "../data/aboutData";
-import { Flag, Building2, ShieldCheck, Milestone, CalendarDays, Check } from "lucide-react";
+import {
+  Flag,
+  Building2,
+  ShieldCheck,
+  Milestone,
+  CalendarDays,
+  Check,
+} from "lucide-react";
+import useSlideUp from "../../../hooks/useSlideUp";
 
 const iconMap = {
   Flag,
@@ -10,10 +18,13 @@ const iconMap = {
 };
 
 export default function CompanyJourney() {
+  useSlideUp();
   return (
-    <section id="journey" className="py-10 sm:py-14 lg:py-16 bg-white text-slate-900 relative overflow-hidden">
+    <section
+      id="journey"
+      className="py-10 sm:py-14 lg:py-16 bg-white text-slate-900 relative overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
         {/* Section Header */}
         <div className="max-w-2xl mb-8 lg:mb-12">
           <span className="span-heading">
@@ -25,13 +36,13 @@ export default function CompanyJourney() {
           </h2>
 
           <p className="text-xs sm:text-sm lg:text-base text-slate-600 font-normal leading-relaxed">
-            From founding VIP Construction in 2019 to growing into commercial projects and launching our digital client tracking platform.
+            From founding VIP Construction in 2019 to growing into commercial
+            projects and launching our digital client tracking platform.
           </p>
         </div>
 
         {/* Timeline Container with Vertical Line Design */}
         <div className="relative">
-          
           {/* Vertical Connecting Line: Left on Mobile/Tablet, Center on Desktop */}
           <div className="absolute left-4 sm:left-6 lg:left-1/2 top-4 bottom-4 w-0.5 bg-slate-200 lg:-translate-x-1/2 rounded-full pointer-events-none" />
 
@@ -48,9 +59,8 @@ export default function CompanyJourney() {
                   }`}
                 >
                   {/* Timeline Card - Offset on Mobile for Left Line, 50% width on Desktop */}
-                  <div className="w-full lg:w-[calc(50%-28px)] pl-11 sm:pl-14 lg:pl-0 group">
+                  <div className="slide-up w-full lg:w-[calc(50%-28px)] pl-11 sm:pl-14 lg:pl-0 group">
                     <div className="bg-white border border-slate-200 rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-t-4 border-t-[#F5A623] hover:border-r-slate-300 hover:border-b-slate-300 hover:border-l-slate-300 cursor-pointer">
-                      
                       {/* Top Header Row */}
                       <div className="flex items-center justify-between gap-2 mb-2.5">
                         <div className="flex items-center gap-2">
@@ -80,13 +90,15 @@ export default function CompanyJourney() {
                       {/* All Key Highlights */}
                       <div className="space-y-1.5 pt-2.5 border-t border-slate-100">
                         {step.highlights.map((hl, hIdx) => (
-                          <div key={hIdx} className="flex items-start gap-2 text-xs font-medium text-slate-700 group-hover:text-slate-900 transition-colors">
+                          <div
+                            key={hIdx}
+                            className="flex items-start gap-2 text-xs font-medium text-slate-700 group-hover:text-slate-900 transition-colors"
+                          >
                             <Check className="w-3.5 h-3.5 text-[#F5A623] flex-shrink-0 mt-0.5" />
                             <span className="leading-snug">{hl}</span>
                           </div>
                         ))}
                       </div>
-
                     </div>
                   </div>
 
@@ -97,14 +109,11 @@ export default function CompanyJourney() {
 
                   {/* Empty Spacer Column for Desktop Alternating Grid */}
                   <div className="hidden lg:block w-[calc(50%-28px)]" />
-
                 </div>
               );
             })}
           </div>
-
         </div>
-
       </div>
     </section>
   );

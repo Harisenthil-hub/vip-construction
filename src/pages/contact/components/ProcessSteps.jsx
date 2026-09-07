@@ -5,8 +5,9 @@ import {
   FaUserTie,
   FaKey,
 } from "react-icons/fa";
+import useSlideUp from "../../../hooks/useSlideUp";
 
-import { AiOutlineSafetyCertificate } from 'react-icons/ai';
+import { AiOutlineSafetyCertificate } from "react-icons/ai";
 
 const steps = [
   {
@@ -54,6 +55,7 @@ const steps = [
 ];
 
 export default function ProcessSteps() {
+  useSlideUp();
   return (
     <section className="relative bg-white py-8 sm:py-15 overflow-hidden">
       {/* Decorative ambient glows */}
@@ -96,7 +98,7 @@ export default function ProcessSteps() {
             {steps.map((step, index) => (
               <div
                 key={step.id}
-                className={`relative group ${
+                className={`slide-up relative group ${
                   index % 2 === 1 ? "lg:mt-16" : ""
                 }`}
               >

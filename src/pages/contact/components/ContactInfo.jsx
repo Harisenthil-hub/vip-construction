@@ -6,6 +6,7 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import useSlideUp from "../../../hooks/useSlideUp";
 
 const cards = [
   {
@@ -35,6 +36,7 @@ const cards = [
 ];
 
 export default function ContactInfo() {
+  useSlideUp();
   return (
     <section className="bg-white py-8 sm:py-15">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10">
@@ -53,7 +55,7 @@ export default function ContactInfo() {
         {/* Layout: featured call panel + 3 stacked cards */}
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 sm:gap-8">
           {/* Featured "Call Us" panel */}
-          <div className="lg:col-span-2 relative bg-primary rounded-2xl p-5 sm:p-10 flex flex-col justify-between overflow-hidden">
+          <div className="slide-up lg:col-span-2 relative bg-primary rounded-2xl p-5 sm:p-10 flex flex-col justify-between overflow-hidden">
             {/* Decorative amber glow */}
             <div className="absolute -top-16 -right-16 w-56 h-56 bg-[#F5A623]/20 rounded-full blur-3xl"></div>
 
@@ -97,7 +99,7 @@ export default function ContactInfo() {
             {cards.map((item, index) => (
               <div
                 key={index}
-                className={`group relative bg-white rounded-2xl border border-gray-200 p-3.5 sm:p-7 flex flex-col hover:border-[#F5A623] hover:shadow-xl transition-all duration-300 ${
+                className={`slide-up group relative bg-white rounded-2xl border border-gray-200 p-3.5 sm:p-7 flex flex-col hover:border-[#F5A623] hover:shadow-xl transition-all duration-300 ${
                   index === 0 ? "col-span-2 sm:col-span-2" : ""
                 }`}
               >

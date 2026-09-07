@@ -7,6 +7,7 @@ import {
   FaPhoneAlt,
   FaArrowRight,
 } from "react-icons/fa";
+import { useEffect } from "react";
 
 export function MobileNav({ closeMenu, isMenuOpen }) {
   const navItems = [
@@ -36,6 +37,14 @@ export function MobileNav({ closeMenu, isMenuOpen }) {
       icon: FaPhoneAlt,
     },
   ];
+
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenuOpen]);
 
   return (
     <>
@@ -99,8 +108,6 @@ export function MobileNav({ closeMenu, isMenuOpen }) {
                   >
                     {({ isActive }) => (
                       <>
-                        
-
                         {/* Icon */}
                         <span
                           className={`flex h-9 w-9 items-center justify-center rounded-lg transition-all duration-300 ${
@@ -147,7 +154,7 @@ export function MobileNav({ closeMenu, isMenuOpen }) {
 
             <NavLink
               to="/contact"
-              state={{ scrollTo: 'contact-form' }}
+              state={{ scrollTo: "contact-form" }}
               onClick={closeMenu}
               className="mt-3 flex items-center justify-center gap-2 rounded-lg bg-gold-hover px-4 py-3 font-poppins text-sm font-semibold text-primary transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
             >

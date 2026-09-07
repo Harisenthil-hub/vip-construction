@@ -19,7 +19,7 @@ const ProjectModal = ({ project, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-bg-black/80 backdrop-blur-sm flex items-center justify-center p-2 sm:p-4">
+    <div className="fixed inset-0 z-50 bg-bg-black/50 opacity-100 visible backdrop-blur-sm transition-opacity duration-300 flex items-center justify-center p-2 sm:p-4">
 
       <div className="relative bg-surface rounded-2xl sm:rounded-3xl shadow-2xl w-full max-w-6xl max-h-[95vh] overflow-y-auto overflow-x-hidden">
 
