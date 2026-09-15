@@ -7,13 +7,12 @@ import {
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { MobileTopBar } from "./MobileTopBar";
 import { Link } from "react-router-dom";
 
 export function TopBar() {
   return (
     <>
-      <div className="bg-primary text-text-muted py-1 text-base">
+      <div className="bg-primary text-text-muted py-0 sm:py-1 text-base">
         {/* DESKTOP */}
         <div className="hidden lg:flex justify-between max-w-[1300px] mx-auto py-0.5">
           {/* TOP BAR LEFT */}
@@ -77,16 +76,7 @@ export function TopBar() {
           </div>
         </div>
 
-        {/* MOBILE + TABLET TICKER */}
-        <div className="lg:hidden overflow-hidden w-full">
-          <div className="topbar-marquee flex w-max">
-            {/* First copy */}
-            <MobileTopBar />
-
-            {/* Duplicate for seamless looping */}
-            <MobileTopBar />
-          </div>
-        </div>
+        
       </div>
     </>
   );

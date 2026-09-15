@@ -52,6 +52,19 @@ import villa7_1 from "../../../assets/project/project_gallery/villas/villa7/vill
 
 import villa8_1 from "../../../assets/project/project_gallery/villas/villa8/villa8_1.webp";
 
+import villa9_1 from "../../../assets/project/project_gallery/villas/villa9/villa9_1.webp";
+import villa9_2 from "../../../assets/project/project_gallery/villas/villa9/villa9_2.webp";
+import villa9_3 from "../../../assets/project/project_gallery/villas/villa9/villa9_3.webp";
+
+import villa10_1 from "../../../assets/project/project_gallery/villas/villa10/villa10_1.webp";
+import villa10_2 from "../../../assets/project/project_gallery/villas/villa10/villa10_2.webp";
+import villa10_3 from "../../../assets/project/project_gallery/villas/villa10/villa10_3.webp";
+
+import villa11_1 from "../../../assets/project/project_gallery/villas/villa11/villa11_1.webp";
+import villa11_2 from "../../../assets/project/project_gallery/villas/villa11/villa11_2.webp";
+import villa11_3 from "../../../assets/project/project_gallery/villas/villa11/villa11_3.webp";
+import villa11_4 from "../../../assets/project/project_gallery/villas/villa11/villa11_4.webp";
+
 
 export const projects = [
   {
@@ -164,5 +177,48 @@ export const projects = [
     duration: "-",
     cover: villa8_1,
     images: [villa8_1],
+  },
+
+  {
+    id: 9,
+    title: "Luxury Villa 9",
+    location: "Sulthanpet",
+    category: "Residential",
+    status: "Ongoing",
+    area: "4,500 sq.ft",
+    price: "Rs 1.57 Cr",
+    year: "2026",
+    duration: "18 Months",
+    cover: villa9_1,
+    images: [villa9_1, villa9_2, villa9_3],
+  },
+
+  {
+    id: 10,
+    title: "Luxury Villa 10",
+    location: "Othakalmandapam",
+    category: "Residential",
+    status: "Ongoing",
+    area: "11,700 sq.ft",
+    price: "Rs 3 Cr",
+    year: "2026",
+    duration: "24 Months",
+    cover: villa10_1,
+    images: [villa10_1, villa10_2, villa10_3],
+  },
+
+
+  {
+    id: 11,
+    title: "Luxury Villa 11",
+    location: "Othakalmandapam",
+    category: "Residential",
+    status: "Ongoing",
+    area: "3,900 sq.ft",
+    price: "Rs 1.05 Cr",
+    year: "2026",
+    duration: "15 Months",
+    cover: villa11_1,
+    images: [villa11_1, villa11_2, villa11_3, villa11_4],
   },
 ];

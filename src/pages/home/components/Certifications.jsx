@@ -37,7 +37,7 @@ export function Certifications() {
               </h3>
 
               {/* TYPE */}
-              <p className=" mt-1 text-xs text-text-dark-muted ">
+              <p className=" mt-1 text-sm text-text-dark-muted ">
                 {" "}
                 {item.type}{" "}
               </p>
